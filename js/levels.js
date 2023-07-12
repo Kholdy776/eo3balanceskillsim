@@ -1344,180 +1344,81 @@ var levels = {
             5: "Reduce damage by 90%; lasts for 80 steps; costs 8 TP"
         }
     },
-    Zodiac: {
+       Zodiac: {
+        EthericReturn: {
+            1: "0% Healing Power as TP",
+            2: "1% Healing Power as TP",
+            3: "2% Healing Power as TP",
+            4: "3% Healing Power as TP",
+            5: "4% Healing Power as TP",
+            6: "5% Healing Power as TP",
+            7: "6% Healing Power as TP",
+            8: "7% Healing Power as TP",
+            9: "8% Healing Power as TP",
+            10: "9% Healing Power as TP"
+
+        },
+        Inferno: {
+            1: "60% FIRE/ICE damage to enemy; 60% FIRE/ICE damage to adjacent enemies; costs 22 TP",
+            2: "68% FIRE/ICE damage to enemy; 65% FIRE/ICE damage to adjacent enemies; costs 24 TP",
+            3: "76% FIRE/ICE damage to enemy; 71% FIRE/ICE damage to adjacent enemies; costs 26 TP",
+            4: "85% FIRE/ICE damage to enemy; 77% FIRE/ICE damage to adjacent enemies; costs 28 TP",
+            5: "94% FIRE/ICE damage to enemy; 82% FIRE/ICE damage to adjacent enemies; costs 30 TP",
+            6: "103% FIRE/ICE damage to enemy; 87% FIRE/ICE damage to adjacent enemies; costs 32 TP",
+            7: "113% FIRE/ICE damage to enemy; 92% FIRE/ICE damage to adjacent enemies; costs 34 TP",
+            8: "123% FIRE/ICE damage to enemy; 97% FIRE/ICE damage to adjacent enemies; costs 36 TP",
+            9: "134% FIRE/ICE damage to enemy; 101% FIRE/ICE damage to adjacent enemies; costs 38 TP",
+            10: "144% FIRE/ICE damage to enemy; 105% FIRE/ICE damage to adjacent enemies; costs 40 TP"
+        },
+        Cocytus: {
+            1: "32% ICE/VOLT damage; 2-3 hits; costs 22 TP",
+            2: "32% ICE/VOLT damage; 2-3 hits; costs 24 TP",
+            3: "32% ICE/VOLT damage; 2-4 hits; costs 26 TP",
+            4: "32% ICE/VOLT damage; 2-4 hits; costs 28 TP",
+            5: "32% ICE/VOLT damage; 2-5 hits; costs 30 TP",
+            6: "32% ICE/VOLT damage; 3-5 hits; costs 32 TP",
+            7: "32% ICE/VOLT damage; 3-6 hits; costs 34 TP",
+            8: "32% ICE/VOLT damage; 3-6 hits; costs 36 TP",
+            9: "32% ICE/VOLT damage; 3-7 hits; costs 38 TP",
+            10: "32% ICE/VOLT damage; 3-7 hits; costs 40 TP"
+        },
+        Thor: {
+            1: "70% VOLT/FIRE damage; costs 22 TP",
+            2: "77% VOLT/FIRE damage; costs 24 TP",
+            3: "84% VOLT/FIRE damage; costs 26 TP",
+            4: "92% VOLT/FIRE damage; costs 28 TP",
+            5: "101% VOLT/FIRE damage; costs 30 TP",
+            6: "109% VOLT/FIRE damage; costs 32 TP",
+            7: "119% VOLT/FIRE damage; costs 34 TP",
+            8: "129% VOLT/FIRE damage; costs 36 TP",
+            9: "139% VOLT/FIRE damage; costs 38 TP",
+            10: "150% VOLT/FIRE damage; costs 40 TP"
+        },
         EtherMastery: {
-            1: "Increase damage by 2%",
-            2: "Increase damage by 4%",
-            3: "Increase damage by 6%",
-            4: "Increase damage by 8%",
-            5: "Increase damage by 10%",
-            6: "Increase damage by 13%",
-            7: "Increase damage by 16%",
-            8: "Increase damage by 19%",
-            9: "Increase damage by 22%",
-            10: "Increase damage by 25%"
+            1: "Increase elemental damage by 2%",
+            2: "Increase elemental damage by 4%",
+            3: "Increase elemental damage by 6%",
+            4: "Increase elemental damage by 8%",
+            5: "Increase elemental damage by 10%",
+            6: "Increase elemental damage by 12%",
+            7: "Increase elemental damage by 14%",
+            8: "Increase elemental damage by 16%",
+            9: "Increase elemental damage by 18%",
+            10: "Increase elemental damage by 20%"
         },
-        FlameMastery: {
-            1: "Increase damage by 2%",
-            2: "Increase damage by 3%",
-            3: "Increase damage by 4%",
-            4: "Increase damage by 5%",
-            5: "Increase damage by 6%",
-            6: "Increase damage by 7%",
-            7: "Increase damage by 8%",
-            8: "Increase damage by 9%",
-            9: "Increase damage by 10%",
-            10: "Increase damage by 11%"
+        Singularity: {
+            1: "Increase damage dealt to weak point by 10%",
+            2: "Increase damage dealt to weak point by 20%",
+            3: "Increase damage dealt to weak point by 30%",
+            4: "Increase damage dealt to weak point by 40%",
+            5: "Increase damage dealt to weak point by 50%"
         },
-        IceMastery: {
-            1: "Increase damage by 2%",
-            2: "Increase damage by 3%",
-            3: "Increase damage by 4%",
-            4: "Increase damage by 5%",
-            5: "Increase damage by 6%",
-            6: "Increase damage by 7%",
-            7: "Increase damage by 8%",
-            8: "Increase damage by 9%",
-            9: "Increase damage by 10%",
-            10: "Increase damage by 11%"
-        },
-        ThunderMastery: {
-            1: "Increase damage by 2%",
-            2: "Increase damage by 3%",
-            3: "Increase damage by 4%",
-            4: "Increase damage by 5%",
-            5: "Increase damage by 6%",
-            6: "Increase damage by 7%",
-            7: "Increase damage by 8%",
-            8: "Increase damage by 9%",
-            9: "Increase damage by 10%",
-            10: "Increase damage by 11%"
-        },
-        SingularityTheorem: {
-            1: "Increase damage to weak point by 10%",
-            2: "Increase damage to weak point by 20%",
-            3: "Increase damage to weak point by 30%",
-            4: "Increase damage to weak point by 40%",
-            5: "Increase damage to weak point by 50%"
-        },
-        ReturnEther: {
-            1: "Restore 1 TP",
-            2: "Restore 2 TP",
-            3: "Restore 3 TP",
-            4: "Restore 4 TP",
-            5: "Restore 5 TP"
-        },
-        FlameAstrology: {
-            1: "40% FIRE damage; costs 8 TP",
-            2: "44% FIRE damage; costs 9 TP",
-            3: "48% FIRE damage; costs 10 TP",
-            4: "52% FIRE damage; costs 11 TP",
-            5: "56% FIRE damage; costs 12 TP",
-            6: "60% FIRE damage; costs 14 TP",
-            7: "64% FIRE damage; costs 16 TP",
-            8: "68% FIRE damage; costs 18 TP",
-            9: "72% FIRE damage; costs 20 TP",
-            10: "80% FIRE damage; costs 22 TP"
-        },
-        FlameConstellation: {
-            1: "30% FIRE damage to all enemies; costs 16 TP",
-            2: "32% FIRE damage to all enemies; costs 18 TP",
-            3: "34% FIRE damage to all enemies; costs 20 TP",
-            4: "36% FIRE damage to all enemies; costs 22 TP",
-            5: "38% FIRE damage to all enemies; costs 24 TP",
-            6: "41% FIRE damage to all enemies; costs 26 TP",
-            7: "44% FIRE damage to all enemies; costs 28 TP",
-            8: "47% FIRE damage to all enemies; costs 30 TP",
-            9: "50% FIRE damage to all enemies; costs 32 TP",
-            10: "55% FIRE damage to all enemies; costs 35 TP"
-        },
-        FlameForesight: {
-            1: "50% FIRE damage; costs 15 TP",
-            2: "60% FIRE damage; costs 16 TP",
-            3: "75% FIRE damage; costs 17 TP",
-            4: "90% FIRE damage; costs 18 TP",
-            5: "105% FIRE damage; costs 19 TP"
-        },
-        IceAstrology: {
-            1: "40% ICE damage; costs 8 TP",
-            2: "44% ICE damage; costs 9 TP",
-            3: "48% ICE damage; costs 10 TP",
-            4: "52% ICE damage; costs 11 TP",
-            5: "56% ICE damage; costs 12 TP",
-            6: "60% ICE damage; costs 14 TP",
-            7: "64% ICE damage; costs 16 TP",
-            8: "68% ICE damage; costs 18 TP",
-            9: "72% ICE damage; costs 20 TP",
-            10: "80% ICE damage; costs 22 TP"
-        },
-        IceConstellation: {
-            1: "30% ICE damage to all enemies; costs 16 TP",
-            2: "32% ICE damage to all enemies; costs 18 TP",
-            3: "34% ICE damage to all enemies; costs 20 TP",
-            4: "36% ICE damage to all enemies; costs 22 TP",
-            5: "38% ICE damage to all enemies; costs 24 TP",
-            6: "41% ICE damage to all enemies; costs 26 TP",
-            7: "44% ICE damage to all enemies; costs 28 TP",
-            8: "47% ICE damage to all enemies; costs 30 TP",
-            9: "50% ICE damage to all enemies; costs 32 TP",
-            10: "55% ICE damage to all enemies; costs 35 TP"
-        },
-        IceForesight: {
-            1: "50% ICE damage; costs 15 TP",
-            2: "60% ICE damage; costs 16 TP",
-            3: "75% ICE damage; costs 17 TP",
-            4: "90% ICE damage; costs 18 TP",
-            5: "105% ICE damage; costs 19 TP"
-        },
-        ThunderAstrology: {
-            1: "40% THUNDER damage; costs 8 TP",
-            2: "44% THUNDER damage; costs 9 TP",
-            3: "48% THUNDER damage; costs 10 TP",
-            4: "52% THUNDER damage; costs 11 TP",
-            5: "56% THUNDER damage; costs 12 TP",
-            6: "60% THUNDER damage; costs 14 TP",
-            7: "64% THUNDER damage; costs 16 TP",
-            8: "68% THUNDER damage; costs 18 TP",
-            9: "72% THUNDER damage; costs 20 TP",
-            10: "80% THUNDER damage; costs 22 TP"
-        },
-        ThunderConstellation: {
-            1: "30% THUNDER damage to all enemies; costs 16 TP",
-            2: "32% THUNDER damage to all enemies; costs 18 TP",
-            3: "34% THUNDER damage to all enemies; costs 20 TP",
-            4: "36% THUNDER damage to all enemies; costs 22 TP",
-            5: "38% THUNDER damage to all enemies; costs 24 TP",
-            6: "41% THUNDER damage to all enemies; costs 26 TP",
-            7: "44% THUNDER damage to all enemies; costs 28 TP",
-            8: "47% THUNDER damage to all enemies; costs 30 TP",
-            9: "50% THUNDER damage to all enemies; costs 32 TP",
-            10: "55% THUNDER damage to all enemies; costs 35 TP"
-        },
-        ThunderForesight: {
-            1: "50% THUNDER damage; costs 15 TP",
-            2: "60% THUNDER damage; costs 16 TP",
-            3: "75% THUNDER damage; costs 17 TP",
-            4: "90% THUNDER damage; costs 18 TP",
-            5: "105% THUNDER damage; costs 19 TP"
-        },
-        Meteor: {
-            1: "35% damage; 3 - 4 hits; costs 30 TP",
-            2: "38% damage; 3 - 4 hits; costs 32 TP",
-            3: "38% damage; 3 - 5 hits; costs 34 TP",
-            4: "41% damage; 3 - 5 hits; costs 37 TP",
-            5: "41% damage; 4 - 5 hits; costs 40 TP",
-            6: "44% damage; 4 - 5 hits; costs 43 TP",
-            7: "44% damage; 4 - 6 hits; costs 47 TP",
-            8: "47% damage; 4 - 6 hits; costs 51 TP",
-            9: "47% damage; 5 - 6 hits; costs 55 TP",
-            10: "50% damage; 5 - 6 hits; costs 60 TP"
-        },
-        EtherConcentration: {
-            1: "Increase elemental damage by 120%; costs 8 TP",
-            2: "Increase elemental damage by 140%; costs 9 TP",
-            3: "Increase elemental damage by 160%; costs 10 TP",
-            4: "Increase elemental damage by 180%; costs 11 TP",
-            5: "Increase elemental damage by 200%; costs 12 TP"
+        EthericCharge: {
+            1: "Increase elemental damage by 160%; costs 2 TP",
+            2: "Increase elemental damage by 180%; costs 4 TP",
+            3: "Increase elemental damage by 200%; costs 6 TP",
+            4: "Increase elemental damage by 220%; costs 8 TP",
+            5: "Increase elemental damage by 240%; costs 10 TP"
         },
         DarkEther: {
             1: "Costs 18 TP",
@@ -1526,12 +1427,122 @@ var levels = {
             4: "Costs 12 TP",
             5: "Costs 10 TP"
         },
-        PlanetObservation: {
-            1: "Lasts for 30 steps; costs 6 TP",
-            2: "Lasts for 40 steps; costs 6 TP",
-            3: "Lasts for 50 steps; costs 7 TP",
-            4: "Lasts for 70 steps; costs 7 TP",
-            5: "Lasts for 100 steps; costs 8 TP"
+        Meteor: {
+            1: "35% STRIKE damage; 3-4 hits; costs 30 TP",
+            2: "38% STRIKE damage; 3-4 hits; costs 32 TP",
+            3: "38% STRIKE damage; 3-5 hits; costs 34 TP",
+            4: "41% STRIKE damage; 4-5 hits; costs 37 TP",
+            5: "41% STRIKE damage; 4-5 hits; costs 40 TP",
+            6: "44% STRIKE damage; 4-5 hits; costs 43 TP",
+            7: "44% STRIKE damage; 4-6 hits; costs 47 TP",
+            8: "47% STRIKE damage; 4-6 hits; costs 51 TP",
+            9: "47% STRIKE damage; 5-6 hits; costs 55 TP",
+            10: "50% STRIKE damage; 5-6 hits; costs 60 TP"
+        },
+        FireStar: {
+            1: "50% FIRE damage; costs 8 TP",
+            2: "55% FIRE damage; costs 9 TP",
+            3: "61% FIRE damage; costs 10 TP",
+            4: "67% FIRE damage; costs 11 TP",
+            5: "74% FIRE damage; costs 12 TP",
+            6: "82% FIRE damage; costs 14 TP",
+            7: "90% FIRE damage; costs 16 TP",
+            8: "100% FIRE damage; costs 18 TP",
+            9: "110% FIRE damage; costs 20 TP",
+            10: "120% FIRE damage; costs 22 TP"
+        },
+        BinaryFire: {
+            1: "40% FIRE damage to all enemies; costs 16 TP",
+            2: "45% FIRE damage to all enemies; costs 18 TP",
+            3: "51% FIRE damage to all enemies; costs 20 TP",
+            4: "57% FIRE damage to all enemies; costs 22 TP",
+            5: "63% FIRE damage to all enemies; costs 24 TP",
+            6: "70% FIRE damage to all enemies; costs 26 TP",
+            7: "78% FIRE damage to all enemies; costs 28 TP",
+            8: "87% FIRE damage to all enemies; costs 30 TP",
+            9: "96% FIRE damage to all enemies; costs 32 TP",
+            10: "106% FIRE damage to all enemies; costs 35 TP"
+        },
+        Prominence: {
+            1: "Reduce resistance to ICE by 10%; costs 11 TP",
+            2: "Reduce resistance to ICE by 20%; costs 12 TP",
+            3: "Reduce resistance to ICE by 30%; costs 13 TP",
+            4: "Reduce resistance to ICE by 40%; costs 14 TP",
+            5: "Reduce resistance to ICE by 50%; costs 15 TP"
+        },
+        IceStar: {
+            1: "50% ICE damage; costs 8 TP",
+            2: "55% ICE damage; costs 9 TP",
+            3: "61% ICE damage; costs 10 TP",
+            4: "67% ICE damage; costs 11 TP",
+            5: "74% ICE damage; costs 12 TP",
+            6: "82% ICE damage; costs 14 TP",
+            7: "90% ICE damage; costs 16 TP",
+            8: "100% ICE damage; costs 18 TP",
+            9: "110% ICE damage; costs 20 TP",
+            10: "120% ICE damage; costs 22 TP"
+        },
+        BinaryIce: {
+            1: "40% ICE damage to all enemies; costs 16 TP",
+            2: "45% ICE damage to all enemies; costs 18 TP",
+            3: "51% ICE damage to all enemies; costs 20 TP",
+            4: "57% ICE damage to all enemies; costs 22 TP",
+            5: "63% ICE damage to all enemies; costs 24 TP",
+            6: "70% ICE damage to all enemies; costs 26 TP",
+            7: "78% ICE damage to all enemies; costs 28 TP",
+            8: "87% ICE damage to all enemies; costs 30 TP",
+            9: "96% ICE damage to all enemies; costs 32 TP",
+            10: "106% ICE damage to all enemies; costs 35 TP"
+        },
+        Deluge: {
+            1: "Reduce resistance to VOLT by 10%; costs 11 TP",
+            2: "Reduce resistance to VOLT by 20%; costs 12 TP",
+            3: "Reduce resistance to VOLT by 30%; costs 13 TP",
+            4: "Reduce resistance to VOLT by 40%; costs 14 TP",
+            5: "Reduce resistance to VOLT by 50%; costs 15 TP"
+        },
+        VoltStar: {
+            1: "50% VOLT damage; costs 8 TP",
+            2: "55% VOLT damage; costs 9 TP",
+            3: "61% VOLT damage; costs 10 TP",
+            4: "67% VOLT damage; costs 11 TP",
+            5: "74% VOLT damage; costs 12 TP",
+            6: "82% VOLT damage; costs 14 TP",
+            7: "90% VOLT damage; costs 16 TP",
+            8: "100% VOLT damage; costs 18 TP",
+            9: "110% VOLT damage; costs 20 TP",
+            10: "120% VOLT damage; costs 22 TP"
+        },
+        BinaryThunder: {
+            1: "40% VOLT damage to all enemies; costs 16 TP",
+            2: "45% VOLT damage to all enemies; costs 18 TP",
+            3: "51% VOLT damage to all enemies; costs 20 TP",
+            4: "57% VOLT damage to all enemies; costs 22 TP",
+            5: "63% VOLT damage to all enemies; costs 24 TP",
+            6: "70% VOLT damage to all enemies; costs 26 TP",
+            7: "78% VOLT damage to all enemies; costs 28 TP",
+            8: "87% VOLT damage to all enemies; costs 30 TP",
+            9: "96% VOLT damage to all enemies; costs 32 TP",
+            10: "106% VOLT damage to all enemies; costs 35 TP"
+        },
+        Tempest: {
+            1: "Reduce resistance to FIRE by 10%; costs 11 TP",
+            2: "Reduce resistance to FIRE by 20%; costs 12 TP",
+            3: "Reduce resistance to FIRE by 30%; costs 13 TP",
+            4: "Reduce resistance to FIRE by 40%; costs 14 TP",
+            5: "Reduce resistance to FIRE by 50%; costs 15 TP"
+        },
+        Supernova: {
+            1: "70% ALMIGHTY damage, costs 30 TP",
+            2: "77% ALMIGHTY damage, costs 32 TP",
+            3: "84% ALMIGHTY damage, costs 34 TP",
+            4: "92% ALMIGHTY damage, costs 37 TP",
+            5: "100% ALMIGHTY DAMAGE, costs 40 TP",
+            6: "108% ALMIGHTY DAMAGE, costs 43 TP",
+            7: "116% ALMIGHTY DAMAGE, costs 47 TP",
+            8: "125% ALMIGHTY DAMAGE, costs 51 TP",
+            9: "134% ALMIGHTY DAMAGE, costs 55 TP",
+            10: "144% ALMIGHTY DAMAGE, costs 60 TP",
         }
     },
     Wildling: {
