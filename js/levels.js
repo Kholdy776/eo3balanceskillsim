@@ -2,27 +2,27 @@ var levels = {
 Default: {
 HPBoost: {
 1: "Increase max HP by 10%",
-2: "Increase max HP by 13%",
-3: "Increase max HP by 16%",
-4: "Increase max HP by 19%",
-5: "Increase max HP by 22%",
-6: "Increase max HP by 25%",
-7: "Increase max HP by 30%",
-8: "Increase max HP by 35%",
-9: "Increase max HP by 40%",
-10: "Increase max HP by 48%"
+2: "Increase max HP by 15%",
+3: "Increase max HP by 20%",
+4: "Increase max HP by 25%",
+5: "Increase max HP by 30%",
+6: "Increase max HP by 35%",
+7: "Increase max HP by 40%",
+8: "Increase max HP by 45%",
+9: "Increase max HP by 50%",
+10: "Increase max HP by 55%"
 },
 TPBoost: {
 1: "Increase max TP by 10%",
-2: "Increase max TP by 13%",
-3: "Increase max TP by 16%",
-4: "Increase max TP by 19%",
-5: "Increase max TP by 22%",
-6: "Increase max TP by 25%",
-7: "Increase max TP by 30%",
-8: "Increase max TP by 35%",
-9: "Increase max TP by 40%",
-10: "Increase max TP by 48%"
+2: "Increase max TP by 15%",
+3: "Increase max TP by 20%",
+4: "Increase max TP by 25%",
+5: "Increase max TP by 30%",
+6: "Increase max TP by 35%",
+7: "Increase max TP by 40%",
+8: "Increase max TP by 45%",
+9: "Increase max TP by 50%",
+10: "Increase max TP by 55%"
 },
 FirstAid: {
 1: "Restores 10 HP; costs 2 TP",
@@ -37,7 +37,7 @@ FirstAid: {
 10: "Restores 150 HP; costs 8 TP"
 },
 ListenToExp: {
-1: "Receive 1% of combat experience while not in active party",
+1: "Receive 17.5% of combat experience while not in active party",
 2: "Receive 2% of combat experience while not in active party",
 3: "Receive 3% of combat experience while not in active party",
 4: "Receive 4% of combat experience while not in active party",
@@ -86,43 +86,19 @@ Mine: {
 }
 },
 Prince: {
-RoyalLineage: {
-1: "Gain 1 TP",
-2: "Gain 2 TP",
-3: "Gain 3 TP",
-4: "Gain 4 TP",
-5: "Gain 5 TP",
-6: "Gain 6 TP",
-7: "Gain 7 TP",
-8: "Gain 8 TP",
-9: "Gain 9 TP",
-10: "Gain 10 TP"
+  RoyalVeil: {
+1: "Healing Power 21%, Activates at 95% HP",
+2: "Healing Power 23%, Activates at 93% HP",
+3: "Healing Power 25%, Activates at 91% HP",
+4: "Healing Power 27%, Activates at 89% HP",
+5: "Healing Power 29%, Activates at 87% HP",
+6: "Healing Power 31%, Activates at 85% HP",
+7: "Healing Power 33%, Activates at 83% HP",
+8: "Healing Power 35%, Activates at 81% HP",
+9: "Healing Power 38%, Activates at 78% HP",
+10: "Healing Power 41%, Activates at 75% HP"
 },
-RoyalBell: {
-1: "Heals 4 HP",
-2: "Heals 7 HP",
-3: "Heals 10 HP",
-4: "Heals 14 HP",
-5: "Heals 18 HP",
-6: "Heals 22 HP",
-7: "Heals 28 HP",
-8: "Heals 34 HP",
-9: "Heals 40 HP",
-10: "Heals 46 HP"
-},
-KingsVictorySong: {
-1: "Heals 10 HP",
-2: "Heals 14 HP",
-3: "Heals 18 HP",
-4: "Heals 22 HP",
-5: "Heals 26 HP",
-6: "Heals 32 HP",
-7: "Heals 38 HP",
-8: "Heals 44 HP",
-9: "Heals 50 HP",
-10: "Heals 60 HP"
-},
-KingsMarch: {
+MonarchMarch: {
 1: "Heals 1 HP per step",
 2: "Heals 2 HP per step",
 3: "Heals 3 HP per step",
@@ -134,6 +110,31 @@ KingsMarch: {
 9: "Heals 9 HP per step",
 10: "Heals 10 HP per step"
 },
+RoyalLineage: {
+1: "Gain 2 TP",
+2: "Gain 4 TP",
+3: "Gain 6 TP",
+4: "Gain 8 TP",
+5: "Gain 10 TP",
+6: "Gain 12 TP",
+7: "Gain 14 TP",
+8: "Gain 16 TP",
+9: "Gain 18 TP",
+10: "Gain 20 TP"
+},
+  TriumphantCry: {
+1: "Heals 10 HP",
+2: "Heals 14 HP",
+3: "Heals 18 HP",
+4: "Heals 22 HP",
+5: "Heals 26 HP",
+6: "Heals 32 HP",
+7: "Heals 38 HP",
+8: "Heals 44 HP",
+9: "Heals 50 HP",
+10: "Heals 60 HP"
+
+},
 Reinforce: {
 1: "Heals 6 HP",
 2: "Heals 10 HP",
@@ -144,50 +145,55 @@ Reinforce: {
 7: "Heals 30 HP",
 8: "Heals 34 HP",
 9: "Heals 38 HP",
-10: "Heals 42 HP"
+10: "Heals 42 HP",
 },
-ProofOfKingship: {
-1: "Restores 3 TP",
-2: "Restores 4 TP",
-3: "Restores 5 TP",
-4: "Restores 6 TP",
-5: "Restores 7 TP",
-6: "Restores 8 TP",
-7: "Restores 9 TP",
-8: "Restores 10 TP",
-9: "Restores 11 TP",
-10: "Restores 12 TP"
+NobilityProof: {
+1: "15/1% Healing Power for HP/TP",
+2: "18/2% Healing Power for HP/TP",
+3: "21/3% Healing Power for HP/TP",
+4: "24/4% Healing Power for HP/TP",
+5: "27/5% Healing Power for HP/TP",
+6: "30/6% Healing Power for HP/TP",
+7: "33/7% Healing Power for HP/TP",
+8: "36/8% Healing Power for HP/TP",
+9: "39/9% Healing Power for HP/TP",
+10: "42/10% Healing Power for HP/TP"
 },
-AttackCommand: {
-1: "Increases damage done by 20%; costs 8 TP",
-2: "Increases damage done by 22%; costs 8 TP",
-3: "Increases damage done by 24%; costs 9 TP",
-4: "Increases damage done by 27%; costs 10 TP",
-5: "Increases damage done by 30%; costs 11 TP",
-6: "Increases damage done by 33%; costs 12 TP",
-7: "Increases damage done by 36%; costs 13 TP",
-8: "Increases damage done by 39%; costs 14 TP",
-9: "Increases damage done by 42%; costs 15 TP",
-10: "Increases damage done by 45%; costs 16 TP"
+AttackOrder: {
+1: "Row, All DMG +20%; costs 8 TP",
+2: "Row, All DMG +23%; costs 8 TP",
+3: "Row, All DMG +26%; costs 9 TP",
+4: "Row, All DMG +29%; costs 10 TP",
+5: "Row, All DMG +32%; costs 11 TP",
+6: "Row, All DMG +35%; costs 12 TP",
+7: "Row, All DMG +38%; costs 13 TP",
+8: "Row, All DMG +42%; costs 14 TP",
+9: "Row, All DMG +45%; costs 15 TP",
+10: "Party, All DMG +38% ↓; costs 16 TP"
 },
-DefenseCommand: {
-1: "Decrease damage taken by 20%; costs 8 TP",
-2: "Decrease damage taken by 22%; costs 8 TP",
-3: "Decrease damage taken by 24%; costs 9 TP",
-4: "Decrease damage taken by 27%; costs 10 TP",
-5: "Decrease damage taken by 30%; costs 11 TP",
-6: "Decrease damage taken by 33%; costs 12 TP",
-7: "Decrease damage taken by 36%; costs 13 TP",
-8: "Decrease damage taken by 39%; costs 14 TP",
-9: "Decrease damage taken by 42%; costs 15 TP",
-10: "Decrease damage taken by 45%; costs 16 TP"
+GuardOrder: {
+1: "Row, All DEF +20%; costs 8 TP",
+2: "Row, All DEF +23%; costs 8 TP",
+3: "Row, All DEF +26%; costs 9 TP",
+4: "Row, All DEF +29%; costs 10 TP",
+5: "Row, All DEF +32%; costs 11 TP",
+6: "Row, All DEF +35%; costs 12 TP",
+7: "Row, All DEF +38%; costs 13 TP",
+8: "Row, All DEF +42%; costs 14 TP",
+9: "Row, All DEF +45%; costs 15 TP",
+10: "Party, All DEF +38% ↓; costs 16 TP"
 },
-FireArms: {
-1: "Reduces FIRE damage by 10%; costs 6 TP",
-2: "Reduces FIRE damage by 20%; costs 7 TP",
-3: "Reduces FIRE damage by 30%; costs 8 TP",
-4: "Reduces FIRE damage by 40%; costs 9 TP",
-5: "Reduces FIRE damage by 50%; costs 10 TP"
+ElementalBomb: {
+1: "55% DMG; costs 6 TP",
+2: "60% DMG; costs 7 TP",
+3: "65% DMG; costs 8 TP",
+4: "70% DMG; costs 9 TP",
+5: "75% DMG; costs 10 TP",
+6: "80% DMG; costs 12 TP",
+7: "85% DMG; costs 15 TP",
+8: "90% DMG; costs 15 TP",
+9: "95% DMG; costs 15 TP",
+10: "100% DMG; costs 16 TP"  
 },
 FreezeArms: {
 1: "Reduces ICE damage by 10%; costs 6 TP",
@@ -235,16 +241,7 @@ ImmunizationCommand: {
 5: "Costs 4 TP"
 },
 AmbitiousCommand: {
-1: "Increases max HP by 30%; costs 6 TP",
-2: "Increases max HP by 33%; costs 6 TP",
-3: "Increases max HP by 36%; costs 7 TP",
-4: "Increases max HP by 39%; costs 7 TP",
-5: "Increases max HP by 43%; costs 8 TP",
-6: "Increases max HP by 47%; costs 8 TP",
-7: "Increases max HP by 51%; costs 9 TP",
-8: "Increases max HP by 55%; costs 9 TP",
-9: "Increases max HP by 60%; costs 10 TP",
-10: "Increases max HP by 70%; costs 10 TP"
+RallywasHere
 },
 ProtectionCommand: {
 1: "Restores 105% of TEC as HP; costs 6 TP",
