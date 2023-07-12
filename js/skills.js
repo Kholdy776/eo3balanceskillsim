@@ -50,7 +50,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: FALSE,
-            max: 10,
+            max: 1,
             coords: {
                 x: 0,
                 y: 240
@@ -100,19 +100,19 @@ var skills = {
         }
     },
     Prince: {
-        RoyalLineage: {
+        RoyalVeil: {
             name_jp: "王家の血統",
-            name_en: "Royal Lineage",
-            details: "Every time the Prince is buffed, he gains TP.",
+            name_en: "Royal Veil",
+            details: "All allies will recover HP if your HP is high at the turn's end.",
             requires: "N/A",
             unique: true,
             active: FALSE,
             max: 10
         },
-        RoyalBell: {
+        MonarchMarch: {
             name_jp: "ロイヤルベール",
-            name_en: "Royal Veil",
-            details: "Every turn the Prince is at full HP, the entire team regenerates some HP.",
+            name_en: "Monarch March",
+            details: "Recover the party's HP with each step by singing gallant military songs.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -123,10 +123,10 @@ var skills = {
                 y: 10
             }
         },
-        KingsVictorySong: {
+        RoyalLineage: {
             name_jp: "王者の凱歌",
-            name_en: "Triumphant Cry",
-            details: "If the Prince is alive at the end of the battle, the entire team is healed.",
+            name_en: "Royal Lineage",
+            details: "This royalty skill regains TP with each new enhancement received.",
             requires: "N/A",
             dep: {
                 RoyalBell: 5
@@ -138,10 +138,10 @@ var skills = {
                 y: 10
             }
         },
-        KingsMarch: {
+        TriumphantCry: {
             name_jp: "キングスマーチ",
-            name_en: "Monarch March",
-            details: "Regenerate HP while walking to the entire party.",
+            name_en: "Triumphant Cry",
+            details: "All allies will recover HP if you are alive at the end of the battle.",
             requires: "N/A",
             dep: {
                 KingsVictorySong: 5
@@ -156,7 +156,7 @@ var skills = {
         Reinforce: {
             name_jp: "リインフォース",
             name_en: "Reinforce",
-            details: "When a buff is cast, the ally that received the buff is healed.",
+            details: "When casting an enhancement spell on an ally they will recover HP.",
             requires: "N/A",
             dep: {
                 DefenseCommand: 1
@@ -168,10 +168,10 @@ var skills = {
                 y: 10
             }
         },
-        ProofOfKingship: {
+        NobilityProof: {
             name_jp: "王たる証",
             name_en: "Nobility Proof",
-            details: "When the Prince's own buffs wear off, his TP is healed.",
+            details: "Your TP will recover when an enhancement spell's effect ends.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -182,10 +182,10 @@ var skills = {
                 y: 412
             }
         },
-        AttackCommand: {
+        AttackOrder: {
             name_jp: "攻撃の号令",
             name_en: "Attack Order",
-            details: "For 3 turns, a row's ATK is increased, increasing damage done.",
+            details: "Allies' attack power will be increased for three turns.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -196,10 +196,10 @@ var skills = {
                 y: 412
             }
         },
-        DefenseCommand: {
+        GuardOrder: {
             name_jp: "防御の号令",
             name_en: "Guard Order",
-            details: "For 3 turns, a row's DEF is increased, decreasing damage taken.",
+            details: "Allies' defense will be increased for three turns.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -210,10 +210,10 @@ var skills = {
                 y: 90
             }
         },
-        FireArms: {
+        ElementalBomb: {
             name_jp: "ファイアアームズ",
-            name_en: "Fire Arms",
-            details: "For 3 turns, reduces the FIRE damage one ally takes; grants the FIRE attribute to their normal attacks.",
+            name_en: "Elemental Bomb",
+            details: "Dispels an ally's Elemental Arms enchantment to deal 3 instances of damage to random enemies.",
             requires: "Arms",
             dep: {
                 AttackCommand: 1
@@ -225,10 +225,10 @@ var skills = {
                 y: 294
             }
         },
-        FreezeArms: {
+        Negotiation: {
             name_jp: "フリーズアームズ",
-            name_en: "Freeze Arms",
-            details: "For 3 turns, reduces the ICE damage one ally takes; grants the ICE attribute to their normal attacks.",
+            name_en: "Negotiation",
+            details: "Dispel all enhancement spells to recover HP.",
             requires: "Arms",
             dep: {
                 AttackCommand: 1
@@ -240,10 +240,10 @@ var skills = {
                 y: 374
             }
         },
-        ShockArms: {
+        Inspire: {
             name_jp: "ショックアームズ",
-            name_en: "Shock Arms",
-            details: "For 3 turns, reduces the THUNDER damage one ally takes; grants the THUNDER attribute to their normal attacks.",
+            name_en: "Inspire",
+            details: "Dispel all stat decreases and recover TP.",
             requires: "Arms",
             dep: {
                 AttackCommand: 1
@@ -255,10 +255,10 @@ var skills = {
                 y: 454
             }
         },
-        EmitWeapon: {
+        AdNihilo: {
             name_jp: "エミットウェポン",
-            name_en: "Regal Radiance",
-            details: "Target an ally to cause them to release the elemental attribute attached to their weapon; that attribute inflicts damage to every enemy.  Damage is based upon the ATK of the ally, and ally's weapon must have an elemental attribute.",
+            name_en: "Ad Nihilo",
+            details: "Dispel all enhancements on one enemy, deals non-elemental damage.",
             requires: "Head",
             dep: {
                 AttackCommand: 3
@@ -270,10 +270,10 @@ var skills = {
                 y: 534
             }
         },
-        ResetWeapon: {
+        FireArms: {
             name_jp: "リセットウェポン",
-            name_en: "Ad Nihilo",
-            details: "Eliminate the buffs of a target enemy, dealing non-elemental damage.",
+            name_en: "Fire Arms",
+            details: "Enchant allies' weapon with fire and increase fire damage dealt for three turns.",
             requires: "Head",
             dep: {
                 AttackCommand: 5,
@@ -286,10 +286,10 @@ var skills = {
                 y: 251
             }
         },
-        ImmunizationCommand: {
+        FreezeArms: {
             name_jp: "予 防の号令",
-            name_en: "Prevent Order",
-            details: "Grants an enhancement to one row of allies that will prevent status abnormalities once during 3 turns.",
+            name_en: "FreezeArms",
+            details: "Enchant allies' weapon with ice and increase ice damage dealt for three turns.",
             requires: "Head",
             dep: {
                 DefenseCommand: 3
@@ -301,10 +301,10 @@ var skills = {
                 y: 90
             }
         },
-        AmbitiousCommand: {
+        ShockArms: {
             name_jp: "覇気の号令",
-            name_en: "Rally Order",
-            details: "For 3 turns, the max HP of one row of allies is increased.",
+            name_en: "ShockArms",
+            details: "Enchant allies' weapon with volt and increase volt damage dealt for three turns.",
             requires: "Head",
             dep: {
                 DefenseCommand: 5
@@ -316,10 +316,10 @@ var skills = {
                 y: 170
             }
         },
-        ProtectionCommand: {
+        RegalRadiance: {
             name_jp: "庇 護の号令",
-            name_en: "Protect Order",
-            details: "For 3 turns, one row of allies recover HP at the end of each turn.",
+            name_en: "Regal Radiance",
+            details: "Dispels an ally's Elemental Arms enchantments to deal damage to all enemies. May stun.",
             requires: "Head",
             dep: {
                 AmbitiousCommand: 5
@@ -331,10 +331,10 @@ var skills = {
                 y: 170
             }
         },
-        Exchange: {
+        PreventOrder: {
             name_jp: "エクスチェンジ",
-            name_en: "Negotiation",
-            details: "Eliminate the buffs of an ally, healing their HP.",
+            name_en: "Prevent Order",
+            details: "Allies will gain ailment and bind protection for three turns. This enhancement is consumed after a bind or ailment is negated.",
             requires: "Head",
             dep: {
                 ProofOfKingship: 1
@@ -346,10 +346,10 @@ var skills = {
                 y: 332
             }
         },
-        RenewLife: {
+        ProtectOrder: {
             name_jp: "リニューライフ",
-            name_en: "Inspire",
-            details: "Eliminate a row of allies' debuffs, healing their TP.",
+            name_en: "Protect Order",
+            details: "For three turns, allies will gain HP when a turn ends.",
             requires: "Head",
             dep: {
                 ProofOfKingship: 3
@@ -361,10 +361,10 @@ var skills = {
                 y: 412
             }
         },
-        QuickOrder: {
+        Knighthood: {
             name_jp: "クイックオーダー",
             name_en: "Knighthood",
-            details: "The target ally's turn comes first.  BUG: Using this skill on any ally other than front row left and center results in the enemy acting before the target ally.",
+            details: "The target ally's turn comes first.",
             requires: "Head",
             dep: {
                 ProofOfKingship: 5
@@ -379,10 +379,10 @@ var skills = {
     },
 
     Gladiator: {
-        BattlefieldRegular: {
+        EndlessBattle: {
             name_jp: "常在戦場",
             name_en: "Endless Battle",
-            details: "Physical attack damage is improved.",
+            details: "A skill for gladiators that raises physical attack power.",
             requires: "N/A",
             unique: true,
             active: FALSE,
@@ -391,7 +391,7 @@ var skills = {
         SwordMastery: {
             name_jp: "剣マスタリー",
             name_en: "Sword Mastery",
-            details: "Improves physical damage with Swords; required for Sword skills.",
+            details: "Prerequisite for sword skills that raises sword damage dealt.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -402,10 +402,10 @@ var skills = {
                 y: 126
             }
         },
-        HammerMastery: {
+        ClubMastery: {
             name_jp: "鎚マスタリー",
             name_en: "Club Mastery",
-            details: "Improves physical damage with Clubs; required for Club skills.",
+            details: "Prerequisite for club skills that raises club damage dealt.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -416,10 +416,10 @@ var skills = {
                 y: 428.8
             }
         },
-        StunAttack: {
+        Avenger: {
             name_jp: "スタンアタック",
-            name_en: "Stun Attack",
-            details: "There's a chance to stun when using a normal attack.",
+            name_en: "Avenger",
+            details: "Recover HP & TP whenever an ally is defeated.",
             requires: "N/A",
             dep: {
                 Trance: 3
@@ -431,10 +431,10 @@ var skills = {
                 y: 25
             }
         },
-        WideEffect: {
+        StunAttack: {
             name_jp: "ワイドエフェク ト",
-            name_en: "Wild Swings",
-            details: "There's a chance to hit enemies next to your target when using skills.  Enemies to the left side of your target are the priority.",
+            name_en: "Stun Attack",
+            details: "May inflict stun damage with a normal attack.",
             requires: "N/A",
             dep: {
                 SwordMastery: 5,
@@ -447,10 +447,10 @@ var skills = {
                 y: 277.4
             }
         },
-        Avenger: {
+        WildSwings: {
             name_jp: "アベンジャー",
-            name_en: "Avenger",
-            details: "Strongly transforms a vengeful heart towards the enemy; HP recovers when allies become battle incapacitated.",
+            name_en: "Wild Swings",
+            details: "Attack skills may cause splash damage to nearby enemies.",
             requires: "N/A",
             dep: {
                 BerserkersOath: 1
@@ -462,10 +462,10 @@ var skills = {
                 y: 328
             }
         },
-        Break: {
+        IronWill: {
             name_jp: "ブレイク",
-            name_en: "Break",
-            details: "Sword: Aims at one enemy and swings downward; cut attack.",
+            name_en: "Iron Will",
+            details: "If HP is maxed and you are in the front row, recover TP.",
             requires: "Arms",
             dep: {
                 SwordMastery: 1
@@ -477,10 +477,10 @@ var skills = {
                 y: 74.7
             }
         },
-        Rush: {
+        BerserkerVow: {
             name_jp: "ラッシュ",
-            name_en: "Rush",
-            details: "Sword: Rushes towards the enemy formation and cuts up every enemy randomly.  Can only hit each enemy once.",
+            name_en: "Berserker Vow",
+            details: "Raise physical attack power of self and all enemies for 9 turns.",
             requires: "Arms",
             dep: {
                 SwordMastery: 3
@@ -492,10 +492,10 @@ var skills = {
                 y: 478.7
             }
         },
-        BindCut: {
+        WolfHowl: {
             name_jp: "バインドカット",
-            name_en: "Bind Cut",
-            details: "Sword: A powerful cut attack at one enemy; increased damage if the enemy has a bind condition.",
+            name_en: "Wolf Howl",
+            details: "Decrease enemy defense for four turns. Stacks with status ailments.",
             requires: "Arms",
             dep: {
                 SwordMastery: 3,
@@ -508,10 +508,10 @@ var skills = {
                 y: 175.7
             }
         },
-        Rampage: {
+        GrandColosseum: {
             name_jp: "ランページ",
-            name_en: "Rampage",
-            details: "Sword: Swings a sword in a rampage at every enemy; a cut attack to every enemy.",
+            name_en: "Grand Colosseum",
+            details: "Raise a bloody arena, allowing all fighters to focus their attacks more accurately. Raises accuracy and status infliction rate for 9 turns.",
             requires: "Arms",
             dep: {
                 SwordMastery: 7
@@ -523,10 +523,10 @@ var skills = {
                 y: 276.7
             }
         },
-        BladeRave: {
+        Break: {
             name_jp: "ブレイドレイヴ",
-            name_en: "Blade Rave",
-            details: "Sword: Swings a sword at high speeds; a cut attack that randomly hits every enemy in succession.  Can hit the same enemy multiple times.",
+            name_en: "Break",
+            details: "Sword: A slashing attack on a single enemy that lowers damage dealt.",
             requires: "Arms",
             dep: {
                 SwordMastery: 10,
@@ -539,10 +539,10 @@ var skills = {
                 y: 377.7
             }
         },
-        CrushBlow: {
+        Rush: {
             name_jp: "ク ラッシュブロー",
-            name_en: "Crushing Blow",
-            details: "Club: A blunt attack that smashes the head of one enemy; has a chance to inflict confusion.",
+            name_en: "Rush",
+            details: "Sword: Flank the enemy and slash them apart at random.",
             requires: "Arms",
             dep: {
                 HammerMastery: 1
@@ -554,10 +554,10 @@ var skills = {
                 y: 429
             }
         },
-        ArmBreaker: {
+        BindCut: {
             name_jp: "アームブレイカー",
-            name_en: "Arm Breaker",
-            details: "Club: A blunt attack aimed at the arms of one enemy; has a chance to inflict arm bind.",
+            name_en: "BindCut",
+            details: "Sword: A strong slash at one enemy. May inflict leg bind.",
             requires: "Arms",
             dep: {
                 HammerMastery: 3
@@ -569,10 +569,10 @@ var skills = {
                 y: 126
             }
         },
-        FreezingBlow: {
+        BloodThirst: {
             name_jp: "フリーズンブロー",
-            name_en: "Freezing Blow",
-            details: "Club: Strikes one enemy with a Club clad in cold air; a skill that combines blunt/ice attack.",
+            name_en: "Bloodthirst",
+            details: "Sword: Wait patiently then deliver a slash. The user heals based on damage dealt.",
             requires: "Arms",
             dep: {
                 HammerMastery: 3,
@@ -585,10 +585,10 @@ var skills = {
                 y: 328
             }
         },
-        NineSmash: {
+        BladeRave: {
             name_jp: "ナインスマッシュ",
-            name_en: "Nine Smashes",
-            details: "Club: A blunt attack that strikes many times at one enemy.  Has low (55%) accuracy.  High AGI can improve accuracy.",
+            name_en: "Blade Rave",
+            details: "Sword: Rapid slashes at random enemies.",
             requires: "Arms",
             dep: {
                 HammerMastery: 10,
@@ -601,10 +601,10 @@ var skills = {
                 y: 227
             }
         },
-        BerserkersOath: {
+        CrushingBlow: {
             name_jp: "狂 戦士の誓い",
-            name_en: "Berserker Vow",
-            details: "Sacrifice some HP to drastically increase ATK for 3 turns.",
+            name_en: "Crushing Blow",
+            details: "Club: A strike attack that smashes enemy brains. May inflict confusion.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -615,10 +615,10 @@ var skills = {
                 y: 227
             }
         },
-        Trance: {
+        ArmBreaker: {
             name_jp: "無我の境地",
-            name_en: "White Flame",
-            details: "For 3 turns, the Gladiator becomes immune to status effects.",
+            name_en: "Arm Breaker",
+            details: "Club: A strike attack that smashes enemy arms. May inflict arm bind.",
             requires: "Head",
             dep: {
                 BerserkersOath: 5
@@ -630,10 +630,10 @@ var skills = {
                 y: 126
             }
         },
-        Charge: {
+        FreezingBlow: {
             name_jp: "チャージ",
-            name_en: "Charge",
-            details: "Power up for a turn in order to do increased damage on the next turn.",
+            name_en: "Freezing Blow",
+            details: "Club: A strike attack that smashes enemies with an ice element.",
             requires: "Arms",
             dep: {
                 Avenger: 3,
@@ -646,10 +646,10 @@ var skills = {
                 y: 429
             }
         },
-        WolfHowl: {
+        NineSmashes: {
             name_jp: "ウルフハウル",
-            name_en: "Wolf Howl",
-            details: "For 4 turns, the enemies' DEF is lowered.  It has a stronger effect on enemies that already have status ailments.",
+            name_en: "Nine Smashes",
+            details: "Club: An inaccurate strike attack that wallops one enemy repeatedly.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -666,16 +666,16 @@ var skills = {
         Guardian: {
             name_jp: "ガーディアン",
             name_en: "Guardian",
-            details: "Decrease physical damage done to the Hoplite.",
+            details: "A hoplite skill that reduces most damage taken. Decreases damage recieved from CUT/STAB/BASH/FIRE/ICE/VOLT attacks.",
             requires: "N/A",
             unique: true,
             active: FALSE,
             max: 10
         },
-        ShieldMastery: {
+        SpearMastery: {
             name_jp: "盾マスタリー",
-            name_en: "Shield Mastery",
-            details: "Decrease physical damage when a Shield is equipped; required for Shield skills.",
+            name_en: "Spear Mastery",
+            details: "Prerequisite for spear skills that raises spear damage dealt.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -686,10 +686,10 @@ var skills = {
                 y: 342
             }
         },
-        SpearMastery: {
+        ShieldMastery: {
             name_jp: "槍マスタリー",
-            name_en: "Spear Mastery",
-            details: "Improves physical damage with Spears; required for Spear skills.",
+            name_en: "Shield Mastery",
+            details: "Prerequisite for shield skills that raises all defenses when equipped. Decreases damage recieved from CUT/STAB/BASH/FIRE/ICE/VOLT attacks when equipped with a shield.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -700,10 +700,10 @@ var skills = {
                 y: 342
             }
         },
-        GuardHeal: {
+        Parry: {
             name_jp: "ガードヒール",
-            name_en: "Recuperate",
-            details: "When Defending, HP is healed.",
+            name_en: "Parry",
+            details: "A skill that may nullify damage received.",
             requires: "N/A",
             dep: {
                 Revive: 3
@@ -715,10 +715,10 @@ var skills = {
                 y: 52
             }
         },
-        Parry: {
+        Rhongomyniad: {
             name_jp: "パリィ",
-            name_en: "Parry",
-            details: "There is a chance to nullify physical attacks.",
+            name_en: "Rhongomyniad",
+            details: "Spear/Shield: Bash with your shield then thrust and slash with your spear. Deals an instance of BASH damage, then STAB damage, then CUT damage.",
             requires: "N/A",
             dep: {
                 Taunt: 5
@@ -730,10 +730,10 @@ var skills = {
                 y: 94
             }
         },
-        MaterialParry: {
+        RexHasta: {
             name_jp: "マテリアルパ リィ",
-            name_en: "Magic Parry",
-            details: "There is a chance to nullify elemental attacks.",
+            name_en: "Rex Hasta",
+            details: "Spear: Debuff the enemy into taking more damage this turn.",
             requires: "N/A",
             dep: {
                 Taunt: 5
@@ -745,10 +745,10 @@ var skills = {
                 y: 14
             }
         },
-        LineGuard: {
+        ExploitWeakness: {
             name_jp: "ラインガード",
-            name_en: "Line Guard",
-            details: "Shield: For 1 turn, decrease damage done to a certain row. The damage reduction is increased if it is used on the same row as the Hoplite.",
+            name_en: "Exploit Weakness",
+            details: "A litany that encourages allies to expose the enemy's weakness. Increases damage dealt to weakpoints for 3 turns.",
             requires: "Arms",
             dep: {
                 ShieldMastery: 1
@@ -760,10 +760,10 @@ var skills = {
                 y: 144
             }
         },
-        FireGuard: {
+        Provoke: {
             name_jp: "ファイアガード",
-            name_en: "Antifire",
-            details: "Shield: For 1 turn, decrease FIRE damage done to the party.",
+            name_en: "Provoke",
+            details: "Shield the party by drawing all enemy attacks to you. Increases chance of being targeted for 3 turns.",
             requires: "Arms",
             dep: {
                 ShieldMastery: 5
@@ -775,10 +775,10 @@ var skills = {
                 y: 304
             }
         },
-        FreezeGuard: {
+        ShrugOff: {
             name_jp: "フリーズガード",
-            name_en: "Anticold",
-            details: "Shield: For 1 turn, decrease ICE damage done to the party.",
+            name_en: "ShrugOff",
+            details: "Fixed chance to heal yourself if you fail to parry an attack.",
             requires: "Arms",
             dep: {
                 ShieldMastery: 5
@@ -790,10 +790,10 @@ var skills = {
                 y: 384
             }
         },
-        ShockGuard: {
+        GáeBolg: {
             name_jp: "ショックガード",
-            name_en: "Antivolt",
-            details: "Shield: For 1 turn, decrease THUNDER damage done to the party.",
+            name_en: "Gáe Bolg",
+            details: "Spear: A fast fire + pierce attack that can instantly kill or paralyze.",
             requires: "Arms",
             dep: {
                 ShieldMastery: 5
@@ -805,10 +805,10 @@ var skills = {
                 y: 464
             }
         },
-        DivideGuard: {
+        Gungnir: {
             name_jp: "ディバイドガード",
-            name_en: "Bodyguard",
-            details: "Shield: For 1 turn, the Hoplite takes damage for a single ally.",
+            name_en: "Gungnir",
+            details: "Spear: A volt + pierce attack that never misses.",
             requires: "Arms",
             dep: {
                 ShieldMastery: 3
@@ -820,10 +820,10 @@ var skills = {
                 y: 224
             }
         },
-        OverGuard: {
+        Geirskögul: {
             name_jp: "オーバーガード",
-            name_en: "Overwatch",
-            details: "Shield: For 1 turn, negates damage directed at the designated ally if that damage would be higher than the Hoplite's HP.",
+            name_en: "Geirskögul",
+            details: "Spear: An ice + slash attack that strikes all enemies, lowering attack.",
             requires: "Arms",
             dep: {
                 ShieldMastery: 8,
@@ -836,10 +836,10 @@ var skills = {
                 y: 544
             }
         },
-        ChangeStep: {
+        Aegis: {
             name_jp: "チェンジステップ",
-            name_en: "Switch Stab",
-            details: "Spear: Attack the enemy with a thrust attack and then switch rows simultaneously.",
+            name_en: "Aegis",
+            details: "Shield: Reduces elemental damage sustained by allies.",
             requires: "Legs",
             dep: {
                 SpearMastery: 1
@@ -851,10 +851,10 @@ var skills = {
                 y: 234
             }
         },
-        Blitzritter: {
+        Hoplon: {
             name_jp: "ブリッツリッター",
-            name_en: "Blitzritter",
-            details: "Spear: Lightning spear attack to a single target; Thrust & THUNDER elemental.",
+            name_en: "Hoplon",
+            details: "Shield: Reduces physical damage sustained by allies.",
             requires: "Legs",
             dep: {
                 SpearMastery: 4
@@ -866,10 +866,10 @@ var skills = {
                 y: 450
             }
         },
-        LongStride: {
+        Phalanx: {
             name_jp: "ロングストライド",
-            name_en: "Long Stride",
-            details: "Spear: Attack all enemies; more damage is dealt if the Hoplite is in the back row.",
+            name_en: "Phalanx",
+            details: "Shield: Reduces nearly all forms of damage sustained by allies.",
             requires: "Legs",
             dep: {
                 SpearMastery: 7,
@@ -882,10 +882,10 @@ var skills = {
                 y: 342
             }
         },
-        Revive: {
+        Gradivus: {
             name_jp: "リバイブ",
-            name_en: "Shrug Off",
-            details: "Restore all status ailments and binds from self.",
+            name_en: "Gradivus",
+            details: "Spear: A vampiric piercing attack that returns life to the user.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -896,10 +896,10 @@ var skills = {
                 y: 52
             }
         },
-        EnGarde: {
+        Bodyguard: {
             name_jp: "決 死の防壁",
-            name_en: "Selflessness",
-            details: "Sacrifice HP to drastically reduce physical damage done to self for 3 turns.",
+            name_en: "Bodyguard",
+            details: "Shield: Take damage in one ally's place for one turn.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -910,10 +910,10 @@ var skills = {
                 y: 544
             }
         },
-        Taunt: {
+        Overwatch: {
             name_jp: "挑発",
-            name_en: "Provoke",
-            details: "For 3 turns, attract the enemy to attack the Hoplite.",
+            name_en: "Overwatch",
+            details: "Shield: Attacks on an ally that exceed your HP are void for 1 turn.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -924,10 +924,10 @@ var skills = {
                 y: 52
             }
         },
-        CarefulWalk: {
+        Vigilance: {
             name_jp: "警戒行進",
             name_en: "Vigilance",
-            details: "For a certain number of steps, encounters are reduced.",
+            details: "Heightened caution will lower the encounter rate for a short period.",
             requires: "N/A",
             dep: {
                 /* none */ },
