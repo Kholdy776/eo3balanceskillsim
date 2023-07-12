@@ -937,43 +937,43 @@ var levels = {
         }
     },
     Ninja: {
-        Smokescreen: {
-            1: "No TP consumption reduction and full damage from back row",
-            2: "Reduce TP consumption by 1 and full damage from back row",
-            3: "Reduce TP consumption by 2 and full damage from back row",
-            4: "Reduce TP consumption by 3 and full damage from back row",
-            5: "Reduce TP consumption by 4 and full damage from back row",
-            6: "Reduce TP consumption by 5 and full damage from back row",
-            7: "Reduce TP consumption by 6 and full damage from back row",
-            8: "Reduce TP consumption by 7 and full damage from back row",
-            9: "Reduce TP consumption by 8 and full damage from back row",
-            10: "Reduce TP consumption by 9 and full damage from back row"
+        MysticCalm: {
+            1: "TP Consumed -1",
+            2: "TP Consumed -2",
+            3: "TP Consumed -3",
+            4: "TP Consumed -4",
+            5: "TP Consumed -5",
+            6: "TP Consumed -6",
+            7: "TP Consumed -7",
+            8: "TP Consumed -8",
+            9: "TP Consumed -9",
+            10: "TP Consumed -10"
         },
-        DaggerMastery: {
-            1: "Increase damage by 2%",
-            2: "Increase damage by 3%",
-            3: "Increase damage by 4%",
-            4: "Increase damage by 5%",
-            5: "Increase damage by 6%",
-            6: "Increase damage by 7%",
-            7: "Increase damage by 8%",
-            8: "Increase damage by 9%",
-            9: "Increase damage by 10%",
-            10: "Increase damage by 11%"
+        Beheading: {
+            1: "6% Activation Rate",
+            2: "9% Activation Rate",
+            3: "12% Activation Rate",
+            4: "15% Activation Rate",
+            5: "18% Activation Rate",
+            6: "21% Activation Rate",
+            7: "24% Activation Rate",
+            8: "27% Activation Rate",
+            9: "30% Activation Rate",
+            10: "33% Activation Rate"
         },
-        Conceal: {
-            1: "Increase evasion by 10%",
-            2: "Increase evasion by 12%",
-            3: "Increase evasion by 14%",
-            4: "Increase evasion by 17%",
-            5: "Increase evasion by 20%",
-            6: "Increase evasion by 23%",
-            7: "Increase evasion by 26%",
-            8: "Increase evasion by 29%",
-            9: "Increase evasion by 32%",
-            10: "Increase evasion by 35%"
+        Katon: {
+            1: "60% DMG, Head Bind Rate 40%; costs 12 TP",
+            2: "67% DMG, Head Bind Rate 42%; costs 12 TP",
+            3:  "74% DMG, Head Bind Rate 44%; costs 12 TP",
+            4: "82% DMG, Head Bind Rate 46%; costs 12 TP",
+            5: "91% DMG, Head Bind Rate 48%; costs 12 TP",
+            6: "99% DMG, Head Bind Rate 50%; costs 12 TP",
+            7: "109% DMG, Head Bind Rate 52%; costs 12 TP",
+            8: "119% DMG, Head Bind Rate 54%; costs 12 TP",
+            9: "129% DMG, Head Bind Rate 56%; costs 12 TP",
+            10: "140% DMG, Head Bind Rate 60%; costs 12 TP"
         },
-        Acrobatics: {
+        Reflexes: {
             1: "Restore 2 TP",
             2: "Restore 4 TP",
             3: "Restore 6 TP",
@@ -985,161 +985,157 @@ var levels = {
             9: "Restore 18 TP",
             10: "Restore 20 TP"
         },
-        Decapitation: {
-            1: "7% chance to instantly kill enemy",
-            2: "8% chance to instantly kill enemy",
-            3: "9% chance to instantly kill enemy",
-            4: "10% chance to instantly kill enemy",
-            5: "11% chance to instantly kill enemy",
-            6: "12% chance to instantly kill enemy",
-            7: "14% chance to instantly kill enemy",
-            8: "16% chance to instantly kill enemy",
-            9: "18% chance to instantly kill enemy",
-            10: "20% chance to instantly kill enemy"
+         Hyouton: {
+            1: "60% DMG, Leg Bind Rate 40%; costs 12 TP", 
+            2: "67% DMG, Leg Bind Rate 42%; costs 12 TP", 
+            3:  "74% DMG, Leg Bind Rate 44%; costs 12 TP",
+            4: "82% DMG, Leg Bind Rate 46%; costs 12 TP",
+            5: "91% DMG, Leg Bind Rate 48%; costs 12 TP",
+            6: "99% DMG, Leg Bind Rate 50%; costs 12 TP",
+            7: "109% DMG, Leg Bind Rate 52%; costs 12 TP",
+            8: "119% DMG, Leg Bind Rate 54%; costs 12 TP",
+            9: "129% DMG, Leg Bind Rate 56; costs 12 TP%",
+            10: "140% DMG, Leg Bind Rate 60; costs 12 TP%"
         },
-        FleshBullet: {
-            1: "200% of attack dealt in FIRE damage",
-            2: "220% of attack dealt in FIRE damage",
-            3: "240% of attack dealt in FIRE damage",
-            4: "270% of attack dealt in FIRE damage",
-            5: "300% of attack dealt in FIRE damage",
-            6: "330% of attack dealt in FIRE damage",
-            7: "370% of attack dealt in FIRE damage",
-            8: "410% of attack dealt in FIRE damage",
-            9: "450% of attack dealt in FIRE damage",
-            10: "500% of attack dealt in FIRE damage"
+        KnifeMastery: {
+              1: "Increase damage by 2%",
+            2: "Increase damage by 4%",
+            3: "Increase damage by 6%",
+            4: "Increase damage by 8%",
+            5: "Increase damage by 10%",
+            6: "Increase damage by 12%",
+            7: "Increase damage by 14%",
+            8: "Increase damage by 16%",
+            9: "Increase damage by 18%",
+            10: "Increase damage by 20%"
         },
-        ShadowWeave: {
-            1: "140% damage; 33% chance to bind legs; costs 6 TP",
-            2: "145% damage; 36% chance to bind legs; costs 6 TP",
-            3: "150% damage; 39% chance to bind legs; costs 7 TP",
-            4: "155% damage; 42% chance to bind legs; costs 7 TP",
-            5: "160% damage; 45% chance to bind legs; costs 8 TP",
-            6: "166% damage; 48% chance to bind legs; costs 8 TP",
-            7: "172% damage; 51% chance to bind legs; costs 9 TP",
-            8: "178% damage; 54% chance to bind legs; costs 10 TP",
-            9: "184% damage; 57% chance to bind legs; costs 11 TP",
-            10: "190% damage; 60% chance to bind legs; costs 12 TP"
+        Raiton: {
+            1: "60% DMG, Arm Bind Rate 40%; costs 12 TP",
+            2: "67% DMG, Arm Bind Rate 42%; costs 12 TP",
+            3:  "74% DMG, Arm Bind Rate 44%; costs 12 TP",
+            4: "82% DMG, Arm Bind Rate 46%; costs 12 TP",
+            5: "91% DMG, Arm Bind Rate 48%; costs 12 TP",
+            6: "99% DMG, Arm Bind Rate 50; costs 12 TP%",
+            7: "109% DMG, Arm Bind Rate 52; costs 12 TP%",
+            8: "119% DMG, Arm Bind Rate 54; costs 12 TP%",
+            9: "129% DMG, Arm Bind Rate 56; costs 12 TP%",
+            10: "140% DMG, Arm Bind Rate 60; costs 12 TP%
         },
-        Meshizuna: {
-            1: "140% damage; 25% chance to petrify; costs 6 TP",
-            2: "147% damage; 27% chance to petrify; costs 7 TP",
-            3: "154% damage; 29% chance to petrify; costs 8 TP",
-            4: "161% damage; 31% chance to petrify; costs 9 TP",
-            5: "168% damage; 33% chance to petrify; costs 10 TP",
-            6: "181% damage; 35% chance to petrify; costs 11 TP",
-            7: "194% damage; 37% chance to petrify; costs 12 TP",
-            8: "207% damage; 39% chance to petrify; costs 13 TP",
-            9: "221% damage; 42% chance to petrify; costs 14 TP",
-            10: "235% damage; 45% chance to petrify; costs 15 TP"
+      Otori: {
+            1: "Draw Rate +7, Action Speed +5; costs 12 TP",
+            2: "Draw Rate +12, Action Speed +10; costs 12 TP",
+            3: "Draw Rate +17, Action Speed +15; costs 12 TP",
+            4: "Draw Rate +23, Action Speed +20; costs 12 TP",
+            5: "Draw Rate +30, Action Speed +25; costs 12 TP"
         },
-        HawkWings: {
-            1: "2 hits at 80% damage; costs 7 TP",
-            2: "2 hits at 85% damage; costs 8 TP",
-            3: "2 - 3 hits at 85% damage; costs 10 TP",
-            4: "2 - 3 hits at 90% damage; costs 11 TP",
-            5: "2 - 3 hits at 95% damage; costs 12 TP",
-            6: "2 - 4 hits at 95% damage; costs 14 TP",
-            7: "2 - 4 hits at 100% damage; costs 16 TP",
-            8: "2 - 4 hits at 105% damage; costs 18 TP",
-            9: "3 - 4 hits at 105% damage; costs 20 TP",
-            10: "3 - 4 hits at 110% damage; costs 22 TP"
+          NinpoSmoke: {
+            1: "EVA Rate +30% , 3 Turns, 50% Self-DMG; costs 12 TP",
+            2: "EVA Rate +30% , 3 Turns, 50% Self-DMG; costs 12 TP",
+            3: "EVA Rate +30% , 3 Turns, 50% Self-DMG; costs 12 TP",
+            4: "EVA Rate +30% , 3 Turns, 50% Self-DMG; costs 12 TP",
+            5: "EVA Rate +30% , 3 Turns, 50% Self-DMG; costs 12 TP"
         },
-        PluralSlash: {
-            1: "3 hits at 200% damage for 1 clone; costs 18 TP",
-            2: "3 hits at 210% damage for 1 clone; costs 19 TP",
-            3: "3 - 4 hits at 220% damage for 1 clone; costs 20 TP",
-            4: "3 - 4 hits at 235% damage for 1 clone; costs 22 TP",
-            5: "3 - 4 hits at 250% damage for 1 clone; costs 24 TP",
-            6: "3 - 4 hits at 265% damage for 1 clone; costs 26 TP",
-            7: "3 - 5 hits at 280% damage for 1 clone; costs 29 TP",
-            8: "3 - 5 hits at 295% damage for 1 clone; costs 32 TP",
-            9: "3 - 5 hits at 310% damage for 1 clone; costs 36 TP",
-            10: "3 - 5 hits at 330% damage for 1 clone; costs 40 TP"
-        },
-        NinpouFukimibari: {
-            1: "40% damage; 10% chance to inflict sleep; costs 4 TP",
-            2: "44% damage; 13% chance to inflict sleep; costs 4 TP",
-            3: "48% damage; 16% chance to inflict sleep; costs 5 TP",
-            4: "52% damage; 19% chance to inflict sleep; costs 5 TP",
-            5: "56% damage; 22% chance to inflict sleep; costs 6 TP",
-            6: "60% damage; 25% chance to inflict sleep; costs 6 TP",
-            7: "64% damage; 28% chance to inflict sleep; costs 7 TP",
-            8: "68% damage; 32% chance to inflict sleep; costs 7 TP",
-            9: "72% damage; 36% chance to inflict sleep; costs 8 TP",
-            10: "80% damage; 40% chance to inflict sleep; costs 8 TP"
-        },
-        NinpouWaterMirror: {
-            1: "30% chance; costs 3 TP",
-            2: "34% chance; costs 3 TP",
-            3: "38% chance; costs 4 TP",
-            4: "42% chance; costs 4 TP",
-            5: "46% chance; costs 5 TP",
-            6: "50% chance; costs 5 TP",
-            7: "55% chance; costs 6 TP",
-            8: "65% chance; costs 6 TP",
-            9: "80% chance; costs 9 TP",
-            10: "100% chance; costs 9 TP"
-        },
-        NinpouCaltrop: {
-            1: "20 physical damage; 40% chance to cause poison that deals 15 damage; costs 4 TP",
-            2: "25 physical damage; 42% chance to cause poison that deals 18 damage; costs 4 TP",
-            3: "30 physical damage; 44% chance to cause poison that deals 21 damage; costs 5 TP",
-            4: "35 physical damage; 46% chance to cause poison that deals 24 damage; costs 5 TP",
-            5: "40 physical damage; 48% chance to cause poison that deals 27 damage; costs 6 TP",
-            6: "50 physical damage; 50% chance to cause poison that deals 30 damage; costs 6 TP",
-            7: "60 physical damage; 52% chance to cause poison that deals 35 damage; costs 7 TP",
-            8: "70 physical damage; 54% chance to cause poison that deals 40 damage; costs 7 TP",
-            9: "80 physical damage; 56% chance to cause poison that deals 45 damage; costs 8 TP",
-            10: "90 physical damage; 60% chance to cause poison that deals 50 damage; costs 8 TP"
-        },
-        NinpouHeatHaze: {
-            1: "Creates a clone with 1 HP and 1 TP; costs 10 TP",
-            2: "Creates a clone with 10 HP and 10 TP; costs 9 TP",
-            3: "Creates a clone with 20 HP and 20 TP; costs 8 TP",
-            4: "Creates a clone with 40 HP and 40 TP; costs 7 TP",
-            5: "Creates a clone with 80 HP and 80 TP; costs 6 TP"
-        },
-        NinpouBeckoning: {
-            1: "Costs 5 TP",
-            2: "Costs 5 TP",
-            3: "Costs 6 TP",
-            4: "Costs 6 TP",
-            5: "Costs 7 TP",
-            6: "Costs 7 TP",
-            7: "Costs 8 TP",
-            8: "Costs 8 TP",
-            9: "Costs 9 TP",
-            10: "Costs 9 TP"
-        },
-        NinpouClone: {
+        NinpoDouble: {
             1: "Costs 10 TP"
         },
-        NinpouSarutobi: {
-            1: "50% chance to nullify damage; costs 3 TP",
-            2: "60% chance to nullify damage; costs 4 TP",
-            3: "70% chance to nullify damage; costs 5 TP",
-            4: "80% chance to nullify damage; costs 6 TP",
-            5: "100% chance to nullify damage; costs 7 TP"
+        SeitonTenchu: {
+            1: "54% DMG Without Ailment, 84% Ailing Enemy; costs 4 TP",
+            2: "56% DMG Without Ailment, 90% Ailing Enemy; costs 4 TP",
+            3: "58% DMG Without Ailment, 96% Ailing Enemy; costs 5 TP",
+            4: "60% DMG Without Ailment, 102% Ailing Enemy; costs 5 TP",
+            5: "62% DMG Without Ailment, 109% Ailing Enemy; costs 6 TP",
+            6: "64% DMG Without Ailment, 115% Ailing Enemy; costs 6 TP",
+            7: "66% DMG Without Ailment, 122% Ailing Enemy; costs 7 TP",
+            8: "68% DMG Without Ailment, 129% Ailing Enemy; costs 7 TP",
+            9: "70% DMG Without Ailment, 137% Ailing Enemy ; costs 8 TP",
+            10: "72% DMG Without Ailment, 144% Ailing Enemy; costs 8 TP"
         },
-        NinpouCloudCover: {
-            1: "Sacrifice 50% HP to increase evasion by 30%; costs 5 TP",
-            2: "Sacrifice 50% HP to increase evasion by 35%; costs 5 TP",
-            3: "Sacrifice 50% HP to increase evasion by 40%; costs 6 TP",
-            4: "Sacrifice 50% HP to increase evasion by 45%; costs 6 TP",
-            5: "Sacrifice 50% HP to increase evasion by 50%; costs 7 TP",
-            6: "Sacrifice 50% HP to increase evasion by 55%; costs 7 TP",
-            7: "Sacrifice 50% HP to increase evasion by 60%; costs 8 TP",
-            8: "Sacrifice 50% HP to increase evasion by 65%; costs 8 TP",
-            9: "Sacrifice 50% HP to increase evasion by 70%; costs 9 TP",
-            10: "Sacrifice 50% HP to increase evasion by 75%; costs 10 TP"
+       NinpoNeedles: {
+            1: "104% DMG, Sleep Rate 33%; costs 3 TP",
+            2: "113% DMG, Sleep Rate 36%; costs 3 TP",
+            3: "123% DMG, Sleep Rate 39%; costs 4 TP",
+            4: "134% DMG, Sleep Rate 42%; costs 4 TP",
+            5: "146% DMG, Sleep Rate 45%; costs 5 TP",
+            6: "160% DMG, Sleep Rate 48% ; costs 5 TP",
+            7: "175% DMG, Sleep Rate 51% ; costs 6 TP",
+            8: "191% DMG, Sleep Rate 54% ; costs 6 TP",
+            9: "209% DMG, Sleep Rate 57%; costs 9 TP",
+            10: "228% DMG, Sleep Rate 60; costs 9 TP%"
         },
-        EscapeArts: {
-            1: "Costs 5 TP",
-            2: "Costs 4 TP",
-            3: "Costs 3 TP",
-            4: "Costs 2 TP",
-            5: "Costs 1 TP"
+        Ninjutsu: {
+            1: "EVA Rate +10%",
+            2: "EVA Rate +12%",
+            3: "EVA Rate +14%",
+            4: "EVA Rate +17%",
+            5: "EVA Rate +20%",
+            6: "EVA Rate +23%",
+            7: "EVA Rate +26%",
+            8: "EVA Rate +29%",
+            9: "EVA Rate +32%",
+            10: "EVA Rate +35%"
+        },
+        NinpoShuriken: {
+            1: "57% DMG, Poison Rate 33%, 3 Hits; costs 3 TP",
+            2: "64% DMG, Poison Rate 36%, 3 Hits; costs 3 TP",
+            3: "72% DMG, Poison Rate 39%, 3 Hits; costs 4 TP",
+            4: "80% DMG, Poison Rate 42%, 3-4 Hits; costs 4 TP",
+            5: "89% DMG, Poison Rate 45%, 3-4 Hits; costs 5 TP",
+            6: "99% DMG, Poison Rate 48%, 4 Hits ; costs 5 TP",
+            7: "109% DMG, Poison Rate 51%, 4 Hits ; costs 6 TP",
+            8: "121% DMG, Poison Rate 54%, 4-5 Hits ; costs 6 TP",
+            9: "133% DMG, Poison Rate 57%, 4-5 Hits; costs 9 TP",
+            10: "147% DMG, Poison Rate 60%, 4-5 Hits; costs 9 TP"
+        },
+          ShadowBind: {
+            1: "140% DMG, Paralysis Rate 33%; costs 3 TP",
+            2: "145% DMG, Paralysis Rate 36%; costs 3 TP",
+            3: "150% DMG, Paralysis Rate 39%; costs 4 TP",
+            4: "155% DMG, Paralysis Rate 42%; costs 4 TP",
+            5: "160% DMG, Paralysis Rate 45%; costs 5 TP",
+            6: "166% DMG, Paralysis Rate 48%; costs 5 TP",
+            7: "172% DMG, Paralysis Rate 51% ; costs 6 TP",
+            8: "178% DMG, Paralysis Rate 54%; costs 6 TP",
+            9: "184% DMG, Paralysis Rate 57%; costs 9 TP",
+            10: "190% DMG, Paralysis Rate 60%; costs 9 TP"
+        },
+        HawkStrike: {
+            1: "0.03*AGI, 4-5 Hits; Costs 10 TP"
+        },
+        Izuna: {
+            1: "140% DMG, Petrify Rate 25%; costs 3 TP",
+            2: "147% DMG, Petrify Rate 27%; costs 3 TP",
+            3: "154% DMG, Petrify Rate 29%; costs 4 TP",
+            4: "161% DMG, Petrify Rate 31%; costs 4 TP",
+            5: "168% DMG, Petrify Rate 33%; costs 5 TP",
+            6: "181% DMG, Petrify Rate 35%; costs 5 TP",
+            7: "194% DMG, Petrify Rate 37%; costs 6 TP",
+            8: "207% DMG, Petrify Rate 39%; costs 6 TP",
+            9: "221% DMG, Petrify Rate 42%; costs 9 TP",
+            10: "235% DMG, Petrify Rate 45%; costs 9 TP"
+        },
+        Chimatsuri: {
+            1: "98% DMG, Increased by 75% per Bind; costs 5 TP",
+            2: "108% DMG, Increased by 77% per Bind; costs 5 TP",
+            3: "117% DMG, Increased by 79% per Bind; costs 6 TP",
+            4: "126% DMG, Increased by 82% per Bind; costs 6 TP",
+            5: "135% DMG, Increased by 85% per Bind; costs 7 TP",
+            6: "144% DMG, Increased by 88% per Bind; costs 7 TP",
+            7: "153% DMG, Increased by 91% per Bind; costs 8 TP",
+            8: "162% DMG, Increased by 94% per Bind; costs 8 TP",
+            9: "171% DMG, Increased by 97% per Bind; costs 9 TP",
+            10: "180% DMG, Increased by 100% per Bind; costs 10 TP"
+        },
+        Genjutsu: {
+            1: "104% DMG, Confusion Rate 33% ; costs 5 TP",
+            2: "113% DMG, Confusion Rate 36% ; costs 5 TP",
+            3: "123% DMG, Confusion Rate 39% ; costs 6 TP",
+            4: "134% DMG, Confusion Rate 42% ; costs 6 TP",
+            5: "146% DMG, Confusion Rate 45%; costs 7 TP",
+            6: "160% DMG, Confusion Rate 48%; costs 7 TP",
+            7: "175% DMG, Confusion Rate 51%; costs 8 TP",
+            8: "191% DMG, Confusion Rate 54%; costs 8 TP",
+            9: "209% DMG, Confusion Rate 57%; costs 9 TP",
+            10: "228% DMG, Confusion Rate 60%; costs 10 TP"
         }
     },
     Monk: {
