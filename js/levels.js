@@ -282,6 +282,7 @@ var levels = {
             8: "Row, Healing Power 75%; Costs 12 TP",
             9: "Row, Healing Power 80%; Costs 12 TP",
             10: "Party, Healing Power 70% ↓; Costs 12 TP"
+       
         },
         Knighthood: {
             1: "Costs 10 TP",
@@ -510,210 +511,209 @@ var levels = {
             9: "45% DMG, 8-9 Hits, ACC -34; costs 12 TP",
             10: "45% DMG, 9 Hits, ACC -36; costs 12 TP"
         }
+    
     },
     Hoplite: {
         Guardian: {
-            1: "Decrease physical damage by 10%",
-            2: "Decrease physical damage by 13%",
-            3: "Decrease physical damage by 16%",
-            4: "Decrease physical damage by 19%",
-            5: "Decrease physical damage by 21%",
-            6: "Decrease physical damage by 24%",
-            7: "Decrease physical damage by 28%",
-            8: "Decrease physical damage by 32%",
-            9: "Decrease physical damage by 36%",
-            10: "Decrease physical damage by 40%"
+            1: "All DEF +7%",
+            2: "All DEF +9%",
+            3: "All DEF +11%",
+            4: "All DEF +13%",
+            5: "All DEF +15%",
+            6: "All DEF +17%",
+            7: "All DEF +19%",
+            8: "All DEF +21%",
+            9: "All DEF +23%",
+            10: "All DEF +25%"
+            
         },
-        ShieldMastery: {
-            1: "Decrease physical damage by 1%",
-            2: "Decrease physical damage by 2%",
-            3: "Decrease physical damage by 3%",
-            4: "Decrease physical damage by 4%",
-            5: "Decrease physical damage by 5%",
-            6: "Decrease physical damage by 6%",
-            7: "Decrease physical damage by 7%",
-            8: "Decrease physical damage by 8%",
-            9: "Decrease physical damage by 9%",
-            10: "Decrease physical damage by 10%"
-        },
-        SpearMastery: {
+       SpearMastery: {
             1: "Increase damage by 2%",
-            2: "Increase damage by 3%",
-            3: "Increase damage by 4%",
-            4: "Increase damage by 5%",
-            5: "Increase damage by 6%",
-            6: "Increase damage by 7%",
-            7: "Increase damage by 8%",
-            8: "Increase damage by 9%",
-            9: "Increase damage by 10%",
-            10: "Increase damage by 11%"
+            2: "Increase damage by 4%",
+            3: "Increase damage by 6%",
+            4: "Increase damage by 8%",
+            5: "Increase damage by 10%",
+            6: "Increase damage by 12%",
+            7: "Increase damage by 14%",
+            8: "Increase damage by 16%",
+            9: "Increase damage by 18%",
+            10: "Increase damage by 20%"
         },
-        GuardHeal: {
-            1: "Restores 10 HP",
-            2: "Restores 15 HP",
-            3: "Restores 20 HP",
-            4: "Restores 25 HP",
-            5: "Restores 30 HP",
-            6: "Restores 35 HP",
-            7: "Restores 40 HP",
-            8: "Restores 45 HP",
-            9: "Restores 50 HP",
-            10: "Restores 60 HP"
+         ShieldMastery: {
+            1: "All DEF +3%",
+            2: "All DEF +4%",
+            3: "All DEF +5%",
+            4: "All DEF +6%",
+            5: All DEF +7%",
+            6: "All DEF +8%",
+            7: "All DEF +9%",
+            8: "All DEF +11%",
+            9: "All DEF +13%",
+            10: "All DEF +15%"
         },
-        Parry: {
+       Parry: {
             1: "4% chance to nullify an attack",
             2: "7% chance to nullify an attack",
             3: "10% chance to nullify an attack",
             4: "14% chance to nullify an attack",
             5: "18% chance to nullify an attack"
+        
         },
-        MaterialParry: {
-            1: "4% chance to nullify an attack",
-            2: "7% chance to nullify an attack",
-            3: "10% chance to nullify an attack",
-            4: "14% chance to nullify an attack",
-            5: "18% chance to nullify an attack"
+        Rhongomyniad: {
+            1: "105% DMG; costs 8 TP",
+            2: "110% DMG; costs 8 TP",
+            3: "115% DMG; costs 9 TP",
+            4: "120% DMG; costs 9 TP",
+            5: "125% DMG; costs 10 TP",
+            6: "130% DMG; costs 10 TP",
+            7: "135% DMG; costs 11 TP",
+            8: "140% DMG; costs 11 TP",
+            9: "145% DMG; costs 12 TP",
+            10: "150% DMG; costs 12 TP"
         },
-        LineGuard: {
-            1: "Decrease damage by 10%, or by 23% if on same row; costs 3 TP",
-            2: "Decrease damage by 11%, or by 26% if on same row; costs 3 TP",
-            3: "Decrease damage by 12%, or by 29% if on same row; costs 4 TP",
-            4: "Decrease damage by 13%, or by 31% if on same row; costs 4 TP",
-            5: "Decrease damage by 14%, or by 34% if on same row; costs 5 TP",
-            6: "Decrease damage by 16%, or by 37% if on same row; costs 5 TP",
-            7: "Decrease damage by 18%, or by 40% if on same row; costs 6 TP",
-            8: "Decrease damage by 20%, or by 43% if on same row; costs 6 TP",
-            9: "Decrease damage by 22%, or by 46% if on same row; costs 7 TP",
-            10: "Decrease damage by 25%, or by 50% if on same row; costs 9 TP"
+        RexHasta: {
+            1: "234% DMG, Enemy DMG Taken +10%; costs 8 TP",
+            2: "245% DMG, Enemy DMG Taken +11%; costs 8 TP",
+            3: "256% DMG, Enemy DMG Taken +12%; costs 9 TP",
+            4: "267% DMG, Enemy DMG Taken +13%; costs 9 TP",
+            5: "278% DMG, Enemy DMG Taken +14%; costs 10 TP",
+            6: "289% DMG, Enemy DMG Taken +16%; costs 10 TP",
+            7: "300% DMG, Enemy DMG Taken +18%; costs 11 TP",
+            8: "311% DMG, Enemy DMG Taken +20%; costs 11 TP",
+            9: "322% DMG, Enemy DMG Taken +22%; costs 12 TP",
+            10: "333% DMG, Enemy DMG Taken +24%; costs 12 TP"
         },
-        FireGuard: {
-            1: "Decrease FIRE damage by 10%; costs 4 TP",
-            2: "Decrease FIRE damage by 15%; costs 4 TP",
-            3: "Decrease FIRE damage by 20%; costs 5 TP",
-            4: "Decrease FIRE damage by 25%; costs 5 TP",
-            5: "Decrease FIRE damage by 30%; costs 6 TP",
-            6: "Decrease FIRE damage by 36%; costs 6 TP",
-            7: "Decrease FIRE damage by 42%; costs 7 TP",
-            8: "Decrease FIRE damage by 48%; costs 7 TP",
-            9: "Decrease FIRE damage by 55%; costs 8 TP",
-            10: "Decrease FIRE damage by 100%; costs 12 TP"
+        ExploitWeakness: {
+            1: "Ally, DMG When Targeting a Weakness +10%; costs 3 TP",
+            2: "Ally, DMG When Targeting a Weakness +12%; costs 3 TP",
+            3: "Ally, DMG When Targeting a Weakness +14%; costs 4 TP",
+            4: "Row, DMG When Targeting a Weakness +16%; costs 4 TP",
+            5: "Row, DMG When Targeting a Weakness +18%; costs 5 TP",
+            6: "Row, DMG When Targeting a Weakness +20%; costs 5 TP",
+            7: "Party, DMG When Targeting a Weakness +22%; costs 6 TP",
+            8: "Party, DMG When Targeting a Weakness +24%; costs 6 TP",
+            9: "Party, DMG When Targeting a Weakness +27%; costs 7 TP",
+            10: "Party, DMG When Targeting a Weakness +30%; costs 9 TP"
         },
-        FreezeGuard: {
-            1: "Decrease ICE damage by 10%; costs 4 TP",
-            2: "Decrease ICE damage by 15%; costs 4 TP",
-            3: "Decrease ICE damage by 20%; costs 5 TP",
-            4: "Decrease ICE damage by 25%; costs 5 TP",
-            5: "Decrease ICE damage by 30%; costs 6 TP",
-            6: "Decrease ICE damage by 36%; costs 6 TP",
-            7: "Decrease ICE damage by 42%; costs 7 TP",
-            8: "Decrease ICE damage by 48%; costs 7 TP",
-            9: "Decrease ICE damage by 55%; costs 8 TP",
-            10: "Decrease ICE damage by 100%; costs 12 TP"
+        Provoke: {
+            1: "Draw Rate +7, Action Speed +5; Costs 10 TP",
+            2: "Draw Rate +12, Action Speed +10; Costs 8 TP",
+            3: "Draw Rate +17, Action Speed +15; Costs 6 TP",
+            4: "Draw Rate +23, Action Speed +20; Costs 4 TP",
+            5: "Draw Rate +30, Action Speed +25; Costs 2 TP"
+       
         },
-        ShockGuard: {
-            1: "Decrease THUNDER damage by 10%; costs 4 TP",
-            2: "Decrease THUNDER damage by 15%; costs 4 TP",
-            3: "Decrease THUNDER damage by 20%; costs 5 TP",
-            4: "Decrease THUNDER damage by 25%; costs 5 TP",
-            5: "Decrease THUNDER damage by 30%; costs 6 TP",
-            6: "Decrease THUNDER damage by 36%; costs 6 TP",
-            7: "Decrease THUNDER damage by 42%; costs 7 TP",
-            8: "Decrease THUNDER damage by 48%; costs 7 TP",
-            9: "Decrease THUNDER damage by 55%; costs 8 TP",
-            10: "Decrease THUNDER damage by 100%; costs 12 TP"
+       ShrugOff: {
+            1: "40% Healing Power when not parried",
+            2: "50% Healing Power when not parried",
+            3: "60% Healing Power when not parried",
+            4: "70% Healing Power when not parried",
+            5: "80% Healing Power when not parried"
         },
-        DivideGuard: {
-            1: "Decrease damage by 30%; costs 4 TP",
-            2: "Decrease damage by 33%; costs 4 TP",
-            3: "Decrease damage by 36%; costs 5 TP",
-            4: "Decrease damage by 39%; costs 5 TP",
-            5: "Decrease damage by 42%; costs 6 TP",
-            6: "Decrease damage by 45%; costs 6 TP",
-            7: "Decrease damage by 48%; costs 7 TP",
-            8: "Decrease damage by 52%; costs 7 TP",
-            9: "Decrease damage by 56%; costs 8 TP",
-            10: "Decrease damage by 60%; costs 8 TP"
+        GáeBolg: {
+            1: "150% DMG, Paralysis/Death Rate 40%; costs 4 TP",
+            2: "158% DMG, Paralysis/Death Rate 42%; costs 4 TP",
+            3: "166% DMG, Paralysis/Death Rate 44%; costs 5 TP",
+            4: "174% DMG, Paralysis/Death Rate 46%; costs 5 TP",
+            5: "182% DMG, Paralysis/Death Rate 48%; costs 6 TP",
+            6: "190% DMG, Paralysis/Death Rate 50%; costs 6 TP",
+            7: "198% DMG, Paralysis/Death Rate 52%; costs 7 TP",
+            8: "206% DMG, Paralysis/Death Rate 54%; costs 7 TP",
+            9: "214% DMG, Paralysis/Death Rate 56%; costs 8 TP",
+            10: "222% DMG, Paralysis/Death Rate 60%; costs 12 TP"
         },
-        OverGuard: {
-            1: "Costs 18 TP",
-            2: "Costs 15 TP",
-            3: "Costs 12 TP",
-            4: "Costs 9 TP",
-            5: "Costs 6 TP"
+        Gungnir: {
+            1: "150% DMG; costs 4 TP",
+            2: "158% DMG; costs 4 TP",
+            3: "166% DMG; costs 5 TP",
+            4: "174% DMG; costs 5 TP",
+            5: "182% DMG; costs 6 TP",
+            6: "190% DMG; costs 6 TP",
+            7: "198% DMG; costs 7 TP",
+            8: "206% DMG; costs 7 TP",
+            9: "214% DMG; costs 8 TP",
+            10: "222% DMG; costs 8 TP"
         },
-        ChangeStep: {
-            1: "110% damage; costs 5 TP",
-            2: "113% damage; costs 5 TP",
-            3: "116% damage; costs 6 TP",
-            4: "122% damage; costs 6 TP",
-            5: "128% damage; costs 7 TP",
-            6: "136% damage; costs 7 TP",
-            7: "142% damage; costs 8 TP",
-            8: "148% damage; costs 8 TP",
-            9: "154% damage; costs 9 TP",
-            10: "160% damage; costs 9 TP"
+        Geirskögul: {
+            1: "132% DMG, Enemy ATK -10%; costs 5 TP",
+            2: "139% DMG, Enemy ATK -11%; costs 5 TP",
+            3: "146% DMG, Enemy ATK -12%; costs 6 TP",
+            4: "153% DMG, Enemy ATK -13%; costs 7 TP",
+            5: "160% DMG, Enemy ATK -14%; costs 7 TP",
+            6: "167% DMG, Enemy ATK -15%; costs 7 TP",
+            7: "174% DMG, Enemy ATK -16%; costs 8 TP",
+            8: "181% DMG, Enemy ATK -17%; costs 8 TP",
+            9: "188% DMG, Enemy ATK -18%; costs 9 TP",
+            10: 195% DMG, Enemy ATK -20%; costs 9 TP"
         },
-        Blitzritter: {
-            1: "120% damage; costs 7 TP",
-            2: "127% damage; costs 7 TP",
-            3: "134% damage; costs 8 TP",
-            4: "141% damage; costs 8 TP",
-            5: "148% damage; costs 9 TP",
-            6: "155% damage; costs 9 TP",
-            7: "162% damage; costs 10 TP",
-            8: "169% damage; costs 10 TP",
-            9: "177% damage; costs 11 TP",
-            10: "185% damage; costs 11 TP"
+       Aegis: {
+            1: "Row, Elemental DMG Taken -10%; costs 5 TP",
+            2: "Row, Elemental DMG Taken -17%; costs 5 TP",
+            3: "Row, Elemental DMG Taken -24%; costs 6 TP",
+            4: "Row, Elemental DMG Taken -31%; costs 6 TP",
+            5: "Row, Elemental DMG Taken -38%; costs 7 TP",
+            6: "Row, Elemental DMG Taken -45%; costs 7 TP",
+            7: "Row, Elemental DMG Taken 52-%; costs 8 TP",
+            8: "Row, Elemental DMG Taken -59%; costs 8 TP",
+            9: "Row, Elemental DMG Taken -66%; costs 9 TP",
+            10: "Party, Elemental DMG Taken -52% ↓; costs 9 TP"
         },
-        LongStride: {
-            1: "70% damage, or 105% damage from back row; costs 12 TP",
-            2: "74% damage, or 113% damage from back row; costs 12 TP",
-            3: "78% damage, or 121% damage from back row; costs 13 TP",
-            4: "82% damage, or 130% damage from back row; costs 13 TP",
-            5: "86% damage, or 139% damage from back row; costs 14 TP",
-            6: "90% damage, or 148% damage from back row; costs 14 TP",
-            7: "95% damage, or 159% damage from back row; costs 15 TP",
-            8: "100% damage, or 172% damage from back row; costs 15 TP",
-            9: "105% damage, or 184% damage from back row; costs 16 TP",
-            10: "110% damage, or 198% damage from back row; costs 16 TP"
+       Hoplon: {
+            1: "Row, Physical DMG Taken -18%; costs 7 TP",
+            2: "Row, Physical DMG Taken -22%; costs 7 TP",
+            3: "Row, Physical DMG Taken -26%; costs 8 TP",
+            4: "Row, Physical DMG Taken -30%; costs 8 TP",
+            5: "Row, Physical DMG Taken -34%; costs 9 TP",
+            6: "Row, Physical DMG Taken -38%; costs 9 TP",
+            7: "Row, Physical DMG Taken -42%; costs 10 TP",
+            8: "Row, Physical DMG Taken -46%; costs 10 TP",
+            9: "Row, Physical DMG Taken -50%; costs 11 TP",
+            10: "Party, Physical DMG Taken -42% ↓; costs 11 TP"
         },
-        Revive: {
-            1: "Costs 12 TP",
-            2: "Costs 10 TP",
-            3: "Costs 8 TP",
-            4: "Costs 6 TP",
-            5: "Costs 4 TP"
+        Phalanx: {
+            1: "Row, All DMG Taken -18%; costs 12 TP",
+            2: "Row, All DMG Taken -22%; costs 12 TP",
+            3: "Row, All DMG Taken -26%; costs 13 TP",
+            4: "Row, All DMG Taken -30%; costs 13 TP",
+            5: "Row, All DMG Taken -34%; costs 13 TP",
+            6: "Row, All DMG Taken -38%; costs 13 TP",
+            7: "Row, All DMG Taken -42%; costs 13 TP",
+            8: "Row, All DMG Taken -46%; costs 13 TP",
+            9: "Row, All DMG Taken -50%; costs 13 TP",
+            10: "Party, All DMG Taken -42% ↓; costs 16 TP"
         },
-        EnGarde: {
-            1: "Sacrifice 50% HP to reduce physical damage by 40%; costs 5 TP",
-            2: "Sacrifice 50% HP to reduce physical damage by 43%; costs 5 TP",
-            3: "Sacrifice 50% HP to reduce physical damage by 46%; costs 6 TP",
-            4: "Sacrifice 50% HP to reduce physical damage by 49%; costs 6 TP",
-            5: "Sacrifice 50% HP to reduce physical damage by 52%; costs 7 TP",
-            6: "Sacrifice 50% HP to reduce physical damage by 55%; costs 7 TP",
-            7: "Sacrifice 50% HP to reduce physical damage by 58%; costs 8 TP",
-            8: "Sacrifice 50% HP to reduce physical damage by 62%; costs 8 TP",
-            9: "Sacrifice 50% HP to reduce physical damage by 66%; costs 9 TP",
-            10: "Sacrifice 50% HP to reduce physical damage by 70%; costs 10 TP"
+        Gradivus: {
+            1: "140% DMG, Lifesteal 24%; costs 12 TP",
+            2: "145% DMG, Lifesteal 26%; costs 12 TP",
+            3: "150% DMG, Lifesteal 28%; costs 13 TP",
+            4: "155% DMG, Lifesteal 30%; costs 13 TP",
+            5: "160% DMG, Lifesteal 32%; costs 16 TP",
+            6: "165% DMG, Lifesteal 34%; costs 16 TP",
+            7: "170% DMG, Lifesteal 36%; costs 16 TP",
+            8: "175% DMG, Lifesteal 38%; costs 16 TP",
+            9: "180% DMG, Lifesteal 40%; costs 16 TP",
+            10: "185% DMG, Lifesteal 42%; costs 16 TP"
         },
-        Taunt: {
-            1: "Costs 3 TP",
-            2: "Costs 3 TP",
-            3: "Costs 4 TP",
-            4: "Costs 4 TP",
-            5: "Costs 5 TP",
-            6: "Costs 5 TP",
-            7: "Costs 6 TP",
-            8: "Costs 6 TP",
-            9: "Costs 7 TP",
-            10: "Costs 7 TP"
+          Bodyguard: {
+            1: "DMG Taken -30%; costs 12 TP",
+            2: "DMG Taken -37%; costs 12 TP",
+            3: "DMG Taken -44%; costs 12 TP",
+            4: "DMG Taken -51%; costs 12 TP",
+            5: "DMG Taken -58%; costs 12 TP"
         },
-        CarefulWalk: {
-            1: "Decreases encounter rate by 40% for 30 steps; costs 6 TP",
-            2: "Decreases encounter rate by 45% for 40 steps; costs 7 TP",
-            3: "Decreases encounter rate by 50% for 50 steps; costs 8 TP",
-            4: "Decreases encounter rate by 60% for 60 steps; costs 9 TP",
-            5: "Decreases encounter rate by 70% for 80 steps; costs 10 TP"
+       Overwatch: {
+            1: "50% Self HP Loss; costs 12 TP",
+            2: "50% Self HP Loss; costs 12 TP",
+            3: "50% Self HP Loss; costs 12 TP",
+            4: "50% Self HP Loss; costs 12 TP",
+            5: "50% Self HP Loss; costs 12 TP"
+        },
+        Vigilance: {
+            1: "Encounter Rate -50%, 30 Steps; costs 6 TP",
+            2: "Encounter Rate -60%, 40 Steps; costs 7 TP",
+            3: "Encounter Rate -70%, 50 Steps; costs 8 TP",
+            4: "Encounter Rate -80%, 60 Steps; costs 9 TP",
+            5: "Encounter Rate -90%, 80 Steps; costs 10 TP"
         }
     },
     Buccaneer: {
