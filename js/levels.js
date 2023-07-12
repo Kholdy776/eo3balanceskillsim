@@ -195,96 +195,100 @@ var levels = {
             9: "95% DMG; costs 15 TP",
             10: "100% DMG; costs 16 TP"
         },
+        Negotiation: {
+            1: "Ally, Healing Power 180%; costs 6 TP",
+            2: "Ally, Healing Power 190%; costs 7 TP",
+            3: "Ally, Healing Power 210%G; costs 8 TP",
+            4: "Ally, Healing Power 230%; costs 9 TP",
+            5: "Ally, Healing Power 250%; costs 10 TP",
+            6: "Ally, Healing Power 270%; costs 12 TP",
+            7: "Ally, Healing Power 290%; costs 15 TP",
+            8: "Ally, Healing Power 310%; costs 15 TP",
+            9:  "Ally, Healing Power 330%; costs 15 TP",
+            10: "Ally, Healing Power 350%; costs 16 TP"
+        },
+        Inspire: {
+            1: "Ally, TP +8",
+            2: "Ally, TP +9",
+            3: "Ally, TP +10",
+            4: "Row, TP +11",
+            5: "Row, TP +12",
+            6: "Row, TP +13",
+            7: "Party, TP +14",
+            8: "Party, TP +15",
+            9: "Party, TP +16",
+            10: "Party, TP +17"
+        },
+        AdNihilo: {
+            1: "130% DMG; costs 12 TP",
+            2: "140% DMG; costs 12 TP",
+            3: "150% DMG; costs 13 TP",
+            4: "160% DMG; costs 14 TP",
+            5: "170% DMG; costs 15 TP",
+            6: "180% DMG; costs 16 TP",
+            7: "195% DMG; costs 17 TP",
+            8: "210% DMG%; costs 18 TP",
+            9: "225% DMG; costs 19 TP",
+            10: "240% DMG; costs 20 TP"
+        },
+        FireArms: {
+            1: "Ally, Fire DMG +2%, Action Speed +10; Costs 12 TP",
+            2: "Row, Fire DMG +4%, Action Speed +20; Costs 10 TP",
+            3: "Row, Fire DMG +6%, Action Speed +30; Costs 8 TP",
+            4: "Row, Fire DMG +8%, Action Speed +40; Costs 6 TP",
+            5: "Party, Fire DMG +10%, Action Speed +50; Costs 4 TP"
+        },
         FreezeArms: {
-            1: "Reduces ICE damage by 10%; costs 6 TP",
-            2: "Reduces ICE damage by 20%; costs 7 TP",
-            3: "Reduces ICE damage by 30%; costs 8 TP",
-            4: "Reduces ICE damage by 40%; costs 9 TP",
-            5: "Reduces ICE damage by 50%; costs 10 TP"
+            1: "Ally, Ice DMG +2%, Action Speed +10; Costs 12 TP",
+            2: "Row, Ice DMG +4%, Action Speed +20; Costs 10 TP",
+            3: "Row, Ice DMG +6%, Action Speed +30; Costs 8 TP",
+            4: "Row, Ice DMG +8%, Action Speed +40; Costs 6 TP",
+            5: "Party, Ice DMG +10%, Action Speed +50; Costs 4 TP"
         },
-        ShockArms: {
-            1: "Reduces THUNDER damage by 10%; costs 6 TP",
-            2: "Reduces THUNDER damage by 20%; costs 7 TP",
-            3: "Reduces THUNDER damage by 30%; costs 8 TP",
-            4: "Reduces THUNDER damage by 40%; costs 9 TP",
-            5: "Reduces THUNDER damage by 50%; costs 10 TP"
+      ShockArms: {
+            1: "Ally, Volt DMG +2%, Action Speed +10; Costs 12 TP",
+            2: "Row, Volt DMG +4%, Action Speed +20; Costs 10 TP",
+            3: "Row, Volt DMG +6%, Action Speed +30; Costs 8 TP",
+            4: "Row, Volt DMG +8%, Action Speed +40; Costs 6 TP",
+            5: "Party, Volt DMG +10%, Action Speed +50; Costs 4 TP"
         },
-        EmitWeapon: {
-            1: "160% damage; costs 12 TP",
-            2: "162% damage; costs 12 TP",
-            3: "164% damage; costs 13 TP",
-            4: "166% damage; costs 14 TP",
-            5: "168% damage; costs 15 TP",
-            6: "172% damage; costs 16 TP",
-            7: "176% damage; costs 17 TP",
-            8: "180% damage; costs 18 TP",
-            9: "185% damage; costs 19 TP",
-            10: "190% damage; costs 20 TP"
+        RegalRadiance: {
+            1: "125% DMG, Stun Rate 30%; costs 6 TP",
+            2: "135% DMG, Stun Rate 33%; costs 6 TP",
+            3: "145% DMG, Stun Rate 36%; costs 7 TP",
+            4: "155% DMG, Stun Rate 39%; costs 8 TP",
+            5: "165% DMG, Stun Rate 42%; costs 9 TP",
+            6: "175% DMG, Stun Rate 45%; costs 10 TP",
+            7: "185% DMG, Stun Rate 48%; costs 11 TP",
+            8: "195% DMG, Stun Rate 51%; costs 12 TP",
+            9: "205% DMG, Stun Rate 55%; costs 13 TP",
+            10: "215% DMG, Stun Rate 60%; costs 14 TP"
         },
-        ResetWeapon: {
-            1: "Deals 130% damage; costs 12 TP",
-            2: "Deals 140% damage; costs 12 TP",
-            3: "Deals 150% damage; costs 13 TP",
-            4: "Deals 160% damage; costs 13 TP",
-            5: "Deals 170% damage; costs 14 TP",
-            6: "Deals 180% damage; costs 14 TP",
-            7: "Deals 195% damage; costs 15 TP",
-            8: "Deals 210% damage; costs 15 TP",
-            9: "Deals 225% damage; costs 16 TP",
-            10: "Deals 240% damage; costs 16 TP"
+       PreventOrder: {
+            1: "Row, 16 TP",
+            2: "Row, 14 TP",
+            3: "Row, 12 TP",
+            4: "Row, 10 TP",
+            5: "Party, 20 TP"
         },
-        ImmunizationCommand: {
-            1: "Costs 12 TP",
-            2: "Costs 10 TP",
-            3: "Costs 8 TP",
-            4: "Costs 6 TP",
-            5: "Costs 4 TP"
+        ProtectOrder: {
+            1: "Row, Healing Power 40%; Costs 8 TP",
+            2: "Row, Healing Power 45%; Costs 8 TP",
+            3: "Row, Healing Power 50%; Costs 9 TP",
+            4: "Row, Healing Power 55%; Costs 10 TP",
+            5: "Row, Healing Power 60%; Costs 10 TP",
+            6: "Row, Healing Power 65%; Costs 11 TP",
+            7: "Row, Healing Power 70%;Costs 11 TP",
+            8: "Row, Healing Power 75%; Costs 12 TP",
+            9: "Row, Healing Power 80%; Costs 12 TP",
+            10: "Party, Healing Power 70% ↓; Costs 12 TP"
         },
-        AmbitiousCommand: {
-            RallywasHere
-        },
-        ProtectionCommand: {
-            1: "Restores 105% of TEC as HP; costs 6 TP",
-            2: "Restores 120% of TEC as HP; costs 6 TP",
-            3: "Restores 135% of TEC as HP; costs 7 TP",
-            4: "Restores 150% of TEC as HP; costs 8 TP",
-            5: "Restores 165% of TEC as HP; costs 9 TP",
-            6: "Restores 180% of TEC as HP; costs 10 TP",
-            7: "Restores 195% of TEC as HP; costs 11 TP",
-            8: "Restores 210% of TEC as HP; costs 12 TP",
-            9: "Restores 225% of TEC as HP; costs 13 TP",
-            10: "Restores 240% of TEC as HP; costs 14 TP"
-        },
-        Exchange: {
-            1: "Restores 540% of TEC as HP; costs 4 TP",
-            2: "Restores 570% of TEC as HP; costs 4 TP",
-            3: "Restores 630% of TEC as HP; costs 5 TP",
-            4: "Restores 690% of TEC as HP; costs 5 TP",
-            5: "Restores 750% of TEC as HP; costs 6 TP",
-            6: "Restores 810% of TEC as HP; costs 6 TP",
-            7: "Restores 870% of TEC as HP; costs 7 TP",
-            8: "Restores 930% of TEC as HP; costs 7 TP",
-            9: "Restores 990% of TEC as HP; costs 8 TP",
-            10: "Restores 1050% of TEC as HP; costs 8 TP"
-        },
-        RenewLife: {
-            1: "Costs 8 TP",
+        Knighthood: {
+            1: "Costs 10 TP",
             2: "Costs 8 TP",
-            3: "Costs 9 TP",
-            4: "Costs 9 TP",
-            5: "Costs 10 TP",
-            6: "Costs 10 TP",
-            7: "Costs 11 TP",
-            8: "Costs 11 TP",
-            9: "Costs 12 TP",
-            10: "Costs 12 TP"
-        },
-        QuickOrder: {
-            1: "Costs 12 TP",
-            2: "Costs 10 TP",
-            3: "Costs 8 TP",
-            4: "Costs 6 TP",
-            5: "Costs 4 TP"
+            3: "Costs 6 TP",
+            4: "Costs 4 TP",
+            5: "Costs 2 TP"
         }
     },
     Gladiator: {
