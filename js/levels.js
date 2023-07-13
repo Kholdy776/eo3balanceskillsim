@@ -981,8 +981,8 @@ var levels = {
             10: "Restore 20 TP"
         },
          Hyouton: {
-            1: "60% DMG, Leg Bind Rate 40%; costs 12 TP", 
-            2: "67% DMG, Leg Bind Rate 42%; costs 12 TP", 
+            1: "60% DMG, Leg Bind Rate 40%; costs 12 TP",
+            2: "67% DMG, Leg Bind Rate 42%; costs 12 TP",
             3: "74% DMG, Leg Bind Rate 44%; costs 12 TP",
             4: "82% DMG, Leg Bind Rate 46%; costs 12 TP",
             5: "91% DMG, Leg Bind Rate 48%; costs 12 TP",
@@ -993,7 +993,7 @@ var levels = {
             10: "140% DMG, Leg Bind Rate 60; costs 12 TP%"
         },
         KnifeMastery: {
-              1: "Increase damage by 2%",
+            1: "Increase damage by 2%",
             2: "Increase damage by 4%",
             3: "Increase damage by 6%",
             4: "Increase damage by 8%",
@@ -1280,8 +1280,7 @@ var levels = {
             2: "100 HP, Action Speed -75; costs 4 TP",
             3: "150 HP, Action Speed -50; costs 5 TP; costs 5 TP",
             4: "150 HP, Action Speed -50; costs 5 TP",
-            5: "Full HP, Action Speed -0; costs 6 TP",
-           
+            5: "Full HP, Action Speed -0; costs 6 TP"
         },
        AuraBlast: {
             1: "97% DMG, 150% Back Row DMG; costs 4 TP",
@@ -1537,7 +1536,7 @@ var levels = {
             7: "116% ALMIGHTY DAMAGE, costs 47 TP",
             8: "125% ALMIGHTY DAMAGE, costs 51 TP",
             9: "134% ALMIGHTY DAMAGE, costs 55 TP",
-            10: "144% ALMIGHTY DAMAGE, costs 60 TP",
+            10: "144% ALMIGHTY DAMAGE, costs 60 TP"
         }
     },
     Wildling: {
