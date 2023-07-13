@@ -1831,7 +1831,7 @@ Wildling: {
             5: "80% chance to blind; costs 10 TP"
        
         },
-        Apollo'sWrath: {
+        ApollosWrath: {
             1: "135% DMG; costs 3 TP",
             2: "145% DMG; costs 3 TP",
             3: "155% DMG; costs 4 TP",
@@ -1856,7 +1856,7 @@ Wildling: {
             9: "180% damage; costs 7 TP",
             10: "185% damage; costs 7 TP"
         },
-        Artemis'Embrace: {
+        ArtemisEmbrace: {
             1: "135% DMG; costs 3 TP",
             2: "145% DMG; costs 3 TP",
             3: "155% DMG; costs 4 TP",
@@ -1868,7 +1868,7 @@ Wildling: {
             9: "240% DMG; costs 7 TP",
             10: "255% DMG; costs 7 TP"
         },
-        Eros'Carnage: {
+        ErosCarnage: {
             1: "135% DMG; costs 3 TP",
             2: "145% DMG; costs 3 TP",
             3: "155% DMG; costs 4 TP",
@@ -1962,38 +1962,43 @@ Wildling: {
         }
     },
     Farmer: {
-        NaturesBlessing: {
-            1: "Gain 10% bonus EXP",
-            2: "Gain 12% bonus EXP",
-            3: "Gain 14% bonus EXP",
-            4: "Gain 16% bonus EXP",
-            5: "Gain 18% bonus EXP",
-            6: "Gain 20% bonus EXP",
-            7: "Gain 22% bonus EXP",
-            8: "Gain 24% bonus EXP",
-            9: "Gain 27% bonus EXP",
-            10: "Gain 30% bonus EXP"
+        EarthsBounty: {
+            1: "Gain 10% bonus EXP;Farmer DMG +3%",
+            2: "Gain 12% bonus EXP;Farmer DMG +5%",
+            3: "Gain 14% bonus EXP;Farmer DMG +7%",
+            4: "Gain 16% bonus EXP;Farmer DMG +9%",
+            5: "Gain 18% bonus EXP;Farmer DMG +11%",
+            6: "Gain 20% bonus EXP;Farmer DMG +13%",
+            7: "Gain 22% bonus EXP;Farmer DMG +16%",
+            8: "Gain 24% bonus EXP;Farmer DMG +19%",
+            9: "Gain 27% bonus EXP;Farmer DMG +22%",
+            10: "Gain 30% bonus EXP;Farmer DMG +25%"
         },
-        Braveheart: {
-            1: "Recover 1 TP",
-            2: "Recover 2 TP",
-            3: "Recover 3 TP",
-            4: "Recover 4 TP",
-            5: "Recover 5 TP"
+       DeathBlight: {
+            1: "Ailment Rate 25%; costs 10 TP",
+            2: "Ailment Rate 28%; costs 10 TP",
+            3: "Ailment Rate 31%; costs 11 TP",
+            4: "Ailment Rate 34%; costs 11 TP",
+            5: "Ailment Rate 37%; costs 12 TP",
+            6: "Ailment Rate 40%; costs 12 TP",
+            7: "Ailment Rate 43%; costs 13 TP",
+            8: "Ailment Rate 46%; costs 13 TP",
+            9: "Ailment Rate 49%; costs 14 TP",
+            10: "Ailment Rate 52%; costs 14 TP"
         },
-        BravingRain: {
-            1: "Lasts for 10 steps; costs 10 TP",
-            2: "Lasts for 15 steps; costs 10 TP",
-            3: "Lasts for 20 steps; costs 11 TP",
-            4: "Lasts for 25 steps; costs 11 TP",
-            5: "Lasts for 30 steps; costs 12 TP",
-            6: "Lasts for 35 steps; costs 12 TP",
-            7: "Lasts for 40 steps; costs 13 TP",
-            8: "Lasts for 50 steps; costs 13 TP",
-            9: "Lasts for 60 steps; costs 14 TP",
-            10: "Lasts for 70 steps; costs 14 TP"
+        Contagion: {
+            1: "Ailment Rate 25%, 15 Poison DMG; costs 10 TP",
+            2: "Ailment Rate 28%, 20 Poison DMG; costs 10 TP",
+            3: "Ailment Rate 31%, 25 Poison DMG; costs 11 TP",
+            4: "Ailment Rate 34%, 30 Poison DMG; costs 11 TP",
+            5: "Ailment Rate 37%, 35 Poison DMG; costs 12 TP",
+            6: "Ailment Rate 40%, 40 Poison DMG; costs 12 TP",
+            7: "Ailment Rate 43%, 45 Poison DMG; costs 13 TP",
+            8: "Ailment Rate 46%, 50 Poison DMG; costs 13 TP",
+            9: "Ailment Rate 49%, 55 Poison DMG; costs 14 TP",
+            10: "Ailment Rate 52%, 60 Poison DMG; costs 14 TP"
         },
-        CampMaster: {
+        CampMastery: {
             1: "Increase tent recovery rate by 40% for HP and 20% for TP",
             2: "Increase tent recovery rate by 80% for HP and 40% for TP",
             3: "Increase tent recovery rate by 120% for HP and 60% for TP",
@@ -2005,142 +2010,19 @@ Wildling: {
             9: "Increase tent recovery rate by 360% for HP and 180% for TP",
             10: "Increase tent recovery rate by 500% for HP and 250% for TP"
         },
-        CPR: {
-            1: "Revive dead ally with 1 HP; costs 5 TP",
-            2: "Revive dead ally with 30 HP; costs 5 TP",
-            3: "Revive dead ally with 60 HP; costs 5 TP",
-            4: "Revive dead ally with 100 HP; costs 5 TP",
-            5: "Revive dead ally with 140 HP; costs 5 TP",
-            6: "Revive dead ally with 180 HP; costs 5 TP",
-            7: "Revive dead ally with 220 HP; costs 5 TP",
-            8: "Revive dead ally with 260 HP; costs 5 TP",
-            9: "Revive dead ally with 300 HP; costs 5 TP",
-            10: "Revive dead ally with 500 HP; costs 5 TP"
-        },
-        CryToCeaseAttack: {
-            1: "Costs 3 TP",
-            2: "Costs 3 TP",
-            3: "Costs 4 TP",
-            4: "Costs 4 TP",
-            5: "Costs 5 TP",
-            6: "Costs 5 TP",
-            7: "Costs 6 TP",
-            8: "Costs 6 TP",
-            9: "Costs 7 TP",
-            10: "Costs 7 TP"
-        },
-        CursedEyeOfWeak: {
-            1: "Decrease enemy ATK by 5% or by 20% if afflicted by a status effect; costs 5 TP",
-            2: "Decrease enemy ATK by 5% or by 23% if afflicted by a status effect; costs 5 TP",
-            3: "Decrease enemy ATK by 6% or by 26% if afflicted by a status effect; costs 6 TP",
-            4: "Decrease enemy ATK by 6% or by 29% if afflicted by a status effect; costs 6 TP",
-            5: "Decrease enemy ATK by 6% or by 32% if afflicted by a status effect; costs 7 TP",
-            6: "Decrease enemy ATK by 7% or by 35% if afflicted by a status effect; costs 7 TP",
-            7: "Decrease enemy ATK by 7% or by 38% if afflicted by a status effect; costs 8 TP",
-            8: "Decrease enemy ATK by 8% or by 42% if afflicted by a status effect; costs 8 TP",
-            9: "Decrease enemy ATK by 8% or by 46% if afflicted by a status effect; costs 9 TP",
-            10: "Decrease enemy ATK by 10% or by 50% if afflicted by a status effect; costs 9 TP"
-        },
-        DetectionMaster: {
-            1: "Lasts for 5 steps; costs 6 TP",
-            2: "Lasts for 10 steps; costs 6 TP",
-            3: "Lasts for 15 steps; costs 7 TP",
-            4: "Lasts for 20 steps; costs 7 TP",
-            5: "Lasts for 25 steps; costs 8 TP",
-            6: "Lasts for 30 steps; costs 8 TP",
-            7: "Lasts for 35 steps; costs 9 TP",
-            8: "Lasts for 40 steps; costs 9 TP",
-            9: "Lasts for 50 steps; costs 10 TP",
-            10: "Lasts for 60 steps; costs 10 TP"
-        },
-        DismantleMastery: {
+        Witchcraft: {
             1: "Increase drop rate by 1%",
             2: "Increase drop rate by 2%",
             3: "Increase drop rate by 3%",
             4: "Increase drop rate by 4%",
             5: "Increase drop rate by 5%"
+            6: "Increase drop rate by 6%",
+            7: "Increase drop rate by 7%",
+            8: "Increase drop rate by 8%",
+            9: "Increase drop rate by 9%",
+            10: "Increase drop rate by 10%"
         },
-        ForagingMastery: {
-            1: "Increase Take, Chop and Mine uses by 1",
-            2: "Increase Take, Chop and Mine uses by 2",
-            3: "Increase Take, Chop and Mine uses by 3",
-            4: "Increase Take, Chop and Mine uses by 4",
-            5: "Increase Take, Chop and Mine uses by 5"
-        },
-        Loitering: {
-            1: "Costs 2 TP"
-        },
-        Lullaby: {
-            1: "15% chance to put enemies to sleep; costs 2 TP",
-            2: "20% chance to put enemies to sleep; costs 3 TP",
-            3: "25% chance to put enemies to sleep; costs 4 TP",
-            4: "30% chance to put enemies to sleep; costs 5 TP",
-            5: "35% chance to put enemies to sleep; costs 6 TP",
-            6: "40% chance to put enemies to sleep; costs 7 TP",
-            7: "45% chance to put enemies to sleep; costs 8 TP",
-            8: "50% chance to put enemies to sleep; costs 9 TP",
-            9: "55% chance to put enemies to sleep; costs 10 TP",
-            10: "60% chance to put enemies to sleep; costs 10 TP"
-        },
-        MomentOfInjury: {
-            1: "60% chance; costs 3 TP",
-            2: "63% chance; costs 3 TP",
-            3: "66% chance; costs 4 TP",
-            4: "70% chance; costs 4 TP",
-            5: "74% chance; costs 5 TP",
-            6: "78% chance; costs 6 TP",
-            7: "82% chance; costs 7 TP",
-            8: "86% chance; costs 8 TP",
-            9: "90% chance; costs 9 TP",
-            10: "100% chance; costs 10 TP"
-        },
-        MysterySeed: {
-            1: "20% chance to Bind enemies; costs 3 TP",
-            2: "24% chance to Bind enemies; costs 4 TP",
-            3: "28% chance to Bind enemies; costs 4 TP",
-            4: "32% chance to Bind enemies; costs 5 TP",
-            5: "36% chance to Bind enemies; costs 5 TP",
-            6: "40% chance to Bind enemies; costs 6 TP",
-            7: "44% chance to Bind enemies; costs 6 TP",
-            8: "48% chance to Bind enemies; costs 7 TP",
-            9: "52% chance to Bind enemies; costs 7 TP",
-            10: "60% chance to Bind enemies; costs 8 TP"
-        },
-        ReturnMaster: {
-            1: "Costs 13 TP"
-        },
-        SafeWalking: {
-            1: "Lasts for 15 steps; costs 12 TP",
-            2: "Lasts for 20 steps; costs 12 TP",
-            3: "Lasts for 25 steps; costs 13 TP",
-            4: "Lasts for 30 steps; costs 13 TP",
-            5: "Lasts for 40 steps; costs 14 TP"
-        },
-        SplitSpirit: {
-            1: "16% chance",
-            2: "18% chance",
-            3: "20% chance",
-            4: "22% chance",
-            5: "24% chance",
-            6: "27% chance",
-            7: "30% chance",
-            8: "33% chance",
-            9: "36% chance",
-            10: "40% chance"
-        },
-        TwoCropsAYear: {
-            1: "Restores 1 take, chop and mine use; costs 10 TP",
-            2: "Restores 2 take, chop and mine uses; costs 15 TP",
-            3: "Restores 3 take, chop and mine uses; costs 20 TP",
-            4: "Restores 4 take, chop and mine uses; costs 25 TP",
-            5: "Restores 5 take, chop and mine uses; costs 30 TP",
-            6: "Restores 6 take, chop and mine uses; costs 35 TP",
-            7: "Restores 7 take, chop and mine uses; costs 40 TP",
-            8: "Restores 8 take, chop and mine uses; costs 45 TP",
-            9: "Restores 9 take, chop and mine uses; costs 50 TP",
-            10: "Restores 10 take, chop and mine uses; costs 55 TP"
-        },
-        WildSmell: {
+        KeenNose: {
             1: "Increase chance by 1%",
             2: "Increase chance by 2%",
             3: "Increase chance by 3%",
@@ -2151,6 +2033,147 @@ Wildling: {
             8: "Increase chance by 8%",
             9: "Increase chance by 9%",
             10: "Increase chance by 10%"
+        },
+        DevilsCandle: {
+            1: "60% Healing Power, 105% Healing Power If Debuff Removed ; costs 5 TP",
+            2: "67% Healing Power, 119% Healing Power If Debuff Removed ; costs 5 TP",
+            3: "74% Healing Power, 132% Healing Power If Debuff Removed ; costs 6 TP",
+            4: "81% Healing Power, 146% Healing Power If Debuff Removed ; costs 6 TP",
+            5: "88% Healing Power, 161% Healing Power If Debuff Removed ; costs 7 TP",
+            6: "95% Healing Power, 177% Healing Power If Debuff Removed ; costs 7 TP",
+            7: "95% Healing Power,180% Healing Power If Debuff Removed ; costs 8 TP",
+            8: "102% Healing Power, 196% Healing Power If Debuff Removed ; costs 8 TP",
+            9: "109% Healing Power,213% Healing Power If Debuff Removed ; costs 9 TP",
+            10: "123% Healing Power, 246% Healing Power If Debuff Removed ; costs 9 TP"
+        },
+        DustDevil: {
+            1: "70% DMG, Blind Rate 42%, Enemy EVA +10%; costs 6 TP",
+            2: "77% DMG, Blind Rate 44%, Enemy EVA +9%; costs 6 TP",
+            3: "84% DMG, Blind Rate 46%, Enemy EVA +8%; costs 7 TP",
+            4: "92% DMG, Blind Rate 48%, Enemy EVA +7%; costs 7 TP",
+            5: "101% DMG, Blind Rate 50%, Enemy EVA +6%; costs 8 TP",
+            6: "109% DMG, Blind Rate 54%, Enemy EVA +5%; costs 8 TP",
+            7: "119% DMG, Blind Rate 58%, Enemy EVA +4%; costs 9 TP",
+            8: "129% DMG, Blind Rate 62%, Enemy EVA +3%; costs 9 TP",
+            9: "139% DMG, Blind Rate 66%, Enemy EVA +2%; costs 10 TP",
+            10: "150% DMG, Blind Rate 70%, Enemy EVA +1%s; costs 10 TP"
+        },
+   RottenEgg: {
+            1: "Enemy ATK -6%, Ailing Enemy ATK -16%; costs 6 TP",
+            2: "Enemy ATK -7%, Ailing Enemy ATK -17%; costs 6 TP",
+            3: "Enemy ATK -8%, Ailing Enemy ATK 18%; costs 7 TP",
+            4: "Enemy ATK -9%, Ailing Enemy ATK -19%; costs 7 TP",
+            5: "Enemy ATK -10%, Ailing Enemy ATK -20%; costs 8 TP",
+            6: "Enemy ATK -11%, Ailing Enemy ATK -21%; costs 8 TP",
+            7: "Enemy ATK -12%, Ailing Enemy ATK -22%; costs 9 TP",
+            8: "Enemy ATK -13%, Ailing Enemy ATK -23%; costs 9 TP",
+            9: "Enemy ATK -14%, Ailing Enemy ATK -24%; costs 10 TP",
+            10: "Enemy ATK -15%, Ailing Enemy ATK -25%; costs 10 TP"
+        },
+        Lullaby: {
+            1: "25% chance to put enemies to sleep; costs 2 TP",
+            2: "27% chance to put enemies to sleep; costs 3 TP",
+            3: "29% chance to put enemies to sleep; costs 4 TP",
+            4: "31% chance to put enemies to sleep; costs 5 TP",
+            5: "33% chance to put enemies to sleep; costs 6 TP",
+            6: "35% chance to put enemies to sleep; costs 7 TP",
+            7: "37% chance to put enemies to sleep; costs 8 TP",
+            8: "39% chance to put enemies to sleep; costs 9 TP",
+            9: "42% chance to put enemies to sleep; costs 10 TP",
+            10: "45% chance to put enemies to sleep; costs 10 TP"
+        },
+          MysterySeed: {
+            1: "55% chance to Bind enemies; costs 3 TP",
+            2: "60% chance to Bind enemies; costs 4 TP",
+            3: "65% chance to Bind enemies; costs 4 TP",
+            4: "70% chance to Bind enemies; costs 5 TP",
+            5: "75% chance to Bind enemies; costs 5 TP",
+            6: "80% chance to Bind enemies; costs 6 TP",
+            7: "85% chance to Bind enemies; costs 6 TP",
+            8: "90% chance to Bind enemies; costs 7 TP",
+            9: "95% chance to Bind enemies; costs 7 TP",
+            10: "100% chance to Bind enemies; costs 8 TP"
+        },
+        Offering: {
+            1: "85% Healing Power, 19% Self-DMG; costs 2 TP",
+            2: "92% Healing Power, 18% Self-DMG; costs 3 TP",
+            3: "99% Healing Power, 17% Self-DMG; costs 4 TP",
+            4: "106% Healing Power, 16% Self-DMG; costs 5 TP",
+            5: "113% Healing Power, 15% Self-DMG; costs 6 TP",
+            6: "120% Healing Power, 14% Self-DMG; costs 7 TP",
+            7: "127% Healing Power, 13% Self-DMG; costs 8 TP",
+            8: "134% Healing Power, 12% Self-DMG; costs 9 TP",
+            9: "141% Healing Power, 11% Self-DMG; costs 10 TP",
+            10: "148% Healing Power, 10% Self-DMG; costs 10 TP"
+        },
+        HarvestTime: {
+            1: "369% DMG; costs 3 TP",
+            2: "402% DMG; costs 3 TP",
+            3: "435% DMG; costs 4 TP",
+            4: "468% DMG; costs 4 TP",
+            5: "501% DMG; costs 5 TP",
+            6: "534% DMG; costs 6 TP",
+            7: "567% DMG; costs 7 TP",
+            8: "600% DMG; costs 8 TP",
+            9: "633% DMG; costs 9 TP",
+            10: "666% DMG; costs 10 TP"
+        },
+       Malediction: {
+            1: "103% DMG, Curse Rate 40% ; costs 3 TP",
+            2: "113% DMG, Curse Rate 45% ; costs 4 TP",
+            3: "123% DMG, Curse Rate 50% ; costs 4 TP",
+            4: "134% DMG, Curse Rate 55% ; costs 5 TP",
+            5: "144% DMG, Curse Rate 60% ; costs 5 TP",
+            6: "155% DMG, Curse Rate 65% ; costs 6 TP",
+            7: "166% DMG, Curse Rate 70% ; costs 6 TP",
+            8: "177% DMG, Curse Rate 75% ; costs 7 TP",
+            9: "189% DMG, Curse Rate 80% ; costs 7 TP",
+            10: "200% DMG, Curse Rate 85% ; costs 8 TP"
+        },
+    SafeWalking: {
+            1: "Lasts for 15 steps; costs 12 TP",
+            2: "Lasts for 20 steps; costs 12 TP",
+            3: "Lasts for 25 steps; costs 13 TP",
+            4: "Lasts for 30 steps; costs 13 TP",
+            5: "Lasts for 40 steps; costs 14 TP"
+        },
+        DevilsSnare: {
+            1: "103% DMG, 180% DMG If Buff Removed; costs 3 TP",
+            2: "113% DMG, 200% DMG If Buff Removed; costs 4 TP",
+            3: "123% DMG, 220% DMG If Buff Removed ; costs 4 TP",
+            4: "134% DMG, 242% DMG If Buff Removed ; costs 5 TP",
+            5: "144% DMG, 264% DMG If Buff Removed ; costs 5 TP",
+            6: "155% DMG, 289% DMG If Buff Removed ; costs 6 TP",
+            7: "166% DMG, 315% DMG If Buff Removed ; costs 6 TP",
+            8: "177% DMG, 341% DMG If Buff Removed ; costs 7 TP",
+            9: "189% DMG, 370% DMG If Buff Removed ; costs 7 TP",
+            10: "200% DMG, 400% DMG If Buff Removed ; costs 8 TP"
+        },
+        ThornBind: {
+            1: "70% DMG, Bind Rate 24%; costs 3 TP",
+            2: "77% DMG, Bind Rate 26%; costs 4 TP",
+            3: "84% DMG, Bind Rate 28%; costs 4 TP",
+            4: "92% DMG, Bind Rate 30%; costs 5 TP",
+            5: "101% DMG, Bind Rate 32%; costs 5 TP",
+            6: "109% DMG, Bind Rate 34%; costs 6 TP",
+            7: "119% DMG, Bind Rate 36%; costs 6 TP",
+            8: "129% DMG, Bind Rate 38%; costs 7 TP",
+            9: "139% DMG, Bind Rate 40%; costs 7 TP",
+            10: "150% DMG, Bind Rate 42%; costs 8 TP"
+        },
+         Mesmerize: {
+            1: "1% DMG; costs 25 TP",
+            2: "1% DMG; costs 23 TP",
+            3: "1% DMG; costs 21 TP",
+            4: "1% DMG; costs 18 TP",
+            5: "1% DMG; costs 15 TP"
+        },
+        Harvestry: {
+            1: "Number of Chop/Mine/Take +1",
+            2: "Number of Chop/Mine/Take +2",
+            3: "Number of Chop/Mine/Take +3",
+            4: "Number of Chop/Mine/Take +4",
+            5: "Number of Chop/Mine/Take +5"
         }
     },
     Shogun: {
