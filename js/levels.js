@@ -1754,36 +1754,17 @@ Wildling: {
             9: "Physical DMG to Higher HP +50%%",
             10: "Physical DMG to Higher HP +55%"
         },
-        CrossbowMastery: {
+        BoltMastery: {
             1: "Increase damage by 2%",
-            2: "Increase damage by 3%",
-            3: "Increase damage by 4%",
-            4: "Increase damage by 5%",
-            5: "Increase damage by 6%",
-            6: "Increase damage by 7%",
-            7: "Increase damage by 8%",
-            8: "Increase damage by 9%",
-            9: "Increase damage by 10%",
-            10: "Increase damage by 11%"
-        },
-        SurefireConcentration: {
-            1: "Increase HIT by 5%",
-            2: "Increase HIT by 10%",
-            3: "Increase HIT by 15%",
-            4: "Increase HIT by 20%",
-            5: "Increase HIT by 35%"
-        },
-        NightVision: {
-            1: "Increase critical hit rate by 15%",
-            2: "Increase critical hit rate by 17%",
-            3: "Increase critical hit rate by 19%",
-            4: "Increase critical hit rate by 22%",
-            5: "Increase critical hit rate by 25%",
-            6: "Increase critical hit rate by 28%",
-            7: "Increase critical hit rate by 31%",
-            8: "Increase critical hit rate by 34%",
-            9: "Increase critical hit rate by 37%",
-            10: "Increase critical hit rate by 40%"
+            2: "Increase damage by 4%",
+            3: "Increase damage by 6%",
+            4: "Increase damage by 8%",
+            5: "Increase damage by 10%",
+            6: "Increase damage by 12%",
+            7: "Increase damage by 14%",
+            8: "Increase damage by 16%",
+            9: "Increase damage by 18%",
+            10: "Increase damage by 20%"
         },
         Extend: {
             1: "Restore 10 HP",
@@ -1797,7 +1778,19 @@ Wildling: {
             9: "Restore 90 HP",
             10: "Restore 100 HP"
         },
-        DoubleAction: {
+        NightVision: {
+            1: "Increase critical hit rate by 14%",
+            2: "Increase critical hit rate by 18%",
+            3: "Increase critical hit rate by 22%",
+            4: "Increase critical hit rate by 26%",
+            5: "Increase critical hit rate by 30%",
+            6: "Increase critical hit rate by 34%",
+            7: "Increase critical hit rate by 38%",
+            8: "Increase critical hit rate by 42%",
+            9: "Increase critical hit rate by 46%",
+            10: "Increase critical hit rate by 50%"
+        },
+        MultiShot: {
             1: "10% chance",
             2: "12% chance",
             3: "14% chance",
@@ -1809,135 +1802,157 @@ Wildling: {
             9: "27% chance",
             10: "30% chance"
         },
-        HeavyShot: {
-            1: "140% damage; costs 5 TP",
-            2: "143% damage; costs 5 TP",
-            3: "147% damage; costs 6 TP",
-            4: "150% damage; costs 6 TP",
-            5: "153% damage; costs 7 TP",
-            6: "156% damage; costs 7 TP",
-            7: "160% damage; costs 8 TP",
-            8: "165% damage; costs 8 TP",
-            9: "170% damage; costs 9 TP",
-            10: "175% damage; costs 9 TP"
+        ProperForm: {
+            1: "Skill ACC +10%",
+            2: "Skill ACC +17%",
+            3: "Skill ACC +24%",
+            4: "Skill ACC +32%",
+            5: "Skill ACC +40%"
+         
         },
-        RearMortarBombardment: {
-            1: "225% damage from front row; 75% damage from back row; costs 9 TP",
-            2: "235% damage from front row; 76% damage from back row; costs 12 TP",
-            3: "246% damage from front row; 77% damage from back row; costs 15 TP",
-            4: "257% damage from front row; 78% damage from back row; costs 18 TP",
-            5: "276% damage from front row; 79% damage from back row; costs 21 TP",
-            6: "296% damage from front row; 80% damage from back row; costs 24 TP",
-            7: "315% damage from front row; 81% damage from back row; costs 27 TP",
-            8: "336% damage from front row; 82% damage from back row; costs 30 TP",
-            9: "356% damage from front row; 83% damage from back row; costs 33 TP",
-            10: "382% damage from front row; 85% damage from back row; costs 36 TP"
+            SagittariusArrow: {
+            1: "189% DMG, Uses weapon attribute; costs 5 TP",
+            2: "201% DMG, Uses weapon attribute; costs 5 TP",
+            3: "213% DMG, Uses weapon attribute; costs 6 TP",
+            4: "225% DMG, Uses weapon attribute; costs 6 TP",
+            5: "237% DMG, Uses weapon attribute; costs 7 TP",
+            6: "249% DMG, Uses weapon attribute; costs 7 TP",
+            7: "261% DMG, Uses weapon attribute; costs 8 TP",
+            8: "273% DMG, Uses weapon attribute; costs 8 TP",
+            9: "285% DMG, Uses weapon attribute; costs 9 TP",
+            10: "297% DMG, Uses weapon attribute; costs 9 TP"
         },
-        SnipeI: {
-            1: "150% damage; costs 3 TP",
-            2: "157% damage; costs 3 TP",
-            3: "164% damage; costs 4 TP",
-            4: "171% damage; costs 4 TP",
-            5: "178% damage; costs 5 TP",
-            6: "185% damage; costs 5 TP",
-            7: "192% damage; costs 6 TP",
-            8: "199% damage; costs 6 TP",
-            9: "206% damage; costs 7 TP",
-            10: "220% damage; costs 7 TP"
-        },
-        SnipeII: {
-            1: "150% damage; costs 3 TP",
-            2: "157% damage; costs 3 TP",
-            3: "164% damage; costs 4 TP",
-            4: "171% damage; costs 4 TP",
-            5: "178% damage; costs 5 TP",
-            6: "185% damage; costs 5 TP",
-            7: "192% damage; costs 6 TP",
-            8: "199% damage; costs 6 TP",
-            9: "206% damage; costs 7 TP",
-            10: "220% damage; costs 7 TP"
-        },
-        RandomShot: {
-            1: "100% damage; 2 - 3 hits; costs 7 TP",
-            2: "102% damage; 2 - 3 hits; costs 8 TP",
-            3: "104% damage; 2 - 3 hits; costs 9 TP",
-            4: "107% damage; 2 - 4 hits; costs 10 TP",
-            5: "110% damage; 2 - 4 hits; costs 11 TP",
-            6: "113% damage; 2 - 4 hits; costs 12 TP",
-            7: "116% damage; 2 - 5 hits; costs 13 TP",
-            8: "119% damage; 2 - 5 hits; costs 14 TP",
-            9: "122% damage; 2 - 5 hits; costs 15 TP",
-            10: "125% damage; 3 - 5 hits; costs 16 TP"
-        },
-        FireBarrage: {
-            1: "80% FIRE damage; costs 8 TP",
-            2: "85% FIRE damage; costs 8 TP",
-            3: "90% FIRE damage; costs 9 TP",
-            4: "95% FIRE damage; costs 9 TP",
-            5: "100% FIRE damage; costs 10 TP",
-            6: "105% FIRE damage; costs 11 TP",
-            7: "110% FIRE damage; costs 12 TP",
-            8: "115% FIRE damage; costs 13 TP",
-            9: "120% FIRE damage; costs 14 TP",
-            10: "125% FIRE damage; costs 15 TP"
-        },
-        FreezeBarrage: {
-            1: "80% ICE damage; costs 8 TP",
-            2: "85% ICE damage; costs 8 TP",
-            3: "90% ICE damage; costs 9 TP",
-            4: "95% ICE damage; costs 9 TP",
-            5: "100% ICE damage; costs 10 TP",
-            6: "105% ICE damage; costs 11 TP",
-            7: "110% ICE damage; costs 12 TP",
-            8: "115% ICE damage; costs 13 TP",
-            9: "120% ICE damage; costs 14 TP",
-            10: "125% ICE damage; costs 15 TP"
-        },
-        ThunderBarrage: {
-            1: "80% THUNDER damage; costs 8 TP",
-            2: "85% THUNDER damage; costs 8 TP",
-            3: "90% THUNDER damage; costs 9 TP",
-            4: "95% THUNDER damage; costs 9 TP",
-            5: "100% THUNDER damage; costs 10 TP",
-            6: "105% THUNDER damage; costs 11 TP",
-            7: "110% THUNDER damage; costs 12 TP",
-            8: "115% THUNDER damage; costs 13 TP",
-            9: "120% THUNDER damage; costs 14 TP",
-            10: "125% THUNDER damage; costs 15 TP"
-        },
-        HighSpeedAPBullet: {
-            1: "170% damage; costs 11 TP",
-            2: "175% damage; costs 11 TP",
-            3: "180% damage; costs 12 TP",
-            4: "185% damage; costs 12 TP",
-            5: "190% damage; costs 13 TP",
-            6: "195% damage; costs 13 TP",
-            7: "200% damage; costs 14 TP",
-            8: "205% damage; costs 14 TP",
-            9: "210% damage; costs 15 TP",
-            10: "215% damage; costs 15 TP"
-        },
-        Rainfall: {
-            1: "140% damage; costs 14 TP",
-            2: "160% damage; costs 16 TP",
-            3: "190% damage; costs 18 TP",
-            4: "220% damage; costs 20 TP",
-            5: "250% damage; costs 22 TP"
-        },
-        IlluminatingShot: {
-            1: "Increase accuracy by 5%; costs 6 TP",
-            2: "Increase accuracy by 10%; costs 7 TP",
-            3: "Increase accuracy by 15%; costs 8 TP",
-            4: "Increase accuracy by 30%; costs 9 TP",
-            5: "Increase accuracy by 50%; costs 10 TP"
-        },
-        SmokeBomb: {
+
+         SmokeGrenade: {
             1: "30% chance to blind; costs 6 TP",
             2: "40% chance to blind; costs 7 TP",
             3: "50% chance to blind; costs 8 TP",
             4: "65% chance to blind; costs 9 TP",
             5: "80% chance to blind; costs 10 TP"
+       
         },
+        Apollo'sWrath: {
+            1: "135% DMG; costs 3 TP",
+            2: "145% DMG; costs 3 TP",
+            3: "155% DMG; costs 4 TP",
+            4: "165% DMG; costs 4 TP",
+            5: "180% DMG; costs 5 TP",
+            6: "195% DMG; costs 5 TP",
+            7: "210% DMG; costs 6 TP",
+            8: "225% DMG; costs 6 TP",
+            9: "240% DMG; costs 7 TP",
+            10: "255% DMG; costs 7 TP"
+          
+        },
+        HeavyShot: {
+            1: "140% damage; costs 3 TP",
+            2: "145% damage; costs 3 TP",
+            3: "150% damage; costs 4 TP",
+            4: "155% damage; costs 4 TP",
+            5: "160% damage; costs 5 TP",
+            6: "165% damage; costs 5 TP",
+            7: "170% damage; costs 6 TP",
+            8: "175% damage; costs 6 TP",
+            9: "180% damage; costs 7 TP",
+            10: "185% damage; costs 7 TP"
+        },
+        Artemis'Embrace: {
+            1: "135% DMG; costs 3 TP",
+            2: "145% DMG; costs 3 TP",
+            3: "155% DMG; costs 4 TP",
+            4: "165% DMG; costs 4 TP",
+            5: "180% DMG; costs 5 TP",
+            6: "195% DMG; costs 5 TP",
+            7: "210% DMG; costs 6 TP",
+            8: "225% DMG; costs 6 TP",
+            9: "240% DMG; costs 7 TP",
+            10: "255% DMG; costs 7 TP"
+        },
+        Eros'Carnage: {
+            1: "135% DMG; costs 3 TP",
+            2: "145% DMG; costs 3 TP",
+            3: "155% DMG; costs 4 TP",
+            4: "165% DMG; costs 4 TP",
+            5: "180% DMG; costs 5 TP",
+            6: "195% DMG; costs 5 TP",
+            7: "210% DMG; costs 6 TP",
+            8: "225% DMG; costs 6 TP",
+            9: "240% DMG; costs 7 TP",
+            10: "255% DMG; costs 7 TP"
+        },
+        ArmorPiercer: {
+            1: "189% DMG; costs 8 TP",
+            2: "201% DMG; costs 8 TP",
+            3: "213% DMG; costs 9 TP",
+            4: "225% DMG; costs 9 TP",
+            5: "237% DMG; costs 10 TP",
+            6: "249% DMG; costs 11 TP",
+            7: "261% DMG; costs 12 TP",
+            8: "273% DMG; costs 13 TP",
+            9: "285% DMG; costs 14 TP",
+            10: "297% DMG; costs 15 TP"
+        },
+        FireBarrage: {
+            1: "80% DMG; costs 7 TP",
+            2: "90% DMG; costs 8 TP",
+            3: "100% DMG; costs 9 TP",
+            4: "110% DMG; costs 10 TP",
+            5: "120% DMG; costs 11 TP",
+            6: "130% DMG; costs 12 TP",
+            7: "140% DMG; costs 13 TP",
+            8: "150% DMG; costs 14 TP",
+            9: "160% DMG; costs 15 TP",
+            10: "170% DMG; costs 16 TP"
+        },
+        FrontMortar: {
+            1: "115% DMG, 224% Front Row DMG; costs 7 TP",
+            2: "120% DMG, 240% Front Row DMG; costs 8 TP",
+            3: "125% DMG, 256% Front Row DMG; costs 9 TP",
+            4: "130% DMG, 273% Front Row DMG; costs 10 TP",
+            5: "135% DMG, 290% Front Row DMGG; costs 11 TP",
+            6: "140% DMG, 308% Front Row DMG; costs 12 TP",
+            7: "145% DMG, 326% Front Row DMG; costs 13 TP",
+            8: "150% DMG, 345% Front Row DMG; costs 14 TP",
+            9: "155% DMG, 364% Front Row DMG; costs 15 TP",
+            10: "160% DMG, 384% Front Row DMG; costs 16 TP"
+        },
+        IceBarrage: {
+            1: "80% DMG; costs 7 TP",
+            2: "90% DMG; costs 8 TP",
+            3: "100% DMG; costs 9 TP",
+            4: "110% DMG; costs 10 TP",
+            5: "120% DMG; costs 11 TP",
+            6: "130% DMG; costs 12 TP",
+            7: "140% DMG; costs 13 TP",
+            8: "150% DMG; costs 14 TP",
+            9: "160% DMG; costs 15 TP",
+            10: "170% DMG; costs 16 TP"
+        },
+        VoltBarrage: {
+            1: "80% DMG; costs 7 TP",
+            2: "90% DMG; costs 8 TP",
+            3: "100% DMG; costs 9 TP",
+            4: "110% DMG; costs 10 TP",
+            5: "120% DMG; costs 11 TP",
+            6: "130% DMG; costs 12 TP",
+            7: "140% DMG; costs 13 TP",
+            8: "150% DMG; costs 14 TP",
+            9: "160% DMG; costs 15 TP",
+            10: "170% DMG; costs 16 TP"
+        },
+        Cloudbuster: {
+            1: "40% DMG; costs 7 TP",
+            2: "43% DMG; costs 8 TP",
+            3: "46% DMG; costs 9 TP",
+            4: "49% DMG; costs 10 TP",
+            5: "52% DMG; costs 11 TP",
+            6: "55% DMG; costs 12 TP",
+            7: "58% DMG; costs 13 TP",
+            8: "61% DMG; costs 14 TP",
+            9: "65% DMG; costs 15 TP",
+            10: "69 DMG; costs 16 TP"
+        },
+    
         Ambush: {
             1: "Have a 25% chance for a preemptive attack for 40 steps; costs 6 TP",
             2: "Have a 30% chance for a preemptive attack for 45 steps; costs 7 TP",
