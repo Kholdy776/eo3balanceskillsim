@@ -644,7 +644,7 @@ var levels = {
             7: "174% DMG, Enemy ATK -16%; costs 8 TP",
             8: "181% DMG, Enemy ATK -17%; costs 8 TP",
             9: "188% DMG, Enemy ATK -18%; costs 9 TP",
-            10: 195% DMG, Enemy ATK -20%; costs 9 TP"
+            10: "195% DMG, Enemy ATK -20%; costs 9 TP"
         },
        Aegis: {
             1: "Row, Elemental DMG Taken -10%; costs 5 TP",
