@@ -204,7 +204,7 @@ var levels = {
             6: "Ally, Healing Power 270%; costs 12 TP",
             7: "Ally, Healing Power 290%; costs 15 TP",
             8: "Ally, Healing Power 310%; costs 15 TP",
-            9:  "Ally, Healing Power 330%; costs 15 TP",
+            9: "Ally, Healing Power 330%; costs 15 TP",
             10: "Ally, Healing Power 350%; costs 16 TP"
         },
         Inspire: {
@@ -641,7 +641,7 @@ var levels = {
             9: "188% DMG, Enemy ATK -18%; costs 9 TP",
             10: "195% DMG, Enemy ATK -20%; costs 9 TP"
         },
-       Aegis: {
+        Aegis: {
             1: "Row, Elemental DMG Taken -10%; costs 5 TP",
             2: "Row, Elemental DMG Taken -17%; costs 5 TP",
             3: "Row, Elemental DMG Taken -24%; costs 6 TP",
@@ -653,7 +653,7 @@ var levels = {
             9: "Row, Elemental DMG Taken -66%; costs 9 TP",
             10: "Party, Elemental DMG Taken -52% ↓; costs 9 TP"
         },
-       Hoplon: {
+        Hoplon: {
             1: "Row, Physical DMG Taken -18%; costs 7 TP",
             2: "Row, Physical DMG Taken -22%; costs 7 TP",
             3: "Row, Physical DMG Taken -26%; costs 8 TP",
@@ -689,14 +689,14 @@ var levels = {
             9: "180% DMG, Lifesteal 40%; costs 16 TP",
             10: "185% DMG, Lifesteal 42%; costs 16 TP"
         },
-          Bodyguard: {
+        Bodyguard: {
             1: "DMG Taken -30%; costs 12 TP",
             2: "DMG Taken -37%; costs 12 TP",
             3: "DMG Taken -44%; costs 12 TP",
             4: "DMG Taken -51%; costs 12 TP",
             5: "DMG Taken -58%; costs 12 TP"
         },
-       Overwatch: {
+        Overwatch: {
             1: "50% Self HP Loss; costs 12 TP",
             2: "50% Self HP Loss; costs 12 TP",
             3: "50% Self HP Loss; costs 12 TP",
@@ -725,7 +725,7 @@ var levels = {
             10: "20% Healing Power as TP"
         },
         RapierMastery: {
-             1: "Increase damage by 2%",
+            1: "Increase damage by 2%",
             2: "Increase damage by 4%",
             3: "Increase damage by 6%",
             4: "Increase damage by 8%",
@@ -737,7 +737,7 @@ var levels = {
             10: "Increase damage by 20%"
         },
         GunMastery: {
-              1: "Increase damage by 2%",
+            1: "Increase damage by 2%",
             2: "Increase damage by 4%",
             3: "Increase damage by 6%",
             4: "Increase damage by 8%",
@@ -748,7 +748,7 @@ var levels = {
             9: "Increase damage by 18%",
             10: "Increase damage by 20%"
         },
-       Swashbuckling: {
+        Swashbuckling: {
             1: "Activation Rate 32%, Max Hits 2 (SS: 5)",
             2: "Activation Rate 34%, Max Hits 2 (SS: 5)",
             3: "Activation Rate 36%, Max Hits 2 (SS: 5)",
@@ -779,7 +779,7 @@ var levels = {
             4: "Increases limit gauge by 8",
             5: "Increases limit gauge by 10"
         },
-      EagleEye: {
+        EagleEye: {
             1: "Enemy DEF -10%",
             2: "Enemy DEF -15%",
             3: "Enemy DEF -20%",
@@ -798,7 +798,7 @@ var levels = {
             9: "155% DMG, Slash Resistance -45%, Max Hits 4, 3 Turn Debuff ; costs 12 TP",
             10: "165% DMG, Slash Resistance -50%, Max Hits 5, 3 Turn Debuff; costs 13 TP"
         },
-       RapidFire: {
+        RapidFire: {
             1: "60% DMG, Pierce Resistance -5%; costs 6 TP",
             2: "63% DMG, Pierce Resistance -10%; costs 6 TP",
             3: "66% DMG, Pierce Resistance -15%; costs 7 TP",
@@ -870,7 +870,7 @@ var levels = {
             9: "236% DMG, Head Bind Rate 58%; costs 12 TP",
             10: "250% DMG, Head Bind Rate 60%; costs 13 TP"
         },
-       ChaseSaber: {
+        ChaseSaber: {
             1: "80% DMG, Max 3 Chases; costs 6 TP",
             2: "85% DMG, Max 3 Chases; costs 6 TP",
             3: "90% DMG, Max 3 Chases; costs 7 TP",
@@ -906,7 +906,7 @@ var levels = {
             9: "133% DMG, Max 5 Chases; costs 12 TP",
             10: "142% DMG, Max 5 Chases; costs 13 TP"
         },
-       Pincushion: {
+        Pincushion: {
             1: "100% DMG, AGI*3% Bonus DMG, 1-2 Hits; costs 6 TP",
             2: "103% DMG, AGI*3% Bonus DMG, 1-2 Hits; costs 6 TP",
             3: "107% DMG, AGI*3% Bonus DMG, 1-2 Hits; costs 7 TP",
@@ -959,7 +959,7 @@ var levels = {
         Katon: {
             1: "60% DMG, Head Bind Rate 40%; costs 12 TP",
             2: "67% DMG, Head Bind Rate 42%; costs 12 TP",
-            3:  "74% DMG, Head Bind Rate 44%; costs 12 TP",
+            3: "74% DMG, Head Bind Rate 44%; costs 12 TP",
             4: "82% DMG, Head Bind Rate 46%; costs 12 TP",
             5: "91% DMG, Head Bind Rate 48%; costs 12 TP",
             6: "99% DMG, Head Bind Rate 50%; costs 12 TP",
@@ -980,7 +980,7 @@ var levels = {
             9: "Restore 18 TP",
             10: "Restore 20 TP"
         },
-         Hyouton: {
+        Hyouton: {
             1: "60% DMG, Leg Bind Rate 40%; costs 12 TP",
             2: "67% DMG, Leg Bind Rate 42%; costs 12 TP",
             3: "74% DMG, Leg Bind Rate 44%; costs 12 TP",
@@ -1007,7 +1007,7 @@ var levels = {
         Raiton: {
             1: "60% DMG, Arm Bind Rate 40%; costs 12 TP",
             2: "67% DMG, Arm Bind Rate 42%; costs 12 TP",
-            3:  "74% DMG, Arm Bind Rate 44%; costs 12 TP",
+            3: "74% DMG, Arm Bind Rate 44%; costs 12 TP",
             4: "82% DMG, Arm Bind Rate 46%; costs 12 TP",
             5: "91% DMG, Arm Bind Rate 48%; costs 12 TP",
             6: "99% DMG, Arm Bind Rate 50; costs 12 TP%",
@@ -1016,14 +1016,14 @@ var levels = {
             9: "129% DMG, Arm Bind Rate 56; costs 12 TP%",
             10: "140% DMG, Arm Bind Rate 60; costs 12 TP%"
         },
-      Otori: {
+        Otori: {
             1: "Draw Rate +7, Action Speed +5; costs 12 TP",
             2: "Draw Rate +12, Action Speed +10; costs 12 TP",
             3: "Draw Rate +17, Action Speed +15; costs 12 TP",
             4: "Draw Rate +23, Action Speed +20; costs 12 TP",
             5: "Draw Rate +30, Action Speed +25; costs 12 TP"
         },
-          NinpoSmoke: {
+        NinpoSmoke: {
             1: "EVA Rate +30% , 3 Turns, 50% Self-DMG; costs 12 TP",
             2: "EVA Rate +30% , 3 Turns, 50% Self-DMG; costs 12 TP",
             3: "EVA Rate +30% , 3 Turns, 50% Self-DMG; costs 12 TP",
@@ -1045,7 +1045,7 @@ var levels = {
             9: "70% DMG Without Ailment, 137% Ailing Enemy ; costs 8 TP",
             10: "72% DMG Without Ailment, 144% Ailing Enemy; costs 8 TP"
         },
-       NinpoNeedles: {
+        NinpoNeedles: {
             1: "104% DMG, Sleep Rate 33%; costs 3 TP",
             2: "113% DMG, Sleep Rate 36%; costs 3 TP",
             3: "123% DMG, Sleep Rate 39%; costs 4 TP",
@@ -1081,7 +1081,7 @@ var levels = {
             9: "133% DMG, Poison Rate 57%, 4-5 Hits; costs 9 TP",
             10: "147% DMG, Poison Rate 60%, 4-5 Hits; costs 9 TP"
         },
-          ShadowBind: {
+        ShadowBind: {
             1: "140% DMG, Paralysis Rate 33%; costs 3 TP",
             2: "145% DMG, Paralysis Rate 36%; costs 3 TP",
             3: "150% DMG, Paralysis Rate 39%; costs 4 TP",
@@ -1182,14 +1182,14 @@ var levels = {
             9: "Party, 18 TP",
             10: "Party, 16 TP"
         },
-         BloodReturn: {
+        BloodReturn: {
             1: "Party, 15 TP Restored, 25% Self-damage",
             2: "Party, 20 TP Restored, 25% Self-damage",
             3: "Party, 25 TP Restored, 25% Self-damage",
             4: "Party, 30 TP Restored, 25% Self-damage",
             5: "Party, 35 TP Restored, 25% Self-damage"
         },
-         Sanctify: {
+        Sanctify: {
             1: "All, Elemental Resistance +10%,",
             2: "All, Elemental Resistance +12%",
             3: "All, Elemental Resistance +14%e",
@@ -1208,7 +1208,7 @@ var levels = {
             9: "135% DMG, Stun Rate 57% , 4-5 Hits; costs 12 TP",
             10: "140% DMG, Stun Rate 60% , 4-5 Hits; costs 13 TP"
         },
-             Healing: {
+        Healing: {
             1: "85% Healing Power; costs 4 TP",
             2: "92% Healing Power; costs 5 TP",
             3: "99% Healing Power; costs 6 TP",
@@ -1251,7 +1251,7 @@ var levels = {
             9: "340% DMG; costs 25 TP ",
             10: "360% DMG; costs 25 TP "
         },
-       Retaliate: {
+        Retaliate: {
             1: "95% DMG  ; costs 6 TP",
             2: "104% DMG  ; costs 5 TP",
             3: "113% DMG  ; costs 4 TP",
@@ -1282,7 +1282,7 @@ var levels = {
             4: "150 HP, Action Speed -50; costs 5 TP",
             5: "Full HP, Action Speed -0; costs 6 TP"
         },
-       AuraBlast: {
+        AuraBlast: {
             1: "97% DMG, 150% Back Row DMG; costs 4 TP",
             2: "103% DMG, 164% Back Row DMG; costs 5 TP",
             3: "109% DMG, 179% Back Row DMG; costs 7 TP",
@@ -1338,7 +1338,7 @@ var levels = {
             5: "Reduce damage by 90%; lasts for 80 steps; costs 8 TP"
         }
     },
-       Zodiac: {
+    Zodiac: {
         EthericReturn: {
             1: "0% Healing Power as TP",
             2: "1% Healing Power as TP",
