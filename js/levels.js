@@ -1539,49 +1539,68 @@ var levels = {
             10: "144% ALMIGHTY DAMAGE, costs 60 TP"
         }
     },
-    Wildling: {
-        BeastHeart: {
-            1: "Increase Max HP by 10%; ATK by 20%; DEF by 5%",
-            2: "Increase Max HP by 14%; ATK by 26%; DEF by 10%",
-            3: "Increase Max HP by 18%; ATK by 32%; DEF by 15%",
-            4: "Increase Max HP by 22%; ATK by 38%; DEF by 20%",
-            5: "Increase Max HP by 26%; ATK by 44%; DEF by 25%",
-            6: "Increase Max HP by 30%; ATK by 50%; DEF by 30%",
-            7: "Increase Max HP by 35%; ATK by 56%; DEF by 35%",
-            8: "Increase Max HP by 40%; ATK by 62%; DEF by 40%",
-            9: "Increase Max HP by 45%; ATK by 68%; DEF by 45%",
-            10: "Increase Max HP by 50%; ATK by 75%; DEF by 50%"
+Wildling: {
+        NaturePact: {
+            1: "50% chance to be protected by beast and be healed for 10 HP",
+            2: "60% chance to be protected by beast and be healed for 20 HP",
+            3: "70% chance to be protected by beast and be healed for 30 HP",
+            4: "80% chance to be protected by beast and be healed for 40 HP",
+            5: "90% chance to be protected by beast and be healed for 50 HP",
+            6: "100% chance to be protected by beast and be healed for 50 HP",
+            7: "100% chance to be protected by beast and be healed for 100 HP",
+            8: "100% chance to be protected by beast and be healed for 150 HP",
+            9: "100% chance to be protected by beast and be healed for 200 HP",
+            10: "100% chance to be protected by beast and healed for full HP"
         },
-        AnimalFriendship: {
-            1: "10% chance to replace beast and be healed for 10 HP",
-            2: "14% chance to replace beast and be healed for 20 HP",
-            3: "18% chance to replace beast and be healed for 30 HP",
-            4: "22% chance to replace beast and be healed for 50 HP",
-            5: "26% chance to replace beast and be healed for 70 HP",
-            6: "30% chance to replace beast and be healed for 100 HP",
-            7: "34% chance to replace beast and be healed for 130 HP",
-            8: "38% chance to replace beast and be healed for 160 HP",
-            9: "42% chance to replace beast and be healed for 200 HP",
-            10: "50% chance to replace beast and be fully healed"
+        WildMastery: {
+            1: "Increase beast ailment infliction rate by an additional 5%",
+            2: "Increase beast ailment infliction rate by an additional 6%",
+            3: "Increase beast ailment infliction rate by an additional 7%",
+            4: "Increase beast ailment infliction rate by an additional 8%",
+            5: "Increase beast ailment infliction rate by an additional 9%",
+            6: "Increase beast ailment infliction rate by an additional 10%",
+            7: "Increase beast ailment infliction rate by an additional 11%",
+            8: "Increase beast ailment infliction rate by an additional 12%",
+            9: "Increase beast ailment infliction rate by an additional 13%",
+            10: "Increase beast ailment infliction rate by an additional 15%"
         },
-        BeastKingMastery: {
-            1: "Increase the chance by 5%",
-            2: "Increase the chance by 6%",
-            3: "Increase the chance by 7%",
-            4: "Increase the chance by 8%",
-            5: "Increase the chance by 9%",
-            6: "Increase the chance by 10%",
-            7: "Increase the chance by 11%",
-            8: "Increase the chance by 12%",
-            9: "Increase the chance by 13%",
-            10: "Increase the chance by 15%"
+        BeastSoul: {
+            1: "Increase beast's Max HP by 10%; ATK by 20%; DEF by 5%",
+            2: "Increase beast's Max HP by 14%; ATK by 26%; DEF by 5%",
+            3: "Increase beast's Max HP by 18%; ATK by 32%; DEF by 5%",
+            4: "Increase beast's Max HP by 22%; ATK by 38%; DEF by 5%",
+            5: "Increase beast's Max HP by 26%; ATK by 44%; DEF by 5%",
+            6: "Increase beast's Max HP by 30%; ATK by 50%; DEF by 30%",
+            7: "Increase beast's Max HP by 35%; ATK by 56%; DEF by 30%",
+            8: "Increase beast's Max HP by 40%; ATK by 62%; DEF by 30%",
+            9: "Increase beast's Max HP by 45%; ATK by 68%; DEF by 30%",
+            10: "Increase beast's Max HP by 50%; ATK by 75%; DEF by 50%"
         },
-        BeastReturn: {
-            1: "Costs 8 TP",
-            2: "Costs 6 TP",
-            3: "Costs 4 TP",
-            4: "Costs 2 TP",
-            5: "Costs 1 TP"
+        Sacrifice: {
+            1: "12% chance of activation",
+            2: "19% chance of activation",
+            3: "26% chance of activation",
+            4: "33% chance of activation",
+            5: "40% chance of activation"
+        },
+        SpiritFang: {
+            1: "77% damage; costs 22 TP",
+            2: "84% damage; costs 24 TP",
+            3: "91% damage; costs 26 TP",
+            4: "99% damage; costs 28 TP",
+            5: "108% damage; costs 30 TP",
+            6: "117% damage; costs 32 TP",
+            7: "127% damage; costs 34 TP",
+            8: "137% damage; costs 36 TP",
+            9: "148% damage; costs 38 TP",
+            10: "160% damage; costs 40 TP"
+        },
+        PrimalEnergy: {
+            1: "Decrease resistance by 8%; costs 8 TP",
+            2: "Decrease resistance by 10%; costs 10 TP",
+            3: "Decrease resistance by 12%; costs 12 TP",
+            4: "Decrease resistance by 14%; costs 14 TP",
+            5: "Decrease resistance by 16%; costs 16 TP"
         },
         BeastRoar: {
             1: "Decreases enemy ATK by 5%; costs 8 TP",
@@ -1590,177 +1609,150 @@ var levels = {
             4: "Decreases enemy ATK by 16%; costs 14 TP",
             5: "Decreases enemy ATK by 20%; costs 16 TP"
         },
-        BeastsOath: {
-            1: "Decrease chance by 30%",
-            2: "Decrease chance by 35%",
-            3: "Decrease chance by 40%",
-            4: "Decrease chance by 45%",
-            5: "Decrease chance by 50%"
-        },
-        Drumming: {
+        PrimalDrums: {
             1: "Decreases enemy DEF by 10%; costs 8 TP",
             2: "Decreases enemy DEF by 15%; costs 10 TP",
             3: "Decreases enemy DEF by 20%; costs 12 TP",
             4: "Decreases enemy DEF by 25%; costs 14 TP",
             5: "Decreases enemy DEF by 30%; costs 16 TP"
         },
-        SacrificeI: {
-            1: "10% chance",
-            2: "12% chance",
-            3: "14% chance",
-            4: "16% chance",
-            5: "18% chance",
-            6: "22% chance",
-            7: "26% chance",
-            8: "30% chance",
-            9: "35% chance",
-            10: "40% chance"
+        DismissBeast: {
+            1: "Action Speed +150; costs 5 TP",
+            2: "Action Speed -50; costs 1 TP"
         },
-        SacrificeII: {
-            1: "10% chance",
-            2: "12% chance",
-            3: "14% chance",
-            4: "16% chance",
-            5: "18% chance",
-            6: "22% chance",
-            7: "26% chance",
-            8: "30% chance",
-            9: "35% chance",
-            10: "40% chance"
+        CallBird: {
+            1: "Initial attack deals 80% damage and 41% chance to Bind Head; 40 base HP; 220% damage; 25% chance to Bind Head; Costs 15 TP",
+            2: "Initial attack deals 85% damage and 43% chance to Bind Head; 45 base HP; 240% damage; 27% chance to Bind Head; Costs 15 TP",
+            3: "Initial attack deals 90% damage and 45% chance to Bind Head; 50 base HP; 260% damage; 29% chance to Bind Head; Costs 15 TP",
+            4: "Initial attack deals 95% damage and 48% chance to Bind Head; 55 base HP; 280% damage; 32% chance to Bind Head; Costs 15 TP",
+            5: "Initial attack deals 100% damage and 51% chance to Bind Head; 60 base HP; 300% damage; 35% chance to Bind Head; Costs 15 TP",
+            6: "Initial attack deals 105% damage and 54% chance to Bind Head; 66 base HP; 320% damage; 38% chance to Bind Head; Costs 15 TP",
+            7: "Initial attack deals 110% damage and 57% chance to Bind Head; 72 base HP; 340% damage; 41% chance to Bind Head; Costs 15 TP",
+            8: "Initial attack deals 115% damage and 60% chance to Bind Head; 78 base HP; 360% damage; 44% chance to Bind Head; Costs 15 TP",
+            9: "Initial attack deals 120% damage and 63% chance to Bind Head; 84 base HP; 380% damage; 47% chance to Bind Head; Costs 15 TP",
+            10: "Initial attack deals 130% damage and 66% chance to Bind Head; 90 base HP; 400% damage; 50% chance to Bind Head; Costs 15 TP"
         },
-        SummonBird: {
-            1: "40 base HP; 80% damage; 25% chance to Bind Head; Costs 15 TP",
-            2: "45 base HP; 85% damage; 27% chance to Bind Head; Costs 15 TP",
-            3: "50 base HP; 90% damage; 29% chance to Bind Head; Costs 18 TP",
-            4: "55 base HP; 95% damage; 32% chance to Bind Head; Costs 18 TP",
-            5: "60 base HP; 100% damage; 35% chance to Bind Head; Costs 21 TP",
-            6: "66 base HP; 105% damage; 38% chance to Bind Head; Costs 21 TP",
-            7: "72 base HP; 110% damage; 41% chance to Bind Head; Costs 24 TP",
-            8: "78 base HP; 115% damage; 44% chance to Bind Head; Costs 24 TP",
-            9: "84 base HP; 120% damage; 47% chance to Bind Head; Costs 27 TP",
-            10: "90 base HP; 130% damage; 50% chance to Bind Head; Costs 27 TP"
+        CallSnake: {
+            1: "Initial attack deals 80% damage and 41% chance to Bind Arms; 40 base HP; 220% damage; 25% chance to Bind Arms; Costs 15 TP",
+            2: "Initial attack deals 85% damage and 43% chance to Bind Arms; 45 base HP; 240% damage; 27% chance to Bind Arms; Costs 15 TP",
+            3: "Initial attack deals 90% damage and 45% chance to Bind Arms; 50 base HP; 260% damage; 29% chance to Bind Arms; Costs 15 TP",
+            4: "Initial attack deals 95% damage and 48% chance to Bind Arms; 55 base HP; 280% damage; 32% chance to Bind Arms; Costs 15 TP",
+            5: "Initial attack deals 100% damage and 51% chance to Bind Arms; 60 base HP; 300% damage; 35% chance to Bind Arms; Costs 15 TP",
+            6: "Initial attack deals 105% damage and 54% chance to Bind Arms; 66 base HP; 320% damage; 38% chance to Bind Arms; Costs 15 TP",
+            7: "Initial attack deals 110% damage and 57% chance to Bind Arms; 72 base HP; 340% damage; 41% chance to Bind Arms; Costs 15 TP",
+            8: "Initial attack deals 115% damage and 60% chance to Bind Arms; 78 base HP; 360% damage; 44% chance to Bind Arms; Costs 15 TP",
+            9: "Initial attack deals 120% damage and 63% chance to Bind Arms; 84 base HP; 380% damage; 47% chance to Bind Arms; Costs 15 TP",
+            10: "Initial attack deals 130% damage and 66% chance to Bind Arms; 90 base HP; 400% damage; 50% chance to Bind Arms; Costs 15 TP"
         },
-        SummonElephant: {
-            1: "110 base HP; 75% damage; 25% chance to Confuse; Costs 21 TP",
-            2: "125 base HP; 80% damage; 27% chance to Confuse; Costs 21 TP",
-            3: "140 base HP; 85% damage; 29% chance to Confuse; Costs 24 TP",
-            4: "155 base HP; 90% damage; 32% chance to Confuse; Costs 24 TP",
-            5: "170 base HP; 95% damage; 35% chance to Confuse; Costs 27 TP",
-            6: "185 base HP; 100% damage; 38% chance to Confuse; Costs 27 TP",
-            7: "200 base HP; 105% damage; 41% chance to Confuse; Costs 30 TP",
-            8: "215 base HP; 110% damage; 44% chance to Confuse; Costs 30 TP",
-            9: "230 base HP; 115% damage; 47% chance to Confuse; Costs 33 TP",
-            10: "250 base HP; 120% damage; 50% chance to Confuse; Costs 33 TP"
+        CallMole: {
+            1: "Initial attack deals 80% damage and 41% chance to Bind Legs; 40 base HP; 220% damage; 25% chance to Bind Legs; Costs 15 TP",
+            2: "Initial attack deals 85% damage and 43% chance to Bind Legs; 45 base HP; 240% damage; 27% chance to Bind Legs; Costs 15 TP",
+            3: "Initial attack deals 90% damage and 45% chance to Bind Legs; 50 base HP; 260% damage; 29% chance to Bind Legs; Costs 15 TP",
+            4: "Initial attack deals 95% damage and 48% chance to Bind Legs; 55 base HP; 280% damage; 32% chance to Bind Legs; Costs 15 TP",
+            5: "Initial attack deals 100% damage and 51% chance to Bind Legs; 60 base HP; 300% damage; 35% chance to Bind Legs; Costs 15 TP",
+            6: "Initial attack deals 105% damage and 54% chance to Bind Legs; 66 base HP; 320% damage; 38% chance to Bind Legs; Costs 15 TP",
+            7: "Initial attack deals 110% damage and 57% chance to Bind Legs; 72 base HP; 340% damage; 41% chance to Bind Legs; Costs 15 TP",
+            8: "Initial attack deals 115% damage and 60% chance to Bind Legs; 78 base HP; 360% damage; 44% chance to Bind Legs; Costs 15 TP",
+            9: "Initial attack deals 120% damage and 63% chance to Bind Legs; 84 base HP; 380% damage; 47% chance to Bind Legs; Costs 15 TP",
+            10: "Initial attack deals 130% damage and 66% chance to Bind Legs; 90 base HP; 400% damage; 50% chance to Bind Legs; Costs 15 TP"
         },
-        SummonHypnoOwl: {
-            1: "70 base HP; 25% chance to cause Sleep; Costs 18 TP",
-            2: "80 base HP; 27% chance to cause Sleep; Costs 18 TP",
-            3: "88 base HP; 29% chance to cause Sleep; Costs 21 TP",
-            4: "98 base HP; 32% chance to cause Sleep; Costs 21 TP",
-            5: "105 base HP; 35% chance to cause Sleep; Costs 24 TP",
-            6: "112 base HP; 38% chance to cause Sleep; Costs 24 TP",
-            7: "119 base HP; 41% chance to cause Sleep; Costs 27 TP",
-            8: "126 base HP; 44% chance to cause Sleep; Costs 27 TP",
-            9: "133 base HP; 47% chance to cause Sleep; Costs 30 TP",
-            10: "140 base HP; 50% chance to cause Sleep; Costs 30 TP"
+        CallSlime: {
+            1: "160 base HP; Reduce damage dealt to ally row by 10%; Costs 24 TP",
+            2: "184 base HP; Reduce damage dealt to ally row by 14%; Costs 24 TP",
+            3: "200 base HP; Reduce damage dealt to ally row by 18%; Costs 24 TP",
+            4: "224 base HP; Reduce damage dealt to ally row by 22%; Costs 24 TP",
+            5: "240 base HP; Reduce damage dealt to ally row by 26%; Costs 24 TP",
+            6: "256 base HP; Reduce damage dealt to ally party by 30%; Costs 24 TP",
+            7: "272 base HP; Reduce damage dealt to ally party by 34%; Costs 24 TP",
+            8: "288 base HP; Reduce damage dealt to ally party by 38%; Costs 24 TP",
+            9: "304 base HP; Reduce damage dealt to ally party by 42%; Costs 24 TP",
+            10: "304 base HP; Reduce damage dealt to ally party by 46%; Costs 24 TP"
         },
-        SummonLionKing: {
-            1: "160 base HP; 130% or 160% damage; 30% chance to Paralyze or Petrify; Costs 27 TP",
-            2: "184 base HP; 135% or 170% damage; 33% chance to Paralyze or Petrify; Costs 27 TP",
-            3: "200 base HP; 140% or 180% damage; 36% chance to Paralyze or Petrify; Costs 30 TP",
-            4: "224 base HP; 145% or 190% damage; 39% chance to Paralyze or Petrify; Costs 30 TP",
-            5: "240 base HP; 150% or 200% damage; 42% chance to Paralyze or Petrify; Costs 33 TP",
-            6: "256 base HP; 160% or 210% damage; 45% chance to Paralyze or Petrify; Costs 33 TP",
-            7: "272 base HP; 170% or 220% damage; 48% chance to Paralyze or Petrify; Costs 36 TP",
-            8: "288 base HP; 180% or 230% damage; 51% chance to Paralyze or Petrify; Costs 36 TP",
-            9: "304 base HP; 190% or 240% damage; 54% chance to Paralyze or Petrify; Costs 39 TP",
-            10: "320 base HP; 200% or 250% damage; 57% chance to Paralyze or Petrify; Costs 39 TP"
+        CallCow: {
+            1: "Initial attack hits 2 times, each for 65% damage and 20% infliction chance; 100 base HP; 115% damage; 2 hits; 15% infliction chance; Costs 21 TP",
+            2: "Initial attack hits 2 times, each for 68% damage and 20% infliction chance; 125 base HP; 115% damage; 2 hits; 15% infliction chance; Costs 21 TP",
+            3: "Initial attack hits 2-3 times, each for 70% damage and 20% infliction chance; 140 base HP; 115% damage; 2-3 hits; 15% infliction chance; Costs 21 TP",
+            4: "Initial attack hits 2-3 times, each for 73% damage and 20% infliction chance; 155 base HP; 115% damage; 2-3 hits; 15% infliction chance; Costs 21 TP",
+            5: "Initial attack hits 2-3 times, each for 76% damage and 20% infliction chance; 170 base HP; 115% damage; 2-3 hits; 15% infliction chance; Costs 21 TP",
+            6: "Initial attack hits 2-4 times, each for 78% damage and 20% infliction chance; 185 base HP; 115% damage; 2-4 hits; 15% infliction chance; Costs 21 TP",
+            7: "Initial attack hits 2-4 times, each for 81% damage and 20% infliction chance; 200 base HP; 115% damage; 2-4 hits; 15% infliction chance; Costs 21 TP",
+            8: "Initial attack hits 2-4 times, each for 84% damage and 20% infliction chance; 215 base HP; 115% damage; 2-4 hits; 15% infliction chance; Costs 21 TP",
+            9: "Initial attack hits 2-4 times, each for 87% damage and 20% infliction chance; 230 base HP; 115% damage; 2-4 hits; 15% infliction chance; Costs 21 TP",
+            10: "Initial attack hits 2-5 times each for 90% damage and 20% infliction chance; 250 base HP; 115% damage; 2-5 hits; 15% infliction chance; Costs 21 TP"
         },
-        SummonMole: {
-            1: "40 base HP; 80% damage; 25% chance to Bind Legs; Costs 15 TP",
-            2: "45 base HP; 85% damage; 27% chance to Bind Legs; Costs 15 TP",
-            3: "50 base HP; 90% damage; 29% chance to Bind Legs; Costs 18 TP",
-            4: "55 base HP; 95% damage; 32% chance to Bind Legs; Costs 18 TP",
-            5: "60 base HP; 100% damage; 35% chance to Bind Legs; Costs 21 TP",
-            6: "66 base HP; 105% damage; 38% chance to Bind Legs; Costs 21 TP",
-            7: "72 base HP; 110% damage; 41% chance to Bind Legs; Costs 24 TP",
-            8: "78 base HP; 115% damage; 44% chance to Bind Legs; Costs 24 TP",
-            9: "84 base HP; 120% damage; 47% chance to Bind Legs; Costs 27 TP",
-            10: "90 base HP; 130% damage; 50% chance to Bind Legs; Costs 27 TP"
+        CallOwl: {
+            1: "Initial attack has a 41% infliction rate; 100 base HP; 25% infliction rate; Costs 18 TP",
+            2: "Initial attack has a 43% infliction rate; 115 base HP; 27% infliction rate; Costs 18 TP",
+            3: "Initial attack has a 45% infliction rate; 125 base HP; 29% infliction rate; Costs 18 TP",
+            4: "Initial attack has a 48% infliction rate; 140 base HP; 32% infliction rate; Costs 18 TP",
+            5: "Initial attack has a 51% infliction rate; 150 base HP; 35% infliction rate; Costs 18 TP",
+            6: "Initial attack has a 54% infliction rate; 160 base HP; 38% infliction rate; Costs 18 TP",
+            7: "Initial attack has a 57% infliction rate; 170 base HP; 41% infliction rate; Costs 18 TP",
+            8: "Initial attack has a 60% infliction rate; 180 base HP; 44% infliction rate; Costs 18 TP",
+            9: "Initial attack has a 63% infliction rate; 190 base HP; 47% infliction rate; Costs 18 TP",
+            10: "Initial attack has a 66% infliction rate; 200 base HP; 50% infliction rate; Costs 18 TP"
         },
-        SummonRagingBull: {
-            1: "100 base HP; 65% damage; 2 hits; 25% chance to Paralyze; Costs 21 TP",
-            2: "115 base HP; 68% damage; 2 hits; 27% chance to Paralyze; Costs 21 TP",
-            3: "125 base HP; 70% damage; 2-3 hits; 29% chance to Paralyze; Costs 24 TP",
-            4: "140 base HP; 73% damage; 2-3 hits; 32% chance to Paralyze; Costs 24 TP",
-            5: "150 base HP; 76% damage; 2-3 hits; 35% chance to Paralyze; Costs 27 TP",
-            6: "160 base HP; 78% damage; 2-4 hits; 38% chance to Paralyze; Costs 27 TP",
-            7: "170 base HP; 81% damage; 2-4 hits; 41% chance to Paralyze; Costs 30 TP",
-            8: "180 base HP; 84% damage; 2-4 hits; 44% chance to Paralyze; Costs 30 TP",
-            9: "190 base HP; 87% damage; 2-4 hits; 47% chance to Paralyze; Costs 33 TP",
-            10: "200 base HP; 90% damage; 2-5 hits; 50% chance to Paralyze; Costs 33 TP"
+        CallPasaran: {
+            1: "Explosion deals 220% damage and has a 41% infliction rate; Costs 21 TP",
+            2: "Explosion deals 240% damage and has a 43% infliction rate; Costs 21 TP",
+            3: "Explosion deals 260% damage and has a 45% infliction rate; Costs 21 TP",
+            4: "Explosion deals 280% damage and has a 48% infliction rate; Costs 21 TP",
+            5: "Explosion deals 300% damage and has a 51% infliction rate; Costs 21 TP",
+            6: "Explosion deals 320% damage and has a 54% infliction rate; Costs 21 TP",
+            7: "Explosion deals 340% damage and has a 57% infliction rate; Costs 21 TP",
+            8: "Explosion deals 360% damage and has a 60% infliction rate; Costs 21 TP",
+            9: "Explosion deals 380% damage and has a 63% infliction rate; Costs 21 TP",
+            10: "Explosion deals 400% damage and has a 66% infliction rate; Costs 21 TP"
         },
-        SummonSlime: {
-            1: "20 base HP; 120% damage; 40% chance to cause Rot for 30 damage; Costs 27 TP",
-            2: "22 base HP; 125% damage; 40% chance to cause Rot for 60 damage; Costs 27 TP",
-            3: "24 base HP; 130% damage; 40% chance to cause Rot for 90 damage; Costs 30 TP",
-            4: "26 base HP; 135% damage; 40% chance to cause Rot for 120 damage; Costs 30 TP",
-            5: "28 base HP; 140% damage; 40% chance to cause Rot for 150 damage; Costs 33 TP",
-            6: "30 base HP; 150% damage; 40% chance to cause Rot for 180 damage; Costs 33 TP",
-            7: "32 base HP; 160% damage; 40% chance to cause Rot for 210 damage; Costs 36 TP",
-            8: "34 base HP; 170% damage; 40% chance to cause Rot for 240 damage; Costs 36 TP",
-            9: "36 base HP; 180% damage; 40% chance to cause Rot for 270 damage; Costs 39 TP",
-            10: "40 base HP; 190% damage; 40% chance to cause Rot for 300 damage; Costs 39 TP"
+        CallTiger: {
+            1: "Initial attack has a 10% infliction rate; 160 base HP; 120% damage and a 10% infliction rate; Costs 24 TP",
+            2: "Initial attack has a 12% infliction rate; 184 base HP; 125% damage and a 10% infliction rate; Costs 24 TP",
+            3: "Initial attack has a 14% infliction rate; 200 base HP; 130% damage and a 10% infliction rate; Costs 24 TP",
+            4: "Initial attack has a 16% infliction rate; 224 base HP; 140% damage and a 10% infliction rate; Costs 24 TP",
+            5: "Initial attack has a 18% infliction rate; 240 base HP; 150% damage and a 10% infliction rate; Costs 24 TP",
+            6: "Initial attack has a 20% infliction rate; 256 base HP; 160% damage and a 10% infliction rate; Costs 24 TP",
+            7: "Initial attack has a 22% infliction rate; 272 base HP; 170% damage and a 10% infliction rate; Costs 24 TP",
+            8: "Initial attack has a 24% infliction rate; 288 base HP; 180% damage and a 10% infliction rate; Costs 24 TP",
+            9: "Initial attack has a 26% infliction rate; 304 base HP; 190% damage and a 10% infliction rate; Costs 24 TP",
+            10: "Initial attack has a 28% infliction rate; 320 base HP; 200% damage and a 10% infliction rate; Costs 24 TP"
         },
-        SummonSnake: {
-            1: "40 base HP; 80% damage; 25% chance to Bind Arms; Costs 15 TP",
-            2: "45 base HP; 85% damage; 27% chance to Bind Arms; Costs 15 TP",
-            3: "50 base HP; 90% damage; 29% chance to Bind Arms; Costs 18 TP",
-            4: "55 base HP; 95% damage; 32% chance to Bind Arms; Costs 18 TP",
-            5: "60 base HP; 100% damage; 35% chance to Bind Arms; Costs 21 TP",
-            6: "66 base HP; 105% damage; 38% chance to Bind Arms; Costs 21 TP",
-            7: "72 base HP; 110% damage; 41% chance to Bind Arms; Costs 24 TP",
-            8: "78 base HP; 115% damage; 44% chance to Bind Arms; Costs 24 TP",
-            9: "84 base HP; 120% damage; 47% chance to Bind Arms; Costs 27 TP",
-            10: "90 base HP; 130% damage; 50% chance to Bind Arms; Costs 27 TP"
+        CallLion: {
+            1: "160 base HP; Aggro rate +5; Costs 24 TP",
+            2: "184 base HP; Aggro rate +7; Costs 24 TP",
+            3: "200 base HP; Aggro rate +9; Costs 24 TP",
+            4: "224 base HP; Aggro rate +11; Costs 24 TP",
+            5: "240 base HP; Aggro rate +13; Costs 24 TP",
+            6: "256 base HP; Aggro rate +15; Costs 24 TP",
+            7: "272 base HP; Aggro rate +17; Costs 24 TP",
+            8: "288 base HP; Aggro rate +19; Costs 24 TP",
+            9: "304 base HP; Aggro rate +21; Costs 24 TP",
+            10: "320 base HP; Aggro rate +23; Costs 24 TP"
         },
-        SummonTiger: {
-            1: "160 base HP; 5% chance to cause Death; Costs 24 TP",
-            2: "184 base HP; 6% chance to cause Death; Costs 24 TP",
-            3: "200 base HP; 7% chance to cause Death; Costs 27 TP",
-            4: "224 base HP; 8% chance to cause Death; Costs 27 TP",
-            5: "240 base HP; 10% chance to cause Death; Costs 30 TP",
-            6: "256 base HP; 12% chance to cause Death; Costs 30 TP",
-            7: "272 base HP; 14% chance to cause Death; Costs 33 TP",
-            8: "288 base HP; 16% chance to cause Death; Costs 33 TP",
-            9: "304 base HP; 18% chance to cause Death; Costs 36 TP",
-            10: "320 base HP; 20% chance to cause Death; Costs 36 TP"
-        },
-        SummonVenomfly: {
-            1: "20 base HP; 60% damage; 40% chance to Poison for 50 damage; Costs 18 TP",
-            2: "22 base HP; 65% damage; 40% chance to Poison for 80 damage; Costs 18 TP",
-            3: "24 base HP; 70% damage; 40% chance to Poison for 110 damage; Costs 21 TP",
-            4: "26 base HP; 75% damage; 40% chance to Poison for 140 damage; Costs 21 TP",
-            5: "28 base HP; 80% damage; 40% chance to Poison for 170 damage; Costs 24 TP",
-            6: "30 base HP; 90% damage; 40% chance to Poison for 200 damage; Costs 24 TP",
-            7: "32 base HP; 100% damage; 40% chance to Poison for 230 damage; Costs 27 TP",
-            8: "34 base HP; 110% damage; 40% chance to Poison for 270 damage; Costs 27 TP",
-            9: "36 base HP; 120% damage; 40% chance to Poison for 310 damage; Costs 30 TP",
-            10: "40 base HP; 130% damage; 40% chance to Poison for 350 damage; Costs 30 TP"
+        CallOoze: {
+            1: "110 base HP; Reduce damage dealt to ally row by 10%; Costs 24 TP",
+            2: "125 base HP; Reduce damage dealt to ally row by 13%; Costs 24 TP",
+            3: "140 base HP; Reduce damage dealt to ally row by 17%; Costs 24 TP",
+            4: "155 base HP; Reduce damage dealt to ally row by 19%; Costs 24 TP",
+            5: "170 base HP; Reduce damage dealt to ally row by 22%; Costs 24 TP",
+            6: "185 base HP; Reduce damage dealt to ally party by 25%; Costs 24 TP",
+            7: "200 base HP; Reduce damage dealt to ally party by 28%; Costs 24 TP",
+            8: "215 base HP; Reduce damage dealt to ally party by 31%; Costs 24 TP",
+            9: "230 base HP; Reduce damage dealt to ally party by 34%; Costs 24 TP",
+            10: "250 base HP; Reduce damage dealt to ally party by 37%; Costs 24 TP"
         }
     },
     Arbalist: {
         GiantKill: {
-            1: "Increase damage by 20%",
-            2: "Increase damage by 23%",
-            3: "Increase damage by 27%",
-            4: "Increase damage by 31%",
-            5: "Increase damage by 35%",
-            6: "Increase damage by 39%",
-            7: "Increase damage by 43%",
-            8: "Increase damage by 47%",
-            9: "Increase damage by 51%",
-            10: "Increase damage by 55%"
+            1: "Physical DMG to Highest HP +15%",
+            2: "Physical DMG to Highest HP +19%",
+            3: "Physical DMG to Higher HP +23%",
+            4: "Physical DMG to Higher HP +27%",
+            5: "Physical DMG to Higher HP +31%",
+            6: "Physical DMG to Higher HP +35%",
+            7: "Physical DMG to Higher HP +40%",
+            8: "Physical DMG to Higher HP +45%",
+            9: "Physical DMG to Higher HP +50%%",
+            10: "Physical DMG to Higher HP +55%"
         },
         CrossbowMastery: {
             1: "Increase damage by 2%",
