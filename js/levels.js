@@ -544,7 +544,7 @@ var levels = {
             2: "All DEF +4%",
             3: "All DEF +5%",
             4: "All DEF +6%",
-            5: All DEF +7%",
+            5: "All DEF +7%",
             6: "All DEF +8%",
             7: "All DEF +9%",
             8: "All DEF +11%",
@@ -1019,7 +1019,7 @@ var levels = {
             7: "109% DMG, Arm Bind Rate 52; costs 12 TP%",
             8: "119% DMG, Arm Bind Rate 54; costs 12 TP%",
             9: "129% DMG, Arm Bind Rate 56; costs 12 TP%",
-            10: "140% DMG, Arm Bind Rate 60; costs 12 TP%
+            10: "140% DMG, Arm Bind Rate 60; costs 12 TP%"
         },
       Otori: {
             1: "Draw Rate +7, Action Speed +5; costs 12 TP",
