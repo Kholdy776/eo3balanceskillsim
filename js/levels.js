@@ -145,7 +145,7 @@ var levels = {
             7: "Heals 30 HP",
             8: "Heals 34 HP",
             9: "Heals 38 HP",
-            10: "Heals 42 HP",
+            10: "Heals 42 HP"
         },
         NobilityProof: {
             1: "15/1% Healing Power for HP/TP",
@@ -245,7 +245,7 @@ var levels = {
             4: "Row, Ice DMG +8%, Action Speed +40; Costs 6 TP",
             5: "Party, Ice DMG +10%, Action Speed +50; Costs 4 TP"
         },
-      ShockArms: {
+        ShockArms: {
             1: "Ally, Volt DMG +2%, Action Speed +10; Costs 12 TP",
             2: "Row, Volt DMG +4%, Action Speed +20; Costs 10 TP",
             3: "Row, Volt DMG +6%, Action Speed +30; Costs 8 TP",
@@ -264,7 +264,7 @@ var levels = {
             9: "205% DMG, Stun Rate 55%; costs 13 TP",
             10: "215% DMG, Stun Rate 60%; costs 14 TP"
         },
-       PreventOrder: {
+        PreventOrder: {
             1: "Row, 16 TP",
             2: "Row, 14 TP",
             3: "Row, 12 TP",
@@ -282,7 +282,6 @@ var levels = {
             8: "Row, Healing Power 75%; Costs 12 TP",
             9: "Row, Healing Power 80%; Costs 12 TP",
             10: "Party, Healing Power 70% ↓; Costs 12 TP"
-       
         },
         Knighthood: {
             1: "Costs 10 TP",
@@ -329,7 +328,7 @@ var levels = {
             9: "Increase damage by 18%",
             10: "Increase damage by 20%"
         },
-       Avenger: {
+        Avenger: {
             1: "HP +50/TP +25",
             2: "HP +60/TP +30",
             3: "HP +70/TP +35",
@@ -365,7 +364,7 @@ var levels = {
             9: "Activation Rate 90%",
             10: "Activation Rate 100%"
         },
-         IronWill: {
+        IronWill: {
             1: "0% Healing Power as TP",
             2: "4% Healing Power as TP",
             3: "8% Healing Power as TP",
@@ -396,7 +395,7 @@ var levels = {
             9: "Enemy DEF -14%, Ailing Enemy DEF -51%; costs 12 TP",
             10: "Enemy DEF -15%, Ailing Enemy DEF -55%; costs 12 TP"
         },
-       GrandColosseum: {
+        GrandColosseum: {
             1: "All, ACC +5, Ailment/Bind ACC +5; Costs 10 TP",
             2: "All, ACC +10, Ailment/Bind ACC +6; Costs 8 TP",
             3: "All, ACC +15, Ailment/Bind ACC +7; Costs 6 TP",
@@ -427,7 +426,7 @@ var levels = {
             9: "131% DMG, 4-5 Hits; costs 8 TP",
             10: "135% DMG, 4-5 Hits; costs 8 TP"
         },
-         BindCut: {
+        BindCut: {
             1: "150% DMG, Leg Bind Rate 40%; costs 8 TP",
             2: "152% DMG, Leg Bind Rate 42%; costs 8 TP",
             3: "154% DMG, Leg Bind Rate 44%; costs 9 TP",
@@ -475,7 +474,7 @@ var levels = {
             9: "152% DMG, Confuse Rate 46%; costs 2 TP",
             10: "155% DMG, Confuse Rate 50%; costs 2 TP"
         },
-      ArmBreaker: {
+        ArmBreaker: {
             1: "150% DMG, Arm Bind Rate 40%; costs 8 TP",
             2: "152% DMG, Arm Bind Rate 42%; costs 8 TP",
             3: "154% DMG, Arm Bind Rate 44%; costs 9 TP",
@@ -487,7 +486,7 @@ var levels = {
             9: "178% DMG, Arm Bind Rate 56%; costs 12 TP",
             10: "185% DMG, Arm Bind Rate 60%; costs 12 TP"
         },
-       FreezingBlow: {
+        FreezingBlow: {
             1: "150% DMG; costs 8 TP",
             2: "158% DMG; costs 8 TP",
             3: "166% DMG; costs 9 TP",
@@ -511,7 +510,6 @@ var levels = {
             9: "45% DMG, 8-9 Hits, ACC -34; costs 12 TP",
             10: "45% DMG, 9 Hits, ACC -36; costs 12 TP"
         }
-    
     },
     Hoplite: {
         Guardian: {
@@ -525,9 +523,8 @@ var levels = {
             8: "All DEF +21%",
             9: "All DEF +23%",
             10: "All DEF +25%"
-            
         },
-       SpearMastery: {
+        SpearMastery: {
             1: "Increase damage by 2%",
             2: "Increase damage by 4%",
             3: "Increase damage by 6%",
@@ -539,7 +536,7 @@ var levels = {
             9: "Increase damage by 18%",
             10: "Increase damage by 20%"
         },
-         ShieldMastery: {
+        ShieldMastery: {
             1: "All DEF +3%",
             2: "All DEF +4%",
             3: "All DEF +5%",
@@ -551,13 +548,12 @@ var levels = {
             9: "All DEF +13%",
             10: "All DEF +15%"
         },
-       Parry: {
+        Parry: {
             1: "4% chance to nullify an attack",
             2: "7% chance to nullify an attack",
             3: "10% chance to nullify an attack",
             4: "14% chance to nullify an attack",
             5: "18% chance to nullify an attack"
-        
         },
         Rhongomyniad: {
             1: "105% DMG; costs 8 TP",
@@ -601,16 +597,15 @@ var levels = {
             3: "Draw Rate +17, Action Speed +15; Costs 6 TP",
             4: "Draw Rate +23, Action Speed +20; Costs 4 TP",
             5: "Draw Rate +30, Action Speed +25; Costs 2 TP"
-       
         },
-       ShrugOff: {
+        ShrugOff: {
             1: "40% Healing Power when not parried",
             2: "50% Healing Power when not parried",
             3: "60% Healing Power when not parried",
             4: "70% Healing Power when not parried",
             5: "80% Healing Power when not parried"
         },
-        GáeBolg: {
+        GaeBolg: {
             1: "150% DMG, Paralysis/Death Rate 40%; costs 4 TP",
             2: "158% DMG, Paralysis/Death Rate 42%; costs 4 TP",
             3: "166% DMG, Paralysis/Death Rate 44%; costs 5 TP",
@@ -634,7 +629,7 @@ var levels = {
             9: "214% DMG; costs 8 TP",
             10: "222% DMG; costs 8 TP"
         },
-        Geirskögul: {
+        Geirskogul: {
             1: "132% DMG, Enemy ATK -10%; costs 5 TP",
             2: "139% DMG, Enemy ATK -11%; costs 5 TP",
             3: "146% DMG, Enemy ATK -12%; costs 6 TP",
@@ -988,7 +983,7 @@ var levels = {
          Hyouton: {
             1: "60% DMG, Leg Bind Rate 40%; costs 12 TP", 
             2: "67% DMG, Leg Bind Rate 42%; costs 12 TP", 
-            3:  "74% DMG, Leg Bind Rate 44%; costs 12 TP",
+            3: "74% DMG, Leg Bind Rate 44%; costs 12 TP",
             4: "82% DMG, Leg Bind Rate 46%; costs 12 TP",
             5: "91% DMG, Leg Bind Rate 48%; costs 12 TP",
             6: "99% DMG, Leg Bind Rate 50%; costs 12 TP",
@@ -1268,7 +1263,7 @@ var levels = {
             9: "R167% DMG  ; costs 12 TP",
             10: "176% DMG  ; costs 10 TP"
         },
-        Merciful Heal: {
+        MercifulHeal: {
             1: "All, 42% Healing Power, Threshold 6%",
             2: "All, 46% Healing Power, Threshold 7%",
             3: "All, 50% Healing Power, Threshold 8%",
