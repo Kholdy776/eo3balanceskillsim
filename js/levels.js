@@ -2177,69 +2177,76 @@ Wildling: {
         }
     },
     Shogun: {
-        DualWield: {
-            1: "Increase damage when dual wielding by 20%",
-            2: "Increase damage when dual wielding by 23%",
-            3: "Increase damage when dual wielding by 26%",
-            4: "Increase damage when dual wielding by 29%",
-            5: "Increase damage when dual wielding by 32%",
-            6: "Increase damage when dual wielding by 35%",
-            7: "Increase damage when dual wielding by 38%",
-            8: "Increase damage when dual wielding by 41%",
-            9: "Increase damage when dual wielding by 45%",
-            10: "Increase damage when dual wielding by 50%"
+        SecondSword: {
+            1: "Increase damage when dual wielding by 19%",
+            2: "Increase damage when dual wielding by 28%",
+            3: "Increase damage when dual wielding by 37%",
+            4: "Increase damage when dual wielding by 46%",
+            5: "Increase damage when dual wielding by 55%",
+            6: "Increase damage when dual wielding by 64%",
+            7: "Increase damage when dual wielding by 73%",
+            8: "Increase damage when dual wielding by 82%",
+            9: "Increase damage when dual wielding by 91%",
+            10: "Increase damage when dual wielding by 100%"
         },
         KatanaMastery: {
             1: "Increase damage by 2%",
-            2: "Increase damage by 3%",
-            3: "Increase damage by 4%",
-            4: "Increase damage by 5%",
-            5: "Increase damage by 6%",
-            6: "Increase damage by 7%",
-            7: "Increase damage by 8%",
-            8: "Increase damage by 9%",
-            9: "Increase damage by 10%",
-            10: "Increase damage by 11%"
+            2: "Increase damage by 4%",
+            3: "Increase damage by 6%",
+            4: "Increase damage by 8%",
+            5: "Increase damage by 10%",
+            6: "Increase damage by 12%",
+            7: "Increase damage by 14%",
+            8: "Increase damage by 16%",
+            9: "Increase damage by 18%",
+            10: "Increase damage by 20%"
         },
         Endure: {
             1: "40% chance",
-            2: "50% chance",
-            3: "60% chance",
-            4: "70% chance",
-            5: "80% chance"
+            2: "55% chance",
+            3: "70% chance",
+            4: "85% chance",
+            5: "100% chance"
         },
-        BloodstainedSpear: {
-            1: "Increase ATK by 10% when an ally dies",
-            2: "Increase ATK by 13% when an ally dies",
-            3: "Increase ATK by 16% when an ally dies",
-            4: "Increase ATK by 19% when an ally dies",
-            5: "Increase ATK by 22% when an ally dies",
-            6: "Increase ATK by 25% when an ally dies",
-            7: "Increase ATK by 28% when an ally dies",
-            8: "Increase ATK by 31% when an ally dies",
-            9: "Increase ATK by 35% when an ally dies",
-            10: "Increase ATK by 40% when an ally dies"
+        UpperStance: {
+            1: "DMG +160%",
+            2: "DMG +180%",
+            3: "DMG +200%",
+            4: "DMG +220%",
+            5: "DMG +240%"
         },
-        RestoreWill: {
-            1: "All allies healed by 10 HP",
-            2: "All allies healed by 20 HP",
-            3: "All allies healed by 30 HP",
-            4: "All allies healed by 40 HP",
-            5: "All allies healed by 50 HP",
-            6: "All allies healed by 60 HP",
-            7: "All allies healed by 70 HP",
-            8: "All allies healed by 80 HP",
-            9: "All allies healed by 90 HP",
-            10: "All allies healed by 100 HP"
+         BloodyLance: {
+            1: "Increase ATK by 10% when user deals the final blow",
+            2: "Increase ATK by 13% when user deals the final blow",
+            3: "Increase ATK by 16% when user deals the final blow",
+            4: "Increase ATK by 19% when user deals the final blow",
+            5: "Increase ATK by 22% when user deals the final blow",
+            6: "Increase ATK by 25% when user deals the final blow",
+            7: "Increase ATK by 28% when user deals the final blow",
+            8: "Increase ATK by 31% when user deals the final blow",
+            9: "Increase ATK by 35% when user deals the final blow",
+            10: "Increase ATK by 40% when user deals the final blow"
         },
-        SuicideAssistant: {
-            1: "30% chance to instantly kill an ally or enemy when they are below 10% HP",
-            2: "35% chance to instantly kill an ally or enemy when they are below 11% HP",
-            3: "40% chance to instantly kill an ally or enemy when they are below 12% HP",
-            4: "50% chance to instantly kill an ally or enemy when they are below 13% HP",
-            5: "60% chance to instantly kill an ally or enemy when they are below 15% HP"
+       MoraleBoost: {
+            1: "Row, Max HP +30%; costs 11 TP",
+            2: "Row, Max HP +33%; costs 12 TP",
+            3: "Row, Max HP +36%; costs 13 TP",
+            4: "Row, Max HP +39%; costs 14 TP",
+            5: "Row, Max HP +43%; costs 15 TP",
+            6: "Row, Max HP +47%; costs 17 TP",
+            7: "Row, Max HP +51; costs 18 TP",
+            8: "Row, Max HP +55%; costs 19 TP",
+            9: "Row, Max HP +60%; costs 21 TP",
+            10: "Party, Max HP +70%; costs 23 TP"
         },
-        HiltSmash: {
+       MiddleStance: {
+            1: "DMG +160%",
+            2: "DMG +180%",
+            3: "DMG +200%",
+            4: "DMG +220%",
+            5: "DMG +240%"
+        },
+      HiltStrike: {
             1: "130% damage; 30% chance to stun; costs 8 TP",
             2: "133% damage; 32% chance to stun; costs 8 TP",
             3: "136% damage; 34% chance to stun; costs 9 TP",
@@ -2252,109 +2259,109 @@ Wildling: {
             10: "165% damage; 50% chance to stun; costs 12 TP"
         },
         MorningStar: {
-            1: "104% damage during the day; 80% damage during the night; 2 - 3 hits; costs 11 TP",
-            2: "109% damage during the day; 82% damage during the night; 2 - 3 hits; costs 12 TP",
-            3: "114% damage during the day; 84% damage during the night; 2 - 3 hits; costs 13 TP",
-            4: "119% damage during the day; 86% damage during the night; 2 - 3 hits; costs 14 TP",
-            5: "124% damage during the day; 88% damage during the night; 2 - 3 hits; costs 15 TP",
-            6: "127% damage during the day; 90% damage during the night; 2 - 4 hits; costs 17 TP",
-            7: "133% damage during the day; 92% damage during the night; 2 - 4 hits; costs 18 TP",
-            8: "139% damage during the day; 94% damage during the night; 2 - 4 hits; costs 19 TP",
-            9: "143% damage during the day; 97% damage during the night; 2 - 4 hits; costs 21 TP",
-            10: "150% damage during the day; 100% damage during the night; 2 - 4 hits; costs 23 TP"
+            1: "132% DMG, Blind Rate 42%; costs 11 TP",
+            2: "139% DMG, Blind Rate 44%; costs 12 TP",
+            3: "146% DMG, Blind Rate 46%; costs 13 TP",
+            4: "153% DMG, Blind Rate 48%; costs 14 TP",
+            5: "160% DMG, Blind Rate 50%; costs 15 TP",
+            6: "167% DMG, Blind Rate 54%; costs 17 TP",
+            7: "174% DMG, Blind Rate 58%; costs 18 TP",
+            8: "181% DMG, Blind Rate 62%; costs 19 TP",
+            9: "188% DMG, Blind Rate 66%; costs 21 TP",
+            10: "195% DMG, Blind Rate 70%; costs 23 TP"
         },
-        Catastrophe: {
-            1: "104% damage during the night; 80% damage during the day; 2 - 3 hits; costs 11 TP",
-            2: "109% damage during the night; 82% damage during the day; 2 - 3 hits; costs 12 TP",
-            3: "114% damage during the night; 84% damage during the day; 2 - 3 hits; costs 13 TP",
-            4: "119% damage during the night; 86% damage during the day; 2 - 3 hits; costs 14 TP",
-            5: "124% damage during the night; 88% damage during the day; 2 - 3 hits; costs 15 TP",
-            6: "127% damage during the night; 90% damage during the day; 2 - 4 hits; costs 17 TP",
-            7: "133% damage during the night; 92% damage during the day; 2 - 4 hits; costs 18 TP",
-            8: "139% damage during the night; 94% damage during the day; 2 - 4 hits; costs 19 TP",
-            9: "143% damage during the night; 97% damage during the day; 2 - 4 hits; costs 21 TP",
-            10: "150% damage during the night; 100% damage during the day; 2 - 4 hits; costs 23 TP"
+            TwilightHour: {
+            1: "132% DMG, Sleep Rate 42%; costs 11 TP",
+            2: "139% DMG, Sleep Rate 44%; costs 12 TP",
+            3: "146% DMG, Sleep Rate 46%; costs 13 TP",
+            4: "153% DMG, Sleep Rate 48%; costs 14 TP",
+            5: "160% DMG, Sleep Rate 50%; costs 15 TP",
+            6: "167% DMG, Sleep Rate 54%; costs 17 TP",
+            7: "174% DMG, Sleep Rate 58%; costs 18 TP",
+            8: "181% DMG, Sleep Rate 62%; costs 19 TP",
+            9: "188% DMG, Sleep Rate 66%; costs 21 TP",
+            10: "195% DMG, Sleep Rate 70%; costs 23 TP"
         },
-        OlympicSword: {
-            1: "70% damage; 2 - 3 hits; 2 - 6 hits if dual wielding; costs 15 TP",
-            2: "72% damage; 2 - 3 hits; 2 - 6 hits if dual wielding; costs 16 TP",
-            3: "74% damage; 2 - 3 hits; 2 - 6 hits if dual wielding; costs 17 TP",
-            4: "76% damage; 2 - 3 hits; 2 - 6 hits if dual wielding; costs 18 TP",
-            5: "78% damage; 2 - 3 hits; 2 - 6 hits if dual wielding; costs 20 TP",
-            6: "80% damage; 2 - 4 hits; 2 - 8 hits if dual wielding; costs 22 TP",
-            7: "82% damage; 2 - 4 hits; 2 - 8 hits if dual wielding; costs 24 TP",
-            8: "84% damage; 2 - 4 hits; 2 - 8 hits if dual wielding; costs 26 TP",
-            9: "86% damage; 2 - 4 hits; 2 - 8 hits if dual wielding; costs 28 TP",
-            10: "90% damage; 2 - 5 hits; 2 - 10 hits if dual wielding; costs 30 TP"
+         5RingSword: {
+            1: "72% DMG, 2-3 Hits costs 11 TP",
+            2: "75% DMG, 2-3 Hits; costs 12 TP",
+            3: "78% DMG, 2-3 Hits; costs 13 TP",
+            4: "78% DMG, 2-3 Hits; costs 14 TP",
+            5: "81% DMG, 3 Hits; costs 15 TP",
+            6: "81% DMG, 3-4 Hits; costs 17 TP",
+            7: "84% DMG, 3-4 Hits; costs 18 TP",
+            8: "84% DMG, 3-4 Hits; costs 19 TP",
+            9: "87% DMG, 4 Hits; costs 21 TP",
+            10: "90% DMG, 4 Hits; costs 23 TP"
         },
-        SpiritualUnification: {
-            1: "Costs 12 TP",
-            2: "Costs 10 TP",
-            3: "Costs 8 TP",
-            4: "Costs 6 TP",
-            5: "Costs 4 TP"
+        GreatWarrior: {
+            1: "DMG/DEF +115%, Draw Rate +5, 3 Turns; costs 10 TP",
+            2: "DMG/DEF +118%, Draw Rate +7, 3 Turns; costs 11 TP",
+            3: "DMG/DEF +121%, Draw Rate +9, 3 Turns; costs 12 TP",
+            4: "DMG/DEF +125%, Draw Rate +11, 4 Turns; costs 13 TP",
+            5: "DMG/DEF +128%, Draw Rate +13, 4 Turns; costs 14 TP",
+            6: "DMG/DEF +132%, Draw Rate +15, 4 Turns; costs 15 TP",
+            7: "DMG/DEF +136%, Draw Rate +17, 4 Turns; costs 16 TP",
+            8: "DMG/DEF +140%, Draw Rate +19, 5 Turns; costs 17 TP",
+            9: "DMG/DEF +145%, Draw Rate +21, 5 Turns; costs 18 TP",
+            10: "DMG/DEF +150%, Draw Rate +23, 5 Turns; costs 20 TP"
         },
-        GreatMilitarist: {
-            1: "Increases ATK by 15% and DEF by 15%; costs 10 TP",
-            2: "Increases ATK by 18% and DEF by 17%; costs 11 TP",
-            3: "Increases ATK by 21% and DEF by 19%; costs 12 TP",
-            4: "Increases ATK by 24% and DEF by 22%; costs 13 TP",
-            5: "Increases ATK by 27% and DEF by 25%; costs 14 TP",
-            6: "Increases ATK by 30% and DEF by 28%; costs 15 TP",
-            7: "Increases ATK by 33% and DEF by 31%; costs 16 TP",
-            8: "Increases ATK by 37% and DEF by 34%; costs 17 TP",
-            9: "Increases ATK by 41% and DEF by 37%; costs 18 TP",
-            10: "Increases ATK by 45% and DEF by 40%; costs 20 TP"
+        WarriorMight: {
+            1: "100% DMG; costs 8 TP",
+            2: "108% DMG; costs 8 TP",
+            3: "116% DMG; costs 9 TP",
+            4: "124% DMG; costs 10 TP",
+            5: "132% DMG; costs 11 TP",
+            6: "140% DMG; costs 12 TP",
+            7: "148% DMG; costs 13 TP",
+            8: "156% DMG; costs 14 TP",
+            9: "164% DMG; costs 15 TP",
+            10: "175% DMG; costs 16 TP"
         },
-        VanguardsPrestige: {
-            1: "Increases ATK by 10% and reduces DEF by 20%; costs 8 TP",
-            2: "Increases ATK by 12% and reduces DEF by 23%; costs 8 TP",
-            3: "Increases ATK by 14% and reduces DEF by 26%; costs 9 TP",
-            4: "Increases ATK by 17% and reduces DEF by 29%; costs 10 TP",
-            5: "Increases ATK by 20% and reduces DEF by 32%; costs 11 TP",
-            6: "Increases ATK by 23% and reduces DEF by 35%; costs 12 TP",
-            7: "Increases ATK by 26% and reduces DEF by 38%; costs 13 TP",
-            8: "Increases ATK by 29% and reduces DEF by 42%; costs 14 TP",
-            9: "Increases ATK by 32% and reduces DEF by 46%; costs 15 TP",
-            10: "Increases ATK by 35% and reduces DEF by 50%; costs 16 TP"
+        ForeHonor: {
+            1: "110% DMG; costs 8 TP",
+            2: "113% DMG; costs 8 TP",
+            3: "116% DMG; costs 9 TP",
+            4: "120% DMG; costs 10 TP",
+            5: "123% DMG; costs 11 TP",
+            6: "127% DMG; costs 12 TP",
+            7: "131% DMG; costs 13 TP",
+            8: "135% DMG; costs 14 TP",
+            9: "140% DMG; costs 15 TP",
+            10: "145% DMG; costs 16 TP"
         },
-        RearGuardsHonor: {
-            1: "Increases DEF by 20% and reduces ATK by 20%; costs 8 TP",
-            2: "Increases DEF by 23% and reduces ATK by 22%; costs 8 TP",
-            3: "Increases DEF by 27% and reduces ATK by 24%; costs 9 TP",
-            4: "Increases DEF by 31% and reduces ATK by 26%; costs 10 TP",
-            5: "Increases DEF by 35% and reduces ATK by 28%; costs 11 TP",
-            6: "Increases DEF by 39% and reduces ATK by 30%; costs 12 TP",
-            7: "Increases DEF by 43% and reduces ATK by 32%; costs 13 TP",
-            8: "Increases DEF by 47% and reduces ATK by 34%; costs 14 TP",
-            9: "Increases DEF by 51% and reduces ATK by 36%; costs 15 TP",
-            10: "Increases DEF by 55% and reduces ATK by 40%; costs 16 TP"
+        RearDignity: {
+            1: "110% DEF; costs 8 TP",
+            2: "113% DEF; costs 8 TP",
+            3: "116% DEF; costs 9 TP",
+            4: "120% DEF; costs 10 TP",
+            5: "123% DEF; costs 11 TP",
+            6: "127% DEF; costs 12 TP",
+            7: "131% DEF; costs 13 TP",
+            8: "135% DEF; costs 14 TP",
+            9: "140% DEF; costs 15 TP",
+            10: "145% DEF; costs 16 TP"
         },
-        AssumeFormation: {
-            1: "100% damage; costs 10 TP",
-            2: "103% damage; costs 10 TP",
-            3: "106% damage; costs 11 TP",
-            4: "110% damage; costs 12 TP",
-            5: "113% damage; costs 13 TP",
-            6: "117% damage; costs 14 TP",
-            7: "120% damage; costs 15 TP",
-            8: "123% damage; costs 16 TP",
-            9: "126% damage; costs 17 TP",
-            10: "132% damage; costs 18 TP"
+       AmbushStance: {
+            1: "100% damage; costs 14 TP",
+            2: "110% damage; costs 15 TP",
+            3: "121% damage; costs 16 TP",
+            4: "133% damage; costs 17 TP",
+            5: "146% damage; costs 18 TP",
+            6: "161% damage; costs 19 TP",
+            7: "177% damage; costs 20 TP",
+            8: "194% damage; costs 22 TP",
+            9: "213% damage; costs 24 TP",
+            10: "233% damage; costs 26 TP"
         },
-        Ikkitousen: {
-            1: "85% damage; 67% defense; costs 10 TP",
-            2: "93% damage; 63% defense; costs 11 TP",
-            3: "102% damage; 60% defense; costs 12 TP",
-            4: "111% damage; 57% defense; costs 13 TP",
-            5: "120% damage; 55% defense; costs 14 TP",
-            6: "129% damage; 53% defense; costs 16 TP",
-            7: "138% damage; 51% defense; costs 18 TP",
-            8: "147% damage; 48% defense; costs 20 TP",
-            9: "156% damage; 46% defense; costs 22 TP",
-            10: "165% damage; 44% defense; costs 24 TP"
+        Alertness: {
+            1: "Ambush Prevetion Rate 40% ,
+            2: "Ambush Prevetion Rate 55% ",
+            3: "Ambush Prevetion Rate 70% ",
+            4: Ambush Prevetion Rate 85% ",
+            5: "Ambush Prevetion Rate 100%"
         },
-        SimultaneousFiring: {
+          BlitzCommand: {
             1: "100% damage; costs 8 TP",
             2: "100% damage; costs 8 TP",
             3: "105% damage; costs 9 TP",
@@ -2366,24 +2373,12 @@ Wildling: {
             9: "130% damage; costs 14 TP",
             10: "135% damage; costs 15 TP"
         },
-        RagingDragonFormation: {
-            1: "100% damage; costs 14 TP",
-            2: "100% damage; costs 15 TP",
-            3: "105% damage; costs 16 TP",
-            4: "105% damage; costs 17 TP",
-            5: "110% damage; costs 18 TP",
-            6: "115% damage; costs 19 TP",
-            7: "120% damage; costs 20 TP",
-            8: "125% damage; costs 22 TP",
-            9: "130% damage; costs 24 TP",
-            10: "135% damage; costs 26 TP"
-        },
-        RetreatToWin: {
-            1: "Costs 5 TP",
-            2: "Costs 5 TP",
-            3: "Costs 5 TP",
-            4: "Costs 5 TP",
-            5: "Costs 5 TP"
+      LowerStance: {
+            1: "DMG +160%",
+            2: "DMG +180%",
+            3: "DMG +200%",
+            4: "DMG +220%",
+            5: "DMG +240%"
         }
     },
     Yggdroid: {
