@@ -772,12 +772,17 @@ var levels = {
             9: "Crit Rate 90%",
             10: "Critical Rate 100%"
         },
-        LimitBoost: {
-            1: "Increases limit gauge by 2",
-            2: "Increases limit gauge by 4",
-            3: "Increases limit gauge by 6",
-            4: "Increases limit gauge by 8",
-            5: "Increases limit gauge by 10"
+        DrunkenBrawler: {
+            1: "40% DMG, 3 Hits, 80% ACC, 25% EVA; costs 10 TP",
+            2: "42% DMG, 3 Hits, 80% ACC, 25% EVA; costs 11 TP",
+            3: "44% DMG, 3 Hits, 80% ACC, 25% EVA; costs 12 TP",
+            4: "44% DMG, 3-4 Hits, 80% ACC, 25% EVA; costs 13 TP",
+            5: "46% DMG, 3-4 Hits, 80% ACC, 25% EVA; costs 14 TP",
+            6: "46% DMG, 4 Hits, 80% ACC, 25% EVA; costs 15 TP",
+            7: "48% DMG, 4 Hits, 80% ACC, 25% EVA; costs 16 TP",
+            8: "48% DMG, 4-5 Hits, 80% ACC, 25% EVA; costs 17 TP",
+            9: "50% DMG, 4-5 Hits, 80% ACC, 25% EVA; costs 18 TP",
+            10: "52% DMG, 4-5 Hits, 80% ACC, 25% EVA; costs 19 TP"
         },
         EagleEye: {
             1: "Enemy DEF -10%",
@@ -870,41 +875,29 @@ var levels = {
             9: "236% DMG, Head Bind Rate 58%; costs 12 TP",
             10: "250% DMG, Head Bind Rate 60%; costs 13 TP"
         },
-        ChaseSaber: {
-            1: "80% DMG, Max 3 Chases; costs 6 TP",
-            2: "85% DMG, Max 3 Chases; costs 6 TP",
-            3: "90% DMG, Max 3 Chases; costs 7 TP",
-            4: "96% DMG, Max 4 Chases; costs 7 TP",
-            5: "102% DMG, Max 4 Chases; costs 8 TP",
-            6: "109% DMG, Max 4 Chases; costs 9 TP",
-            7: "116% DMG, Max 4 Chases; costs 10 TP",
-            8: "124% DMG, Max 5 Chases; costs 11 TP",
-            9: "133% DMG, Max 5 Chases; costs 12 TP",
-            10: "142% DMG, Max 5 Chases; costs 13 TP"
+        ChaseWeapon: {
+            1: "80% DMG, Max 3 Chases, Uses Weapon Attribute; costs 6 TP",
+            2: "85% DMG, Max 3 Chases, Uses Weapon Attribute; costs 6 TP",
+            3: "90% DMG, Max 3 Chases, Uses Weapon Attribute; costs 7 TP",
+            4: "96% DMG, Max 4 Chases, Uses Weapon Attribute; costs 7 TP",
+            5: "102% DMG, Max 4 Chases, Uses Weapon Attribute; costs 8 TP",
+            6: "109% DMG, Max 4 Chases, Uses Weapon Attribute; costs 9 TP",
+            7: "116% DMG, Max 4 Chases, Uses Weapon Attribute; costs 10 TP",
+            8: "124% DMG, Max 5 Chases, Uses Weapon Attribute; costs 11 TP",
+            9: "133% DMG, Max 5 Chases, Uses Weapon Attribute; costs 12 TP",
+            10: "142% DMG, Max 5 Chases, Uses Weapon Attribute; costs 13 TP"
         },
-        ChaseBlow: {
-            1: "80% DMG, Max 3 Chases; costs 6 TP",
-            2: "85% DMG, Max 3 Chases; costs 6 TP",
-            3: "90% DMG, Max 3 Chases; costs 7 TP",
-            4: "96% DMG, Max 4 Chases; costs 7 TP",
-            5: "102% DMG, Max 4 Chases; costs 8 TP",
-            6: "109% DMG, Max 4 Chases; costs 9 TP",
-            7: "116% DMG, Max 4 Chases; costs 10 TP",
-            8: "124% DMG, Max 5 Chases; costs 11 TP",
-            9: "133% DMG, Max 5 Chases; costs 12 TP",
-            10: "142% DMG, Max 5 Chases; costs 13 TP"
+        LimitBoost: {
+            1: "Limit Accumulation +2",
+            2: "Limit Accumulation +4",
+            3: "Limit Accumulation +6",
+            4: Limit Accumulation +8",
+            5: "Limit Accumulation +10"
+        
         },
-        ChaseThrust: {
-            1: "80% DMG, Max 3 Chases; costs 6 TP",
-            2: "85% DMG, Max 3 Chases; costs 6 TP",
-            3: "90% DMG, Max 3 Chases; costs 7 TP",
-            4: "96% DMG, Max 4 Chases; costs 7 TP",
-            5: "102% DMG, Max 4 Chases; costs 8 TP",
-            6: "109% DMG, Max 4 Chases; costs 9 TP",
-            7: "116% DMG, Max 4 Chases; costs 10 TP",
-            8: "124% DMG, Max 5 Chases; costs 11 TP",
-            9: "133% DMG, Max 5 Chases; costs 12 TP",
-            10: "142% DMG, Max 5 Chases; costs 13 TP"
+        CheersMatey: {
+            1: "100% DMG, 100% Activation"
+          
         },
         Pincushion: {
             1: "100% DMG, AGI*3% Bonus DMG, 1-2 Hits; costs 6 TP",
@@ -1766,17 +1759,12 @@ Wildling: {
             9: "Increase damage by 18%",
             10: "Increase damage by 20%"
         },
-        Extend: {
-            1: "Restore 10 HP",
-            2: "Restore 20 HP",
-            3: "Restore 30 HP",
-            4: "Restore 40 HP",
-            5: "Restore 50 HP",
-            6: "Restore 60 HP",
-            7: "Restore 70 HP",
-            8: "Restore 80 HP",
-            9: "Restore 90 HP",
-            10: "Restore 100 HP"
+        AdrenalineRush: {
+            1: "Revive with 1 HP, ATK +9%, DEF -25%",
+            2: "Revive with 50 HP, ATK +13%, DEF -25%",
+            3: "Revive with 100 HP, ATK +17%, DEF -25%",
+            4: "Revive with 150 HP, ATK +21%, DEF -25%",
+            5: "Revive with 200 HP, ATK +25%, DEF -25%"
         },
         NightVision: {
             1: "Increase critical hit rate by 14%",
@@ -2208,12 +2196,12 @@ Wildling: {
             4: "85% chance",
             5: "100% chance"
         },
-        UpperStance: {
-            1: "DMG +160%",
-            2: "DMG +180%",
-            3: "DMG +200%",
-            4: "DMG +220%",
-            5: "DMG +240%"
+        UpwardSlash: {
+            1: "144% DMG, +15% DMG next hit; costs 10 TP",
+            2: "158% DMG, +30% DMG next hit; costs 12 TP",
+            3: "172% DMG, +45% DMG next hit; costs 14 TP",
+            4: "186% DMG, +60% DMG next hit; costs 16 TP",
+            5: "200% DMG, +75% DMG next hit; costs 18 TP"
         },
          BloodyLance: {
             1: "Increase ATK by 10% when user deals the final blow",
@@ -2239,12 +2227,12 @@ Wildling: {
             9: "Row, Max HP +60%; costs 21 TP",
             10: "Party, Max HP +70%; costs 23 TP"
         },
-       MiddleStance: {
-            1: "DMG +160%",
-            2: "DMG +180%",
-            3: "DMG +200%",
-            4: "DMG +220%",
-            5: "DMG +240%"
+       ChargingThrust: {
+            1: "144% DMG, +15% DMG next hit; costs 10 TP",
+            2: "158% DMG, +30% DMG next hit; costs 12 TP",
+            3: "172% DMG, +45% DMG next hit; costs 14 TP",
+            4: "186% DMG, +60% DMG next hit; costs 16 TP",
+            5: "200% DMG, +75% DMG next hit; costs 18 TP"
         },
       HiltStrike: {
             1: "130% damage; 30% chance to stun; costs 8 TP",
@@ -2373,12 +2361,12 @@ Wildling: {
             9: "130% damage; costs 14 TP",
             10: "135% damage; costs 15 TP"
         },
-      LowerStance: {
-            1: "DMG +160%",
-            2: "DMG +180%",
-            3: "DMG +200%",
-            4: "DMG +220%",
-            5: "DMG +240%"
+      SheathStrike: {
+            1: "144% DMG, +15% DMG next hit; costs 10 TP",
+            2: "158% DMG, +30% DMG next hit; costs 12 TP",
+            3: "172% DMG, +45% DMG next hit; costs 14 TP",
+            4: "186% DMG, +60% DMG next hit; costs 16 TP",
+            5: "200% DMG, +75% DMG next hit; costs 18 TP"
         }
     },
     Yggdroid: {
