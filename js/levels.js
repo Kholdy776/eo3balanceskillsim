@@ -2355,10 +2355,10 @@ Wildling: {
             10: "233% damage; costs 26 TP"
         },
         Alertness: {
-            1: "Ambush Prevetion Rate 40% ,
+            1: "Ambush Prevetion Rate 40%",
             2: "Ambush Prevetion Rate 55% ",
             3: "Ambush Prevetion Rate 70% ",
-            4: Ambush Prevetion Rate 85% ",
+            4: "Ambush Prevetion Rate 85% ",
             5: "Ambush Prevetion Rate 100%"
         },
           BlitzCommand: {
@@ -2382,31 +2382,55 @@ Wildling: {
         }
     },
     Yggdroid: {
-        ReflectiveEnergy: {
-            1: "Restore 1 TP per bind",
-            2: "Restore 2 TP per bind",
-            3: "Restore 3 TP per bind",
-            4: "Restore 4 TP per bind",
-            5: "Restore 5 TP per bind",
-            6: "Restore 6 TP per bind",
-            7: "Restore 7 TP per bind",
-            8: "Restore 8 TP per bind",
-            9: "Restore 9 TP per bind",
-            10: "Restore 10 TP per bind"
+        SleepMode: {
+            1: "Restore 2 TP per bind",
+            2: "Restore 4 TP per bind",
+            3: "Restore 6 TP per bind",
+            4: "Restore 8 TP per bind",
+            5: "Restore 10 TP per bind",
+            6: "Restore 12 TP per bind",
+            7: "Restore 14 TP per bind",
+            8: "Restore 16 TP per bind",
+            9: "Restore 18 TP per bind",
+            10: "Restore 20 TP per bind"
         },
-        DataAnalysis: {
-            1: "Increase damage by 30% and critical rate by 5%",
-            2: "Increase damage by 35% and critical rate by 5%",
-            3: "Increase damage by 40% and critical rate by 6%",
-            4: "Increase damage by 50% and critical rate by 6%",
-            5: "Increase damage by 55% and critical rate by 7%",
-            6: "Increase damage by 60% and critical rate by 7%",
-            7: "Increase damage by 65% and critical rate by 8%",
-            8: "Increase damage by 70% and critical rate by 8%",
-            9: "Increase damage by 80% and critical rate by 9%",
-            10: "Increase damage by 90% and critical rate by 10%"
+        Overheat: {
+            1: "4% increased DMG, HP Consumed/Turn: 1",
+            2: "9% increased DMG, HP Consumed/Turn: 3",
+            3: "14% increased DMG, HP Consumed/Turn: 6",
+            4: "20% increased DMG, HP Consumed/Turn: 10",
+            5: "26% increased DMG, HP Consumed/Turn: 16",
+            6: "32% increased DMG, HP Consumed/Turn: 24",
+            7: "38% increased DMG, HP Consumed/Turn: 34",
+            8: "44% increased DMG, HP Consumed/Turn: 46",
+            9: "50% increased DMG, HP Consumed/Turn: 60",
+            10: "50% increased DMG, HP Consumed/Turn: 999 (be careful)"
         },
-        DarkVision: {
+        Bastion: {
+            1: "User Ailment Resistance +21%, Draw Rate +5",
+            2: "User Ailment Resistance +27%, Draw Rate +7",
+            3: "User Ailment Resistance +33%, Draw Rate +9",
+            4: "User Ailment Resistance +39%, Draw Rate +11",
+            5: "User Ailment Resistance +45%, Draw Rate +13",
+            6: "User Ailment Resistance +51%, Draw Rate +15",
+            7: "User Ailment Resistance +57%, Draw Rate +17",
+            8: "User Ailment Resistance +63%, Draw Rate +19",
+            9: "User Ailment Resistance +69%, Draw Rate +21",
+            10: "User Ailment Resistance +75%, Draw Rate +23"
+        },
+        AnnihilationProtocol: {
+            1: "3% DMG, Highest Possible Damage 300%; costs 10 TP",
+            2: "4% DMG, Highest Possible Damage 400%; costs 11 TP",
+            3: "4% DMG, Highest Possible Damage 400%; costs 12 TP",
+            4: "5% DMG, Highest Possible Damage 500%; costs 13 TP",
+            5: "5% DMG, Highest Possible Damage 500%; costs 14 TP",
+            6: "6% DMG, Highest Possible Damage 600%; costs 15 TP",
+            7: "6% DMG, Highest Possible Damage 600%; costs 16 TP",
+            8: "7% DMG, Highest Possible Damage 700%; costs 17 TP",
+            9: "7% DMG, Highest Possible Damage 700%; costs 18 TP",
+            10: "8% DMG, Highest Possible Damage 800%; costs 20 TP"
+        },
+               Infravision: {
             1: "Increase hit rate by 5% and evasion rate by 10%",
             2: "Increase hit rate by 8% and evasion rate by 13%",
             3: "Increase hit rate by 11% and evasion rate by 16%",
@@ -2418,134 +2442,88 @@ Wildling: {
             9: "Increase hit rate by 30% and evasion rate by 34%",
             10: "Increase hit rate by 40% and evasion rate by 40%"
         },
-        AntibodyIncubation: {
-            1: "Increase status ailment resistance by 20%",
-            2: "Increase status ailment resistance by 28%",
-            3: "Increase status ailment resistance by 31%",
-            4: "Increase status ailment resistance by 34%",
-            5: "Increase status ailment resistance by 37%",
-            6: "Increase status ailment resistance by 40%",
-            7: "Increase status ailment resistance by 43%",
-            8: "Increase status ailment resistance by 46%",
-            9: "Increase status ailment resistance by 49%",
-            10: "Increase status ailment resistance by 52%"
+            
+        DataMining: {
+            1: "Crit Hit Rate +5%, Crit Hit DMG +55%",
+            2: "Crit Hit Rate +10%, Crit Hit DMG +65%",
+            3: "Crit Hit Rate +15%, Crit Hit DMG +75%",
+            4: "Crit Hit Rate +20%, Crit Hit DMG +85%",
+            5: "Crit Hit Rate +25%, Crit Hit DMG +95%",
+            6: "Crit Hit Rate +30%, Crit Hit DMG +105%",
+            7: "Crit Hit Rate +35%, Crit Hit DMG +115%",
+            8: "Crit Hit Rate +40%, Crit Hit DMG +125%",
+            9: "Crit Hit Rate +45%, Crit Hit DMG +135%",
+            10: "Crit Hit Rate +50%, Crit Hit DMG +145%"
         },
-        Overheat: {
-            1: "Increase damage by 5%, but consumes 1 HP per hit",
-            2: "Increase damage by 8%, but consumes 3 HP per hit",
-            3: "Increase damage by 11%, but consumes 5 HP per hit",
-            4: "Increase damage by 14%, but consumes 7 HP per hit",
-            5: "Increase damage by 17%, but consumes 11 HP per hit",
-            6: "Increase damage by 20%, but consumes 29 HP per hit",
-            7: "Increase damage by 25%, but consumes 47 HP per hit",
-            8: "Increase damage by 30%, but consumes 67 HP per hit",
-            9: "Increase damage by 40%, but consumes 89 HP per hit",
-            10: "Increase damage by 50%, but consumes 127 HP per hit"
+        Benben: {
+            1: "50 Bot HP, 80% DMG, Enemy Almighty res -5%, 3 Max Chases; costs 10 TP",
+            2: "60 Bot HP, 85% DMG, Enemy Almighty res -10%, 3 Max Chases; costs 11 TP",
+            3: "71 Bot HP, 90% DMG, Enemy Almighty res -15%, 3 Max Chases; costs 12 TP",
+            4: "83 Bot HP, 96% DMG, Enemy Almighty res -20%, 4 Max Chases; costs 13 TP",
+            5: "96 Bot HP, 102% DMG, Enemy Almighty res -25%, 4 Max Chases; costs 14 TP",
+            6: "111 Bot HP, 109% DMG, Enemy Almighty res -30%, 4 Max Chases; costs 15 TP",
+            7: "127 Bot HP, 116% DMG, Enemy Almighty res -35%, 5 Max Chases; costs 16 TP",
+            8: "144 Bot HP, 124% DMG, Enemy Almighty res -40%, 6 Max Chases; costs 17 TP",
+            9: "163 Bot HP, 133% DMG, Enemy Almighty res -45%, 7 Max Chases; costs 18 TP",
+            10: "183 Bot HP, 142% DMG, Enemy Almighty res -50%, 7 Max Chases; costs 20 TP"
         },
-        ElectromagneticBarrier: {
-            1: "30% chance",
-            2: "32% chance",
-            3: "34% chance",
-            4: "36% chance",
-            5: "38% chance",
-            6: "40% chance",
-            7: "42% chance",
-            8: "44% chance",
-            9: "47% chance",
-            10: "50% chance"
+         Perkins: {
+            1: "50 Bot HP, 80% DMG, Enemy EVA -10%, 3 Max Chases; costs 10 TP",
+            2: "60 Bot HP, 85% DMG, Enemy EVA -12%, 3 Max Chases; costs 11 TP",
+            3: "71 Bot HP, 90% DMG, Enemy EVA -14%, 3 Max Chases; costs 12 TP",
+            4: "83 Bot HP, 96% DMG, Enemy EVA -16%, 4 Max Chases; costs 13 TP",
+            5: "96 Bot HP, 102% DMG, Enemy EVA -18%, 4 Max Chases; costs 14 TP",
+            6: "111 Bot HP, 109% DMG, Enemy EVA -20%, 4 Max Chases; costs 15 TP",
+            7: "127 Bot HP, 116% DMG, Enemy EVA -22%, 5 Max Chases; costs 16 TP",
+            8: "144 Bot HP, 124% DMG, Enemy EVA -24%, 6 Max Chases; costs 17 TP",
+            9: "163 Bot HP, 133% DMG, Enemy EVA -27%, 7 Max Chases; costs 18 TP",
+            10: "183 Bot HP, 142% DMG, Enemy EVA -30%, 7 Max Chases; costs 20 TP"
         },
-        RedBot: {
-            1: "Deploy a bot with 40 HP and TP; 40% chance reduction per chase; maximum 3 chases; costs 10 TP",
-            2: "Deploy a bot with 60 HP and TP; 37% chance reduction per chase; maximum 3 chases; costs 11 TP",
-            3: "Deploy a bot with 80 HP and TP; 34% chance reduction per chase; maximum 3 chases; costs 12 TP",
-            4: "Deploy a bot with 110 HP and TP; 31% chance reduction per chase; maximum 4 chases; costs 13 TP",
-            5: "Deploy a bot with 140 HP and TP; 28% chance reduction per chase; maximum 4 chases; costs 14 TP",
-            6: "Deploy a bot with 175 HP and TP; 25% chance reduction per chase; maximum 4 chases; costs 15 TP",
-            7: "Deploy a bot with 210 HP and TP; 22% chance reduction per chase; maximum 5 chases; costs 16 TP",
-            8: "Deploy a bot with 250 HP and TP; 19% chance reduction per chase; maximum 6 chases; costs 17 TP",
-            9: "Deploy a bot with 290 HP and TP; 16% chance reduction per chase; maximum 7 chases; costs 18 TP",
-            10: "Deploy a bot with 360 HP and TP; 13% chance reduction per chase; maximum 7 chases; costs 20 TP"
-        },
-        BlueBot: {
-            1: "Deploy a bot with 40 HP and TP; 40% chance reduction per chase; maximum 3 chases; costs 10 TP",
-            2: "Deploy a bot with 60 HP and TP; 37% chance reduction per chase; maximum 3 chases; costs 11 TP",
-            3: "Deploy a bot with 80 HP and TP; 34% chance reduction per chase; maximum 3 chases; costs 12 TP",
-            4: "Deploy a bot with 110 HP and TP; 31% chance reduction per chase; maximum 4 chases; costs 13 TP",
-            5: "Deploy a bot with 140 HP and TP; 28% chance reduction per chase; maximum 4 chases; costs 14 TP",
-            6: "Deploy a bot with 175 HP and TP; 25% chance reduction per chase; maximum 4 chases; costs 15 TP",
-            7: "Deploy a bot with 210 HP and TP; 22% chance reduction per chase; maximum 5 chases; costs 16 TP",
-            8: "Deploy a bot with 250 HP and TP; 19% chance reduction per chase; maximum 6 chases; costs 17 TP",
-            9: "Deploy a bot with 290 HP and TP; 16% chance reduction per chase; maximum 7 chases; costs 18 TP",
-            10: "Deploy a bot with 360 HP and TP; 13% chance reduction per chase; maximum 7 chases; costs 20 TP"
-        },
-        YellowBot: {
-            1: "Deploy a bot with 40 HP and TP; 40% chance reduction per chase; maximum 3 chases; costs 10 TP",
-            2: "Deploy a bot with 60 HP and TP; 37% chance reduction per chase; maximum 3 chases; costs 11 TP",
-            3: "Deploy a bot with 80 HP and TP; 34% chance reduction per chase; maximum 3 chases; costs 12 TP",
-            4: "Deploy a bot with 110 HP and TP; 31% chance reduction per chase; maximum 4 chases; costs 13 TP",
-            5: "Deploy a bot with 140 HP and TP; 28% chance reduction per chase; maximum 4 chases; costs 14 TP",
-            6: "Deploy a bot with 175 HP and TP; 25% chance reduction per chase; maximum 4 chases; costs 15 TP",
-            7: "Deploy a bot with 210 HP and TP; 22% chance reduction per chase; maximum 5 chases; costs 16 TP",
-            8: "Deploy a bot with 250 HP and TP; 19% chance reduction per chase; maximum 6 chases; costs 17 TP",
-            9: "Deploy a bot with 290 HP and TP; 16% chance reduction per chase; maximum 7 chases; costs 18 TP",
-            10: "Deploy a bot with 360 HP and TP; 13% chance reduction per chase; maximum 7 chases; costs 20 TP"
-        },
-        Resupply: {
-            1: "Restores 70 HP to a bot; costs 5 TP",
-            2: "Restores 80 HP to a bot; costs 6 TP",
-            3: "Restores 90 HP to a bot; costs 7 TP",
-            4: "Restores 100 HP to a bot; costs 8 TP",
-            5: "Restores 110 HP to a bot; costs 9 TP",
-            6: "Restores 120 HP to a bot; costs 10 TP",
-            7: "Restores 140 HP to a bot; costs 11 TP",
-            8: "Restores 160 HP to a bot; costs 12 TP",
-            9: "Restores 180 HP to a bot; costs 13 TP",
-            10: "Restores 200 HP to a bot; costs 14 TP"
-        },
-        CoordinatedAttack: {
-            1: "100% damage; costs 15 TP",
-            2: "105% damage; costs 16 TP",
-            3: "110% damage; costs 17 TP",
-            4: "115% damage; costs 18 TP",
-            5: "120% damage; costs 20 TP",
-            6: "125% damage; costs 22 TP",
-            7: "135% damage; costs 25 TP",
-            8: "145% damage; costs 28 TP",
-            9: "155% damage; costs 31 TP",
-            10: "165% damage; costs 35 TP"
+         Pascal: {
+            1: "50 Bot HP, 80% DMG, Enemy ACC -10%, 3 Max Chases; costs 10 TP",
+            2: "60 Bot HP, 85% DMG, Enemy ACC -12%, 3 Max Chases; costs 11 TP",
+            3: "71 Bot HP, 90% DMG, Enemy ACC -14%, 3 Max Chases; costs 12 TP",
+            4: "83 Bot HP, 96% DMG, Enemy ACC -16%, 4 Max Chases; costs 13 TP",
+            5: "96 Bot HP, 102% DMG, Enemy ACC -18%, 4 Max Chases; costs 14 TP",
+            6: "111 Bot HP, 109% DMG, Enemy ACC -20%, 4 Max Chases; costs 15 TP",
+            7: "127 Bot HP, 116% DMG, Enemy ACC -22%, 5 Max Chases; costs 16 TP",
+            8: "144 Bot HP, 124% DMG, Enemy ACC -24%, 6 Max Chases; costs 17 TP",
+            9: "163 Bot HP, 133% DMG, Enemy ACC -27%, 7 Max Chases; costs 18 TP",
+            10: "183 Bot HP, 142% DMG, Enemy ACC -30%, 7 Max Chases; costs 20 TP"
+                },
+               5: "Physical DEF +18%, ATK -5%",
+            6: "Physical DEF +20%, ATK -6%",
+            7: "Physical DEF +22%, ATK -7%",
+            8: "Physical DEF +24%, ATK -8%",
+            9: "Physical DEF +27%, ATK -9%",
+            10: "Physical DEF +30%, ATK -10%"
         },
         Reflector: {
-            1: "Costs 14 TP",
-            2: "Costs 15 TP",
-            3: "Costs 16 TP",
-            4: "Costs 18 TP",
-            5: "Costs 20 TP"
+            1: "120% DMG Counterattack; Costs 14 TP",
+            2: "150% DMG Counterattack; Costs 15 TP",
+            3: "190% DMG Counterattack; Costs 16 TP",
+            4: "230% DMG Counterattack; Costs 18 TP",
+            5: "270% DMG Counterattack; Costs 20 TP"
         },
-        Shoot: {
-            1: "With one bot of each type, 3 bots deal 1716% damage; costs 25 TP",
-            2: "With one bot of each type, 3 bots deal 1915% damage; costs 26 TP",
-            3: "With one bot of each type, 3 bots deal 2137% damage; costs 28 TP",
-            4: "With one bot of each type, 3 bots deal 2369% damage; costs 30 TP",
-            5: "With one bot of each type, 3 bots deal 2610% damage; costs 32 TP",
-            6: "With one bot of each type, 3 bots deal 2861% damage; costs 34 TP",
-            7: "With one bot of each type, 3 bots deal 3121% damage; costs 36 TP",
-            8: "With one bot of each type, 3 bots deal 3391% damage; costs 39 TP",
-            9: "With one bot of each type, 3 bots deal 3671% damage; costs 42 TP",
-            10: "With one bot of each type, 3 bots deal 3960% damage; costs 45 TP"
+            
+        FamilysWarmth: {
+            1: "DEF +20% when covering allies; Costs 14 TP",
+            2: "DEF +26% when covering allies; Costs 15 TP",
+            3: "DEF +32% when covering allies ; Costs 16 TP",
+            4: "DEF +38% when covering allies; Costs 18 TP",
+            5: "DEF +44% when covering allies; Costs 20 TP"
         },
-        PartsRecovery: {
-            1: "Costs 5 TP",
-            2: "Costs 4 TP",
-            3: "Costs 3 TP",
-            4: "Costs 2 TP",
-            5: "Costs 1 TP"
-        },
-        Purge: {
-            1: "Costs 5 TP",
-            2: "Costs 4 TP",
-            3: "Costs 3 TP",
-            4: "Costs 2 TP",
-            5: "Costs 1 TP"
+          AllOut: {
+           1: "150% DMG, Uses weapon attribute; costs 15 TP",
+            2: "158% DMG, Uses weapon attribute costs 16 TP",
+            3: "166% DMG, Uses weapon attribute; costs 17 TP",
+            4: "174% DMG, Uses weapon attribute; costs 18 TP",
+            5: "182% DMG, Uses weapon attribute; costs 19 TP",
+            6: "190% DMG, Uses weapon attribute; costs 20 TP",
+            7: "198% DMG, Uses weapon attribute; costs 21 TP",
+            8: "206% DMG, Uses weapon attribute; costs 22 TP",
+            9: "214% DMG, Uses weapon attribute; costs 23 TP",
+            10: "222% DMG, Uses weapon attribute; costs 25 TP"
         },
         RocketPunch: {
             1: "90% damage; costs 15 TP",
@@ -2559,7 +2537,7 @@ Wildling: {
             9: "138% damage; costs 23 TP",
             10: "145% damage; costs 25 TP"
         },
-        RocketHeadbutt: {
+        RocketHead: {
             1: "90% damage; costs 18 TP",
             2: "98% damage; costs 19 TP",
             3: "106% damage; costs 20 TP",
@@ -2572,23 +2550,39 @@ Wildling: {
             10: "165% damage; costs 30 TP"
         },
         RocketJump: {
-            1: "Costs 15 TP",
-            2: "Costs 14 TP",
-            3: "Costs 13 TP",
-            4: "Costs 12 TP",
-            5: "Costs 10 TP"
+            1: "Action speed +0; costs 18 TP",
+            2: "Action speed +10; costs 19 TP",
+            3: "Action speed +20; costs 20 TP",
+            4: "Action speed +40; costs 21 TP",
+            5: "Action speed +60; costs 22 TP"
+           
         },
-        HPCannon: {
-            1: "116% damage multiplied by (Max HP - Current HP); costs 5 TP",
-            2: "120% damage multiplied by (Max HP - Current HP); costs 6 TP",
-            3: "124% damage multiplied by (Max HP - Current HP); costs 7 TP",
-            4: "128% damage multiplied by (Max HP - Current HP); costs 8 TP",
-            5: "131% damage multiplied by (Max HP - Current HP); costs 9 TP",
-            6: "139% damage multiplied by (Max HP - Current HP); costs 10 TP",
-            7: "146% damage multiplied by (Max HP - Current HP); costs 11 TP",
-            8: "154% damage multiplied by (Max HP - Current HP); costs 12 TP",
-            9: "161% damage multiplied by (Max HP - Current HP); costs 13 TP",
-            10: "169% damage multiplied by (Max HP - Current HP); costs 14 TP"
-        }
+        HPCannon {
+            1: "155% damage multiplied by (Max HP - Current HP); costs 5 TP",
+            2: "175% damage multiplied by (Max HP - Current HP); costs 6 TP",
+            3: "195% damage multiplied by (Max HP - Current HP); costs 7 TP",
+            4: "215% damage multiplied by (Max HP - Current HP); costs 8 TP",
+            5: "235% damage multiplied by (Max HP - Current HP); costs 9 TP",
+            6: "255% damage multiplied by (Max HP - Current HP); costs 10 TP",
+            7: "275% damage multiplied by (Max HP - Current HP); costs 11 TP",
+            8: "295% damage multiplied by (Max HP - Current HP); costs 12 TP",
+            9: "315% damage multiplied by (Max HP - Current HP); costs 13 TP",
+            10: "335% damage multiplied by (Max HP - Current HP); costs 14 TP"
+        },
+        CoreDump: {
+            1: "costs 5 TP",
+            2: "costs 4 TP",
+            3: "costs 3 TP",
+            4:  "costs 2 TP",
+            5:  "costs 1 TP"
+           
+    },
+          Defrag: {
+            1: "costs 5 TP",
+            2: "costs 4 TP",
+            3: "costs 3 TP",
+            4:  "costs 2 TP",
+            5:  "costs 1 TP"
+           
     }
 };
