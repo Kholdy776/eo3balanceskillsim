@@ -159,7 +159,7 @@ var skills = {
             details: "When casting an enhancement spell on an ally they will recover HP.",
             requires: "N/A",
             dep: {
-                DefenseCommand: 1
+                DefenseOrder: 1
             },
             active: FALSE,
             max: 10,
@@ -216,7 +216,7 @@ var skills = {
             details: "Dispels an ally's Elemental Arms enchantment to deal 3 instances of damage to random enemies.",
             requires: "Arms",
             dep: {
-                AttackCommand: 1
+                AttackOrder: 1
             },
             active: TRUE,
             max: 5,
@@ -231,7 +231,7 @@ var skills = {
             details: "Dispel all enhancement spells to recover HP.",
             requires: "Arms",
             dep: {
-                AttackCommand: 1
+                AttackOrder: 1
             },
             active: TRUE,
             max: 5,
@@ -246,7 +246,7 @@ var skills = {
             details: "Dispel all stat decreases and recover TP.",
             requires: "Arms",
             dep: {
-                AttackCommand: 1
+                AttackOrder: 1
             },
             active: TRUE,
             max: 5,
@@ -261,7 +261,7 @@ var skills = {
             details: "Dispel all enhancements on one enemy, deals non-elemental damage.",
             requires: "Head",
             dep: {
-                AttackCommand: 3
+                AttackOrder: 3
             },
             active: TRUE,
             max: 10,
@@ -276,8 +276,8 @@ var skills = {
             details: "Enchant allies' weapon with fire and increase fire damage dealt for three turns.",
             requires: "Head",
             dep: {
-                AttackCommand: 5,
-                DefenseCommand: 5
+                AttackOrder: 5,
+                DefenseOrder: 5
             },
             active: TRUE,
             max: 10,
@@ -288,11 +288,11 @@ var skills = {
         },
         FreezeArms: {
             name_jp: "予 防の号令",
-            name_en: "FreezeArms",
+            name_en: "Freeze Arms",
             details: "Enchant allies' weapon with ice and increase ice damage dealt for three turns.",
             requires: "Head",
             dep: {
-                DefenseCommand: 3
+                DefenseOrder: 3
             },
             active: TRUE,
             max: 5,
@@ -303,11 +303,11 @@ var skills = {
         },
         ShockArms: {
             name_jp: "覇気の号令",
-            name_en: "ShockArms",
+            name_en: "Shock Arms",
             details: "Enchant allies' weapon with volt and increase volt damage dealt for three turns.",
             requires: "Head",
             dep: {
-                DefenseCommand: 5
+                DefenseOrder: 5
             },
             active: TRUE,
             max: 10,
@@ -337,7 +337,7 @@ var skills = {
             details: "Allies will gain ailment and bind protection for three turns. This enhancement is consumed after a bind or ailment is negated.",
             requires: "Head",
             dep: {
-                ProofOfKingship: 1
+                NobilityProof: 1
             },
             active: TRUE,
             max: 10,
@@ -352,7 +352,7 @@ var skills = {
             details: "For three turns, allies will gain HP when a turn ends.",
             requires: "Head",
             dep: {
-                ProofOfKingship: 3
+                NobilityProof: 3
             },
             active: TRUE,
             max: 10,
@@ -364,10 +364,10 @@ var skills = {
         Knighthood: {
             name_jp: "クイックオーダー",
             name_en: "Knighthood",
-            details: "The target ally's turn comes first.",
+            details: "The specified ally will act first this turn.",
             requires: "Head",
             dep: {
-                ProofOfKingship: 5
+                NobilityProof: 5
             },
             active: TRUE,
             max: 5,
@@ -556,7 +556,7 @@ var skills = {
         },
         BindCut: {
             name_jp: "アームブレイカー",
-            name_en: "BindCut",
+            name_en: "Bind Cut",
             details: "Sword: A strong slash at one enemy. May inflict leg bind.",
             requires: "Arms",
             dep: {
@@ -718,7 +718,7 @@ var skills = {
         Rhongomyniad: {
             name_jp: "パリィ",
             name_en: "Rhongomyniad",
-            details: "Spear/Shield: Bash with your shield then thrust and slash with your spear. Deals an instance of BASH damage, then STAB damage, then CUT damage.",
+            details: "Spear/Shield: Bash with your shield then thrust and slash with your spear. Deals an instance of Strike damage, then Pierce damage, then Slash damage.",
             requires: "N/A",
             dep: {
                 Taunt: 5
@@ -748,7 +748,7 @@ var skills = {
         ExploitWeakness: {
             name_jp: "ラインガード",
             name_en: "Exploit Weakness",
-            details: "A litany that encourages allies to expose the enemy's weakness. Increases damage dealt to weakpoints for 3 turns.",
+            details: "A litany that encourages allies to expose the enemy's weakness. Increases damage dealt to any enemy weakness for 3 turns.",
             requires: "Arms",
             dep: {
                 ShieldMastery: 1
@@ -778,7 +778,7 @@ var skills = {
         ShrugOff: {
             name_jp: "フリーズガード",
             name_en: "ShrugOff",
-            details: "Fixed chance to heal yourself if you fail to parry an attack.",
+            details: "Fixed chance to heal yourself if you fail to parry an attack that you are the specific target of.",
             requires: "Arms",
             dep: {
                 ShieldMastery: 5
@@ -944,7 +944,7 @@ var skills = {
         Trickster: {
             name_jp: "トリックスター",
             name_en: "Trickster",
-            details: "Whenever you use an offensive skill, TP is restored.",
+            details: "Replenish TP if you chase or kill an enemy.",
             requires: "N/A",
             unique: true,
             active: FALSE,
@@ -978,7 +978,7 @@ var skills = {
                 y: 515.8
             }
         },
-        SelfTaughtSwordplay: {
+        Swashbuckling: {
             name_jp: "我流の剣術",
             name_en: "Swashbuckling",
             details: "When using a normal attack, there is a chance to strike multiple times.",
@@ -1008,26 +1008,26 @@ var skills = {
                 y: 353.2
             }
         },
-        LimitBoost: {
+        DrunkenBrawler: {
             name_jp: "リミットブース ト",
-            name_en: "Limit Boost",
-            details: "Increase the rate at which the Limit Gauge increases.",
-            requires: "N/A",
+            name_en: "DrunkenBrawler",
+            details: "Rapier: Increase evasion and fight with your rapier and fists.",
+            requires: "Rapier",
             dep: {
                 LadyLuck: 3,
                 EagleEye: 3
             },
             active: FALSE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 190.6
             }
         },
-        InTheDark: {
+        EagleEye: {
             name_jp: "インザダーク",
-            name_en: "Lights Out",
-            details: "Rapier: A thrust attack aimed at the eyes of an enemy; has a chance to blind the enemy.",
+            name_en: "Eagle Eye",
+            details: "Lowers one enemy's physical defense for three turns.",
             requires: "Arms",
             dep: {
                 RapierMastery: 1
@@ -1039,10 +1039,10 @@ var skills = {
                 y: 28
             }
         },
-        ChaseSaber: {
+        QuickDraw: {
             name_jp: "チェイスセーバー",
-            name_en: "Chase Saber",
-            details: "Rapier: Matches with allies' cut attacks; performs a chase with a Rapier.",
+            name_en: "Quick Draw",
+            details: "Rapier/Gun: Random pierce attacks to all enemies, decreasing slash resistance.",
             requires: "Legs",
             dep: {
                 RapierMastery: 3
@@ -1054,10 +1054,10 @@ var skills = {
                 y: 150
             }
         },
-        ChaseBlow: {
+        RapidFire: {
             name_jp: "チェイスブロー",
-            name_en: "Chase Blow",
-            details: "Rapier: Matches with allies' blunt attacks; performs a chase with a Rapier.",
+            name_en: "Rapid Fire",
+            details: "Gun: A piercing attack that fires 3 bullets, decreasing pierce resistance.",
             requires: "Legs",
             dep: {
                 RapierMastery: 3
@@ -1069,10 +1069,10 @@ var skills = {
                 y: 272
             }
         },
-        ChaseThrust: {
+       ChaseFlame: {
             name_jp: "チェイススラスト",
-            name_en: "Chase Thrust",
-            details: "Rapier: Matches with allies' thrust attacks; performs a chase with a Rapier.",
+            name_en: "Chase Flame",
+            details: "Rapier/Gun: Perform a fire follow-up  to an ally's attack.",
             requires: "Legs",
             dep: {
                 RapierMastery: 3
@@ -1084,10 +1084,10 @@ var skills = {
                 y: 394
             }
         },
-        Hanging: {
+        ChaseIce: {
             name_jp: "ハンギング",
-            name_en: "Hanging",
-            details: "Rapier: A thrust attack aimed at the head of one enemy; has a chance to bind the enemy's head.",
+            name_en: "Chase Ice",
+            details: "Rapier/Gun: Perform an ice follow-up  to an ally's attack.",
             requires: "Arms",
             dep: {
                 RapierMastery: 5
@@ -1099,10 +1099,10 @@ var skills = {
                 y: 516
             }
         },
-        QuickDraw: {
+        ChaseVolt: {
             name_jp: "ク イックドロー",
-            name_en: "Quick Draw",
-            details: "Gun: Quickly draws out a gun; thrust attacks randomly fired at every enemy at the beginning of the turn.",
+            name_en: "Chase Volt",
+            details: "Rapier/Gun: Perform a volt follow-up  to an ally's attack.",
             requires: "Arms",
             dep: {
                 GunMastery: 1
@@ -1114,10 +1114,10 @@ var skills = {
                 y: 28
             }
         },
-        ChaseFlame: {
+        LightsOut: {
             name_jp: "チェイスフレイム",
-            name_en: "Chase Flame",
-            details: "Gun: Matches with allies' flame attacks; performs a chase with a gun.",
+            name_en: "Lights Out",
+            details: "Rapier: A pierce attack that may blind the enemy.",
             requires: "Legs",
             dep: {
                 GunMastery: 3
@@ -1129,10 +1129,10 @@ var skills = {
                 y: 150
             }
         },
-        ChaseIce: {
+        Hanging: {
             name_jp: "チェイスアイス",
-            name_en: "Chase Ice",
-            details: "Gun: Matches with allies' ice attacks; performs a chase with a gun.",
+            name_en: "Hanging",
+            details: "Rapier/Gun: A pierce attack that may bind the enemy's head.",
             requires: "Legs",
             dep: {
                 GunMastery: 3
@@ -1144,10 +1144,10 @@ var skills = {
                 y: 272
             }
         },
-        ChaseThunder: {
+       ChaseWeapon: {
             name_jp: "チェイスサンダー",
-            name_en: "Chase Thunder",
-            details: "Gun: Matches with allies' thunder attacks; performs a chase with a gun.",
+            name_en: "Chase Weapon",
+            details: "Perform a slash follow-up to an ally's attack.",
             requires: "Legs",
             dep: {
                 GunMastery: 3
@@ -1159,10 +1159,10 @@ var skills = {
                 y: 394
             }
         },
-        RapidFire: {
+       LimitBoost: {
             name_jp: "ラピッドファイア",
-            name_en: "Rapid Fire",
-            details: "Gun: A thrust attack that drives 3 rapid shots into the enemy at once.",
+            name_en: "Limit Boost",
+            details: "The limit gauge will increase faster.",
             requires: "Arms",
             dep: {
                 GunMastery: 5
@@ -1174,10 +1174,10 @@ var skills = {
                 y: 516
             }
         },
-        MillionThrust: {
+        CheersMatey: {
             name_jp: "ミリオンスラスト",
-            name_en: "Pincushion",
-            details: "Rapier/Gun: Thrust attacks at every enemy randomly; damage increases with increased AGI.",
+            name_en: "Cheers, Matey!",
+            details: "When receiving a buff, execute a normal attack on a random enemy.",
             requires: "Arms",
             dep: {
                 RapierMastery: 10,
@@ -1190,10 +1190,10 @@ var skills = {
                 y: 353.2
             }
         },
-        EagleEye: {
+        Pincushion: {
             name_jp: "イーグルアイ",
-            name_en: "Eagle Eye",
-            details: "For 3 turns, an enemy's DEF is lowered.",
+            name_en: "Pincushion",
+            details: "Rapier/Gun: Random pierce attacks boosted by the user's agility.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -1204,10 +1204,10 @@ var skills = {
                 y: 28
             }
         },
-        Troublemaking: {
+        DoubleTap: {
             name_jp: "トラブルメイク",
-            name_en: "Trouble Maker",
-            details: "For a certain number of steps, encounters are increased.",
+            name_en: "Double Tap",
+            details: "Gun: A piercing attack that hits twice, decreasing strike resistance.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1221,19 +1221,19 @@ var skills = {
     },
 
     Ninja: {
-        Smokescreen: {
+        MysticCalm: {
             name_jp: "煙りの末",
-            name_en: "Keburi no Sue",
+            name_en: "Mystic Calm",
             details: "Decreases TP consumption and allows the Ninja to do full melee damage from the back row.",
             requires: "N/A",
             unique: true,
             active: FALSE,
             max: 10
         },
-        DaggerMastery: {
+        Beheading: {
             name_jp: "短剣マスタリー",
-            name_en: "Knife Mastery",
-            details: "Improves physical damage with Knives; required for Knife skills.",
+            name_en: "Beheading",
+            details: "Normal attacks may be fatal blows.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1244,10 +1244,10 @@ var skills = {
                 y: 265
             }
         },
-        Conceal: {
+        Katon: {
             name_jp: "潜伏",
-            name_en: "Senpuku",
-            details: "Increase evasion rate.",
+            name_en: "Katon",
+            details: "Fire Ninjutsu creates an explosion over an enemy. May bind head.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1258,9 +1258,9 @@ var skills = {
                 y: 506
             }
         },
-        Acrobatics: {
+        Reflexes: {
             name_jp: "軽業",
-            name_en: "Karuwaza",
+            name_en: "Reflexes",
             details: "TP is recovered when evading an attack.",
             requires: "N/A",
             dep: {
@@ -1274,10 +1274,10 @@ var skills = {
                 y: 506
             }
         },
-        Decapitation: {
+        Hyouton: {
             name_jp: "首切",
-            name_en: "Kubikiri",
-            details: "When using a normal attack, there's a chance to instantly kill an enemy.",
+            name_en: "Hyouton",
+            details: "Ice Ninjutsu freezes the air under an enemy. May bind legs.",
             requires: "N/A",
             dep: {
                 NinpouWaterMirror: 3,
@@ -1290,10 +1290,10 @@ var skills = {
                 y: 373
             }
         },
-        FleshBullet: {
+        KnifeMastery: {
             name_jp: "肉弾",
-            name_en: "Nikudan",
-            details: "Upon your death, you deal FIRE damage to the enemy.",
+            name_en: "Knife Mastery",
+            details: "Prerequisite for knife skills that raises knife damage dealt.",
             requires: "N/A",
             dep: {
                 NinpouBeckoning: 3,
@@ -1306,10 +1306,10 @@ var skills = {
                 y: 49
             }
         },
-        ShadowWeave: {
+        Raiton: {
             name_jp: "影 縫",
-            name_en: "Kagenui",
-            details: "Knife: A slash attack that stitches an enemy's shadow; has a chance to Bind Legs.",
+            name_en: "Raiton",
+            details: "Volt Ninjutsu conjures lightning towards an enemy. May bind arms.",
             requires: "Arms",
             dep: {
                 DaggerMastery: 1
@@ -1321,10 +1321,10 @@ var skills = {
                 y: 157
             }
         },
-        Meshizuna: {
+        Otori: {
             name_jp: "飯綱",
-            name_en: "Izuna",
-            details: "Knife: A cut attack at one enemy; has a chance to Petrify.",
+            name_en: "Otori",
+            details: "Makes enemies target one ally for three turns.",
             requires: "Arms",
             dep: {
                 DaggerMastery: 3,
@@ -1337,10 +1337,10 @@ var skills = {
                 y: 265
             }
         },
-        HawkWings: {
+        NinpoSmoke: {
             name_jp: "鷹乃羽",
-            name_en: "Takanoha",
-            details: "Knife: A cut attack that randomly strikes every enemy many times at high speeds.",
+            name_en: "Ninpo: Smoke",
+            details: "Sacrifice HP for a significant evasion boost for three turns.",
             requires: "Arms",
             dep: {
                 DaggerMastery: 5
@@ -1352,26 +1352,26 @@ var skills = {
                 y: 373
             }
         },
-        PluralSlash: {
+        NinpoDouble: {
             name_jp: "多元抜刀",
-            name_en: "Tagen Battou",
-            details: "Knife: A coordinated attack with clones randomly performs a cut attack at every enemy; the clone disappear after using this skill.  Damage is increased based on the number of clones consumed.  Only the damage from 1 clone is shown below.  For the complete damage table, see the table in the Help/About section.",
+            name_en: "Ninpo: Double",
+            details: "Use half your HP and TP to create a copy of yourself in the party.",
             requires: "Arms",
             dep: {
                 DaggerMastery: 10,
                 FleshBullet: 3
             },
             active: TRUE,
-            max: 10,
+            max: 1,
             coords: {
                 x: 302,
                 y: 157
             }
         },
-        NinpouFukimibari: {
+        SeitonTenchu: {
             name_jp: "忍 法 含針",
-            name_en: "Fukubari",
-            details: "A thrust attack at 3 enemies with needles held in the mouth; has a chance to inflict Sleep.",
+            name_en: "Seiton Tenchu",
+            details: "Knife: Deliver heavenly punishment by slicing through ailing enemies.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -1382,10 +1382,10 @@ var skills = {
                 y: 374
             }
         },
-        NinpouWaterMirror: {
+        NinpoNeedles: {
             name_jp: "忍法 水鏡",
-            name_en: "Suikyou",
-            details: "Chance to spread target enemy's status ailments to other enemies.",
+            name_en: "Ninpo: Needles",
+            details: "Ninjutsu: Conjure anesthetic needles that may make an enemy drowsy.",
             requires: "Head",
             dep: {
                 NinpouFukimibari: 1
@@ -1397,10 +1397,10 @@ var skills = {
                 y: 332
             }
         },
-        NinpouCaltrop: {
+        Ninjutsu: {
             name_jp: "忍法 撒菱",
-            name_en: "Makibishi",
-            details: "A cut counterattack with fixed damage to enemies that have attacked the designated row; has a chance to inflict Poison.",
+            name_en: "Ninjutsu",
+            details: "Prerequisite for ninja techniques. Passively increases evasion.",
             requires: "Arms",
             dep: {
                 NinpouFukimibari: 3
@@ -1412,10 +1412,10 @@ var skills = {
                 y: 412
             }
         },
-        NinpouHeatHaze: {
+        NinpoShuriken: {
             name_jp: "忍法 陽炎",
-            name_en: "Kagerou",
-            details: "Create a shadow image of yourself from thin air to act as a decoy.",
+            name_en: "Ninpo: Shuriken",
+            details: "Ninjutsu: Throw poisoned shurikens at a group of enemies.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -1426,10 +1426,10 @@ var skills = {
                 y: 49
             }
         },
-        NinpouBeckoning: {
+        ShadowBind: {
             name_jp: "忍法 招鳥",
-            name_en: "Otori",
-            details: "For 3 turns, the designated ally will be the target of all enemy attacks.",
+            name_en: "Shadow Bind",
+            details: "Knife: A surprise slash attack that may leave the enemy paralyzed.",
             requires: "Head",
             dep: {
                 NinpouHeatHaze: 1
@@ -1441,10 +1441,10 @@ var skills = {
                 y: 7
             }
         },
-        NinpouClone: {
+        HawkStrike: {
             name_jp: "忍法 分身",
-            name_en: "Bunshin",
-            details: "Sacrifice half of your HP and TP to create a fully functional image from thin air. This clone can also use skills.",
+            name_en: "Hawk Strike",
+            details: "Knife: Slash attack to random enemies, damage is based on the user's agility.",
             requires: "Head",
             dep: {
                 NinpouHeatHaze: 3
@@ -1456,10 +1456,10 @@ var skills = {
                 y: 87
             }
         },
-        NinpouSarutobi: {
+        Izuna: {
             name_jp: "忍法 猿飛",
-            name_en: "Sarutobi",
-            details: "For 1 turn, there's a chance to nullify enemy physical attacks.",
+            name_en: "Izuna",
+            details: "Knife: Slash attack to one enemy. May cause petrification.",
             requires: "Legs",
             dep: {
                 Conceal: 1
@@ -1471,10 +1471,10 @@ var skills = {
                 y: 464
             }
         },
-        NinpouCloudCover: {
+        Chimatsuri: {
             name_jp: "忍法 雲隠",
-            name_en: "Kumogakure",
-            details: "Sacrifice half of your HP to increase evasion.",
+            name_en: "Chimatsuri",
+            details: "Ninjutsu: Torture a bound enemy with piercing techniques.",
             requires: "Legs",
             dep: {
                 Conceal: 5
@@ -1486,10 +1486,10 @@ var skills = {
                 y: 544
             }
         },
-        EscapeArts: {
+        Genjutsu: {
             name_jp: "遁走の術",
-            name_en: "Tonsou Jutsu",
-            details: "Escape from battle and return to the floor entrance or Geomagnetic Field.",
+            name_en: "Genjutsu",
+            details: "Ninjutsu: A disorienting pierce attack that may leave the enemy confused.",
             requires: "Legs",
             dep: {
                 /* none */ },
@@ -1503,10 +1503,10 @@ var skills = {
     },
 
     Monk: {
-        FocusEnergy: {
+        FormQi: {
             name_jp: "練気の法",
             name_en: "Form Qi",
-            details: "The amount of HP recovered by healing skills is increased.",
+            details: "A passive that enhances healing skills and lowers the monk's presence.",
             requires: "N/A",
             unique: true,
             active: FALSE,
@@ -1526,10 +1526,10 @@ var skills = {
                 y: 370
             }
         },
-        PilgrimsGain: {
+        AsceticDeeds: {
             name_jp: "行者の利益",
-            name_en: "Ascetic Reward",
-            details: "If the Monk falls in combat, the HP of every ally is recovered.  Works only once per battle.",
+            name_en: "Ascetic Deeds",
+            details: "Recover HP each time you use a skill in battle.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1540,10 +1540,10 @@ var skills = {
                 y: 348
             }
         },
-        ArtOfBloodReturn: {
+        FullCleansing: {
             name_jp: "血返しの法",
-            name_en: "Blood Return",
-            details: "If an ally falls in combat, the Monk's TP is restored.",
+            name_en: "Full Cleansing",
+            details: "Heals status effects and binds on allies. Range increases with level.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1554,10 +1554,10 @@ var skills = {
                 y: 428
             }
         },
-        PilgrimsDeed: {
+        BloodReturn: {
             name_jp: "行者の功徳",
-            name_en: "Ascetic Deeds",
-            details: "If the Monk uses a skill, HP is restored.",
+            name_en: "Blood Return",
+            details: "Sacrifice health to bless the party with TP.",
             requires: "N/A",
             dep: {
                 PilgrimsGain: 3,
@@ -1570,10 +1570,10 @@ var skills = {
                 y: 390
             }
         },
-        ChakraZeal: {
+        Sanctify: {
             name_jp: "チャクラの覚醒",
-            name_en: "Waking Chakra",
-            details: "Increases the rate of natural recovery of status ailments and binds on the monk.",
+            name_en: "Sanctify",
+            details: "Purify the battlefield, raising the elemental resistance of all characters for 9 turns.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1584,10 +1584,10 @@ var skills = {
                 y: 544
             }
         },
-        Healing: {
+        Kikouken: {
             name_jp: "ヒーリング",
-            name_en: "Healing",
-            details: "Heal a single target of some HP.",
+            name_en: "Kikouken",
+            details: "Fist: Perform quick jabs at all enemies' weak points. May stun.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -1598,10 +1598,10 @@ var skills = {
                 y: 125
             }
         },
-        FullHealing: {
+        Healing: {
             name_jp: "フルヒーリング",
-            name_en: "Full Heal",
-            details: "Fully restore a target's HP.",
+            name_en: "Healing",
+            details: "Healing qi will recover one ally's HP.",
             requires: "Head",
             dep: {
                 Healing: 5
@@ -1613,10 +1613,10 @@ var skills = {
                 y: 167
             }
         },
-        LineHeal: {
+        PartyHeal: {
             name_jp: "ラインヒール",
-            name_en: "Line Heal",
-            details: "Heal the HP of an entire row of allies.",
+            name_en: "Party Heall",
+            details: "Healing qi will recover all allies' HP.",
             requires: "Head",
             dep: {
                 Healing: 4
@@ -1628,10 +1628,10 @@ var skills = {
                 y: 247
             }
         },
-        PartyHeal: {
+        FullHeal: {
             name_jp: "パーティヒール",
-            name_en: "Party Heal",
-            details: "Heals the HP of all allies.",
+            name_en: "Full Heal",
+            details: "Healing qi will recover all HP for one ally.",
             requires: "Head",
             dep: {
                 LineHeal: 5
@@ -1643,10 +1643,10 @@ var skills = {
                 y: 247
             }
         },
-        Refresh: {
+        Counter: {
             name_jp: "リフレッシュ",
-            name_en: "Refresh",
-            details: "Restore status ailments.",
+            name_en: "Counter",
+            details: "Fist: Wait patiently, then counters attacks in current row with freezing blows.",
             requires: "Head",
             dep: {
                 Healing: 2
@@ -1658,10 +1658,10 @@ var skills = {
                 y: 7
             }
         },
-        BindRecovery: {
+        Retaliate: {
             name_jp: "バインドリカバリ",
-            name_en: "Unbind",
-            details: "Restores binds.",
+            name_en: "Retaliate",
+            details: "Fist: Wait patiently, then counters attacks in current row with electrifying qi.",
             requires: "Head",
             dep: {
                 Healing: 2
@@ -1673,10 +1673,10 @@ var skills = {
                 y: 87
             }
         },
-        Resurrect: {
+        MercifulHeal: {
             name_jp: "リザレクト",
-            name_en: "Resurrect",
-            details: "Revives a fallen ally.",
+            name_en: "Merciful Heal",
+            details: "By instinct, heal anyone who suffers a grievous wound.",
             requires: "Head",
             dep: {
                 Refresh: 2,
@@ -1689,10 +1689,10 @@ var skills = {
                 y: 49
             }
         },
-        ForceImpact: {
+       Resurrect: {
             name_jp: "気功 拳",
-            name_en: "Kikouken",
-            details: "Fist: A blunt attack that sends spirit at one enemy; has a chance to Paralyze the enemy.",
+            name_en: "Resurrect",
+            details: "Revive one ally with healing qi.",
             requires: "Arms",
             dep: {
                 FistMastery: 1
@@ -1704,10 +1704,10 @@ var skills = {
                 y: 196
             }
         },
-        BurstFist: {
-            name_jp: "壊炎拳",
-            name_en: "Breakfire Fist",
-            details: "Fist: Randomly strike all enemies; combines blunt/flame attack.",
+        AuraBlast: {
+            name_jp: "カウンターI",
+            name_en: "Aura Blast",
+            details: "Condense spiritual energy then blasts enemies, more damage from back row.",
             requires: "Arms",
             dep: {
                 FistMastery: 3,
@@ -1720,10 +1720,10 @@ var skills = {
                 y: 544
             }
         },
-        CounterI: {
-            name_jp: "カウンターI",
-            name_en: "Counter",
-            details: "Fist: Counterattacks with a blunt attack against enemy physical attacks.",
+        LineHeal: {
+            name_jp: "カウンターII",
+            name_en: "Line Heal",
+            details: "Recover one row of allies' HP using healing qi.",
             requires: "Arms",
             dep: {
                 FistMastery: 8
@@ -1735,10 +1735,10 @@ var skills = {
                 y: 283
             }
         },
-        CounterII: {
-            name_jp: "カウンターII",
-            name_en: "Retaliate",
-            details: "Fist: Counterattacks with a blunt attack against enemy elemental attacks.",
+         BreakfireFist: {
+            name_jp: "暗黒拳",
+            name_en: "Breakfire Fist",
+            details: "Fist: A strike and fire attack that hits enemies at random.",
             requires: "Arms",
             dep: {
                 FistMastery: 8
@@ -1750,11 +1750,11 @@ var skills = {
                 y: 370
             }
         },
-        DarknessFist: {
-            name_jp: "暗黒拳",
+       DarknessFist: {
+            name_jp: "火渡りの行",
             name_en: "Darkness Fist",
-            details: "Fist: A blunt attack at all enemies at the expense of sacrificing HP; has a chance to curse the enemy.",
-            requires: "Arms",
+            details: "Fist: Sacrifice HP to strike all enemies. May inflict blind.",
+            requires: "N/A",
             dep: {
                 FistMastery: 10,
                 BurstFist: 3
@@ -1766,10 +1766,10 @@ var skills = {
                 y: 457
             }
         },
-        WalkingOverFire: {
+        Levitate: {
             name_jp: "火渡りの行",
-            name_en: "Fire Walk",
-            details: "Reduce damage taken from damage tiles for a certain number of steps.",
+            name_en: "Levitate",
+            details: "Decreases damage from trap floors for a certain number of steps.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1783,19 +1783,19 @@ var skills = {
     },
 
     Zodiac: {
-        EtherMastery: {
+        EthericReturn: {
             name_jp: "エーテルマスター",
-            name_en: "Ether Mastery",
-            details: "Increase damage caused by FIRE, ICE, and VOLT attacks.",
+            name_en: "Etheric Return",
+            details: "Zodiac skill that recovers TP when using attack skills.",
             requires: "N/A",
             unique: true,
             active: FALSE,
             max: 10
         },
-        FlameMastery: {
+        Inferno: {
             name_jp: "炎マスタリー",
-            name_en: "Fire Mastery",
-            details: "Increase damage caused by FIRE skills; required for FIRE skills.",
+            name_en: "Inferno",
+            details: "A fire and ice attack that splashes lava on enemies.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1806,10 +1806,10 @@ var skills = {
                 y: 49
             }
         },
-        IceMastery: {
+        Cocytus: {
             name_jp: "氷マスタリー",
-            name_en: "Ice Mastery",
-            details: "Increase damage caused by ICE skills; required for ICE skills.",
+            name_en: "Cocytus",
+            details: "An ice and volt attack that sends ice shards crashing down on random enemies.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1820,10 +1820,10 @@ var skills = {
                 y: 181
             }
         },
-        ThunderMastery: {
+        Thor: {
             name_jp: "雷マスタリー",
-            name_en: "Volt Mastery",
-            details: "Increase damage caused by VOLT skills; required for VOLT skills.",
+            name_en: "Thor",
+            details: "A volt and fire attack that blasts one enemy with heavy damage.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -1834,10 +1834,10 @@ var skills = {
                 y: 317
             }
         },
-        SingularityTheorem: {
+        EtherMastery: {
             name_jp: "特異点定理",
-            name_en: "Singularity",
-            details: "Increases damage if attacking an enemy's weak point, including both elemental weakness (Fire, Ice, VOLT) and physical damage weakness (Cut, Blunt, Thrust).",
+            name_en: "Ether Mastery",
+            details: "Prerequisite for elemental skills. Increases elemental damage.",
             requires: "N/A",
             dep: {
                 DarkEther: 5
@@ -1849,10 +1849,10 @@ var skills = {
                 y: 487
             }
         },
-        ReturnEther: {
+        Singularity: {
             name_jp: "リターンエーテ ル",
-            name_en: "Etheric Return",
-            details: "The Zodiac recovers TP when killing an enemy.",
+            name_en: "Singularity",
+            details: "Damage increases when attacking an enemy's elemental weakness.",
             requires: "N/A",
             dep: {
                 SingularityTheorem: 5,
@@ -1865,10 +1865,10 @@ var skills = {
                 y: 449
             }
         },
-        FlameAstrology: {
+        EthericCharge: {
             name_jp: "炎の星術",
-            name_en: "Fire Star",
-            details: "FIRE: A formula that brings forth flames by use of astrology; attacks one enemy with a FIRE spell.",
+            name_en: "Etheric Charge",
+            details: "Concentrate to increase damage with elemental attacks.",
             requires: "Head",
             dep: {
                 FlameMastery: 1
@@ -1880,10 +1880,10 @@ var skills = {
                 y: 7
             }
         },
-        FlameConstellation: {
+        DarkEther: {
             name_jp: "炎の連星術",
-            name_en: "Binary Fire",
-            details: "FIRE: A formula that brings forth a great inferno by use of astrology; attacks every enemy with a FIRE spell.",
+            name_en: "Dark Ether",
+            details: "One row of allies will be able to use skills at no TP cost.",
             requires: "Head",
             dep: {
                 FlameMastery: 5
@@ -1895,10 +1895,10 @@ var skills = {
                 y: 87
             }
         },
-        FlameForesight: {
+        Meteor: {
             name_jp: "炎の先見術",
-            name_en: "Fire Prophecy",
-            details: "FIRE: Prevents the FIRE attacks of one designated enemy and counterattack that target with a FIRE spell.",
+            name_en: "Meteor",
+            details: "Call down meteors to deal strike damage to random enemies.",
             requires: "Head",
             dep: {
                 FlameAstrology: 5,
@@ -1911,10 +1911,10 @@ var skills = {
                 y: 49
             }
         },
-        IceAstrology: {
+        FireStar: {
             name_jp: "氷の星術",
-            name_en: "Ice Star",
-            details: "ICE: A formula that brings forth blocks of ice by use of astrology; attacks one enemy with an ICE spell.",
+            name_en: "Fire Star",
+            details: "Astrological flame does fire damage to one enemy.",
             requires: "Head",
             dep: {
                 IceMastery: 1
@@ -1926,10 +1926,10 @@ var skills = {
                 y: 139
             }
         },
-        IceConstellation: {
+        BinaryFire: {
             name_jp: "氷の連星術",
-            name_en: "Binary Ice",
-            details: "ICE: A formula that brings forth a great ice spear by use of astrology; attacks every enemy with an ICE spell.",
+            name_en: "Binary Fire",
+            details: "Astrology calls forth flames that do fire damage to all enemies.",
             requires: "Head",
             dep: {
                 IceMastery: 5
@@ -1941,10 +1941,10 @@ var skills = {
                 y: 219
             }
         },
-        IceForesight: {
+        Prominence: {
             name_jp: "氷の先見術",
-            name_en: "Ice Prophecy",
-            details: "ICE: Prevents the ICE attacks of one designated enemy and counterattack that target with an ICE spell.",
+            name_en: "Prominence",
+            details: "Engulf the battlefield with a conflagration. All units are weaker to ice attacks.",
             requires: "Head",
             dep: {
                 IceAstrology: 5,
@@ -1957,10 +1957,10 @@ var skills = {
                 y: 181
             }
         },
-        ThunderAstrology: {
+        IceStar: {
             name_jp: "雷の星術",
-            name_en: "Volt Star",
-            details: "VOLT: A formula that brings forth a lightning strike by use of astrology; attacks one enemy with a VOLT spell.",
+            name_en: "Ice Star",
+            details: "Astrological glaciers do ice damage to one enemy.",
             requires: "Head",
             dep: {
                 ThunderMastery: 1
@@ -1972,10 +1972,10 @@ var skills = {
                 y: 275
             }
         },
-        ThunderConstellation: {
+        BinaryIce: {
             name_jp: "雷の連星術",
-            name_en: "Binary Thunder",
-            details: "VOLT: A formula that brings forth a great VOLTbolt by use of astrology; attacks every enemy with a VOLT spell.",
+            name_en: "Binary Ice",
+            details: "Astrology calls forth an ice spear that damages all enemies with ice.",
             requires: "Head",
             dep: {
                 ThunderMastery: 5
@@ -1987,10 +1987,10 @@ var skills = {
                 y: 355
             }
         },
-        ThunderForesight: {
+        Deluge: {
             name_jp: "雷の先見術",
-            name_en: "Volt Prophecy",
-            details: "VOLT: Prevents the VOLT attacks of one designated enemy and counterattack that target with a VOLT spell.",
+            name_en: "Deluge",
+            details: "Invoke a raging flood over the battlefield. All units are weaker to volt attacks.",
             requires: "Head",
             dep: {
                 ThunderAstrology: 5,
@@ -2003,10 +2003,10 @@ var skills = {
                 y: 317
             }
         },
-        Meteor: {
-            name_jp: "メテオ",
-            name_en: "Meteor",
-            details: "Causes a meteorite from the cosmos to come flying and randomly performs a powerful blunt attack at all enemies randomly.",
+          VoltStar: {
+            name_jp: "エーテル圧縮",
+            name_en: "Volt Star",
+            details: "Astrological lightning does volt damage to one enemy.",
             requires: "Head",
             dep: {
                 ReturnEther: 3,
@@ -2019,10 +2019,10 @@ var skills = {
                 y: 543
             }
         },
-        EtherConcentration: {
-            name_jp: "エーテル圧縮",
-            name_en: "Etheric Charge",
-            details: "Concentrate the mind and raise the damage of FIRE, ICE and VOLT attacks for the next turn.",
+      BinaryThunder: {
+            name_jp: "ダークエーテル",
+            name_en: "Binary Thunder",
+            details: "Astrology calls forth lightning for volt damage to all enemies.",
             requires: "Head",
             dep: {
                 DarkEther: 5
@@ -2034,11 +2034,11 @@ var skills = {
                 y: 407
             }
         },
-        DarkEther: {
-            name_jp: "ダークエーテル",
-            name_en: "Dark Ether",
-            details: "On this turn only, the skills that a row uses do not cost TP.",
-            requires: "Head",
+      Tempest: {
+            name_jp: "星体観測",
+            name_en: "Tempest",
+            details: "Conjure a turbulent thunderstorm overhead. All units are weaker to fire attacks.",
+            requires: "N/A",
             dep: {
                 /* none */ },
             active: TRUE,
@@ -2048,10 +2048,10 @@ var skills = {
                 y: 449
             }
         },
-        PlanetObservation: {
+       Supernova: {
             name_jp: "星体観測",
-            name_en: "Horoscope",
-            details: "Indicates the location of nearby F.O.E.s on the map for a certain number of steps.",
+            name_en: "Supernova",
+            details: "Conjures the primordial power of the heavens to strike enemies' weaknesses.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2065,19 +2065,19 @@ var skills = {
     },
 
     Wildling: {
-        BeastHeart: {
+        NaturePact: {
             name_jp: "獣の心",
-            name_en: "Beast Soul",
-            details: "Increases Max HP, ATK, and DEF of summoned beasts.",
+            name_en: "Nature Pact",
+            details: "Wildling skill that allows a beast to take a mortal blow in your place.",
             requires: "N/A",
             unique: true,
             active: FALSE,
             max: 10
         },
-        AnimalFriendship: {
+        WildMastery: {
             name_jp: "獣たちの友情",
-            name_en: "Nature Pact",
-            details: "On dying, there is a chance to take the place of the summoned beast.",
+            name_en: "Wild Mastery",
+            details: "Prerequisite for summoning beasts. Ailment success rate of beasts rises.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2088,10 +2088,10 @@ var skills = {
                 y: 212
             }
         },
-        BeastKingMastery: {
+        BeastSoul: {
             name_jp: "獣王マスタリー",
-            name_en: "Wild Mastery",
-            details: "Increase the chance for summoned beasts to inflict status ailments; required to summon beasts.",
+            name_en: "Beast Soul",
+            details: "Raise Max HP, ATK, and DEF of summoned beasts.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2102,10 +2102,10 @@ var skills = {
                 y: 212
             }
         },
-        BeastReturn: {
+        Sacrifice: {
             name_jp: "ビースト帰還",
-            name_en: "Dismiss Beast",
-            details: "Return a summoned beast and recover the TP that was consumed during the summoning.",
+            name_en: "Sacrifice",
+            details: "A beast may take a blow instead of an ally in the same row.",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 1
@@ -2117,10 +2117,10 @@ var skills = {
                 y: 362
             }
         },
-        BeastRoar: {
+        SpiritFang: {
             name_jp: "ビー ストロア",
-            name_en: "Beast Roar",
-            details: "The sound of a loud roar lowers the ATK of all enemies.",
+            name_en: "Spirit Fang",
+            details: "Ranged attack to one enemy with equipped weapon, utilizing magical strength.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -2131,10 +2131,10 @@ var skills = {
                 y: 515
             }
         },
-        BeastsOath: {
+        PrimalEnergy: {
             name_jp: "獣の警戒",
-            name_en: "Alertness",
-            details: "Decreases the chance of enemy preemptive attacks.",
+            name_en: "Primal Energy",
+            details: "Relaxes enemies, lowering their resistances for three turns.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2145,10 +2145,10 @@ var skills = {
                 y: 515
             }
         },
-        Drumming: {
+        BeastRoar: {
             name_jp: "ドラミング",
-            name_en: "Primal Drums",
-            details: "The sound of loud drumming lowers the DEF of all enemies.",
+            name_en: "Beast Roar",
+            details: "A loud roar lowers the damage of all enemies for 3 turns.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -2159,10 +2159,10 @@ var skills = {
                 y: 515
             }
         },
-        SacrificeI: {
+        PrimalDrums: {
             name_jp: "捨身の心得I",
-            name_en: "Sacrifice I",
-            details: "Have a chance that the summoned beast will take physical damage in place of allies in the same row.",
+            name_en: "Primal Drums",
+            details: "Threatens enemies, lowering their defense for three turns.",
             requires: "N/A",
             dep: {
                 AnimalFriendship: 3
@@ -2174,10 +2174,10 @@ var skills = {
                 y: 83
             }
         },
-        SacrificeII: {
+        DismissBeast: {
             name_jp: "捨身の心得II",
-            name_en: "Sacrifice II",
-            details: "Have a chance that the summoned beast will take elemental damage in place of allies in the same row.",
+            name_en: "Dismiss Beast",
+            details: "Calls back a summoned beast. When they return, you regain the TP.",
             requires: "N/A",
             dep: {
                 AnimalFriendship: 3
@@ -2189,10 +2189,10 @@ var skills = {
                 y: 341
             }
         },
-        SummonBird: {
+        CallBird: {
             name_jp: "大鳥招来",
             name_en: "Call Bird",
-            details: "Summons a large bird that does a Thrust attack and can Bind Head to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            details: "Summons a large bird that does a Thrust attack and can Bind Head to one enemy.",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 1
@@ -2204,10 +2204,10 @@ var skills = {
                 y: 59
             }
         },
-        SummonElephant: {
+        CallSnake: {
             name_jp: "巨象招来",
-            name_en: "Call Elephant",
-            details: "Summons an elephant that attacks all enemies and can cause confusion.  After the initial attack, it will only attack a single enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Snake",
+            details: "Summons a great snake that deals strike damage and binds the arms.",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 7,
@@ -2220,10 +2220,10 @@ var skills = {
                 y: 313
             }
         },
-        SummonHypnoOwl: {
+        CallMole: {
             name_jp: "催眠梟招来",
-            name_en: "Call Owl",
-            details: "Summons an owl that has a chance to cause every enemy to fall asleep.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Mole",
+            details: "Summons a great mole that deals slash damage and binds the legs.",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 5
@@ -2235,10 +2235,10 @@ var skills = {
                 y: 10
             }
         },
-        SummonLionKing: {
+        CallSlime: {
             name_jp: "獅子王招来",
-            name_en: "Call Lion",
-            details: "Summons a sleeping lion king that paralyzes or petrifies all enemies when it wakes up.  Deals greater damage to enemies that already have a status ailment.  After its attack, it goes back to sleep.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Slime",
+            details: "Summons a viscous slime protect allies from elemental damage.",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 10,
@@ -2251,10 +2251,10 @@ var skills = {
                 y: 83
             }
         },
-        SummonMole: {
+        CallCow: {
             name_jp: "土竜招来",
-            name_en: "Call Mole",
-            details: "Summons a mole that does a Slash attack and can Bind Legs to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Cow",
+            details: "Summons a wild, violent cow dealing random pierce damage and paralysis.",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 1
@@ -2266,10 +2266,10 @@ var skills = {
                 y: 160
             }
         },
-        SummonRagingBull: {
+        Call Owl: {
             name_jp: "暴れ野牛招来",
-            name_en: "Call Cow",
-            details: "Summons a bull that does a Thrust attack on random enemies and can cause paralysis.  After the initial attack, it will only attack a single enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Owl",
+            details: "Summons a beguiling owl that may put all enemies to sleep.",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 7,
@@ -2282,10 +2282,10 @@ var skills = {
                 y: 111
             }
         },
-        SummonSlime: {
+        CallPasaran: {
             name_jp: "不定型生物招来",
-            name_en: "Call Ooze",
-            details: "Summons a slime that does a Slash attack and can inflict decay on one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Pasaran",
+            details: "Summons an angry pasaran. Explosion damage will confuse all enemies. ",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 6,
@@ -2298,10 +2298,10 @@ var skills = {
                 y: 212
             }
         },
-        SummonSnake: {
+        CallTiger: {
             name_jp: "大蛇招来",
-            name_en: "Call Snake",
-            details: "Summons a large snake that does a Hit attack and can Bind Arms to one enemy.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Tiger",
+            details: "Summons a sabretooth tiger. Glare attacks will defeat all enemies. ",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 1
@@ -2313,10 +2313,10 @@ var skills = {
                 y: 261
             }
         },
-        SummonTiger: {
+        CallLion: {
             name_jp: "剣虎招来",
-            name_en: "Call Tiger",
-            details: "Summons the saber-toothed tiger that tries to instantly kill all enemies.  After that, it counters any attacks that it receives.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Lion",
+            details: "Summons a majestic lion. Demands enemies' attention with its presence.  ",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 10,
@@ -2329,10 +2329,10 @@ var skills = {
                 y: 341
             }
         },
-        SummonVenomfly: {
+        CallOoze: {
             name_jp: "毒アゲハ招来",
-            name_en: "Call Insect",
-            details: "Summons a venomfly which does a Slash attack and has a chance to inflict one enemy with poison.  Check the Help/About section to see detailed explanations regarding all summoned beasts.",
+            name_en: "Call Ooze",
+            details: "Summons a swamp ooze protect allies from physical damage.",
             requires: "Arms",
             dep: {
                 BeastKingMastery: 3
@@ -2356,10 +2356,10 @@ var skills = {
             active: FALSE,
             max: 10
         },
-        CrossbowMastery: {
+       BoltMastery: {
             name_jp: "弩マスタリー",
             name_en: "Bolt Mastery",
-            details: "Improves physical damage with Bolts; required for Bolt skills.",
+            details: "Revive once when at death's door to increase attack and decrease defense.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2370,9 +2370,9 @@ var skills = {
                 y: 276
             }
         },
-        SurefireConcentration: {
+       AdrenalineRush: {
             name_jp: "正射必中",
-            name_en: "Proper Form",
+            name_en: "Adrenaline Rush",
             details: "Increase accuracy of skills.",
             requires: "N/A",
             dep: {
@@ -2400,10 +2400,10 @@ var skills = {
                 y: 499
             }
         },
-        Extend: {
+        MultiShot: {
             name_jp: "エクステンド",
-            name_en: "Extend",
-            details: "When a monster is killed, the Arbalist restores some HP.",
+            name_en: "Multi-Shot",
+            details: "When using skills targeting one enemy, number of hits may rise.",
             requires: "N/A",
             dep: {
                 SurefireConcentration: 3
@@ -2415,10 +2415,10 @@ var skills = {
                 y: 15
             }
         },
-        DoubleAction: {
+        ProperForm: {
             name_jp: "ダブルアクショ ン",
-            name_en: "Double Action",
-            details: "When using a skill that targets a single enemy, there is a chance to perform the skill a second time.",
+            name_en: "Proper Form",
+            details: "Employ especially careful aim, increasing all skills' accuracy.",
             requires: "N/A",
             dep: {
                 RearMortarBombardment: 4,
@@ -2431,10 +2431,10 @@ var skills = {
                 y: 339
             }
         },
-        HeavyShot: {
+        SagittariusArrow: {
             name_jp: "ヘビーショット",
-            name_en: "Heavy Shot",
-            details: "Bolt: A thrust attack at one enemy by using a projectile that is heavier than normal.",
+            name_en: "Sagittarius Arrow",
+            details: "Crossbow: Fires a quick shot imbued with the element of your weapon.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 1
@@ -2446,10 +2446,10 @@ var skills = {
                 y: 212.8
             }
         },
-        RearMortarBombardment: {
+        SmokeGrenade: {
             name_jp: "前陣迫撃砲術",
-            name_en: "Front Mortar",
-            details: "Bolt: Damage is increased when used from the front row; a thrust attack at one enemy with a projectile for short distance usage.",
+            name_en: "Smoke Grenade",
+            details: "Detonate a smoke bomb to blind all enemies.",
             requires: "Arms",
             dep: {
                 HeavyShot: 5
@@ -2461,10 +2461,10 @@ var skills = {
                 y: 212.8
             }
         },
-        SnipeI: {
+        ApollosWrath: {
             name_jp: "スナイプⅠ",
-            name_en: "Snipe",
-            details: "Bolt: Prepares weapon and waits; at the end of the turn, a thrust attack that snipes enemies that are afflicted by status abnormalities.",
+            name_en: "Apollo's Wrath",
+            details: "Crossbow: Summon the power of Apollo to burn enemies with ailments or binds.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 2
@@ -2476,10 +2476,10 @@ var skills = {
                 y: 15
             }
         },
-        SnipeII: {
+        HeavyShot: {
             name_jp: "スナイプⅡ",
-            name_en: "Sharpshooter",
-            details: "Bolt: Prepares weapon and waits; at the end of the turn, a thrust attack that snipes enemies that have any bind conditions.",
+            name_en: "Heavy Shot",
+            details: "Crossbow: Heavy arrows deal pierce damage to a single enemy.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 2
@@ -2491,10 +2491,10 @@ var skills = {
                 y: 102
             }
         },
-        RandomShot: {
+        ArtemisEmbrace: {
             name_jp: "ランダムショット",
-            name_en: "Strafe",
-            details: "Bolt: Fires projectiles in succession; thrust attack at all enemies randomly.",
+            name_en: "Artemis' Embrace",
+            details: "Crossbow: Summon the power of Artemis to freeze enemies with ailments or binds.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 3
@@ -2506,10 +2506,10 @@ var skills = {
                 y: 189
             }
         },
-        FireBarrage: {
+        ErosCarnage: {
             name_jp: "ファイアバラージ",
-            name_en: "Fire Barrage",
-            details: "Bolt: Fires a shell that is mixed with a special gunpowder; attacks all enemies; combines Thrust/FIRE attack.",
+            name_en: "Eros' Carnage",
+            details: "Crossbow: Summon the power of Eros to electrocute enemies with ailments or binds.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 5
@@ -2521,10 +2521,10 @@ var skills = {
                 y: 276
             }
         },
-        FreezeBarrage: {
+        ArmorPiercer: {
             name_jp: "フリーズバラージ",
-            name_en: "Ice Barrage",
-            details: "Bolt: Fires a shell that is mixed with a special gunpowder; attacks every enemy; combines Thrust/ICE attack.",
+            name_en: "Armor Piercer",
+            details: "Crossbow: Bolts deal pierce/almighty damage that ignores enemy enhancements.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 5
@@ -2536,10 +2536,10 @@ var skills = {
                 y: 363
             }
         },
-        ThunderBarrage: {
+        FireBarrage: {
             name_jp: "サンダーバラージ",
-            name_en: "Volt Barrage",
-            details: "Bolt: Fires a shell that is mixed with a special gunpowder; attacks every enemy; combines Thrust/THUNDER attack.",
+            name_en: "Fire Barrage",
+            details: "Crossbow: Special gunpowder deals pierce/fire damage to all enemies.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 5
@@ -2551,10 +2551,10 @@ var skills = {
                 y: 450
             }
         },
-        HighSpeedAPBullet: {
+        FrontMortar: {
             name_jp: "高速徹甲弾",
-            name_en: "Armor Piercer",
-            details: "Bolt: A thrust attack at one enemy with an armor piercing bullet; ignores the enhancements of the enemy.",
+            name_en: "Front Mortar",
+            details: "Crossbow: Pierce damage at one enemy. More effective from the front row.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 7
@@ -2566,10 +2566,10 @@ var skills = {
                 y: 339
             }
         },
-        Rainfall: {
+       IceBarrage: {
             name_jp: "レインフォール",
-            name_en: "Cloudbuster",
-            details: "Bolt: Fires projectiles up in the sky; on the next turn, a thrust attack descends upon all enemies.",
+            name_en: "Ice Barrage",
+            details: "Crossbow: Special gunpowder deals pierce/ice damage to all enemies.",
             requires: "Arms",
             dep: {
                 CrossbowMastery: 10
@@ -2581,10 +2581,10 @@ var skills = {
                 y: 537
             }
         },
-        IlluminatingShot: {
+        VoltBarrage: {
             name_jp: "照 明弾",
-            name_en: "Pop Flares",
-            details: "For 3 turns, the accuracy of all allies increases.",
+            name_en: "Volt Barrage",
+            details: "Crossbow: Special gunpowder deals pierce/volt damage to all enemies.",
             requires: "Arms",
             dep: {
                 /* none */ },
@@ -2595,10 +2595,10 @@ var skills = {
                 y: 457
             }
         },
-        SmokeBomb: {
+        Cloudbuster: {
             name_jp: "発煙弾",
-            name_en: "Smoke Grenade",
-            details: "Drop a smoke bomb that has a chance to blind all enemies.",
+            name_en: "Cloudbuster",
+            details: "Crossbow: Shoot a bolt into the sky, raining pierce damage next turn.",
             requires: "Arms",
             dep: {
                 /* none */ },
@@ -2626,19 +2626,19 @@ var skills = {
     },
 
     Farmer: {
-        NaturesBlessing: {
+        EarthsBounty: {
             name_jp: "大自然の恵み",
             name_en: "Earth's Bounty",
-            details: "As long as the Farmer is alive at the end of battle, all allies gain bonus EXP.  This effect stacks with other Farmers that have this skill and are in the active party.",
+            details: "Farmer skill that increases ally EXP points and damage of farmer skills.",
             requires: "N/A",
             unique: true,
             active: FALSE,
             max: 10
         },
-        Braveheart: {
+        DeathBlight: {
             name_jp: "ブレイブハート",
-            name_en: "Brave Heart",
-            details: "Every turn that the Farmer's HP is full, TP is recovered.",
+            name_en: "Death Blight",
+            details: "Throw a bucket of mysterious acid at enemies, hoping for the best.",
             requires: "N/A",
             dep: {
                 MomentOfInjury: 5
@@ -2650,10 +2650,10 @@ var skills = {
                 y: 170
             }
         },
-        BravingRain: {
+       Contagion: {
             name_jp: "アメニモマケズ",
-            name_en: "Rain or Shine",
-            details: "For a certain number of steps, all allies become immune to damage and mud tiles.",
+            name_en: "Contagion",
+            details: "Launch nasty sewage at enemies. Biological warfare!.",
             requires: "N/A",
             dep: {
                 DetectionMaster: 3
@@ -2665,7 +2665,7 @@ var skills = {
                 y: 412
             }
         },
-        CampMaster: {
+        CampMastery: {
             name_jp: "キャンプマス ター",
             name_en: "Camp Mastery",
             details: "HP and TP healed from Tents is increased, dead party members and petrified party members are also restored.",
@@ -2679,10 +2679,10 @@ var skills = {
                 y: 492
             }
         },
-        CPR: {
+        Witchcraft: {
             name_jp: "応急蘇生",
-            name_en: "Slap Awake",
-            details: "Revive a person outside of battle.",
+            name_en: "Witchcraft",
+            details: "Delve into the realms of witchcraft to learn occult magic.",
             requires: "N/A",
             dep: {
                 CampMaster: 5
@@ -2694,10 +2694,10 @@ var skills = {
                 y: 534
             }
         },
-        CryToCeaseAttack: {
+        KeenNose: {
             name_jp: "鳴かずば討たれず",
-            name_en: "Play Possum",
-            details: "For 3 turns, the Farmer is less likely to be targeted by enemies.",
+            name_en: "Keen Nose",
+            details: "You have a higher chance of finding rare items at harvesting points.",
             requires: "Head",
             dep: {
                 Lullaby: 1
@@ -2709,10 +2709,10 @@ var skills = {
                 y: 10
             }
         },
-        CursedEyeOfWeak: {
+        DevilsCandle: {
             name_jp: "弱り目に祟り目",
-            name_en: "Rotten Egg",
-            details: "During 4 turns, all enemies have their ATK decreased. Those enemies already afflicted by a status condition have a greater ATK reduction.",
+            name_en: "Devil's Candle",
+            details: "Purge the party's debuffs and heal them with occult magic.",
             requires: "Arms",
             dep: {
                 Lullaby: 3
@@ -2724,10 +2724,10 @@ var skills = {
                 y: 170
             }
         },
-        DetectionMaster: {
+        DustDevil: {
             name_jp: "探 知マスター",
-            name_en: "Keen Eye",
-            details: "For a certain number of steps, the location of every F.O.E. is displayed on the map.",
+            name_en: "Dust Devil",
+            details: "Kick a dust cloud towards enemies,  but maybe that wasn't a great idea.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2738,10 +2738,10 @@ var skills = {
                 y: 412
             }
         },
-        DismantleMastery: {
+        RottenEgg: {
             name_jp: "解体マスター",
-            name_en: "Waste Not",
-            details: "Increases the drop rate of items acquired from battle.  This effect stacks with other Farmers that have this skill and are in the active party.",
+            name_en: "Rotten Egg",
+            details: "Lower enemy strength for 4 turns. Status ailments increase its effect.",
             requires: "N/A",
             dep: {
                 CampMaster: 3
@@ -2753,10 +2753,10 @@ var skills = {
                 y: 454
             }
         },
-        ForagingMastery: {
+        Lullaby: {
             name_jp: "収穫マスター",
-            name_en: "Harvestry",
-            details: "Increases the number of times the Farmer can use Take, Chop and Mine gathering spots, independently from Take, Chop and Mine.",
+            name_en: "Lullaby",
+            details: "Sing a lullaby, reminiscing of dear father... before he left us.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2767,10 +2767,10 @@ var skills = {
                 y: 332
             }
         },
-        Loitering: {
+        StrangeSeeds: {
             name_jp: "みちくさ",
-            name_en: "Horseplay",
-            details: "Lets 1 hour pass by.",
+            name_en: "Strange Seeds",
+            details: "Plant seeds that bind enemies' head, arm, or legs at the end of the turn..",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2781,10 +2781,10 @@ var skills = {
                 y: 251
             }
         },
-        Lullaby: {
+        Offering: {
             name_jp: "子守唄",
-            name_en: "Lullaby",
-            details: "Farmer falls asleep, but also has a chance to put each enemy to sleep.",
+            name_en: "Offering",
+            details: "Witchcraft: Sacrifice the user's health to heal an ally.",
             requires: "Head",
             dep: {
                 /* none */ },
@@ -2795,10 +2795,10 @@ var skills = {
                 y: 90
             }
         },
-        MomentOfInjury: {
+        HarvestTime: {
             name_jp: "怪我の功名",
-            name_en: "Sympathy Pain",
-            details: "If the Farmer is afflicted by a negative status effect, there is a chance to transfer them to an enemy.",
+            name_en: "Harvest Time!",
+            details: "Time to swing that scythe 'round and 'round... did I even hit anything?",
             requires: "Arms",
             dep: {
                 CursedEyeOfWeak: 3
@@ -2810,10 +2810,10 @@ var skills = {
                 y: 170
             }
         },
-        MysterySeed: {
+        Malediction: {
             name_jp: "不思議な種",
-            name_en: "Strange Seeds",
-            details: "At the end of a turn, all enemies will be afflicted by random binds.",
+            name_en: "Malediction",
+            details: "Witchcraft: Embrace the power of darkness to curse your enemies.",
             requires: "Arms",
             dep: {
                 Lullaby: 3
@@ -2825,10 +2825,10 @@ var skills = {
                 y: 90
             }
         },
-        ReturnMaster: {
+        SafeStroll: {
             name_jp: "帰宅マスター",
-            name_en: "To Market",
-            details: "Teleports the party out of the dungeon and back to town.  Same effect as a warp wire.",
+            name_en: "Safe Stroll",
+            details: "Eliminate enemy encounters for a limited number of steps.",
             requires: "N/A",
             dep: {
                 DetectionMaster: 1
@@ -2840,10 +2840,10 @@ var skills = {
                 y: 332
             }
         },
-        SafeWalking: {
+        DevilsSnare: {
             name_jp: "安全歩行",
-            name_en: "Safe Stroll",
-            details: "For a certain number of steps, the encounter rate with enemies becomes zero.",
+            name_en: "Devil's Snare",
+            details: "Remove buffs from all enemies and blast them with occult magic.",
             requires: "N/A",
             dep: {
                 DetectionMaster: 5
@@ -2855,10 +2855,10 @@ var skills = {
                 y: 492
             }
         },
-        SplitSpirit: {
+        ThornBind: {
             name_jp: "五分の魂",
-            name_en: "Persistence",
-            details: "Once per battle, there's a chance that the Farmer is automatically revived if dead.",
+            name_en: "Thorn Bind",
+            details: "Summon your loyal plants to drain and bind enemies 3 ways. Maybe it'll work?",
             requires: "N/A",
             dep: {
                 CryToCeaseAttack: 5,
@@ -2871,10 +2871,10 @@ var skills = {
                 y: 52
             }
         },
-        TwoCropsAYear: {
+       Mesmerize: {
             name_jp: "二毛作",
-            name_en: "Double Crop",
-            details: "Restores the Farmer's ability to use Take, Chop and Mine spots.",
+            name_en: "Mesmerize",
+            details: "Witchcraft: Hypnotize your enemies into forgetting their misfortunes. Removes Built up Ailment/Bind Resistance",
             requires: "N/A",
             dep: {
                 ForagingMastery: 5
@@ -2886,10 +2886,10 @@ var skills = {
                 y: 374
             }
         },
-        WildSmell: {
+        Harvestry: {
             name_jp: "野生の嗅覚",
-            name_en: "Keen Nose",
-            details: "Increase the chance of acquiring a rare item from a take, chop or mine spot.  This effect stacks with other Farmers that have this skill and are in the active party.",
+            name_en: "Harvestry",
+            details: "Gather resources at all chopping, mining and gathering points.",
             requires: "N/A",
             dep: {
                 ForagingMastery: 3
@@ -2904,7 +2904,7 @@ var skills = {
     },
 
     Shogun: {
-        DualWield: {
+        SecondSword: {
             name_jp: "弐の太刀",
             name_en: "Second Sword",
             details: "Allows equipping of two weapons and increases damage when attacking with two weapons.",
@@ -2941,10 +2941,10 @@ var skills = {
                 y: 256
             }
         },
-        BloodstainedSpear: {
+        UpwardSlash: {
             name_jp: "血染めの朱槍",
-            name_en: "Bloody Lance",
-            details: "Increases the ATK of the Shogun whenever an ally or enemy is defeated in battle.",
+            name_en: "Upward Slash",
+            details: "Katana: Deal slash damage then empower the next slash attack.",
             requires: "N/A",
             dep: {
                 Endure: 3
@@ -2956,10 +2956,10 @@ var skills = {
                 y: 336
             }
         },
-        RestoreWill: {
+        BloodyLance: {
             name_jp: "士気回復",
-            name_en: "Morale Boost",
-            details: "If the Shogun is revived during battle, all allies have their HP restored.",
+            name_en: "Bloody Lance",
+            details: "Your attack power increases each time you deal a final blow.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -2970,10 +2970,10 @@ var skills = {
                 y: 148
             }
         },
-        SuicideAssistant: {
+        MoraleBoost: {
             name_jp: "介錯",
             name_en: "Kaishaku",
-            details: "When allies or enemies are below a certain amount of HP, there is a chance to instantly kill them.",
+            details: "Increase the morale of the allies, raising their maximum HP.",
             requires: "Arms",
             dep: {
                 RestoreWill: 1,
@@ -2986,10 +2986,10 @@ var skills = {
                 y: 148
             }
         },
-        HiltSmash: {
+        ChargingThrust: {
             name_jp: "柄落 し",
-            name_en: "Hilt Strike",
-            details: "Katana: A blunt attack that strikes one enemy with the hilt; has a chance to stun the enemy.",
+            name_en: "Charging Thrust",
+            details: "Katana: Deal pierce damage then empower the next pierce attack.",
             requires: "Arms",
             dep: {
                 KatanaMastery: 1
@@ -3001,10 +3001,10 @@ var skills = {
                 y: 363.8
             }
         },
-        MorningStar: {
+       HiltStrike: {
             name_jp: "明星",
-            name_en: "Myoujou",
-            details: "Katana: A cut attack that randomly strikes out at every enemy; attack power increases during the day.",
+            name_en: "Hilt Strike",
+            details: "Katana/Sword: A single strike that uses the hilt. May stun.",
             requires: "Arms",
             dep: {
                 KatanaMastery: 5
@@ -3016,10 +3016,10 @@ var skills = {
                 y: 443.8
             }
         },
-        Catastrophe: {
+        MorningStar: {
             name_jp: "禍時",
-            name_en: "Magatoki",
-            details: "Katana: A cut attack that randomly strikes out at every enemy; attack power increases during the night.",
+            name_en: "Morning Star",
+            details: "Katana/Sword: Slash all enemies. Stronger in sunlight, may blind.",
             requires: "Arms",
             dep: {
                 KatanaMastery: 5
@@ -3031,10 +3031,10 @@ var skills = {
                 y: 523.8
             }
         },
-        OlympicSword: {
+        TwilightHour: {
             name_jp: "五輪の剣",
-            name_en: "5-Ring Sword",
-            details: "Katana: A cut attack that randomly strikes out at every enemy; the maximum number of strikes doubles if two weapons are equipped.",
+            name_en: "Twilight Hour",
+            details: "Katana/Sword: Slash all enemies. Stronger in moonlight, may sleep.",
             requires: "Arms",
             dep: {
                 KatanaMastery: 10,
@@ -3047,10 +3047,10 @@ var skills = {
                 y: 256
             }
         },
-        SpiritualUnification: {
+        5RingSword: {
             name_jp: "精神統一",
-            name_en: "Unified Spirit",
-            details: "For three turns, the Shogun become immune to binds.",
+            name_en: "5-Ring Sword",
+            details: "Katana: Randomly slash all enemies, more hits with two swords.",
             requires: "Head",
             dep: {
                 Endure: 3
@@ -3062,10 +3062,10 @@ var skills = {
                 y: 444
             }
         },
-        GreatMilitarist: {
+        GreatWarrior: {
             name_jp: "大武辺者",
-            name_en: "Daifuhensha",
-            details: "For three turns, ATK and DEF is raised and the and the chance that enemies attack the Shogun increases.",
+            name_en: "Great Warrior",
+            details: "Increases attack and defense, but draws enemy attacks.",
             requires: "Head",
             dep: {
                 Endure: 5
@@ -3077,10 +3077,10 @@ var skills = {
                 y: 256
             }
         },
-        VanguardsPrestige: {
+        WarriorMight: {
             name_jp: "先陣の名誉",
-            name_en: "Fore Honor",
-            details: "Assigns someone to be the vanguard for 3 turns, increasing their ATK, lowering their DEF, and lets them act first.",
+            name_en: "Warrior Might",
+            details: "To perform follow up damage to most ally attacks.",
             requires: "Head",
             dep: {
                 RestoreWill: 3
@@ -3092,10 +3092,10 @@ var skills = {
                 y: 40
             }
         },
-        RearGuardsHonor: {
+        ForeHonor: {
             name_jp: "殿軍の誉れ",
-            name_en: "Rear Dignity",
-            details: "Assigns someone to be the rear guard for 3 turns, increasing their DEF, lowering their ATK, and having them act last.",
+            name_en: "Fore Honor",
+            details: "Designate an attacker for 3 turns, receiving ATK up and acting first.",
             requires: "Head",
             dep: {
                 RestoreWill: 3
@@ -3107,10 +3107,10 @@ var skills = {
                 y: 40
             }
         },
-        AssumeFormation: {
+        RearDignity: {
             name_jp: "野伏せの陣立",
-            name_en: "Ambush Stance",
-            details: "Command a row assume battle formation, causing them to counter enemy attacks that target that row.",
+            name_en: "Rear Dignity",
+            details: "Designate a defender for 3 turns, receiving DEF up and acting last.",
             requires: "Arms",
             dep: {
                 VanguardsPrestige: 3,
@@ -3123,10 +3123,10 @@ var skills = {
                 y: 40
             }
         },
-        Ikkitousen: {
+        AmbushStance: {
             name_jp: "一騎当千",
-            name_en: "Warrior Might",
-            details: "While disregarding defense completely, chase the attacks of every ally.",
+            name_en: "Ambush Stance",
+            details: "Attacks against the designated row will be countered.",
             requires: "Legs",
             dep: {
                 SpiritualUnification: 3,
@@ -3139,10 +3139,10 @@ var skills = {
                 y: 444
             }
         },
-        SimultaneousFiring: {
+        Alertness: {
             name_jp: "一斉射撃",
-            name_en: "Fusillade",
-            details: "Commands everyone with a gun or a crossbow to fire at one enemy.",
+            name_en: "Alertness",
+            details: "Raises awareness to reduce the chance of being ambushed.",
             requires: "Arms",
             dep: {
                 RestoreWill: 5
@@ -3154,7 +3154,7 @@ var skills = {
                 y: 148
             }
         },
-        RagingDragonFormation: {
+        BlitzCommand: {
             name_jp: "乱れ竜の陣",
             name_en: "Blitz Command",
             details: "Commands every ally to strike one enemy simultaneously with their equipped weapon.",
@@ -3169,10 +3169,10 @@ var skills = {
                 y: 148
             }
         },
-        RetreatToWin: {
+        SheathStrike: {
             name_jp: "逃げるが勝ち",
-            name_en: "Retreat",
-            details: "Causes everyone to try and escape.  Escaping chance increases with higher levels of the ability.",
+            name_en: "Sheath Strike",
+            details: "Katana: Deal strike damage then empower the next strike attack.",
             requires: "Legs",
             dep: {
                 /* none */ },
@@ -3186,7 +3186,7 @@ var skills = {
     },
 
     Yggdroid: {
-        ReflectiveEnergy: {
+        SleepMode: {
             name_jp: "省エネ",
             name_en: "Sleep Mode",
             details: "TP is restored when inflicted with Binds.  The more binds, the more TP is restored.",
@@ -3195,10 +3195,10 @@ var skills = {
             active: FALSE,
             max: 10
         },
-        DataAnalysis: {
+        Overheat: {
             name_jp: "データ解析",
-            name_en: "Data Mining",
-            details: "ATK and critical rate is increased for normal attacks.",
+            name_en: "Overheat",
+            details: "Gain superior attack power at the cost of HP loss each turn.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -3209,10 +3209,10 @@ var skills = {
                 y: 206
             }
         },
-        DarkVision: {
+        Bastion {
             name_jp: "暗視",
-            name_en: "Infravision",
-            details: "Accuracy and evasion is increased during the night.",
+            name_en: "Bastion",
+            details: "Grow bigger, attracting more enemy hits and resisting ailments.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -3223,10 +3223,10 @@ var skills = {
                 y: 110.1
             }
         },
-        AntibodyIncubation: {
+        AnnihilationProtocol: {
             name_jp: "抗体培養",
-            name_en: "Virus Scanner",
-            details: "Increases status ailment resistance.",
+            name_en: "Annihilation Protocol",
+            details: "In total annihilation mode, attacks are stronger while having lower HP.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -3237,10 +3237,10 @@ var skills = {
                 y: 14
             }
         },
-        Overheat: {
+        Infravision: {
             name_jp: "オーバーヒート",
-            name_en: "Overheat",
-            details: "Increases ATK, but in exchange, HP will be consumed each turn.  Since this skill is passive, it cannot be turned off.",
+            name_en: "Infravision",
+            details: "Aim and evasion increase at night.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -3251,10 +3251,10 @@ var skills = {
                 y: 377
             }
         },
-        ElectromagneticBarrier: {
+        DataMining: {
             name_jp: "電磁バリア",
-            name_en: "EM Barrier",
-            details: "When being attacked, there is a chance that you may paralyze the enemy and counterattack THUNDER elemental attacks.",
+            name_en: "Data Mining",
+            details: "Critical hit rate increases. Each successful hit adds to your power.",
             requires: "N/A",
             dep: {
                 Overheat: 3
@@ -3266,10 +3266,10 @@ var skills = {
                 y: 377
             }
         },
-        RedBot: {
+        Benben: {
             name_jp: "レッドボット",
-            name_en: "Red Bot",
-            details: "Deploys a fire bot in an empty space that chases the FIRE attacks of all allies.",
+            name_en: "Benben",
+            details: "Summon a fire bot whose follow-up attacks debuff almighty resistance.",
             requires: "Head",
             dep: {
                 DataAnalysis: 1
@@ -3281,10 +3281,10 @@ var skills = {
                 y: 262
             }
         },
-        BlueBot: {
+        Perkins: {
             name_jp: "ブルーボット",
-            name_en: "Blue Bot",
-            details: "Deploys an ice bot in an empty space that chases the ICE attacks of all allies.",
+            name_en: "Perkins",
+            details: "Summon an ice bot whose follow-up attacks debuff evasion.",
             requires: "Head",
             dep: {
                 DataAnalysis: 1
@@ -3296,10 +3296,10 @@ var skills = {
                 y: 262
             }
         },
-        YellowBot: {
+        Pascal: {
             name_jp: "イエロボット",
-            name_en: "Yellow Bot",
-            details: "Deploys a thunder bot in an empty space that chases the THUNDER attacks of all allies.",
+            name_en: "Pascal",
+            details: "Summon a volt bot whose follow-up attacks debuff accuracy.",
             requires: "Head",
             dep: {
                 DataAnalysis: 1
@@ -3311,10 +3311,10 @@ var skills = {
                 y: 262
             }
         },
-        Resupply: {
+        Fortification: {
             name_jp: "補給",
-            name_en: "Resupply",
-            details: "Supplies energy to bots and recovers the HP of every bot.",
+            name_en: "Fortification",
+            details: "Bulk up to gain physical defense but  lowering attack power.",
             requires: "Head",
             dep: {
                 DataAnalysis: 3
@@ -3326,10 +3326,10 @@ var skills = {
                 y: 150
             }
         },
-        CoordinatedAttack: {
+        Reflector: {
             name_jp: "一斉攻撃",
-            name_en: "All Out",
-            details: "Simultaneous attack to one enemy with deployed bots and the Yggdroid.",
+            name_en: "Reflector",
+            details: "Bots will nullify attacks of their element and counterattack.",
             requires: "Head",
             dep: {
                 DataAnalysis: 3
@@ -3341,10 +3341,10 @@ var skills = {
                 y: 49
             }
         },
-        Reflector: {
+        FamilysWarmth: {
             name_jp: "リフレクター",
-            name_en: "Reflector",
-            details: "If there are bots deployed, prevent attacks of the same attribute and counterattack with that attribute.",
+            name_en: "Family's Warmth",
+            details: "Cover: Protect all allies from damage for one turn.",
             requires: "Head",
             dep: {
                 Resupply: 3,
@@ -3357,10 +3357,10 @@ var skills = {
                 y: 98
             }
         },
-        Shoot: {
+        AllOut {
             name_jp: "シュート",
-            name_en: "Shoot",
-            details: "Attacks one enemy with attributes of deployed bots.  The number of bots deployed and their types determines the amount of damage done.  Having all three types of bots deployed maximizes the damage.  All bots are destroyed after using this skill.  Only damage done by 3 bots, one of each type, is shown below.  For the complete damage table, see the table in the Help/About section.",
+            name_en: "All Out",
+            details: "Join forces with your family of bots for a coordinated attack.",
             requires: "Head",
             dep: {
                 Resupply: 5,
@@ -3373,10 +3373,10 @@ var skills = {
                 y: 98
             }
         },
-        PartsRecovery: {
+        RocketPunch: {
             name_jp: "パーツ回収",
-            name_en: "Defrag",
-            details: "Recover all parts, removing binds.",
+            name_en: "Rocket Punch",
+            details: "Blast arms at an enemy for strike damage. Causes arm bind to you.",
             requires: "N/A",
             dep: {
                 /* none */ },
@@ -3387,10 +3387,10 @@ var skills = {
                 y: 492
             }
         },
-        Purge: {
+        RocketHead: {
             name_jp: "パージ",
-            name_en: "Core Dump",
-            details: "Releases all parts and adds every bind condition.",
+            name_en: "Rocket Head",
+            details: "Blast your head for pierce damage to all enemies. Causes head bind to you.",
             requires: "N/A",
             dep: {
                 PartsRecovery: 3
@@ -3402,10 +3402,10 @@ var skills = {
                 y: 377
             }
         },
-        RocketPunch: {
+        RocketJump: {
             name_jp: "ロケットパンチ",
-            name_en: "Rocket Punch",
-            details: "Fires both arms causing two blunt attacks towards one enemy; the Yggdroid's arm is bound after use.",
+            name_en: "Rocket Jump",
+            details: "All attacks will miss you, but when the turn ends, your legs are bound.",
             requires: "Arms",
             dep: {
                 PartsRecovery: 1
@@ -3417,10 +3417,10 @@ var skills = {
                 y: 548
             }
         },
-        RocketHeadbutt: {
+        HPCannon: {
             name_jp: "ロケット頭突き",
-            name_en: "Rocket Headbutt",
-            details: "Fires head causing thrust attacks at every enemy; the Yggdroid's head is bound after use.",
+            name_en: "HP Cannon",
+            details: "Usable only when fully bound. Deals damage based on how low your HP is.",
             requires: "Head",
             dep: {
                 PartsRecovery: 1
@@ -3432,10 +3432,10 @@ var skills = {
                 y: 548
             }
         },
-        RocketJump: {
+        CoreDump: {
             name_jp: "ロケットジャンプ",
-            name_en: "Rocket Jump",
-            details: "For one turn only, all attacks directed at the Yggdroid will miss; the Yggdroid's legs are bound afterwards.",
+            name_en: "Core Dump",
+            details: "Undo all parts, entering a full bind.",
             requires: "Legs",
             dep: {
                 PartsRecovery: 1
@@ -3447,10 +3447,10 @@ var skills = {
                 y: 548
             }
         },
-        HPCannon: {
+        Defrag: {
             name_jp: "HP砲",
-            name_en: "HP Cannon",
-            details: "Non-elemental attack towards one enemy; only usable when the Yggdroid has every bind condition; the less HP the Yggdroid has, the greater the power of this skill.",
+            name_en: "Defrag",
+            details: "Recover all parts, becoming unbound.",
             requires: "N/A",
             dep: {
                 Purge: 5,
