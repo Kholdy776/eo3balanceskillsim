@@ -219,7 +219,7 @@ var skills = {
                 AttackOrder: 1
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 151,
                 y: 294
@@ -234,7 +234,7 @@ var skills = {
                 AttackOrder: 1
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 151,
                 y: 374
@@ -249,7 +249,7 @@ var skills = {
                 AttackOrder: 1
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 151,
                 y: 454
@@ -280,7 +280,7 @@ var skills = {
                 DefenseOrder: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 0,
                 y: 251
@@ -340,7 +340,7 @@ var skills = {
                 NobilityProof: 1
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453.2,
                 y: 332
@@ -471,7 +471,7 @@ var skills = {
                 SwordMastery: 1
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 302.4,
                 y: 74.7
@@ -517,7 +517,7 @@ var skills = {
                 SwordMastery: 7
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 302.4,
                 y: 276.7
@@ -624,7 +624,7 @@ var skills = {
                 BerserkersOath: 5
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453.4,
                 y: 126
@@ -640,7 +640,7 @@ var skills = {
                 WolfHowl: 3
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453.4,
                 y: 429
@@ -709,7 +709,7 @@ var skills = {
                 Revive: 3
             },
             active: FALSE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 52
@@ -724,7 +724,7 @@ var skills = {
                 Taunt: 5
             },
             active: FALSE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 94
@@ -739,7 +739,7 @@ var skills = {
                 Taunt: 5
             },
             active: FALSE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 14
@@ -769,7 +769,7 @@ var skills = {
                 ShieldMastery: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 304
@@ -784,7 +784,7 @@ var skills = {
                 ShieldMastery: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 384
@@ -830,7 +830,7 @@ var skills = {
                 EnGarde: 3
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 151,
                 y: 544
@@ -890,7 +890,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 0,
                 y: 52
@@ -904,7 +904,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 302,
                 y: 544
@@ -918,7 +918,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 302,
                 y: 52
@@ -1033,7 +1033,7 @@ var skills = {
                 RapierMastery: 1
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 0,
                 y: 28
@@ -1147,7 +1147,7 @@ var skills = {
        ChaseWeapon: {
             name_jp: "チェイスサンダー",
             name_en: "Chase Weapon",
-            details: "Perform a slash follow-up to an ally's attack.",
+            details: "Perform a follow-up to an ally's attack with current weapon's attritutes.",
             requires: "Legs",
             dep: {
                 GunMastery: 3
@@ -1168,7 +1168,7 @@ var skills = {
                 GunMastery: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 302,
                 y: 516
@@ -1184,7 +1184,7 @@ var skills = {
                 GunMastery: 10
             },
             active: TRUE,
-            max: 10,
+            max: 1,
             coords: {
                 x: 151,
                 y: 353.2
@@ -1198,7 +1198,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 28
@@ -1212,7 +1212,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 515.8
@@ -1331,7 +1331,7 @@ var skills = {
                 ShadowWeave: 3
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453,
                 y: 265
@@ -1346,7 +1346,7 @@ var skills = {
                 DaggerMastery: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453,
                 y: 373
@@ -1465,7 +1465,7 @@ var skills = {
                 Conceal: 1
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 302,
                 y: 464
@@ -1494,7 +1494,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 0,
                 y: 213
@@ -1564,7 +1564,7 @@ var skills = {
                 ArtOfBloodReturn: 3
             },
             active: FALSE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453.2,
                 y: 390
@@ -1578,7 +1578,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: FALSE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 302,
                 y: 544
@@ -1607,7 +1607,7 @@ var skills = {
                 Healing: 5
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 302.2,
                 y: 167
@@ -1637,7 +1637,7 @@ var skills = {
                 LineHeal: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453.2,
                 y: 247
@@ -1698,7 +1698,7 @@ var skills = {
                 FistMastery: 1
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 196
@@ -1843,7 +1843,7 @@ var skills = {
                 DarkEther: 5
             },
             active: FALSE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 302,
                 y: 487
@@ -1874,7 +1874,7 @@ var skills = {
                 FlameMastery: 1
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 7
@@ -1889,7 +1889,7 @@ var skills = {
                 FlameMastery: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 87
@@ -1905,7 +1905,7 @@ var skills = {
                 FlameConstellation: 5
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 302,
                 y: 49
@@ -2028,7 +2028,7 @@ var skills = {
                 DarkEther: 5
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 302,
                 y: 407
@@ -2056,7 +2056,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 151,
                 y: 543
@@ -2125,7 +2125,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 515
@@ -2168,7 +2168,7 @@ var skills = {
                 AnimalFriendship: 3
             },
             active: FALSE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453,
                 y: 83
@@ -2183,7 +2183,7 @@ var skills = {
                 AnimalFriendship: 3
             },
             active: FALSE,
-            max: 10,
+            max: 1,
             coords: {
                 x: 453,
                 y: 341
@@ -2425,7 +2425,7 @@ var skills = {
                 HighSpeedAPBullet: 4
             },
             active: FALSE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453,
                 y: 339
@@ -2455,7 +2455,7 @@ var skills = {
                 HeavyShot: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453,
                 y: 212.8
@@ -2575,7 +2575,7 @@ var skills = {
                 CrossbowMastery: 10
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 0,
                 y: 537
@@ -2589,7 +2589,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 302.2,
                 y: 457
@@ -2603,7 +2603,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 302.2,
                 y: 537
@@ -2644,7 +2644,7 @@ var skills = {
                 MomentOfInjury: 5
             },
             active: FALSE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 170
@@ -2747,7 +2747,7 @@ var skills = {
                 CampMaster: 3
             },
             active: FALSE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 454
@@ -2761,7 +2761,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: FALSE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 302,
                 y: 332
@@ -2834,7 +2834,7 @@ var skills = {
                 DetectionMaster: 1
             },
             active: TRUE,
-            max: 1,
+            max: 5,
             coords: {
                 x: 151,
                 y: 332
@@ -2849,7 +2849,7 @@ var skills = {
                 DetectionMaster: 5
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 151,
                 y: 492
@@ -2880,7 +2880,7 @@ var skills = {
                 ForagingMastery: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453,
                 y: 374
@@ -2895,7 +2895,7 @@ var skills = {
                 ForagingMastery: 3
             },
             active: FALSE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 453,
                 y: 294
@@ -2950,7 +2950,7 @@ var skills = {
                 Endure: 3
             },
             active: FALSE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 302,
                 y: 336
@@ -2980,7 +2980,7 @@ var skills = {
                 Endure: 1
             },
             active: FALSE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 148
@@ -2995,7 +2995,7 @@ var skills = {
                 KatanaMastery: 1
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 363.8
@@ -3056,7 +3056,7 @@ var skills = {
                 Endure: 3
             },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 453,
                 y: 444
@@ -3148,7 +3148,7 @@ var skills = {
                 RestoreWill: 5
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 148
@@ -3335,7 +3335,7 @@ var skills = {
                 DataAnalysis: 3
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 49
@@ -3411,7 +3411,7 @@ var skills = {
                 PartsRecovery: 1
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 548
@@ -3457,7 +3457,7 @@ var skills = {
                 Overheat: 10
             },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 151,
                 y: 377
