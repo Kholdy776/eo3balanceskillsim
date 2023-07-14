@@ -891,7 +891,7 @@ var levels = {
             1: "Limit Accumulation +2",
             2: "Limit Accumulation +4",
             3: "Limit Accumulation +6",
-            4: Limit Accumulation +8",
+            4: "Limit Accumulation +8",
             5: "Limit Accumulation +10"
         
         },
@@ -2070,7 +2070,7 @@ Wildling: {
             9: "42% chance to put enemies to sleep; costs 10 TP",
             10: "45% chance to put enemies to sleep; costs 10 TP"
         },
-          MysterySeed: {
+          StrangeSeeds: {
             1: "55% chance to Bind enemies; costs 3 TP",
             2: "60% chance to Bind enemies; costs 4 TP",
             3: "65% chance to Bind enemies; costs 4 TP",
@@ -2118,7 +2118,7 @@ Wildling: {
             9: "189% DMG, Curse Rate 80% ; costs 7 TP",
             10: "200% DMG, Curse Rate 85% ; costs 8 TP"
         },
-    SafeWalking: {
+     SafeStroll: {
             1: "Lasts for 15 steps; costs 12 TP",
             2: "Lasts for 20 steps; costs 12 TP",
             3: "Lasts for 25 steps; costs 13 TP",
@@ -2479,7 +2479,14 @@ Wildling: {
             9: "163 Bot HP, 133% DMG, Enemy ACC -27%, 7 Max Chases; costs 18 TP",
             10: "183 Bot HP, 142% DMG, Enemy ACC -30%, 7 Max Chases; costs 20 TP"
                 },
-               5: "Physical DEF +18%, ATK -5%",
+
+           Fortification: {   
+            1: "Physical DEF +10%, ATK -1%",
+            2: "Physical DEF +12%, ATK -2%",
+            3: "Physical DEF +14%, ATK -3%",
+            4: "Physical DEF +24%, ATK -8%",
+            5: "Physical DEF +16%, ATK -4%",
+            5: "Physical DEF +18%, ATK -5%",
             6: "Physical DEF +20%, ATK -6%",
             7: "Physical DEF +22%, ATK -7%",
             8: "Physical DEF +24%, ATK -8%",
