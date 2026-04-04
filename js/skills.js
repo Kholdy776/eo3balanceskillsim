@@ -770,7 +770,6 @@ var skills = {
             requires: "Arms",
             dep: {
                 /* none */ },
-            },
             active: TRUE,
             max: 5,
             coords: {
@@ -1034,7 +1033,6 @@ var skills = {
             requires: "Arms",
             dep: {
                 /* none */ },
-            },
             active: TRUE,
             max: 5,
             coords: {
