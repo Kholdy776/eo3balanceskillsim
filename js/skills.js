@@ -403,7 +403,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 0,
-                y: 120
+                y: 1.5*yl
             }
         },
         ClubMastery: {
@@ -417,7 +417,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 0,
-                y: 440
+                y: 5.5*yl
             }
         },
         Avenger: {
@@ -477,7 +477,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 2*xl,
-                y: 74.7
+                y: 5*yl
             }
         },
         BerserkerVow: {
@@ -490,8 +490,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 478.7
+                x: 2.5*xl,
+                y: 7*yl
             }
         },
         WolfHowl: {
@@ -504,8 +504,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 175.7
+                x: 3*xl,
+                y: 5*yl
             }
         },
         GrandColosseum: {
@@ -520,8 +520,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl,
-                y: 276.7
+                x: 3*xl,
+                y: 6*yl
             }
         },
         Break: {
@@ -535,8 +535,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 377.7
+                x: xl,
+                y: 3*yl
             }
         },
         Rush: {
@@ -550,8 +550,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 429
+                x: xl,
+                y: 2*yl
             }
         },
         BindCut: {
@@ -565,8 +565,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 126
+                x: xl,
+                y: yl
             }
         },
         BloodThirst: {
@@ -580,8 +580,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 328
+                x: xl,
+                y: 0
             }
         },
         BladeRave: {
@@ -596,8 +596,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 227
+                x: 2*xl,
+                y: 0
             }
         },
         CrushingBlow: {
@@ -611,8 +611,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 227
+                x: xl,
+                y: 7*yl
             }
         },
         ArmBreaker: {
@@ -626,8 +626,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 126
+                x: xl,
+                y: 6*yl
             }
         },
         FreezingBlow: {
@@ -641,8 +641,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 429
+                x: xl,
+                y: 4*yl
             }
         },
         NineSmashes: {
@@ -657,8 +657,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 530
+                x: 2*xl,
+                y: 4*yl
             }
         }
     },
