@@ -700,6 +700,7 @@ var SkillSimulator = {
         line.setAttribute("y2", y2);
         line.setAttribute("stroke", "gray");
         line.setAttribute("stroke-width", "2");
+        line.setAttribute("marker-end", "url(#arrow)");
 
         var midX = (x1 + x2) / 2;
         var midY = (y1 + y2) / 2;
