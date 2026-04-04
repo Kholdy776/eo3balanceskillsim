@@ -684,7 +684,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 0,
-                y: 342
+                y: 4*yl
             }
         },
         ShieldMastery: {
@@ -697,8 +697,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 342
+                x: 0,
+                y: yl
             }
         },
         Parry: {
@@ -707,13 +707,13 @@ var skills = {
             details: "A skill that may nullify damage received.",
             requires: "N/A",
             dep: {
-                Revive: 3
+                Provoke: 5
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 52
+                x: 3*xl,
+                y: yl
             }
         },
         Rhongomyniad: {
@@ -722,13 +722,14 @@ var skills = {
             details: "Spear/Shield: Bash with your shield then thrust and slash with your spear. Deals an instance of Strike damage, then Pierce damage, then Slash damage.",
             requires: "N/A",
             dep: {
-                Taunt: 5
+                SpearMastery: 7,
+                ShieldMastery: 7
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 94
+                x: 0,
+                y: 2.5*yl
             }
         },
         RexHasta: {
@@ -737,13 +738,14 @@ var skills = {
             details: "Spear: Debuff the enemy into taking more damage this turn.",
             requires: "N/A",
             dep: {
-                Taunt: 5
+                Gungnir: 5,
+                GáeBolg: 5
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 3*xl,
-                y: 14
+                y: 3.5*yl
             }
         },
         ExploitWeakness: {
@@ -752,13 +754,13 @@ var skills = {
             details: "A litany that encourages allies to expose the enemy's weakness. Increases damage dealt to any enemy weakness for 3 turns.",
             requires: "Arms",
             dep: {
-                ShieldMastery: 1
+                SpearMastery: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 144
+                x: 0,
+                y: 5.5*yl
             }
         },
         Provoke: {
@@ -767,13 +769,13 @@ var skills = {
             details: "Shield the party by drawing all enemy attacks to you. Increases chance of being targeted for 3 turns.",
             requires: "Arms",
             dep: {
-                ShieldMastery: 5
+                /* none */ },
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 304
+                x: 3*xl,
+                y: 0
             }
         },
         ShrugOff: {
@@ -782,13 +784,13 @@ var skills = {
             details: "Fixed chance to heal yourself if you fail to parry an attack that you are the specific target of.",
             requires: "Arms",
             dep: {
-                ShieldMastery: 5
+                Parry: 3
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 384
+                x: 3*xl,
+                y: 2*yl
             }
         },
         GáeBolg: {
@@ -797,13 +799,13 @@ var skills = {
             details: "Spear: A fast fire + pierce attack that can instantly kill or paralyze.",
             requires: "Arms",
             dep: {
-                ShieldMastery: 5
+                Gradivus: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 464
+                x: 2*xl,
+                y: 4*yl
             }
         },
         Gungnir: {
@@ -812,13 +814,13 @@ var skills = {
             details: "Spear: A volt + pierce attack that never misses.",
             requires: "Arms",
             dep: {
-                ShieldMastery: 3
+                Gradivus: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 224
+                x: 2*xl,
+                y: 3*yl
             }
         },
         Geirskögul: {
@@ -827,14 +829,13 @@ var skills = {
             details: "Spear: An ice + slash attack that strikes all enemies, lowering attack.",
             requires: "Arms",
             dep: {
-                ShieldMastery: 8,
-                EnGarde: 3
+                SpearMastery: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 544
+                y: 4.5*yl
             }
         },
         Aegis: {
@@ -843,13 +844,13 @@ var skills = {
             details: "Shield: Reduces elemental damage sustained by allies.",
             requires: "Legs",
             dep: {
-                SpearMastery: 1
+                ShieldMastery: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 234
+                x: xl,
+                y: yl
             }
         },
         Hoplon: {
@@ -858,13 +859,13 @@ var skills = {
             details: "Shield: Reduces physical damage sustained by allies.",
             requires: "Legs",
             dep: {
-                SpearMastery: 4
+                ShieldMastery: 1
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 450
+                x: xl,
+                y: 0
             }
         },
         Phalanx: {
@@ -873,14 +874,14 @@ var skills = {
             details: "Shield: Reduces nearly all forms of damage sustained by allies.",
             requires: "Legs",
             dep: {
-                SpearMastery: 7,
-                ChangeStep: 3
+                Hoplon: 5,
+                Aegis: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 342
+                x: 2*xl,
+                y: 0.5*yl
             }
         },
         Gradivus: {
@@ -889,12 +890,13 @@ var skills = {
             details: "Spear: A vampiric piercing attack that returns life to the user.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                SpearMastery: 1
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 52
+                x: xl,
+                y: 3.5*yl
             }
         },
         Bodyguard: {
@@ -903,12 +905,13 @@ var skills = {
             details: "Shield: Take damage in one ally's place for one turn.",
             requires: "Head",
             dep: {
-                /* none */ },
+                ShieldMastery: 3
+            },
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl,
-                y: 544
+                x: xl,
+                y: 2*yl
             }
         },
         Overwatch: {
@@ -917,12 +920,13 @@ var skills = {
             details: "Shield: Attacks on an ally that exceed your HP are void for 1 turn.",
             requires: "Head",
             dep: {
-                /* none */ },
+                Bodyguard: 3
+            },
             active: TRUE,
             max: 5,
             coords: {
                 x: 2*xl,
-                y: 52
+                y: 2*yl
             }
         },
         Vigilance: {
@@ -935,8 +939,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 544
+                x: 2*xl,
+                y: 5.5*yl
             }
         }
     },
