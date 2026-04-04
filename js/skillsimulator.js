@@ -1,23 +1,33 @@
+// Aliases for the Excel-generated skills.js
+// because Excel wants to uppercase booleans.
 TRUE = true;
 FALSE = false;
-(function($) {
-    $.fn.disableTextSelect = function() {
-        return this.each(function() {
-            if ($.browser.mozilla) {
+
+/**
+ *  http://chris-barr.com/entry/disable_text_selection_with_jquery/
+ *  modified to be â€œ$â€ safe by Dakkar Daemor [www.imaginific.com]
+ */
+(function ($) {
+    $.fn.disableTextSelect = function () {
+        return this.each(function () {
+            if ($.browser.mozilla) {  //Firefox
                 $(this).css('MozUserSelect', 'none');
-            } else if ($.browser.msie) {
-                $(this).bind('selectstart', function() {
+            } else if ($.browser.msie) {  //IE
+                $(this).bind('selectstart', function () {
                     return false;
                 });
-            } else {
-                $(this).mousedown(function() {
+            } else {  //Opera, etc.
+                $(this).mousedown(function () {
                     return false;
                 });
             }
         });
     };
 })(jQuery);
+
+
 var SkillSimulator = {
+    // Initial state
     language: "en",
     primaryClass: "Prince",
     secondaryClass: "None",
@@ -27,9 +37,11 @@ var SkillSimulator = {
         primary: {},
         secondary: {}
     },
-    url: location.href,
-    init: function() {
+    url: location.href, // only used by exportToText for attribution.
+
+    init: function () {
         var self = this;
+
         var frag = "";
         for (var c in skills) {
             if (c == "Default") continue;
@@ -37,58 +49,73 @@ var SkillSimulator = {
         }
         $("#class-selector-primary").html(frag);
         $("#class-selector-primary").val(this.primaryClass);
-        $("#class-selector-primary").change(function() {
+        $("#class-selector-primary").change(function () {
             self.changePrimaryClass($("#class-selector-primary").val());
             $("#class-selector-secondary option:disabled").removeAttr("disabled");
             $("#class-selector-secondary option[value=" + self.primaryClass + "]").attr("disabled", "disabled");
             $("#class-selector-secondary option[value=Yggdroid]").attr("disabled", "disabled");
         });
+
         frag += '<option value="None">None</option>';
         $("#class-selector-secondary").html(frag);
         $("#class-selector-secondary").val(this.secondaryClass);
         $("#class-selector-secondary option[value=" + this.primaryClass + "]").attr("disabled", "disabled");
-        $("#class-selector-secondary").change(function() {
+        $("#class-selector-secondary").change(function () {
             self.changeSecondaryClass($("#class-selector-secondary").val());
             $("#class-selector-primary option:disabled").removeAttr("disabled");
             $("#class-selector-primary option[value=" + self.secondaryClass + "]").attr("disabled", "disabled");
             self.cbUpdateSkillPoints();
         });
+
+        // Android/Yggdroid cannot be a subclass (keep it visible as a disabled option to make this clear)
         $("#class-selector-secondary option[value=Yggdroid]").attr("disabled", "disabled");
+
         $("#level-cap").html("");
         for (var i in this.levelCaps) {
             $("#level-cap").append('<option value="' + this.levelCaps[i] + '">' + this.levelCaps[i] + '</option>');
         }
-        $("#level,#retire-level").keyup(function(e) {
+
+        $("#level,#retire-level").keyup(function (e) {
             this.value = this.value.replace(/[^0-9\.]/g, '').substring(0, 2);
         });
         $("#level,#level-cap,#retired,#retire-level").change(this.cbUpdateSkillPoints);
         $("#points-total,#points-available,#level,#retire-level").addClass("form-textbox");
         $("#points-total,#points-available").attr("disabled", "disabled");
+
         $("#points-total").val(0);
         $("#points-available").val(0);
         $("#level").val(1);
         $("#level-cap").val(70);
         this.cbUpdateSkillPoints();
+
+        // Default to English
         $(".skill-name-jp").hide();
-        $("#language-button").toggle(function() {
-            $(".skill-name-en").hide();
-            $(".skill-name-jp").show();
-            self.language = "jp";
-            $(this).removeClass("jp").addClass("en");
-            $(this).attr("title", "Switch to English");
-        }, function() {
-            $(".skill-name-jp").hide();
-            $(".skill-name-en").show();
-            self.language = "en";
-            $(this).removeClass("en").addClass("jp");
-            $(this).attr("title", "Switch to Japanese");
-        });
+
+        $("#language-button").toggle(
+            function () {
+                $(".skill-name-en").hide();
+                $(".skill-name-jp").show();
+                self.language = "jp";
+                $(this).removeClass("jp").addClass("en");
+                $(this).attr("title", "Switch to English");
+            },
+            function () {
+                $(".skill-name-jp").hide();
+                $(".skill-name-en").show();
+                self.language = "en";
+                $(this).removeClass("en").addClass("jp");
+                $(this).attr("title", "Switch to Japanese");
+            }
+        );
+
         $("#help-button").fancybox({
             'type': 'ajax',
             'titleShow': false,
+            //'autoScale': false,
             'autoDimensions': true,
             'padding': 10,
             'speedIn': 600,
+            'speedOut': 200,
             'speedOut': 200,
             'overlayOpacity': 0.7,
             'overlayColor': '#fff',
@@ -105,16 +132,23 @@ var SkillSimulator = {
             'overlayColor': '#fff',
             'scrolling': 'no',
             'autoScale': false,
+            //'centerOnScroll': true,
             'onStart': this.exportToText,
             'onComplete': this.setExportControls
         });
+        //$("#help-button").click(this.showHelp);
+        //$("#export-button").click(this.exportToText);
         $("#clear-button").click(this.clearAll);
         $("#theme-selector").change(this.changeTheme);
-        $("#controls").submit(function(e) {
+
+        $("#controls").submit(function (e) {
             e.preventDefault();
         });
+
+        // No functional reason, just aesthetics
         $("#main").disableTextSelect();
         $(".skill-info-layer").disableTextSelect();
+
         this.createSkillNodes("fixed", "Default");
         this.createSkillInfoNodes("fixed", "Default");
         for (var skill in skills.Default) {
@@ -123,37 +157,70 @@ var SkillSimulator = {
         this.changePrimaryClass(this.primaryClass);
         this.changeSecondaryClass(this.secondaryClass);
     },
-    changePrimaryClass: function(classname) {
+
+    changePrimaryClass: function (classname) {
         this.primaryClass = classname;
         this.createSkillNodes("primary", classname);
         this.createSkillInfoNodes("primary", classname);
         this.cbUpdateSkillPoints();
     },
-    changeSecondaryClass: function(classname) {
+
+    changeSecondaryClass: function (classname) {
         this.secondaryClass = classname;
         this.createSkillNodes("secondary", classname);
         this.createSkillInfoNodes("secondary", classname);
         this.cbUpdateSkillPoints();
     },
-    createSkillNodes: function(section, classname) {
+
+    createSkillNodes: function (section, classname) {
         this.state[section] = {}
         var frag = '<div class="tree-bg-' + section + '"></div>';
+
         if (section == "secondary" && classname == "None") {
             $("#tree-secondary").html(frag);
             return;
         }
+
         if (section == "fixed") {
             frag += '<div id="skill-unique"></div>';
         } else {
-            frag += '<div class="arrows arrows-' + classname.toLowerCase() + '"></div>';
+            // Death to the old arrows
+            //frag += '<div class="arrows arrows-' + classname.toLowerCase() + '"></div>';
+            var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svg.setAttribute("id", "dynamic-arrows");
+            svg.setAttribute("width", "100%");
+            svg.setAttribute("height", "100%");
+
+            // Draw dependency lines between skill nodes
+            for (var skillname in skills[classname]) {
+                var s = skills[classname][skillname];
+                for (var d in s.dep) {
+                    var ds = skills[classname][d];
+                    if (ds) {
+                        this.drawDependencyLine(
+                            svg,
+                            s.coords.x + 44,
+                            s.coords.y + 30,
+                            ds.coords.x + 44,
+                            ds.coords.y + 30,
+                            s.dep[d]
+                        );
+                    }
+                }
+            }
+
+            frag += svg.outerHTML;
         }
+
         for (var skillname in skills[classname]) {
             var s = skills[classname][skillname];
             var id = 'skill-' + classname + '-' + skillname;
+
             this.state[section][skillname] = 0;
             if (s.unique && section == "secondary") continue;
             if (s.unique && section == "primary") {
-                $("#skill-unique").html('<div class="skill skill-primary skill-primary-available" id="skill-' + classname + '-' + skillname + '">' +
+                $("#skill-unique").html(
+                    '<div class="skill skill-primary skill-primary-available" id="skill-' + classname + '-' + skillname + '">' +
                     '<div class="skill-name skill-name-jp">' + s.name_jp + '</div>' +
                     '<div class="skill-name skill-name-en">' + s.name_en + '</div>' +
                     '<div class="skill-level skill-level-max' + s.max + ' skill-level-' + s.max + '-0">' +
@@ -161,11 +228,12 @@ var SkillSimulator = {
             } else {
                 var x = s.coords["x"];
                 var y = s.coords["y"];
-                var a = true;
+                var a = true;  // initially available if no dependencies
                 for (var i in s.dep) {
                     a = false;
                     break;
                 }
+
                 frag += '<div class="skill skill-' + section + ' skill-' + section + '-' + (a ? '' : 'un') + 'available"' +
                     ' id="' + id + '" style="left:' + x + 'px;top:' + y + 'px;">' +
                     '<div class="skill-name skill-name-jp">' + s.name_jp + '</div>' +
@@ -175,29 +243,39 @@ var SkillSimulator = {
             }
         }
         $("#tree-" + section).html(frag);
+
         $(".skill-" + section + " .skill-name").click(this.cbShowSkillInfo);
         $(".skill-" + section + " .skill-name").mouseout(this.cbHideSkillInfo);
         $(".skill-" + section + " .skill-level-node").click(this.cbChangeLevel);
-        $(".skill-" + section + " .skill-level-node").mouseover(function() {
+
+        $(".skill-" + section + " .skill-level-node").mouseover(function () {
             var parts = $(this).closest(".skill").attr("id").split("-");
             var classname = parts[1];
             var skillname = parts[2];
             if (SkillSimulator.state[section][skillname] > 0) return false;
             var level = $(this).parent().find(".skill-level-node").index(this) + 1;
             var max = $(this).parent().find(".skill-level-node").length;
-            $(this).parent().removeClass().addClass("skill-level").addClass("skill-level-max" + max).addClass("skill-level-" + max + "-" + level);
+            $(this).parent().removeClass()
+                .addClass("skill-level")
+                .addClass("skill-level-max" + max)
+                .addClass("skill-level-" + max + "-" + level);
         });
-        $(".skill-" + section + " .skill-level-node").mouseout(function() {
+        $(".skill-" + section + " .skill-level-node").mouseout(function () {
             var parts = $(this).closest(".skill").attr("id").split("-");
             var classname = parts[1];
             var skillname = parts[2];
             var level = SkillSimulator.state[section][skillname];
             var max = skills[classname][skillname].max;
-            $(this).parent().removeClass().addClass("skill-level").addClass("skill-level-max" + max).addClass("skill-level-" + max + "-" + level);
+            $(this).parent().removeClass()
+                .addClass("skill-level")
+                .addClass("skill-level-max" + max)
+                .addClass("skill-level-" + max + "-" + level);
         });
+
         this.updateLanguage();
     },
-    createSkillInfoNodes: function(section, classname) {
+
+    createSkillInfoNodes: function (section, classname) {
         $("#skill-info-layer-" + section).html("");
         var frag = "";
         for (var skillname in skills[classname]) {
@@ -205,10 +283,11 @@ var SkillSimulator = {
             frag += '<div class="skill-info" id="skill-info-' + classname + '-' + skillname + '">' +
                 '<div class="skill-info-close"></div>' +
                 '<div class="title">Name:</div><div class="skill-info-name-en">' + skills[classname][skillname].name_en + '</div>' +
-                '<div class="title">名前:</div><div class="skill-info-name-jp">' + skills[classname][skillname].name_jp + '</div>' +
+                '<div class="title">åå‰:</div><div class="skill-info-name-jp">' + skills[classname][skillname].name_jp + '</div>' +
                 '<div class="title">Type:</div><div class="skill-info-type ' + (active ? 'active' : 'passive') + '">' + (active ? 'Active' : 'Passive') + '</div>' +
                 '<div class="title">Uses:</div><div class="skill-info-requires">' + skills[classname][skillname].requires + '</div>' +
                 '<div class="skill-info-details">' + skills[classname][skillname].details + '</div>';
+
             if (levels[classname][skillname]) {
                 frag += '<table class="levels">';
                 var skill = levels[classname][skillname];
@@ -220,49 +299,64 @@ var SkillSimulator = {
             frag += "</div>";
         }
         $("#skill-info-layer-" + section).html(frag);
-        $("#skill-info-layer-" + section + " .skill-info").mousedown(function(e) {
+
+        $("#skill-info-layer-" + section + " .skill-info").mousedown(function (e) {
+            // If it's not pinned, don't allow it to be draggable.
             if (!$(this).hasClass("pinned")) return;
+
             var s = $(this).closest(".skill-info");
             var id = s.attr("id");
             var pos = s.offset();
             var ox = e.pageX;
             var oy = e.pageY;
-            $("body").mousemove(function(e) {
+
+            $("body").mousemove(function (e) {
+                //if (!$(this).hasClass("skill-info")) return false;
                 var nx = e.pageX;
                 var ny = e.pageY;
                 $("#" + id).css("left", "" + (pos.left + nx - ox) + "px");
                 $("#" + id).css("top", "" + (pos.top + ny - oy) + "px");
+                //window.status = "X:"+pos.left+"/"+nx+"/"+ox+" Y:"+pos.top+"/"+ny+"/"+oy;
             });
-            $("body").mouseup(function() {
+            $("body").mouseup(function () {
                 $(this).unbind("mousemove");
             });
         });
     },
-    createLevelNodes: function(max) {
+
+    createLevelNodes: function (max) {
         var frag = "";
         for (var i = 1; i <= max; i++) {
             frag += '<div class="skill-level-node skill-level-node-' + i + '"></div>';
         }
         return frag;
     },
-    cbChangeLevel: function() {
+
+    cbChangeLevel: function () {
         var s = $(this).closest(".skill");
         var parts = s.attr("id").split("-");
         var classname = parts[1];
         var skillname = parts[2];
+
         var level = $(this).parent().find(".skill-level-node").index(this) + 1;
         var max = skills[classname][skillname].max;
+
         var section = "fixed";
         if (s.hasClass("skill-primary")) {
             section = "primary";
         } else if (s.hasClass("skill-secondary")) {
             section = "secondary";
         }
+
+        // Selecting the current level will clear the skill.
         var old = SkillSimulator.state[section][skillname];
         if (old == level) level = 0;
+
         SkillSimulator.state[section][skillname] = level;
+
+        // Directionally resolve dependencies depending on level increase/decrease.
         if (level > old) {
-            var resolve = function(skillname) {
+            var resolve = function (skillname) {
                 var d = skills[classname][skillname].dep;
                 for (var depname in d) {
                     if (SkillSimulator.state[section][depname] < d[depname]) {
@@ -273,7 +367,7 @@ var SkillSimulator = {
             };
             resolve(skillname);
         } else {
-            var resolveForward = function(skillname) {
+            var resolveForward = function (skillname) {
                 var l = SkillSimulator.state[section][skillname];
                 var d = forward[classname][skillname];
                 for (var depname in d) {
@@ -285,11 +379,17 @@ var SkillSimulator = {
             };
             resolveForward(skillname);
         }
+
         for (var skillname in SkillSimulator.state[section]) {
             var id = "#skill-" + classname + "-" + skillname;
             var max = skills[classname][skillname].max;
             var level = SkillSimulator.state[section][skillname];
-            $(id + " .skill-level").removeClass().addClass("skill-level").addClass("skill-level-max" + max).addClass("skill-level-" + max + "-" + level);
+
+            $(id + " .skill-level").removeClass()
+                .addClass("skill-level")
+                .addClass("skill-level-max" + max)
+                .addClass("skill-level-" + max + "-" + level);
+
             var a = true;
             var skill = skills[classname][skillname];
             for (var depname in skill.dep) {
@@ -298,23 +398,44 @@ var SkillSimulator = {
                     break;
                 }
             }
-            $(id).removeClass().addClass("skill skill-" + section).addClass("skill-" + section + "-" + (a ? "" : "un") + "available");
+            $(id).removeClass()
+                .addClass("skill skill-" + section)
+                .addClass("skill-" + section + "-" + (a ? "" : "un") + "available");
+
             var n = SkillSimulator.state[section][skillname];
             $("#skill-info-" + classname + "-" + skillname + " table.levels tr").removeClass("current");
             $("#skill-info-" + classname + "-" + skillname + " table.levels tr:nth-child(" + n + ")").addClass("current");
         }
+
         SkillSimulator.cbUpdateSkillPoints();
     },
-    cbUpdateSkillPoints: function() {
+
+    cbUpdateSkillPoints: function () {
+        // Update the total and available skill points based on character level.
+
+        // Starting points: 3(=LV1+2)
+        // Subclass bonus: 5
+        // Retirement bonuses:
+        // 30~39   +4(=LV+6)
+        // 40~49   +5(=LV+7)
+        // 50~59   +6(=LV+8)
+        // 60~69   +7(=LV+9)
+        // 70~98   +8(=LV+10)
+        // 99      +10(=LV+12)
+        // Max points possible: 111
+
         var startBonus = 2;
         var levelMax = parseInt($("#level-cap").val());
         var level = parseInt($("#level").val());
         if (isNaN(level) || level < 1) level = 1;
         if (level > levelMax) level = levelMax;
+
         var retired = $("#retired").is(":checked");
         var retireLevel = parseInt($("#retire-level").val());
         if (isNaN(retireLevel)) retireLevel = -1;
+
         var pointsTotal = startBonus + level;
+
         if ($("#retired").is(":checked")) {
             if (retireLevel == 99) pointsTotal += 10;
             else if (retireLevel >= 70) pointsTotal += 8;
@@ -333,15 +454,19 @@ var SkillSimulator = {
             $("#retire-level").removeClass("disabled").addClass("disabled");
             $("#retire-level").val("");
         }
+
+        // There is a 5-point bonus for subclassing.
         if (SkillSimulator.secondaryClass != "None") {
             pointsTotal += 5;
         }
+
         var pointsUsed = 0;
         for (var section in SkillSimulator.state) {
             for (var skillname in SkillSimulator.state[section]) {
                 pointsUsed += SkillSimulator.state[section][skillname];
             }
         }
+        // Bump up the level
         if (pointsUsed > pointsTotal) {
             var bump = Math.min(pointsUsed - pointsTotal, Math.max(levelMax - level, 0));
             level += bump;
@@ -350,6 +475,7 @@ var SkillSimulator = {
         $("#level").val(level);
         $("#points-total").val(pointsTotal);
         $("#points-available").val(pointsTotal - pointsUsed);
+
         if (pointsTotal < pointsUsed) {
             $("#available-label").removeClass().addClass("negative");
             $("#points-available").removeClass("negative").addClass("negative");
@@ -358,7 +484,8 @@ var SkillSimulator = {
             $("#points-available").removeClass("negative");
         }
     },
-    updateLanguage: function() {
+
+    updateLanguage: function () {
         if (this.language == "en") {
             $(".skill-name-jp").hide();
             $(".skill-name-en").show();
@@ -370,13 +497,17 @@ var SkillSimulator = {
             $(".skill-name-jp").show();
         }
     },
-    cbShowSkillInfo: function() {
+
+    cbShowSkillInfo: function () {
         var s = $(this).closest(".skill");
         var parts = s.attr("id").split("-");
         var classname = parts[1];
         var skillname = parts[2];
         var si = $("#skill-info-" + classname + "-" + skillname);
         var sic = si.find(".skill-info-close");
+
+        // FIXME: Refactor this pinning/unpinning stuff.
+        // For now, assume this function is triggered onclick
         if (si.hasClass("pinned")) {
             si.removeClass("pinned");
             sic.fadeOut(75);
@@ -385,64 +516,85 @@ var SkillSimulator = {
         }
         if (!si.hasClass("pinned") && si.is(":visible")) {
             si.addClass("pinned");
-            sic.unbind("click").click(function() {
+            sic.unbind("click").click(function () {
                 si.removeClass("pinned");
                 sic.fadeOut(75);
                 si.fadeOut(150);
             });
             sic.fadeIn(150);
         }
+
+        // Viewport scroll offset and dimensions
         var vl = ($("html").scrollLeft() || $("body").scrollLeft() || 0);
         var vt = ($("html").scrollTop() || $("body").scrollTop() || 0);
         var vw = window.innerWidth;
         var vh = window.innerHeight;
+
+        // Dimensions and position of skill box
         var sl = s.offset().left;
         var st = s.offset().top;
         var sx = sl - vl;
         var sy = st - vt;
         var sw = s.outerWidth();
         var sh = s.outerHeight();
+
+        // Dimensions of the floating skill info box
         var iw = si.outerWidth();
         var ih = si.outerHeight();
-        var ms = (document.all ? 0 : 16);
-        var m = {
-            t: -20,
-            r: 10,
-            b: 10,
-            l: 0
-        };
+
+        // Margins and padding
+        // FIXME: margins hardcoded for now based on the default theme....
+        var ms = (document.all ? 0 : 16);    // non-IE browers include scrollbars in viewport area
+        var m = {t: -20, r: 10, b: 10, l: 0};  // general margin around skill info box (css order)
+
+        // Kludge: Make the skill info box width fixed.
+        // This is required for repositioning the box without it stretching.
         si.width(si.width());
+
+        // Keep skill info box within viewport (for most cases)
         si.css("left", "" + (sx + sw + m.l + iw + m.r + ms > vw ? sl - m.r - iw : sl + sw + m.l) + "px");
         si.css("top", "" + (sy + m.t + ih + m.b + ms > vh ? vt + vh - ms - m.b - ih : st + m.t) + "px");
+
         if (!si.is(":visible")) si.fadeIn(150);
     },
-    cbHideSkillInfo: function() {
+
+    cbHideSkillInfo: function () {
         var s = $(this).closest(".skill");
         var parts = s.attr("id").split("-");
         var classname = parts[1];
         var skillname = parts[2];
         var si = $("#skill-info-" + classname + "-" + skillname);
+
+        // Leave the skill info box alone if it's pinned
         if (si.hasClass("pinned")) return;
+
         if (si.is(":visible")) si.fadeOut(400);
     },
-    showHelp: function() {
+
+    showHelp: function () {
+        // FOE-ify the help window :3
         $("#fancybox-outer").prepend('<div id="help-bg"></div>');
     },
-    hideHelp: function() {
+
+    hideHelp: function () {
         $("#help-bg").remove();
     },
-    exportToText: function() {
+
+    exportToText: function () {
         $("#export").html('<textarea id="export-data" readonly="readonly"></textarea>');
         $("#export-data").val(SkillSimulator.getExportText());
     },
-    getExportText: function(showAll) {
+
+    getExportText: function (showAll) {
         if (showAll == null) showAll = true;
-        var lpad = function(str, len) {
+
+        var lpad = function (str, len) {
             return (new Array(len - str.length + 1).join(" ")) + str;
         };
-        var rpad = function(str, len) {
+        var rpad = function (str, len) {
             return str + (new Array(len - str.length + 1).join(" "));
         };
+
         var sections = {
             fixed: "Default",
             primary: SkillSimulator.primaryClass,
@@ -456,10 +608,12 @@ var SkillSimulator = {
             }
         }
         var text = sections.primary + (sections.secondary != "None" ? "/" + sections.secondary : "") + " Build\n";
+
         text += "Level:            " + lpad($("#level").val(), 3) + "\n";
         text += "Level Cap:        " + lpad($("#level-cap").val(), 3) + "\n";
         text += "Total Points:     " + lpad($("#points-total").val(), 3) + "\n";
         text += "Available Points: " + lpad($("#points-available").val(), 3) + "\n";
+
         if ($("#retired").is(":checked") && !isNaN(parseInt($("#retire-level").val()))) {
             text += "Retired: Yes, at  " + lpad($("#retire-level").val(), 3) + "\n";
         } else {
@@ -484,44 +638,89 @@ var SkillSimulator = {
         text += "\nGenerated by Etrian Odyssey 3 Skill Simulator\n" + SkillSimulator.url + "\n";
         return text;
     },
-    setExportControls: function() {
+
+    setExportControls: function () {
         $("#export").append('<div id="export-controls">' +
             '<div id="export-clip">Copy to Clipboard<div id="export-clip-notice"></div></div>' +
             '<input id="export-omit-unused" type="checkbox" /> ' +
             '<label for="export-omit-unused">Omit Unused Skills</label></div>');
+
         var clip = new ZeroClipboard.Client();
         clip.setText($("#export-data").val());
-        clip.addEventListener('onMouseDown', function() {
+        clip.addEventListener('onMouseDown', function () {
             $("#export-clip").addClass("down");
         });
-        clip.addEventListener('onMouseUp', function() {
+        clip.addEventListener('onMouseUp', function () {
             $("#export-clip").removeClass("down");
         });
-        clip.addEventListener('onComplete', function() {
+        clip.addEventListener('onComplete', function () {
+            //alert("Build copied to clipboard.");
             $("#export-clip-notice").html("Build Copied");
             $("#export-clip-notice").show();
             $("#export-clip-notice").fadeOut(2000);
         });
+        //clip.glue("export-clip");
         var cliphtml = clip.getHTML($("#export-clip").width(), $("#export-clip").height());
         $("#export-clip").append('<div id="export-clip-flash">' + cliphtml + '</div>');
-        $("#export-omit-unused").change(function() {
+
+        $("#export-omit-unused").change(function () {
             $("#export-data").val(SkillSimulator.getExportText(!$(this).is(":checked")));
             clip.setText($("#export-data").val());
         });
     },
-    clearAll: function() {
+
+    clearAll: function () {
         SkillSimulator.createSkillNodes("fixed", "Default");
         for (var skill in skills.Default) {
             SkillSimulator.state.fixed[skill] = 0;
         }
         SkillSimulator.changePrimaryClass(SkillSimulator.primaryClass);
         SkillSimulator.changeSecondaryClass(SkillSimulator.secondaryClass);
+
         $("#points-total").val(0);
         $("#points-available").val(0);
         $("#level").val(1);
+        //$("#level-cap").val(70);
+        //$("#retired").removeAttr("checked");
+
         SkillSimulator.cbUpdateSkillPoints();
     },
-    changeTheme: function() {
+
+    changeTheme: function () {
         $("#theme").attr("href", "themes/" + $("#theme-selector").val() + "/style.css");
+    },
+
+    drawDependencyLine: function (svg, x1, y1, x2, y2, label, offset = 10) {
+        var ns = "http://www.w3.org/2000/svg";
+
+        var line = document.createElementNS(ns, "line");
+        line.setAttribute("x1", x1);
+        line.setAttribute("y1", y1);
+        line.setAttribute("x2", x2);
+        line.setAttribute("y2", y2);
+        line.setAttribute("stroke", "gray");
+        line.setAttribute("stroke-width", "2");
+
+        var midX = (x1 + x2) / 2;
+        var midY = (y1 + y2) / 2;
+        var dx = x2 - x1;
+        var dy = y2 - y1;
+        var length = Math.sqrt(dx * dx + dy * dy);
+        var perpX = -dy / length;
+        var perpY = dx / length;
+        var labelX = midX + perpX * offset;
+        var labelY = midY + perpY * offset;
+
+        var text = document.createElementNS(ns, "text");
+        text.setAttribute("x", labelX);
+        text.setAttribute("y", labelY);
+        text.setAttribute("text-anchor", "middle");
+        text.setAttribute("dominant-baseline", "middle");
+        text.setAttribute("font-size", "14");
+        text.setAttribute("fill", "black");
+        text.textContent = label;
+
+        svg.appendChild(line);
+        svg.appendChild(text);
     }
 }
