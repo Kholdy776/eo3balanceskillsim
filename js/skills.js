@@ -966,7 +966,7 @@ var skills = {
             max: 10,
             coords: {
                 x: xl,
-                y: 28
+                y: 4*yl
             }
         },
         GunMastery: {
@@ -980,7 +980,7 @@ var skills = {
             max: 10,
             coords: {
                 x: xl,
-                y: 515.8
+                y: 5*yl
             }
         },
         Swashbuckling: {
@@ -989,14 +989,13 @@ var skills = {
             details: "When using a normal attack, there is a chance to strike multiple times.",
             requires: "N/A",
             dep: {
-                RapierMastery: 8,
-                GunMastery: 8
+                LadyLuck: 10
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 190.6
+                y: 2*yl
             }
         },
         LadyLuck: {
@@ -1009,8 +1008,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 353.2
+                x: 0,
+                y: 1.5*yl
             }
         },
         DrunkenBrawler: {
@@ -1019,14 +1018,13 @@ var skills = {
             details: "Rapier: Increase evasion and fight with your rapier and fists.",
             requires: "Rapier",
             dep: {
-                LadyLuck: 3,
-                EagleEye: 3
+                RapierMastery: 7
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 190.6
+                x: 0,
+                y: 5*yl
             }
         },
         EagleEye: {
@@ -1035,13 +1033,13 @@ var skills = {
             details: "Lowers one enemy's physical defense for three turns.",
             requires: "Arms",
             dep: {
-                RapierMastery: 1
+                /* none */ },
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 28
+                x: 2*xl,
+                y: 3*yl
             }
         },
         QuickDraw: {
@@ -1050,13 +1048,13 @@ var skills = {
             details: "Rapier/Gun: Random pierce attacks to all enemies, decreasing slash resistance.",
             requires: "Legs",
             dep: {
-                RapierMastery: 3
+                GunMastery: 1
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 150
+                x: 2*xl,
+                y: 4*yl
             }
         },
         RapidFire: {
@@ -1065,13 +1063,13 @@ var skills = {
             details: "Gun: A piercing attack that fires 3 bullets, decreasing pierce resistance.",
             requires: "Legs",
             dep: {
-                RapierMastery: 3
+                GunMastery: 4
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 272
+                x: 2*xl,
+                y: 6*yl
             }
         },
        ChaseFlame: {
@@ -1080,13 +1078,13 @@ var skills = {
             details: "Rapier/Gun: Perform a fire follow-up  to an ally's attack.",
             requires: "Legs",
             dep: {
-                RapierMastery: 3
+                ChaseWeapon: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 394
+                x: 2*xl,
+                y: 2*yl
             }
         },
         ChaseIce: {
@@ -1095,13 +1093,13 @@ var skills = {
             details: "Rapier/Gun: Perform an ice follow-up  to an ally's attack.",
             requires: "Arms",
             dep: {
-                RapierMastery: 5
+                ChaseWeapon: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 516
+                x: 2*xl,
+                y: yl
             }
         },
         ChaseVolt: {
@@ -1110,13 +1108,13 @@ var skills = {
             details: "Rapier/Gun: Perform a volt follow-up  to an ally's attack.",
             requires: "Arms",
             dep: {
-                GunMastery: 1
+                ChaseWeapon: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 28
+                y: 0
             }
         },
         LightsOut: {
@@ -1125,13 +1123,13 @@ var skills = {
             details: "Rapier: A pierce attack that may blind the enemy.",
             requires: "Legs",
             dep: {
-                GunMastery: 3
+                RapierMastery: 1
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 150
+                x: 0,
+                y: 4*yl
             }
         },
         Hanging: {
@@ -1140,13 +1138,13 @@ var skills = {
             details: "Rapier/Gun: A pierce attack that may bind the enemy's head.",
             requires: "Legs",
             dep: {
-                GunMastery: 3
+                RapierMastery: 4
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 272
+                x: 0,
+                y: 6*yl
             }
         },
        ChaseWeapon: {
@@ -1155,13 +1153,13 @@ var skills = {
             details: "Perform a follow-up to an ally's attack with current weapon's attritutes.",
             requires: "Legs",
             dep: {
-                GunMastery: 3
+                LadyLuck: 1
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 394
+                x: xl,
+                y: 0
             }
         },
        LimitBoost: {
@@ -1170,13 +1168,14 @@ var skills = {
             details: "The limit gauge will increase faster.",
             requires: "Arms",
             dep: {
-                GunMastery: 5
+                LadyLuck: 3,
+                EagleEye: 3
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl,
-                y: 516
+                x: xl,
+                y: 3*yl
             }
         },
         CheersMatey: {
@@ -1185,14 +1184,13 @@ var skills = {
             details: "When receiving a buff, execute a normal attack on a random enemy.",
             requires: "Arms",
             dep: {
-                RapierMastery: 10,
-                GunMastery: 10
+                LadyLuck: 5
             },
             active: TRUE,
             max: 1,
             coords: {
                 x: xl,
-                y: 353.2
+                y: yl
             }
         },
         Pincushion: {
@@ -1201,12 +1199,14 @@ var skills = {
             details: "Rapier/Gun: Random pierce attacks boosted by the user's agility.",
             requires: "Head",
             dep: {
-                /* none */ },
+                Hanging: 5,
+                RapidFire: 5
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 28
+                x: xl,
+                y: 6*yl
             }
         },
         DoubleTap: {
@@ -1215,12 +1215,13 @@ var skills = {
             details: "Gun: A piercing attack that hits twice, decreasing strike resistance.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                GunMastery: 7
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 515.8
+                x: 2*xl,
+                y: 5*yl
             }
         }
     },
