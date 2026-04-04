@@ -1246,8 +1246,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl,
-                y: 265
+                x: xl,
+                y: 2*yl
             }
         },
         Katon: {
@@ -1261,8 +1261,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 506
+                x: 2*xl,
+                y: 2*yl
             }
         },
         Reflexes: {
@@ -1276,8 +1276,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 506
+                x: 2*xl,
+                y: 7*yl
             }
         },
         Hyouton: {
@@ -1292,7 +1292,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 373
+                y: 3*yl
             }
         },
         KnifeMastery: {
@@ -1305,8 +1305,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 49
+                x: 0,
+                y: 2*yl
             }
         },
         Raiton: {
@@ -1320,8 +1320,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 157
+                x: 2*xl,
+                y: 4*yl
             }
         },
         Otori: {
@@ -1336,7 +1336,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 265
+                y: 6*yl
             }
         },
         Epidemic: {
@@ -1350,8 +1350,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl,
-                y: 373
+                x: xl,
+                y: yl
             }
         },
         NinpoDouble: {
@@ -1366,7 +1366,7 @@ var skills = {
             max: 1,
             coords: {
                 x: 2*xl,
-                y: 157
+                y: 6*yl
             }
         },
         SeitonTenchu: {
@@ -1381,8 +1381,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 374
+                x: 2*xl,
+                y: 0.5*yl
             }
         },
         NinpoNeedles: {
@@ -1397,8 +1397,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 332
+                x: 3*xl,
+                y: 3.5*yl
             }
         },
         Ninjutsu: {
@@ -1412,7 +1412,7 @@ var skills = {
             max: 10,
             coords: {
                 x: xl,
-                y: 412
+                y: 5*yl
             }
         },
         NinpoShuriken: {
@@ -1426,8 +1426,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 49
+                x: 2*xl,
+                y: 5*yl
             }
         },
         ShadowBind: {
@@ -1442,7 +1442,7 @@ var skills = {
             max: 10,
             coords: {
                 x: xl,
-                y: 7
+                y: 0
             }
         },
         HawkStrike: {
@@ -1458,7 +1458,7 @@ var skills = {
             max: 1,
             coords: {
                 x: xl,
-                y: 87
+                y: 4*yl
             }
         },
         Izuna: {
@@ -1472,8 +1472,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 464
+                x: xl,
+                y: 3*yl
             }
         },
         Chimatsuri: {
@@ -1488,8 +1488,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 544
+                x: 3*xl,
+                y: 2*yl
             }
         },
         Genjutsu: {
@@ -1503,8 +1503,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 213
+                x: 3*xl,
+                y: 5*yl
             }
         }
     },
@@ -1611,8 +1611,7 @@ var skills = {
             details: "Healing qi will recover one ally's HP.",
             requires: "Head",
             dep: {
-                Healing: 5
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
@@ -1620,7 +1619,7 @@ var skills = {
                 y: 167
             }
         },
-        PartyHeal: {
+        GroupHeal: {
             name_jp: "ラインヒール",
             name_en: "Party Heall",
             details: "Healing qi will recover all allies' HP.",
@@ -1696,7 +1695,7 @@ var skills = {
                 y: 49
             }
         },
-       Resurrect: {
+        Resurrect: {
             name_jp: "気功 拳",
             name_en: "Resurrect",
             details: "Revive one ally with healing qi.",
@@ -1727,10 +1726,10 @@ var skills = {
                 y: 544
             }
         },
-        LineHeal: {
+        Meditation: {
             name_jp: "カウンターII",
-            name_en: "Line Heal",
-            details: "Recover one row of allies' HP using healing qi.",
+            name_en: "Meditation",
+            details: "Increase attack power when bound.",
             requires: "Arms",
             dep: {
                 FistMastery: 8
@@ -1742,7 +1741,7 @@ var skills = {
                 y: 283
             }
         },
-         BreakfireFist: {
+        BreakfireFist: {
             name_jp: "暗黒拳",
             name_en: "Breakfire Fist",
             details: "Fist: A strike and fire attack that hits enemies at random.",
@@ -1757,7 +1756,7 @@ var skills = {
                 y: 370
             }
         },
-       DarknessFist: {
+        DarknessFist: {
             name_jp: "火渡りの行",
             name_en: "Darkness Fist",
             details: "Fist: Sacrifice HP to strike all enemies. May inflict blind.",
@@ -1773,10 +1772,10 @@ var skills = {
                 y: 457
             }
         },
-        Levitate: {
+        Clinch: {
             name_jp: "火渡りの行",
-            name_en: "Levitate",
-            details: "Decreases damage from trap floors for a certain number of steps.",
+            name_en: "Clinch",
+            details: "Bind head, arm, and legs of all enemies and self.",
             requires: "N/A",
             dep: {
                 /* none */ },
