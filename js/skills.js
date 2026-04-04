@@ -115,7 +115,8 @@ var skills = {
             details: "Recover the party's HP with each step by singing gallant military songs.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                TriumphantCry: 3
+			},
             active: FALSE,
             max: 10,
             coords: {
@@ -129,9 +130,8 @@ var skills = {
             details: "This royalty skill regains TP with each new enhancement received.",
             requires: "N/A",
             dep: {
-                RoyalBell: 5
-            },
-            active: FALSE,
+                /* none */ },
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -144,7 +144,7 @@ var skills = {
             details: "All allies will recover HP if you are alive at the end of the battle.",
             requires: "N/A",
             dep: {
-                KingsVictorySong: 5
+                RoyalLineage: 1
             },
             active: FALSE,
             max: 10,
@@ -159,7 +159,7 @@ var skills = {
             details: "When casting an enhancement spell on an ally they will recover HP.",
             requires: "N/A",
             dep: {
-                DefenseOrder: 1
+                GuardOrder: 1
             },
             active: FALSE,
             max: 10,
@@ -175,7 +175,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -216,7 +216,7 @@ var skills = {
             details: "Dispels an ally's Elemental Arms enchantment to deal 3 instances of damage to random enemies.",
             requires: "Arms",
             dep: {
-                AttackOrder: 1
+                RegalRadiance: 3
             },
             active: TRUE,
             max: 10,
@@ -231,7 +231,7 @@ var skills = {
             details: "Dispel all enhancement spells to recover HP.",
             requires: "Arms",
             dep: {
-                AttackOrder: 1
+                NobilityProof: 1
             },
             active: TRUE,
             max: 10,
@@ -246,7 +246,7 @@ var skills = {
             details: "Dispel all stat decreases and recover TP.",
             requires: "Arms",
             dep: {
-                AttackOrder: 1
+                Negotiation: 2
             },
             active: TRUE,
             max: 10,
@@ -261,7 +261,8 @@ var skills = {
             details: "Dispel all enhancements on one enemy, deals non-elemental damage.",
             requires: "Head",
             dep: {
-                AttackOrder: 3
+                AttackOrder: 5,
+                GuardOrder: 5
             },
             active: TRUE,
             max: 10,
@@ -276,8 +277,7 @@ var skills = {
             details: "Enchant allies' weapon with fire and increase fire damage dealt for three turns.",
             requires: "Head",
             dep: {
-                AttackOrder: 5,
-                DefenseOrder: 5
+                AttackOrder: 2
             },
             active: TRUE,
             max: 5,
@@ -292,7 +292,7 @@ var skills = {
             details: "Enchant allies' weapon with ice and increase ice damage dealt for three turns.",
             requires: "Head",
             dep: {
-                DefenseOrder: 3
+                AttackOrder: 2
             },
             active: TRUE,
             max: 5,
@@ -307,7 +307,7 @@ var skills = {
             details: "Enchant allies' weapon with volt and increase volt damage dealt for three turns.",
             requires: "Head",
             dep: {
-                DefenseOrder: 5
+                AttackOrder: 2
             },
             active: TRUE,
             max: 10,
@@ -322,7 +322,7 @@ var skills = {
             details: "Dispels an ally's Elemental Arms enchantments to deal damage to all enemies. May stun.",
             requires: "Head",
             dep: {
-                AmbitiousCommand: 5
+                AttackOrder: 5
             },
             active: TRUE,
             max: 10,
@@ -337,7 +337,7 @@ var skills = {
             details: "Allies will gain ailment and bind protection for three turns. This enhancement is consumed after a bind or ailment is negated.",
             requires: "Head",
             dep: {
-                NobilityProof: 1
+                GuardOrder: 3
             },
             active: TRUE,
             max: 5,
@@ -352,7 +352,8 @@ var skills = {
             details: "For three turns, allies will gain HP when a turn ends.",
             requires: "Head",
             dep: {
-                NobilityProof: 3
+                Reinforce: 5,
+                PreventOrder: 3
             },
             active: TRUE,
             max: 10,
@@ -367,7 +368,7 @@ var skills = {
             details: "The specified ally will act first this turn.",
             requires: "Head",
             dep: {
-                NobilityProof: 5
+                Inspire: 2
             },
             active: TRUE,
             max: 5,
