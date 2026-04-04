@@ -1240,9 +1240,11 @@ var skills = {
             details: "Normal attacks may be fatal blows.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                KnifeMastery: 5,
+                Epidemic: 3
+            },
             active: TRUE,
-            max: 10,
+            max: 5,
             coords: {
                 x: 2*xl,
                 y: 265
@@ -1254,7 +1256,8 @@ var skills = {
             details: "Fire Ninjutsu creates an explosion over an enemy. May bind head.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Ninjutsu: 1
+            },
             active: TRUE,
             max: 10,
             coords: {
@@ -1268,8 +1271,7 @@ var skills = {
             details: "TP is recovered when evading an attack.",
             requires: "N/A",
             dep: {
-                NinpouSarutobi: 3,
-                NinpouCloudCover: 3
+                Ninjutsu: 7
             },
             active: TRUE,
             max: 10,
@@ -1284,8 +1286,7 @@ var skills = {
             details: "Ice Ninjutsu freezes the air under an enemy. May bind legs.",
             requires: "N/A",
             dep: {
-                NinpouWaterMirror: 3,
-                NinpouCaltrop: 5
+                Ninjutsu: 2
             },
             active: TRUE,
             max: 10,
@@ -1300,9 +1301,7 @@ var skills = {
             details: "Prerequisite for knife skills that raises knife damage dealt.",
             requires: "N/A",
             dep: {
-                NinpouBeckoning: 3,
-                NinpouClone: 1
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
@@ -1316,7 +1315,7 @@ var skills = {
             details: "Volt Ninjutsu conjures lightning towards an enemy. May bind arms.",
             requires: "Arms",
             dep: {
-                DaggerMastery: 1
+                KnifeMastery: 1
             },
             active: TRUE,
             max: 10,
@@ -1331,8 +1330,7 @@ var skills = {
             details: "Makes enemies target one ally for three turns.",
             requires: "Arms",
             dep: {
-                DaggerMastery: 3,
-                ShadowWeave: 3
+                NinpoDouble: 1
             },
             active: TRUE,
             max: 5,
@@ -1341,13 +1339,13 @@ var skills = {
                 y: 265
             }
         },
-        NinpoSmoke: {
+        Epidemic: {
             name_jp: "鷹乃羽",
-            name_en: "Ninpo: Smoke",
-            details: "Sacrifice HP for a significant evasion boost for three turns.",
+            name_en: "Epidemic",
+            details: "Normal attacks may inflict sleep, poison, blind, confusion, or paralysis.",
             requires: "Arms",
             dep: {
-                DaggerMastery: 5
+                KnifeMastery: 3
             },
             active: TRUE,
             max: 5,
@@ -1362,8 +1360,7 @@ var skills = {
             details: "Use half your HP and TP to create a copy of yourself in the party.",
             requires: "Arms",
             dep: {
-                DaggerMastery: 10,
-                FleshBullet: 3
+                Ninjutsu: 5
             },
             active: TRUE,
             max: 1,
@@ -1378,7 +1375,9 @@ var skills = {
             details: "Knife: Deliver heavenly punishment by slicing through ailing enemies.",
             requires: "Head",
             dep: {
-                /* none */ },
+                ShadowBind: 5,
+                Epidemic: 5
+            },
             active: TRUE,
             max: 10,
             coords: {
@@ -1392,7 +1391,8 @@ var skills = {
             details: "Ninjutsu: Conjure anesthetic needles that may make an enemy drowsy.",
             requires: "Head",
             dep: {
-                NinpouFukimibari: 1
+                Hyouton: 3,
+                Raiton: 3
             },
             active: TRUE,
             max: 10,
@@ -1407,8 +1407,7 @@ var skills = {
             details: "Prerequisite for ninja techniques. Passively increases evasion.",
             requires: "Arms",
             dep: {
-                NinpouFukimibari: 3
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
@@ -1422,7 +1421,8 @@ var skills = {
             details: "Ninjutsu: Throw poisoned shurikens at a group of enemies.",
             requires: "Head",
             dep: {
-                /* none */ },
+                Ninjutsu: 4
+            },
             active: TRUE,
             max: 5,
             coords: {
@@ -1436,7 +1436,7 @@ var skills = {
             details: "Knife: A surprise slash attack that may leave the enemy paralyzed.",
             requires: "Head",
             dep: {
-                NinpouHeatHaze: 1
+                KnifeMastery: 1
             },
             active: TRUE,
             max: 10,
@@ -1451,7 +1451,8 @@ var skills = {
             details: "Knife: Slash attack to random enemies, damage is based on the user's agility.",
             requires: "Head",
             dep: {
-                NinpouHeatHaze: 3
+                KnifeMastery: 10,
+                Ninjutsu: 10
             },
             active: TRUE,
             max: 1,
@@ -1466,7 +1467,7 @@ var skills = {
             details: "Knife: Slash attack to one enemy. May cause petrification.",
             requires: "Legs",
             dep: {
-                Conceal: 1
+                KnifeMastery: 5
             },
             active: TRUE,
             max: 10,
@@ -1481,7 +1482,8 @@ var skills = {
             details: "Ninjutsu: Torture a bound enemy with piercing techniques.",
             requires: "Legs",
             dep: {
-                Conceal: 5
+                Katon: 3,
+                NinpoNeedles: 1
             },
             active: TRUE,
             max: 10,
@@ -1496,7 +1498,8 @@ var skills = {
             details: "Ninjutsu: A disorienting pierce attack that may leave the enemy confused.",
             requires: "Legs",
             dep: {
-                /* none */ },
+                NinpoShuriken: 3
+            },
             active: TRUE,
             max: 10,
             coords: {
