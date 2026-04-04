@@ -2266,7 +2266,7 @@ var skills = {
                 y: 160
             }
         },
-        Call Owl: {
+        CallOwl: {
             name_jp: "暴れ野牛招来",
             name_en: "Call Owl",
             details: "Summons a beguiling owl that may put all enemies to sleep.",
@@ -3047,7 +3047,7 @@ var skills = {
                 y: 256
             }
         },
-        5RingSword: {
+        "5RingSword": {
             name_jp: "精神統一",
             name_en: "5-Ring Sword",
             details: "Katana: Randomly slash all enemies, more hits with two swords.",
@@ -3209,7 +3209,7 @@ var skills = {
                 y: 206
             }
         },
-        Bastion {
+        Bastion: {
             name_jp: "暗視",
             name_en: "Bastion",
             details: "Grow bigger, attracting more enemy hits and resisting ailments.",
@@ -3357,7 +3357,7 @@ var skills = {
                 y: 98
             }
         },
-        AllOut {
+        AllOut: {
             name_jp: "シュート",
             name_en: "All Out",
             details: "Join forces with your family of bots for a coordinated attack.",

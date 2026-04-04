@@ -893,11 +893,11 @@ var levels = {
             3: "Limit Accumulation +6",
             4: "Limit Accumulation +8",
             5: "Limit Accumulation +10"
-        
+
         },
         CheersMatey: {
             1: "100% DMG, 100% Activation"
-          
+
         },
         Pincushion: {
             1: "100% DMG, AGI*3% Bonus DMG, 1-2 Hits; costs 6 TP",
@@ -1532,7 +1532,7 @@ var levels = {
             10: "144% ALMIGHTY DAMAGE, costs 60 TP"
         }
     },
-Wildling: {
+    Wildling: {
         NaturePact: {
             1: "50% chance to be protected by beast and be healed for 10 HP",
             2: "60% chance to be protected by beast and be healed for 20 HP",
@@ -1796,9 +1796,9 @@ Wildling: {
             3: "Skill ACC +24%",
             4: "Skill ACC +32%",
             5: "Skill ACC +40%"
-         
+
         },
-            SagittariusArrow: {
+        SagittariusArrow: {
             1: "189% DMG, Uses weapon attribute; costs 5 TP",
             2: "201% DMG, Uses weapon attribute; costs 5 TP",
             3: "213% DMG, Uses weapon attribute; costs 6 TP",
@@ -1811,13 +1811,13 @@ Wildling: {
             10: "297% DMG, Uses weapon attribute; costs 9 TP"
         },
 
-         SmokeGrenade: {
+        SmokeGrenade: {
             1: "30% chance to blind; costs 6 TP",
             2: "40% chance to blind; costs 7 TP",
             3: "50% chance to blind; costs 8 TP",
             4: "65% chance to blind; costs 9 TP",
             5: "80% chance to blind; costs 10 TP"
-       
+
         },
         ApollosWrath: {
             1: "135% DMG; costs 3 TP",
@@ -1830,7 +1830,7 @@ Wildling: {
             8: "225% DMG; costs 6 TP",
             9: "240% DMG; costs 7 TP",
             10: "255% DMG; costs 7 TP"
-          
+
         },
         HeavyShot: {
             1: "140% damage; costs 3 TP",
@@ -1940,7 +1940,7 @@ Wildling: {
             9: "65% DMG; costs 15 TP",
             10: "69 DMG; costs 16 TP"
         },
-    
+
         Ambush: {
             1: "Have a 25% chance for a preemptive attack for 40 steps; costs 6 TP",
             2: "Have a 30% chance for a preemptive attack for 45 steps; costs 7 TP",
@@ -1962,7 +1962,7 @@ Wildling: {
             9: "Gain 27% bonus EXP;Farmer DMG +22%",
             10: "Gain 30% bonus EXP;Farmer DMG +25%"
         },
-       DeathBlight: {
+        DeathBlight: {
             1: "Ailment Rate 25%; costs 10 TP",
             2: "Ailment Rate 28%; costs 10 TP",
             3: "Ailment Rate 31%; costs 11 TP",
@@ -2003,7 +2003,7 @@ Wildling: {
             2: "Increase drop rate by 2%",
             3: "Increase drop rate by 3%",
             4: "Increase drop rate by 4%",
-            5: "Increase drop rate by 5%"
+            5: "Increase drop rate by 5%",
             6: "Increase drop rate by 6%",
             7: "Increase drop rate by 7%",
             8: "Increase drop rate by 8%",
@@ -2046,7 +2046,7 @@ Wildling: {
             9: "139% DMG, Blind Rate 66%, Enemy EVA +2%; costs 10 TP",
             10: "150% DMG, Blind Rate 70%, Enemy EVA +1%s; costs 10 TP"
         },
-   RottenEgg: {
+        RottenEgg: {
             1: "Enemy ATK -6%, Ailing Enemy ATK -16%; costs 6 TP",
             2: "Enemy ATK -7%, Ailing Enemy ATK -17%; costs 6 TP",
             3: "Enemy ATK -8%, Ailing Enemy ATK 18%; costs 7 TP",
@@ -2070,7 +2070,7 @@ Wildling: {
             9: "42% chance to put enemies to sleep; costs 10 TP",
             10: "45% chance to put enemies to sleep; costs 10 TP"
         },
-          StrangeSeeds: {
+        StrangeSeeds: {
             1: "55% chance to Bind enemies; costs 3 TP",
             2: "60% chance to Bind enemies; costs 4 TP",
             3: "65% chance to Bind enemies; costs 4 TP",
@@ -2106,7 +2106,7 @@ Wildling: {
             9: "633% DMG; costs 9 TP",
             10: "666% DMG; costs 10 TP"
         },
-       Malediction: {
+        Malediction: {
             1: "103% DMG, Curse Rate 40% ; costs 3 TP",
             2: "113% DMG, Curse Rate 45% ; costs 4 TP",
             3: "123% DMG, Curse Rate 50% ; costs 4 TP",
@@ -2118,7 +2118,7 @@ Wildling: {
             9: "189% DMG, Curse Rate 80% ; costs 7 TP",
             10: "200% DMG, Curse Rate 85% ; costs 8 TP"
         },
-     SafeStroll: {
+        SafeStroll: {
             1: "Lasts for 15 steps; costs 12 TP",
             2: "Lasts for 20 steps; costs 12 TP",
             3: "Lasts for 25 steps; costs 13 TP",
@@ -2149,7 +2149,7 @@ Wildling: {
             9: "139% DMG, Bind Rate 40%; costs 7 TP",
             10: "150% DMG, Bind Rate 42%; costs 8 TP"
         },
-         Mesmerize: {
+        Mesmerize: {
             1: "1% DMG; costs 25 TP",
             2: "1% DMG; costs 23 TP",
             3: "1% DMG; costs 21 TP",
@@ -2203,7 +2203,7 @@ Wildling: {
             4: "186% DMG, +60% DMG next hit; costs 16 TP",
             5: "200% DMG, +75% DMG next hit; costs 18 TP"
         },
-         BloodyLance: {
+        BloodyLance: {
             1: "Increase ATK by 10% when user deals the final blow",
             2: "Increase ATK by 13% when user deals the final blow",
             3: "Increase ATK by 16% when user deals the final blow",
@@ -2215,7 +2215,7 @@ Wildling: {
             9: "Increase ATK by 35% when user deals the final blow",
             10: "Increase ATK by 40% when user deals the final blow"
         },
-       MoraleBoost: {
+        MoraleBoost: {
             1: "Row, Max HP +30%; costs 11 TP",
             2: "Row, Max HP +33%; costs 12 TP",
             3: "Row, Max HP +36%; costs 13 TP",
@@ -2227,14 +2227,14 @@ Wildling: {
             9: "Row, Max HP +60%; costs 21 TP",
             10: "Party, Max HP +70%; costs 23 TP"
         },
-       ChargingThrust: {
+        ChargingThrust: {
             1: "144% DMG, +15% DMG next hit; costs 10 TP",
             2: "158% DMG, +30% DMG next hit; costs 12 TP",
             3: "172% DMG, +45% DMG next hit; costs 14 TP",
             4: "186% DMG, +60% DMG next hit; costs 16 TP",
             5: "200% DMG, +75% DMG next hit; costs 18 TP"
         },
-      HiltStrike: {
+        HiltStrike: {
             1: "130% damage; 30% chance to stun; costs 8 TP",
             2: "133% damage; 32% chance to stun; costs 8 TP",
             3: "136% damage; 34% chance to stun; costs 9 TP",
@@ -2258,7 +2258,7 @@ Wildling: {
             9: "188% DMG, Blind Rate 66%; costs 21 TP",
             10: "195% DMG, Blind Rate 70%; costs 23 TP"
         },
-            TwilightHour: {
+        TwilightHour: {
             1: "132% DMG, Sleep Rate 42%; costs 11 TP",
             2: "139% DMG, Sleep Rate 44%; costs 12 TP",
             3: "146% DMG, Sleep Rate 46%; costs 13 TP",
@@ -2270,7 +2270,7 @@ Wildling: {
             9: "188% DMG, Sleep Rate 66%; costs 21 TP",
             10: "195% DMG, Sleep Rate 70%; costs 23 TP"
         },
-         5RingSword: {
+        "5RingSword": {
             1: "72% DMG, 2-3 Hits costs 11 TP",
             2: "75% DMG, 2-3 Hits; costs 12 TP",
             3: "78% DMG, 2-3 Hits; costs 13 TP",
@@ -2330,7 +2330,7 @@ Wildling: {
             9: "140% DEF; costs 15 TP",
             10: "145% DEF; costs 16 TP"
         },
-       AmbushStance: {
+        AmbushStance: {
             1: "100% damage; costs 14 TP",
             2: "110% damage; costs 15 TP",
             3: "121% damage; costs 16 TP",
@@ -2349,7 +2349,7 @@ Wildling: {
             4: "Ambush Prevetion Rate 85% ",
             5: "Ambush Prevetion Rate 100%"
         },
-          BlitzCommand: {
+        BlitzCommand: {
             1: "100% damage; costs 8 TP",
             2: "100% damage; costs 8 TP",
             3: "105% damage; costs 9 TP",
@@ -2361,7 +2361,7 @@ Wildling: {
             9: "130% damage; costs 14 TP",
             10: "135% damage; costs 15 TP"
         },
-      SheathStrike: {
+        SheathStrike: {
             1: "144% DMG, +15% DMG next hit; costs 10 TP",
             2: "158% DMG, +30% DMG next hit; costs 12 TP",
             3: "172% DMG, +45% DMG next hit; costs 14 TP",
@@ -2418,7 +2418,7 @@ Wildling: {
             9: "7% DMG, Highest Possible Damage 700%; costs 18 TP",
             10: "8% DMG, Highest Possible Damage 800%; costs 20 TP"
         },
-               Infravision: {
+        Infravision: {
             1: "Increase hit rate by 5% and evasion rate by 10%",
             2: "Increase hit rate by 8% and evasion rate by 13%",
             3: "Increase hit rate by 11% and evasion rate by 16%",
@@ -2430,7 +2430,7 @@ Wildling: {
             9: "Increase hit rate by 30% and evasion rate by 34%",
             10: "Increase hit rate by 40% and evasion rate by 40%"
         },
-            
+
         DataMining: {
             1: "Crit Hit Rate +5%, Crit Hit DMG +55%",
             2: "Crit Hit Rate +10%, Crit Hit DMG +65%",
@@ -2455,7 +2455,7 @@ Wildling: {
             9: "163 Bot HP, 133% DMG, Enemy Almighty res -45%, 7 Max Chases; costs 18 TP",
             10: "183 Bot HP, 142% DMG, Enemy Almighty res -50%, 7 Max Chases; costs 20 TP"
         },
-         Perkins: {
+        Perkins: {
             1: "50 Bot HP, 80% DMG, Enemy EVA -10%, 3 Max Chases; costs 10 TP",
             2: "60 Bot HP, 85% DMG, Enemy EVA -12%, 3 Max Chases; costs 11 TP",
             3: "71 Bot HP, 90% DMG, Enemy EVA -14%, 3 Max Chases; costs 12 TP",
@@ -2467,7 +2467,7 @@ Wildling: {
             9: "163 Bot HP, 133% DMG, Enemy EVA -27%, 7 Max Chases; costs 18 TP",
             10: "183 Bot HP, 142% DMG, Enemy EVA -30%, 7 Max Chases; costs 20 TP"
         },
-         Pascal: {
+        Pascal: {
             1: "50 Bot HP, 80% DMG, Enemy ACC -10%, 3 Max Chases; costs 10 TP",
             2: "60 Bot HP, 85% DMG, Enemy ACC -12%, 3 Max Chases; costs 11 TP",
             3: "71 Bot HP, 90% DMG, Enemy ACC -14%, 3 Max Chases; costs 12 TP",
@@ -2478,9 +2478,9 @@ Wildling: {
             8: "144 Bot HP, 124% DMG, Enemy ACC -24%, 6 Max Chases; costs 17 TP",
             9: "163 Bot HP, 133% DMG, Enemy ACC -27%, 7 Max Chases; costs 18 TP",
             10: "183 Bot HP, 142% DMG, Enemy ACC -30%, 7 Max Chases; costs 20 TP"
-                },
+        },
 
-           Fortification: {   
+        Fortification: {
             1: "Physical DEF +10%, ATK -1%",
             2: "Physical DEF +12%, ATK -2%",
             3: "Physical DEF +14%, ATK -3%",
@@ -2500,7 +2500,7 @@ Wildling: {
             4: "230% DMG Counterattack; Costs 18 TP",
             5: "270% DMG Counterattack; Costs 20 TP"
         },
-            
+
         FamilysWarmth: {
             1: "DEF +20% when covering allies; Costs 14 TP",
             2: "DEF +26% when covering allies; Costs 15 TP",
@@ -2508,8 +2508,8 @@ Wildling: {
             4: "DEF +38% when covering allies; Costs 18 TP",
             5: "DEF +44% when covering allies; Costs 20 TP"
         },
-          AllOut: {
-           1: "150% DMG, Uses weapon attribute; costs 15 TP",
+        AllOut: {
+            1: "150% DMG, Uses weapon attribute; costs 15 TP",
             2: "158% DMG, Uses weapon attribute costs 16 TP",
             3: "166% DMG, Uses weapon attribute; costs 17 TP",
             4: "174% DMG, Uses weapon attribute; costs 18 TP",
@@ -2550,9 +2550,9 @@ Wildling: {
             3: "Action speed +20; costs 20 TP",
             4: "Action speed +40; costs 21 TP",
             5: "Action speed +60; costs 22 TP"
-           
+
         },
-        HPCannon {
+        HPCannon: {
             1: "155% damage multiplied by (Max HP - Current HP); costs 5 TP",
             2: "175% damage multiplied by (Max HP - Current HP); costs 6 TP",
             3: "195% damage multiplied by (Max HP - Current HP); costs 7 TP",
@@ -2568,16 +2568,17 @@ Wildling: {
             1: "costs 5 TP",
             2: "costs 4 TP",
             3: "costs 3 TP",
-            4:  "costs 2 TP",
-            5:  "costs 1 TP"
-           
-    },
-          Defrag: {
+            4: "costs 2 TP",
+            5: "costs 1 TP"
+
+        },
+        Defrag: {
             1: "costs 5 TP",
             2: "costs 4 TP",
             3: "costs 3 TP",
-            4:  "costs 2 TP",
-            5:  "costs 1 TP"
-           
+            4: "costs 2 TP",
+            5: "costs 1 TP"
+
+        }
     }
-};
+}
