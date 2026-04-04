@@ -119,8 +119,8 @@ var skills = {
             active: FALSE,
             max: 10,
             coords: {
-                x: 302,
-                y: 10
+                x: 453,
+                y: 0
             }
         },
         RoyalLineage: {
@@ -134,8 +134,8 @@ var skills = {
             active: FALSE,
             max: 10,
             coords: {
-                x: 453,
-                y: 10
+                x: 302,
+                y: 80
             }
         },
         TriumphantCry: {
@@ -150,7 +150,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 453,
-                y: 169.8
+                y: 80
             }
         },
         Reinforce: {
@@ -165,7 +165,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 151,
-                y: 10
+                y: 320
             }
         },
         NobilityProof: {
@@ -178,8 +178,8 @@ var skills = {
             active: FALSE,
             max: 10,
             coords: {
-                x: 302.2,
-                y: 412
+                x: 302,
+                y: 240
             }
         },
         AttackOrder: {
@@ -193,7 +193,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 0,
-                y: 412
+                y: 120
             }
         },
         GuardOrder: {
@@ -207,7 +207,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 0,
-                y: 90
+                y: 360
             }
         },
         ElementalBomb: {
@@ -221,8 +221,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 151,
-                y: 294
+                x: 302,
+                y: 0
             }
         },
         Negotiation: {
@@ -236,8 +236,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 151,
-                y: 374
+                x: 453,
+                y: 240
             }
         },
         Inspire: {
@@ -251,8 +251,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 151,
-                y: 454
+                x: 453,
+                y: 320
             }
         },
         AdNihilo: {
@@ -266,8 +266,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 151,
-                y: 534
+                x: 0,
+                y: 240
             }
         },
         FireArms: {
@@ -282,8 +282,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 251
+                x: 151,
+                y: 80
             }
         },
         FreezeArms: {
@@ -298,7 +298,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 151,
-                y: 90
+                y: 160
             }
         },
         ShockArms: {
@@ -313,7 +313,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 151,
-                y: 170
+                y: 240
             }
         },
         RegalRadiance: {
@@ -327,8 +327,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 302,
-                y: 170
+                x: 151,
+                y: 0
             }
         },
         PreventOrder: {
@@ -342,8 +342,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 453.2,
-                y: 332
+                x: 151,
+                y: 400
             }
         },
         ProtectOrder: {
@@ -357,8 +357,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 453.2,
-                y: 412
+                x: 302,
+                y: 360
             }
         },
         Knighthood: {
@@ -372,8 +372,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 453.2,
-                y: 492
+                x: 453,
+                y: 400
             }
         }
     },
