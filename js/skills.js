@@ -1845,7 +1845,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
+                x: 3*xl,
                 y: 5.5*yl
             }
         },
