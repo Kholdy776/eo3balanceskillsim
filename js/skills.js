@@ -476,7 +476,7 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl.4,
+                x: 2*xl,
                 y: 74.7
             }
         },
@@ -490,7 +490,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.4,
+                x: 2*xl,
                 y: 478.7
             }
         },
@@ -504,7 +504,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.4,
+                x: 2*xl,
                 y: 175.7
             }
         },
@@ -520,7 +520,7 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl.4,
+                x: 2*xl,
                 y: 276.7
             }
         },
@@ -535,7 +535,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.4,
+                x: 2*xl,
                 y: 377.7
             }
         },
@@ -611,7 +611,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl.4,
+                x: 3*xl,
                 y: 227
             }
         },
@@ -626,7 +626,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl.4,
+                x: 3*xl,
                 y: 126
             }
         },
@@ -641,7 +641,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl.4,
+                x: 3*xl,
                 y: 429
             }
         },
@@ -657,7 +657,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl.4,
+                x: 3*xl,
                 y: 530
             }
         }
@@ -1537,7 +1537,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.2,
+                x: 2*xl,
                 y: 348
             }
         },
@@ -1551,7 +1551,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.2,
+                x: 2*xl,
                 y: 428
             }
         },
@@ -1567,7 +1567,7 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl.2,
+                x: 3*xl,
                 y: 390
             }
         },
@@ -1610,7 +1610,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.2,
+                x: 2*xl,
                 y: 167
             }
         },
@@ -1625,7 +1625,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.2,
+                x: 2*xl,
                 y: 247
             }
         },
@@ -1640,7 +1640,7 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl.2,
+                x: 3*xl,
                 y: 247
             }
         },
@@ -1655,7 +1655,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.2,
+                x: 2*xl,
                 y: 7
             }
         },
@@ -1670,7 +1670,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.2,
+                x: 2*xl,
                 y: 87
             }
         },
@@ -1686,7 +1686,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl.2,
+                x: 3*xl,
                 y: 49
             }
         },
@@ -2397,7 +2397,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl.2,
+                x: 3*xl,
                 y: 499
             }
         },
@@ -2592,7 +2592,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.2,
+                x: 2*xl,
                 y: 457
             }
         },
@@ -2606,7 +2606,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl.2,
+                x: 2*xl,
                 y: 537
             }
         },
