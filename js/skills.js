@@ -1,5 +1,5 @@
 const xl = 151;
-const yl = 80;
+const yl = 120;
 
 var skills = {
     Default: {
@@ -1530,7 +1530,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 0,
-                y: 370
+                y: 1.5*yl
             }
         },
         AsceticDeeds: {
@@ -1543,8 +1543,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 348
+                x: 3*xl,
+                y: 5*yl
             }
         },
         FullCleansing: {
@@ -1553,12 +1553,13 @@ var skills = {
             details: "Heals status effects and binds on allies. Range increases with level.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Healing: 1
+            },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 428
+                y: 2*yl
             }
         },
         BloodReturn: {
@@ -1567,14 +1568,14 @@ var skills = {
             details: "Sacrifice health to bless the party with TP.",
             requires: "N/A",
             dep: {
-                PilgrimsGain: 3,
-                ArtOfBloodReturn: 3
+                AsceticDeeds: 3,
+                GroupHeal: 3
             },
             active: TRUE,
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 390
+                y: 4*yl
             }
         },
         Sanctify: {
@@ -1583,12 +1584,14 @@ var skills = {
             details: "Purify the battlefield, raising the elemental resistance of all characters for 9 turns.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                AsceticDeeds: 1,
+                Meditation: 1
+            },
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl,
-                y: 544
+                x: 3*xl,
+                y: 6*yl
             }
         },
         Kikouken: {
@@ -1597,12 +1600,13 @@ var skills = {
             details: "Fist: Perform quick jabs at all enemies' weak points. May stun.",
             requires: "Head",
             dep: {
-                /* none */ },
+                FistMastery: 3
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 125
+                x: xl,
+                y: 3*yl
             }
         },
         Healing: {
@@ -1615,8 +1619,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 167
+                x: xl,
+                y: 5*yl
             }
         },
         GroupHeal: {
@@ -1625,13 +1629,13 @@ var skills = {
             details: "Healing qi will recover all allies' HP.",
             requires: "Head",
             dep: {
-                Healing: 4
+                Healing: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 247
+                y: 4*yl
             }
         },
         FullHeal: {
@@ -1640,13 +1644,13 @@ var skills = {
             details: "Healing qi will recover all HP for one ally.",
             requires: "Head",
             dep: {
-                LineHeal: 5
+                Healing: 5
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl,
-                y: 247
+                x: 2*xl,
+                y: 3*yl
             }
         },
         Counter: {
@@ -1655,13 +1659,13 @@ var skills = {
             details: "Fist: Wait patiently, then counters attacks in current row with freezing blows.",
             requires: "Head",
             dep: {
-                Healing: 2
+                FistMastery: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 7
+                x: xl,
+                y: 0
             }
         },
         Retaliate: {
@@ -1670,29 +1674,28 @@ var skills = {
             details: "Fist: Wait patiently, then counters attacks in current row with electrifying qi.",
             requires: "Head",
             dep: {
-                Healing: 2
+                Counter: 5
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 87
+                y: 0
             }
         },
         MercifulHeal: {
             name_jp: "リザレクト",
             name_en: "Merciful Heal",
-            details: "By instinct, heal anyone who suffers a grievous wound.",
+            details: "By instinct, heal anyone who suffers a grievous wound. (BE CAREFUL)",
             requires: "Head",
             dep: {
-                Refresh: 2,
-                BindRecovery: 2
+                Healing: 7
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 49
+                x: 2*xl,
+                y: 5*yl
             }
         },
         Resurrect: {
@@ -1701,13 +1704,13 @@ var skills = {
             details: "Revive one ally with healing qi.",
             requires: "Arms",
             dep: {
-                FistMastery: 1
+                FullHeal: 1
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 196
+                x: 3*xl,
+                y: 3*yl
             }
         },
         AuraBlast: {
@@ -1716,14 +1719,14 @@ var skills = {
             details: "Condense spiritual energy then blasts enemies, more damage from back row.",
             requires: "Arms",
             dep: {
-                FistMastery: 3,
-                ChakraZeal: 3
+                Kikouken: 3,
+                Healing: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 544
+                y: 4*yl
             }
         },
         Meditation: {
@@ -1732,13 +1735,12 @@ var skills = {
             details: "Increase attack power when bound.",
             requires: "Arms",
             dep: {
-                FistMastery: 8
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 283
+                x: 2*xl,
+                y: 6*yl
             }
         },
         BreakfireFist: {
@@ -1747,13 +1749,14 @@ var skills = {
             details: "Fist: A strike and fire attack that hits enemies at random.",
             requires: "Arms",
             dep: {
-                FistMastery: 8
+                FistMastery: 10,
+                DarknessFist: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 370
+                y: 2*yl
             }
         },
         DarknessFist: {
@@ -1762,14 +1765,13 @@ var skills = {
             details: "Fist: Sacrifice HP to strike all enemies. May inflict blind.",
             requires: "N/A",
             dep: {
-                FistMastery: 10,
-                BurstFist: 3
+                FistMastery: 7
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 457
+                y: yl
             }
         },
         Clinch: {
@@ -1778,12 +1780,13 @@ var skills = {
             details: "Bind head, arm, and legs of all enemies and self.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                FullCleansing: 3
+            },
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 10
+                x: 3*xl,
+                y: 2*yl
             }
         }
     },
