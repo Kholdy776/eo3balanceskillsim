@@ -1,5 +1,5 @@
 const xl = 151;
-const yl = 120;
+const yl = 80;
 
 var skills = {
     Default: {
