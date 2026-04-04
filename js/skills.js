@@ -1,4 +1,6 @@
 var skills = {
+	xl = 151,
+	yl = 80,
     Default: {
         HPBoost: {
             name_jp: "HPブースト",
@@ -7,7 +9,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -21,11 +23,11 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 80
+                y: xl
             }
         },
         FirstAid: {
@@ -35,11 +37,11 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 160
+                y: 2*xl
             }
         },
         ListenToExp: {
@@ -49,11 +51,11 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 1,
             coords: {
                 x: 0,
-                y: 240
+                y: 3*xl
             }
         },
         Take: {
@@ -63,11 +65,11 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 320
+                y: 4*xl
             }
         },
         Chop: {
@@ -77,11 +79,11 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 400
+                y: 5*xl
             }
         },
         Mine: {
@@ -91,11 +93,11 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 480
+                y: 6*xl
             }
         }
     },
@@ -106,7 +108,7 @@ var skills = {
             details: "All allies will recover HP if your HP is high at the turn's end.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         MonarchMarch: {
@@ -117,7 +119,7 @@ var skills = {
             dep: {
                 TriumphantCry: 3
 			},
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -146,7 +148,7 @@ var skills = {
             dep: {
                 RoyalLineage: 1
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -161,7 +163,7 @@ var skills = {
             dep: {
                 GuardOrder: 1
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
@@ -386,7 +388,7 @@ var skills = {
             details: "A skill for gladiators that raises physical attack power.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         SwordMastery: {
@@ -396,11 +398,11 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
-                x: 151,
-                y: 126
+                x: 0,
+                y: 120
             }
         },
         ClubMastery: {
@@ -410,11 +412,11 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
-                x: 151,
-                y: 428.8
+                x: 0,
+                y: 440
             }
         },
         Avenger: {
@@ -423,29 +425,28 @@ var skills = {
             details: "Recover HP & TP whenever an ally is defeated.",
             requires: "N/A",
             dep: {
-                Trance: 3
+                BerserkerVow: 1
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
-                x: 453.4,
-                y: 25
+                x: 302,
+                y: 480
             }
         },
-        StunAttack: {
+        FierceStrike: {
             name_jp: "ワイドエフェク ト",
-            name_en: "Stun Attack",
+            name_en: "Fierce Strike",
             details: "May inflict stun damage with a normal attack.",
             requires: "N/A",
             dep: {
-                SwordMastery: 5,
-                HammerMastery: 5
+                ClubMastery: 5
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
-                y: 277.4
+                y: 400
             }
         },
         WildSwings: {
@@ -454,13 +455,12 @@ var skills = {
             details: "Attack skills may cause splash damage to nearby enemies.",
             requires: "N/A",
             dep: {
-                BerserkersOath: 1
-            },
-            active: FALSE,
+                /* none */ },
+            active: TRUE,
             max: 10,
             coords: {
-                x: 453.4,
-                y: 328
+                x: 302,
+                y: 160
             }
         },
         IronWill: {
@@ -469,7 +469,8 @@ var skills = {
             details: "If HP is maxed and you are in the front row, recover TP.",
             requires: "Arms",
             dep: {
-                SwordMastery: 1
+                WolfHowl: 3,
+				Avenger: 3
             },
             active: TRUE,
             max: 5,
@@ -484,8 +485,7 @@ var skills = {
             details: "Raise physical attack power of self and all enemies for 9 turns.",
             requires: "Arms",
             dep: {
-                SwordMastery: 3
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
@@ -499,9 +499,7 @@ var skills = {
             details: "Decrease enemy defense for four turns. Stacks with status ailments.",
             requires: "Arms",
             dep: {
-                SwordMastery: 3,
-                Break: 5
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
@@ -515,7 +513,8 @@ var skills = {
             details: "Raise a bloody arena, allowing all fighters to focus their attacks more accurately. Raises accuracy and status infliction rate for 9 turns.",
             requires: "Arms",
             dep: {
-                SwordMastery: 7
+                BerserkerVow: 5,
+				WolfHowl: 5
             },
             active: TRUE,
             max: 5,
@@ -530,8 +529,7 @@ var skills = {
             details: "Sword: A slashing attack on a single enemy that lowers damage dealt.",
             requires: "Arms",
             dep: {
-                SwordMastery: 10,
-                Rush: 5
+                SwordMastery: 1
             },
             active: TRUE,
             max: 10,
@@ -546,7 +544,7 @@ var skills = {
             details: "Sword: Flank the enemy and slash them apart at random.",
             requires: "Arms",
             dep: {
-                HammerMastery: 1
+                SwordMastery: 3
             },
             active: TRUE,
             max: 10,
@@ -561,7 +559,7 @@ var skills = {
             details: "Sword: A strong slash at one enemy. May inflict leg bind.",
             requires: "Arms",
             dep: {
-                HammerMastery: 3
+                SwordMastery: 5
             },
             active: TRUE,
             max: 10,
@@ -576,8 +574,7 @@ var skills = {
             details: "Sword: Wait patiently then deliver a slash. The user heals based on damage dealt.",
             requires: "Arms",
             dep: {
-                HammerMastery: 3,
-                CrushBlow: 5
+                SwordMastery: 7
             },
             active: TRUE,
             max: 10,
@@ -592,8 +589,8 @@ var skills = {
             details: "Sword: Rapid slashes at random enemies.",
             requires: "Arms",
             dep: {
-                HammerMastery: 10,
-                ArmBreaker: 5
+                BloodThirst: 5,
+                WildSwings: 3
             },
             active: TRUE,
             max: 10,
@@ -608,7 +605,8 @@ var skills = {
             details: "Club: A strike attack that smashes enemy brains. May inflict confusion.",
             requires: "Head",
             dep: {
-                /* none */ },
+                ClubMastery: 1
+            },
             active: TRUE,
             max: 10,
             coords: {
@@ -622,7 +620,7 @@ var skills = {
             details: "Club: A strike attack that smashes enemy arms. May inflict arm bind.",
             requires: "Head",
             dep: {
-                BerserkersOath: 5
+                ClubMastery: 3
             },
             active: TRUE,
             max: 10,
@@ -637,8 +635,7 @@ var skills = {
             details: "Club: A strike attack that smashes enemies with an ice element.",
             requires: "Arms",
             dep: {
-                Avenger: 3,
-                WolfHowl: 3
+                ClubMastery: 7
             },
             active: TRUE,
             max: 10,
@@ -653,7 +650,9 @@ var skills = {
             details: "Club: An inaccurate strike attack that wallops one enemy repeatedly.",
             requires: "Head",
             dep: {
-                /* none */ },
+                FreezingBlow: 5,
+                WildSwings: 3
+            },
             active: TRUE,
             max: 10,
             coords: {
@@ -670,7 +669,7 @@ var skills = {
             details: "A hoplite skill that reduces most damage taken. Decreases damage recieved from CUT/STAB/BASH/FIRE/ICE/VOLT attacks.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         SpearMastery: {
@@ -680,7 +679,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -694,7 +693,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -709,7 +708,7 @@ var skills = {
             dep: {
                 Revive: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 151,
@@ -724,7 +723,7 @@ var skills = {
             dep: {
                 Taunt: 5
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -739,7 +738,7 @@ var skills = {
             dep: {
                 Taunt: 5
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -948,7 +947,7 @@ var skills = {
             details: "Replenish TP if you chase or kill an enemy.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         RapierMastery: {
@@ -958,7 +957,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
@@ -972,7 +971,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
@@ -988,7 +987,7 @@ var skills = {
                 RapierMastery: 8,
                 GunMastery: 8
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
@@ -1002,7 +1001,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -1018,7 +1017,7 @@ var skills = {
                 LadyLuck: 3,
                 EagleEye: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -1228,7 +1227,7 @@ var skills = {
             details: "Decreases TP consumption and allows the Ninja to do full melee damage from the back row.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         Beheading: {
@@ -1238,7 +1237,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -1252,7 +1251,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
@@ -1268,7 +1267,7 @@ var skills = {
                 NinpouSarutobi: 3,
                 NinpouCloudCover: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -1284,7 +1283,7 @@ var skills = {
                 NinpouWaterMirror: 3,
                 NinpouCaltrop: 5
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -1300,7 +1299,7 @@ var skills = {
                 NinpouBeckoning: 3,
                 NinpouClone: 1
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -1510,7 +1509,7 @@ var skills = {
             details: "A passive that enhances healing skills and lowers the monk's presence.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         FistMastery: {
@@ -1520,7 +1519,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -1534,7 +1533,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302.2,
@@ -1548,7 +1547,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302.2,
@@ -1564,7 +1563,7 @@ var skills = {
                 PilgrimsGain: 3,
                 ArtOfBloodReturn: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 453.2,
@@ -1578,7 +1577,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 302,
@@ -1790,7 +1789,7 @@ var skills = {
             details: "Zodiac skill that recovers TP when using attack skills.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         Inferno: {
@@ -1800,7 +1799,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -1814,7 +1813,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
@@ -1828,7 +1827,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -1843,7 +1842,7 @@ var skills = {
             dep: {
                 DarkEther: 5
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -1859,7 +1858,7 @@ var skills = {
                 SingularityTheorem: 5,
                 EtherConcentration: 5
             },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 453,
@@ -2072,7 +2071,7 @@ var skills = {
             details: "Wildling skill that allows a beast to take a mortal blow in your place.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         WildMastery: {
@@ -2082,7 +2081,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -2096,7 +2095,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
@@ -2139,7 +2138,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 151,
@@ -2168,7 +2167,7 @@ var skills = {
             dep: {
                 AnimalFriendship: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 453,
@@ -2183,7 +2182,7 @@ var skills = {
             dep: {
                 AnimalFriendship: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 1,
             coords: {
                 x: 453,
@@ -2354,7 +2353,7 @@ var skills = {
             details: "Increase damage against enemies whose HP is greater than 200% of the Arbalist's HP.  (e.g. If Arbalist has 100 HP, then enemy must have more than 200 HP).",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
        BoltMastery: {
@@ -2364,7 +2363,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 151,
@@ -2378,7 +2377,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 151,
@@ -2394,7 +2393,7 @@ var skills = {
                 IlluminatingShot: 3,
                 SmokeBomb: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453.2,
@@ -2409,7 +2408,7 @@ var skills = {
             dep: {
                 SurefireConcentration: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -2425,7 +2424,7 @@ var skills = {
                 RearMortarBombardment: 4,
                 HighSpeedAPBullet: 4
             },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 453,
@@ -2633,7 +2632,7 @@ var skills = {
             details: "Farmer skill that increases ally EXP points and damage of farmer skills.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         DeathBlight: {
@@ -2644,7 +2643,7 @@ var skills = {
             dep: {
                 MomentOfInjury: 5
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -2673,7 +2672,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -2747,7 +2746,7 @@ var skills = {
             dep: {
                 CampMaster: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -2761,7 +2760,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -2865,7 +2864,7 @@ var skills = {
                 CryToCeaseAttack: 5,
                 MysterySeed: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -2895,7 +2894,7 @@ var skills = {
             dep: {
                 ForagingMastery: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 453,
@@ -2911,7 +2910,7 @@ var skills = {
             details: "Allows equipping of two weapons and increases damage when attacking with two weapons.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         KatanaMastery: {
@@ -2921,7 +2920,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -2935,7 +2934,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 453,
@@ -2950,7 +2949,7 @@ var skills = {
             dep: {
                 Endure: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 5,
             coords: {
                 x: 302,
@@ -2964,7 +2963,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -2980,7 +2979,7 @@ var skills = {
                 RestoreWill: 1,
                 Endure: 1
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
@@ -3193,7 +3192,7 @@ var skills = {
             details: "TP is restored when inflicted with Binds.  The more binds, the more TP is restored.",
             requires: "N/A",
             unique: true,
-            active: FALSE,
+            active: TRUE,
             max: 10
         },
         Overheat: {
@@ -3203,7 +3202,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -3217,7 +3216,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -3231,7 +3230,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 0,
@@ -3245,7 +3244,7 @@ var skills = {
             requires: "N/A",
             dep: {
                 /* none */ },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 302,
@@ -3260,7 +3259,7 @@ var skills = {
             dep: {
                 Overheat: 3
             },
-            active: FALSE,
+            active: TRUE,
             max: 10,
             coords: {
                 x: 453,
