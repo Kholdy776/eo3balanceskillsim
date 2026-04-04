@@ -1544,7 +1544,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 3*xl,
-                y: 5*yl
+                y: 6*yl
             }
         },
         FullCleansing: {
@@ -1559,7 +1559,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 2*yl
+                y: 3*yl
             }
         },
         BloodReturn: {
@@ -1575,7 +1575,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 4*yl
+                y: 5*yl
             }
         },
         Sanctify: {
@@ -1591,7 +1591,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 6*yl
+                y: 7*yl
             }
         },
         Kikouken: {
@@ -1625,7 +1625,7 @@ var skills = {
         },
         GroupHeal: {
             name_jp: "ラインヒール",
-            name_en: "Party Heall",
+            name_en: "Group Heal",
             details: "Healing qi will recover all allies' HP.",
             requires: "Head",
             dep: {
@@ -1635,7 +1635,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 4*yl
+                y: 5*yl
             }
         },
         FullHeal: {
@@ -1650,7 +1650,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 2*xl,
-                y: 3*yl
+                y: 4*yl
             }
         },
         Counter: {
@@ -1695,7 +1695,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 5*yl
+                y: 6*yl
             }
         },
         Resurrect: {
@@ -1710,7 +1710,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 3*yl
+                y: 4*yl
             }
         },
         AuraBlast: {
@@ -1725,7 +1725,7 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
+                x: 0,
                 y: 4*yl
             }
         },
@@ -1740,7 +1740,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 6*yl
+                y: 7*yl
             }
         },
         BreakfireFist: {
@@ -1786,7 +1786,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 2*yl
+                y: 3*yl
             }
         }
     },
@@ -1807,12 +1807,14 @@ var skills = {
             details: "A fire and ice attack that splashes lava on enemies.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                BinaryFire: 2,
+                IceStar: 5
+            },
             active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 49
+                y: 5.5*yl
             }
         },
         Cocytus: {
@@ -1821,12 +1823,14 @@ var skills = {
             details: "An ice and volt attack that sends ice shards crashing down on random enemies.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                BinaryIce: 2,
+                BinaryThunder: 2
+            },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 181
+                y: 5.5*yl
             }
         },
         Thor: {
@@ -1835,12 +1839,14 @@ var skills = {
             details: "A volt and fire attack that blasts one enemy with heavy damage.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                VoltStar: 5,
+                FireStar: 5
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 317
+                x: 2*xl,
+                y: 5.5*yl
             }
         },
         EtherMastery: {
@@ -1849,13 +1855,12 @@ var skills = {
             details: "Prerequisite for elemental skills. Increases elemental damage.",
             requires: "N/A",
             dep: {
-                DarkEther: 5
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 487
+                x: xl,
+                y: 2*yl
             }
         },
         Singularity: {
@@ -1864,14 +1869,14 @@ var skills = {
             details: "Damage increases when attacking an enemy's elemental weakness.",
             requires: "N/A",
             dep: {
-                SingularityTheorem: 5,
-                EtherConcentration: 5
+                EtherMastery: 5,
+                DarkEther: 5
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl,
-                y: 449
+                x: xl,
+                y: yl
             }
         },
         EthericCharge: {
@@ -1880,13 +1885,13 @@ var skills = {
             details: "Concentrate to increase damage with elemental attacks.",
             requires: "Head",
             dep: {
-                FlameMastery: 1
+                DarkEther: 5
             },
             active: TRUE,
             max: 5,
             coords: {
                 x: xl,
-                y: 7
+                y: 0
             }
         },
         DarkEther: {
@@ -1895,13 +1900,12 @@ var skills = {
             details: "One row of allies will be able to use skills at no TP cost.",
             requires: "Head",
             dep: {
-                FlameMastery: 5
-            },
+                /* none */ },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 87
+                x: 0,
+                y: 0.5*yl
             }
         },
         Meteor: {
@@ -1910,14 +1914,14 @@ var skills = {
             details: "Call down meteors to deal strike damage to random enemies.",
             requires: "Head",
             dep: {
-                FlameAstrology: 5,
-                FlameConstellation: 5
+                EthericCharge: 5,
+                Singularity: 5
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 49
+                y: 0.5*yl
             }
         },
         FireStar: {
@@ -1926,13 +1930,13 @@ var skills = {
             details: "Astrological flame does fire damage to one enemy.",
             requires: "Head",
             dep: {
-                IceMastery: 1
+                EtherMastery: 1
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 139
+                x: 0,
+                y: 3.5*yl
             }
         },
         BinaryFire: {
@@ -1941,13 +1945,13 @@ var skills = {
             details: "Astrology calls forth flames that do fire damage to all enemies.",
             requires: "Head",
             dep: {
-                IceMastery: 5
+                FireStar: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 219
+                x: 0,
+                y: 4.5*yl
             }
         },
         Prominence: {
@@ -1956,14 +1960,13 @@ var skills = {
             details: "Engulf the battlefield with a conflagration. All units are weaker to ice attacks.",
             requires: "Head",
             dep: {
-                IceAstrology: 5,
-                IceConstellation: 5
+                Inferno: 3
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl,
-                y: 181
+                x: 0,
+                y: 6.5*yl
             }
         },
         IceStar: {
@@ -1972,13 +1975,13 @@ var skills = {
             details: "Astrological glaciers do ice damage to one enemy.",
             requires: "Head",
             dep: {
-                ThunderMastery: 1
+                EtherMastery: 1
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 275
+                y: 3.5*yl
             }
         },
         BinaryIce: {
@@ -1987,13 +1990,13 @@ var skills = {
             details: "Astrology calls forth an ice spear that damages all enemies with ice.",
             requires: "Head",
             dep: {
-                ThunderMastery: 5
+                IceStar: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 355
+                y: 4.5*yl
             }
         },
         Deluge: {
@@ -2002,73 +2005,73 @@ var skills = {
             details: "Invoke a raging flood over the battlefield. All units are weaker to volt attacks.",
             requires: "Head",
             dep: {
-                ThunderAstrology: 5,
-                ThunderConstellation: 5
+                Cocytus: 3
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl,
-                y: 317
+                x: xl,
+                y: 6.5*yl
             }
         },
-          VoltStar: {
+        VoltStar: {
             name_jp: "エーテル圧縮",
             name_en: "Volt Star",
             details: "Astrological lightning does volt damage to one enemy.",
             requires: "Head",
             dep: {
-                ReturnEther: 3,
-                PlanetObservation: 5
-            },
-            active: TRUE,
-            max: 10,
-            coords: {
-                x: 3*xl,
-                y: 543
-            }
-        },
-      BinaryThunder: {
-            name_jp: "ダークエーテル",
-            name_en: "Binary Thunder",
-            details: "Astrology calls forth lightning for volt damage to all enemies.",
-            requires: "Head",
-            dep: {
-                DarkEther: 5
+                EtherMastery: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 407
+                y: 3.5*yl
             }
         },
-      Tempest: {
+        BinaryThunder: {
+            name_jp: "ダークエーテル",
+            name_en: "Binary Thunder",
+            details: "Astrology calls forth lightning for volt damage to all enemies.",
+            requires: "Head",
+            dep: {
+                VoltStar: 3
+            },
+            active: TRUE,
+            max: 10,
+            coords: {
+                x: 2*xl,
+                y: 4.5*yl
+            }
+        },
+        Tempest: {
             name_jp: "星体観測",
             name_en: "Tempest",
             details: "Conjure a turbulent thunderstorm overhead. All units are weaker to fire attacks.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Thor: 3
+            },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 449
+                x: 2*xl,
+                y: 6.5*yl
             }
         },
-       Supernova: {
+        Supernova: {
             name_jp: "星体観測",
             name_en: "Supernova",
             details: "Conjures the primordial power of the heavens to strike enemies' weaknesses.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Meteor: 5
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 543
+                x: 3*xl,
+                y: 0.5*yl
             }
         }
     },
