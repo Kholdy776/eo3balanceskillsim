@@ -693,27 +693,6 @@ var SkillSimulator = {
     drawDependencyLine: function (svg, x1, y1, x2, y2, label, offset = 10) {
         var ns = "http://www.w3.org/2000/svg";
 
-        // Create <defs> (container for reusable elements)
-        var defs = document.createElementNS(ns, "defs");
-        
-        // Create marker (arrowhead)
-        var marker = document.createElementNS(ns, "marker");
-        marker.setAttribute("id", "arrow");
-        marker.setAttribute("markerWidth", 10);
-        marker.setAttribute("markerHeight", 10);
-        marker.setAttribute("refX", 10);
-        marker.setAttribute("refY", 3);
-        marker.setAttribute("orient", "auto");
-        
-        // Create arrow shape (triangle)
-        var path = document.createElementNS(ns, "path");
-        path.setAttribute("d", "M0,0 L10,3 L0,6 Z");
-        path.setAttribute("fill", "black");
-        
-        marker.appendChild(path);
-        defs.appendChild(marker);
-        svg.appendChild(defs);
-
         var line = document.createElementNS(ns, "line");
         line.setAttribute("x1", x1);
         line.setAttribute("y1", y1);
@@ -721,8 +700,6 @@ var SkillSimulator = {
         line.setAttribute("y2", y2);
         line.setAttribute("stroke", "gray");
         line.setAttribute("stroke-width", "2");
-
-        line.setAttribute("marker-end", "url(#arrow)");
 
         var midX = (x1 + x2) / 2;
         var midY = (y1 + y2) / 2;
@@ -733,6 +710,20 @@ var SkillSimulator = {
         var perpY = dx / length;
         var labelX = midX + perpX * offset;
         var labelY = midY + perpY * offset;
+        var angle = Math.atan2(y2 - y1, x2 - x1) * (180 / Math.PI);
+
+        // Create chevron (">" shape centered at 0,0)
+        var chevron = document.createElementNS(ns, "polyline");
+        chevron.setAttribute("points", "-6,-6 0,0 -6,6");
+        chevron.setAttribute("fill", "none");
+        chevron.setAttribute("stroke", "black");
+        chevron.setAttribute("stroke-width", 2);
+        
+        // Move + rotate into position
+        chevron.setAttribute(
+          "transform",
+          `translate(${mx}, ${my}) rotate(${angle})`
+        );
 
         var text = document.createElementNS(ns, "text");
         text.setAttribute("x", labelX);
@@ -744,6 +735,7 @@ var SkillSimulator = {
         text.textContent = label;
 
         svg.appendChild(line);
+        svg.appendChild(chevron);
         svg.appendChild(text);
     }
 }
