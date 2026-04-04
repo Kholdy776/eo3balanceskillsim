@@ -722,7 +722,7 @@ var SkillSimulator = {
         // Move + rotate into position
         chevron.setAttribute(
           "transform",
-          `translate(${mx}, ${my}) rotate(${angle})`
+          `translate(${midX}, ${midY}) rotate(${angle})`
         );
 
         var text = document.createElementNS(ns, "text");
