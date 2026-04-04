@@ -1,6 +1,7 @@
+const xl = 151;
+const yl = 80;
+
 var skills = {
-	xl = 151,
-	yl = 80,
     Default: {
         HPBoost: {
             name_jp: "HPブースト",
