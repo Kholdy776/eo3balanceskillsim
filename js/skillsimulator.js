@@ -714,7 +714,7 @@ var SkillSimulator = {
 
         // Create chevron (">" shape centered at 0,0)
         var chevron = document.createElementNS(ns, "polyline");
-        chevron.setAttribute("points", "-6,-6 0,0 -6,6");
+        chevron.setAttribute("points", "6,-6 0,0 6,6");
         chevron.setAttribute("fill", "none");
         chevron.setAttribute("stroke", "black");
         chevron.setAttribute("stroke-width", 2);
