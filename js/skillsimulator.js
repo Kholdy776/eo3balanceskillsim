@@ -714,7 +714,7 @@ var SkillSimulator = {
 
         // Create chevron (">" shape centered at 0,0)
         var chevron = document.createElementNS(ns, "polyline");
-        chevron.setAttribute("points", "6,-6 0,0 6,6");
+        chevron.setAttribute("points", "4,-4 0,0 4,4");
         chevron.setAttribute("fill", "none");
         chevron.setAttribute("stroke", "black");
         chevron.setAttribute("stroke-width", 2);
@@ -722,7 +722,7 @@ var SkillSimulator = {
         // Move + rotate into position
         chevron.setAttribute(
           "transform",
-          `translate(${midX+3}, ${midY+3}) rotate(${angle})`
+          `translate(${midX}, ${midY}) rotate(${angle})`
         );
 
         var text = document.createElementNS(ns, "text");
