@@ -1,5 +1,5 @@
 const xl = 151;
-const yl = 80;
+const yl = 90;
 
 var skills = {
     Default: {
@@ -2020,7 +2020,7 @@ var skills = {
             details: "Astrological lightning does volt damage to one enemy.",
             requires: "Head",
             dep: {
-                EtherMastery: 3
+                EtherMastery: 1
             },
             active: TRUE,
             max: 10,
@@ -2077,7 +2077,7 @@ var skills = {
     },
 
     Wildling: {
-        NaturePact: {
+        SpiritFang: {
             name_jp: "獣の心",
             name_en: "Nature Pact",
             details: "Wildling skill that allows a beast to take a mortal blow in your place.",
@@ -2085,6 +2085,22 @@ var skills = {
             unique: true,
             active: TRUE,
             max: 10
+        },
+        NaturePact: {
+            name_jp: "ビー ストロア",
+            name_en: "Spirit Fang",
+            details: "Ranged attack to one enemy with equipped weapon, utilizing magical strength.",
+            requires: "Head",
+            dep: {
+                BeastSoul: 3,
+                PrimalEnergy: 3
+            },
+            active: TRUE,
+            max: 10,
+            coords: {
+                x: 0,
+                y: 5*yl
+            }
         },
         WildMastery: {
             name_jp: "獣たちの友情",
@@ -2096,8 +2112,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 212
+                x: 2*xl,
+                y: yl
             }
         },
         BeastSoul: {
@@ -2111,7 +2127,7 @@ var skills = {
             max: 10,
             coords: {
                 x: xl,
-                y: 212
+                y: 5*yl
             }
         },
         Sacrifice: {
@@ -2120,27 +2136,13 @@ var skills = {
             details: "A beast may take a blow instead of an ally in the same row.",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 1
+                DismissBeast: 1
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 362
-            }
-        },
-        SpiritFang: {
-            name_jp: "ビー ストロア",
-            name_en: "Spirit Fang",
-            details: "Ranged attack to one enemy with equipped weapon, utilizing magical strength.",
-            requires: "Head",
-            dep: {
-                /* none */ },
-            active: TRUE,
-            max: 10,
-            coords: {
                 x: 3*xl,
-                y: 515
+                y: 5*yl
             }
         },
         PrimalEnergy: {
@@ -2149,12 +2151,13 @@ var skills = {
             details: "Relaxes enemies, lowering their resistances for three turns.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                PrimalDrums: 3
+            },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 515
+                x: 0,
+                y: 4*yl
             }
         },
         BeastRoar: {
@@ -2167,8 +2170,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl,
-                y: 515
+                x: 0,
+                y: 2*yl
             }
         },
         PrimalDrums: {
@@ -2177,13 +2180,12 @@ var skills = {
             details: "Threatens enemies, lowering their defense for three turns.",
             requires: "N/A",
             dep: {
-                AnimalFriendship: 3
-            },
+                /* none */ },
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl,
-                y: 83
+                x: 0,
+                y: 3*yl
             }
         },
         DismissBeast: {
@@ -2192,28 +2194,28 @@ var skills = {
             details: "Calls back a summoned beast. When they return, you regain the TP.",
             requires: "N/A",
             dep: {
-                AnimalFriendship: 3
+                WildMastery: 1
             },
             active: TRUE,
             max: 1,
             coords: {
                 x: 3*xl,
-                y: 341
+                y: yl
             }
         },
-        CallBird: {
+        CallCrow: {
             name_jp: "大鳥招来",
             name_en: "Call Bird",
             details: "Summons a large bird that does a Thrust attack and can Bind Head to one enemy.",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 1
+                WildMastery: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 59
+                x: xl,
+                y: 2*yl
             }
         },
         CallSnake: {
@@ -2222,29 +2224,28 @@ var skills = {
             details: "Summons a great snake that deals strike damage and binds the arms.",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 7,
-                SummonVenomfly: 4
+                WildMastery: 2
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 313
+                y: yl
             }
         },
-        CallMole: {
+        CallHound: {
             name_jp: "催眠梟招来",
             name_en: "Call Mole",
-            details: "Summons a great mole that deals slash damage and binds the legs.",
+            details: "Summons a hunting hound that pierces enemies' feet and heals the party.",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 5
+                WildMastery: 1
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 10
+                y: 0
             }
         },
         CallSlime: {
@@ -2253,14 +2254,14 @@ var skills = {
             details: "Summons a viscous slime protect allies from elemental damage.",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 10,
-                SacrificeI: 5
+                BeastSoul: 7,
+                SacrificeI: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 83
+                y: 6*yl
             }
         },
         CallCow: {
@@ -2269,13 +2270,13 @@ var skills = {
             details: "Summons a wild, violent cow dealing random pierce damage and paralysis.",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 1
+                WildMastery: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 2*yl
+                x: xl,
+                y: 4*yl
             }
         },
         CallOwl: {
@@ -2284,14 +2285,13 @@ var skills = {
             details: "Summons a beguiling owl that may put all enemies to sleep.",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 7,
-                SummonHypnoOwl: 4
+                WildMastery: 4
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 111
+                y: 3*yl
             }
         },
         CallPasaran: {
@@ -2300,14 +2300,13 @@ var skills = {
             details: "Summons an angry pasaran. Explosion damage will confuse all enemies. ",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 6,
-                AnimalFriendship: 10
+                WildMastery: 7
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 212
+                y: 0
             }
         },
         CallTiger: {
@@ -2316,13 +2315,14 @@ var skills = {
             details: "Summons a sabretooth tiger. Glare attacks will defeat all enemies. ",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 1
+                BeastSoul: 1,
+                WildMastery: 6
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 261
+                x: 2*xl,
+                y: 3*yl
             }
         },
         CallLion: {
@@ -2331,14 +2331,14 @@ var skills = {
             details: "Summons a majestic lion. Demands enemies' attention with its presence.  ",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 10,
-                SacrificeII: 5
+                BeastSoul: 3,
+                SacrificeI: 1
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 341
+                y: 4*yl
             }
         },
         CallOoze: {
@@ -2347,13 +2347,14 @@ var skills = {
             details: "Summons a swamp ooze protect allies from physical damage.",
             requires: "Arms",
             dep: {
-                BeastKingMastery: 3
+                BeastSoul: 5,
+                SacrificeI: 2
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 414
+                x: 2*xl,
+                y: 5*yl
             }
         }
     },
