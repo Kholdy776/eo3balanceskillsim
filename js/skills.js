@@ -196,7 +196,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 0,
-                y: 120
+                y: 1.5*yl
             }
         },
         GuardOrder: {
@@ -210,7 +210,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 0,
-                y: 360
+                y: 4.5*yl
             }
         },
         ElementalBomb: {
@@ -362,7 +362,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 360
+                y: 4.5*yl
             }
         },
         Knighthood: {
@@ -2380,7 +2380,7 @@ var skills = {
             max: 10,
             coords: {
                 x: xl,
-                y: 276
+                y: yl
             }
         },
        AdrenalineRush: {
@@ -2389,12 +2389,13 @@ var skills = {
             details: "Increase accuracy of skills.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Resilience: 5
+            },
             active: TRUE,
             max: 5,
             coords: {
                 x: xl,
-                y: 15
+                y: 4*yl
             }
         },
         NightVision: {
@@ -2403,29 +2404,27 @@ var skills = {
             details: "Increase critical hit rate during the night.",
             requires: "N/A",
             dep: {
-                IlluminatingShot: 3,
-                SmokeBomb: 3
+                Ambush: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 3*xl,
-                y: 499
+                y: 4*yl
             }
         },
-        MultiShot: {
+        Resilience: {
             name_jp: "エクステンド",
             name_en: "Multi-Shot",
             details: "When using skills targeting one enemy, number of hits may rise.",
             requires: "N/A",
             dep: {
-                SurefireConcentration: 3
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 15
+                x: 0,
+                y: 4*yl
             }
         },
         ProperForm: {
@@ -2434,14 +2433,12 @@ var skills = {
             details: "Employ especially careful aim, increasing all skills' accuracy.",
             requires: "N/A",
             dep: {
-                RearMortarBombardment: 4,
-                HighSpeedAPBullet: 4
-            },
+                /* none */ },
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl,
-                y: 339
+                x: xl,
+                y: 3*yl
             }
         },
         SagittariusArrow: {
@@ -2450,13 +2447,14 @@ var skills = {
             details: "Crossbow: Fires a quick shot imbued with the element of your weapon.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 1
+                ProperForm: 3,
+                ArmorPiercer: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 212.8
+                x: 0,
+                y: 3*yl
             }
         },
         SmokeGrenade: {
@@ -2465,13 +2463,13 @@ var skills = {
             details: "Detonate a smoke bomb to blind all enemies.",
             requires: "Arms",
             dep: {
-                HeavyShot: 5
+                Ambush: 1
             },
             active: TRUE,
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 212.8
+                y: 3*yl
             }
         },
         ApollosWrath: {
@@ -2480,13 +2478,13 @@ var skills = {
             details: "Crossbow: Summon the power of Apollo to burn enemies with ailments or binds.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 2
+                FireBarrage: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 15
+                x: 3*xl,
+                y: 0
             }
         },
         HeavyShot: {
@@ -2495,13 +2493,13 @@ var skills = {
             details: "Crossbow: Heavy arrows deal pierce damage to a single enemy.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 2
+                BoltMastery: 1
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 102
+                y: yl
             }
         },
         ArtemisEmbrace: {
@@ -2510,13 +2508,13 @@ var skills = {
             details: "Crossbow: Summon the power of Artemis to freeze enemies with ailments or binds.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 3
+                IceBarrage: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 189
+                x: 3*xl,
+                y: yl
             }
         },
         ErosCarnage: {
@@ -2525,13 +2523,13 @@ var skills = {
             details: "Crossbow: Summon the power of Eros to electrocute enemies with ailments or binds.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 5
+                VoltBarrage: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 276
+                x: 3*xl,
+                y: 2*yl
             }
         },
         ArmorPiercer: {
@@ -2540,13 +2538,13 @@ var skills = {
             details: "Crossbow: Bolts deal pierce/almighty damage that ignores enemy enhancements.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 5
+                BoltMastery: 5
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 363
+                y: 2*yl
             }
         },
         FireBarrage: {
@@ -2555,13 +2553,13 @@ var skills = {
             details: "Crossbow: Special gunpowder deals pierce/fire damage to all enemies.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 5
+                BoltMastery: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 450
+                x: 2*xl,
+                y: 0
             }
         },
         FrontMortar: {
@@ -2570,13 +2568,13 @@ var skills = {
             details: "Crossbow: Pierce damage at one enemy. More effective from the front row.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 7
+                HeavyShot: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 339
+                x: 0,
+                y: 0
             }
         },
        IceBarrage: {
@@ -2585,13 +2583,13 @@ var skills = {
             details: "Crossbow: Special gunpowder deals pierce/ice damage to all enemies.",
             requires: "Arms",
             dep: {
-                CrossbowMastery: 10
+                BoltMastery: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 537
+                x: 2*xl,
+                y: yl
             }
         },
         VoltBarrage: {
@@ -2600,12 +2598,13 @@ var skills = {
             details: "Crossbow: Special gunpowder deals pierce/volt damage to all enemies.",
             requires: "Arms",
             dep: {
-                /* none */ },
+                BoltMastery: 3
+            },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 457
+                y: 2*yl
             }
         },
         Cloudbuster: {
@@ -2614,12 +2613,13 @@ var skills = {
             details: "Crossbow: Shoot a bolt into the sky, raining pierce damage next turn.",
             requires: "Arms",
             dep: {
-                /* none */ },
+                BoltMastery: 7
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 537
+                x: xl,
+                y: 0
             }
         },
         Ambush: {
@@ -2633,7 +2633,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 2*xl,
-                y: 102
+                y: 3.5*yl
             }
         }
     },
