@@ -3068,7 +3068,6 @@ var skills = {
                 MorningStar: 5,
                 TwilightHour: 5
             },
-            },
             active: TRUE,
             max: 10,
             coords: {
