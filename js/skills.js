@@ -1276,8 +1276,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 7*yl
+                x: 0,
+                y: 5*yl
             }
         },
         Hyouton: {
@@ -1412,7 +1412,7 @@ var skills = {
             max: 10,
             coords: {
                 x: xl,
-                y: 5*yl
+                y: 4.5*yl
             }
         },
         NinpoShuriken: {
@@ -1457,7 +1457,7 @@ var skills = {
             active: TRUE,
             max: 1,
             coords: {
-                x: xl,
+                x: 0,
                 y: 4*yl
             }
         },
