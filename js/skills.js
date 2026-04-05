@@ -2394,8 +2394,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 4*yl
+                x: 3*xl,
+                y: 5*yl
             }
         },
         NightVision: {
@@ -2415,7 +2415,7 @@ var skills = {
         },
         Resilience: {
             name_jp: "エクステンド",
-            name_en: "Multi-Shot",
+            name_en: "Resilience",
             details: "When using skills targeting one enemy, number of hits may rise.",
             requires: "N/A",
             dep: {
@@ -2423,8 +2423,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 4*yl
+                x: 2*xl,
+                y: 5*yl
             }
         },
         ProperForm: {
@@ -2437,8 +2437,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 3*yl
+                x: 0,
+                y: 4*yl
             }
         },
         SagittariusArrow: {
@@ -2938,7 +2938,7 @@ var skills = {
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 0
+                y: yl
             }
         },
         Endure: {
@@ -2952,7 +2952,7 @@ var skills = {
             max: 5,
             coords: {
                 x: 2*xl,
-                y: 1.5*yl
+                y: 2*yl
             }
         },
         UpwardSlash: {
