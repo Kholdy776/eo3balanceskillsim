@@ -3217,8 +3217,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 206
+                x: 3*xl,
+                y: 4*yl
             }
         },
         Bastion: {
@@ -3231,22 +3231,23 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 110.1
+                x: 2*xl,
+                y: 3*yl
             }
         },
-        AnnihilationProtocol: {
+        Annihilation: {
             name_jp: "抗体培養",
-            name_en: "Annihilation Protocol",
+            name_en: "Annihilation",
             details: "In total annihilation mode, attacks are stronger while having lower HP.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Overheat: 9
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 14
+                x: 3*xl,
+                y: 5*yl
             }
         },
         Infravision: {
@@ -3259,8 +3260,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 377
+                x: xl,
+                y: 5*yl
             }
         },
         DataMining: {
@@ -3269,13 +3270,12 @@ var skills = {
             details: "Critical hit rate increases. Each successful hit adds to your power.",
             requires: "N/A",
             dep: {
-                Overheat: 3
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 377
+                x: 0,
+                y: 2*yl
             }
         },
         Benben: {
@@ -3284,13 +3284,13 @@ var skills = {
             details: "Summon a fire bot whose follow-up attacks debuff almighty resistance.",
             requires: "Head",
             dep: {
-                DataAnalysis: 1
+                DataMining: 1
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 262
+                y: 0
             }
         },
         Perkins: {
@@ -3299,13 +3299,13 @@ var skills = {
             details: "Summon an ice bot whose follow-up attacks debuff evasion.",
             requires: "Head",
             dep: {
-                DataAnalysis: 1
+                DataMining: 2
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 262
+                x: xl,
+                y: yl
             }
         },
         Pascal: {
@@ -3314,13 +3314,13 @@ var skills = {
             details: "Summon a volt bot whose follow-up attacks debuff accuracy.",
             requires: "Head",
             dep: {
-                DataAnalysis: 1
+                DataMining: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 262
+                x: xl,
+                y: 2*yl
             }
         },
         Fortification: {
@@ -3329,13 +3329,13 @@ var skills = {
             details: "Bulk up to gain physical defense but  lowering attack power.",
             requires: "Head",
             dep: {
-                DataAnalysis: 3
+                Bastion: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 150
+                x: 2*xl,
+                y: 4*yl
             }
         },
         Reflector: {
@@ -3344,13 +3344,13 @@ var skills = {
             details: "Bots will nullify attacks of their element and counterattack.",
             requires: "Head",
             dep: {
-                DataAnalysis: 3
+                DataMining: 5
             },
             active: TRUE,
             max: 5,
             coords: {
                 x: xl,
-                y: 49
+                y: 3*yl
             }
         },
         FamilysWarmth: {
@@ -3359,14 +3359,14 @@ var skills = {
             details: "Cover: Protect all allies from damage for one turn.",
             requires: "Head",
             dep: {
-                Resupply: 3,
-                CoordinatedAttack: 3
+                Fortification: 3,
+                Infravision: 3
             },
             active: TRUE,
             max: 5,
             coords: {
                 x: 2*xl,
-                y: 98
+                y: 5*yl
             }
         },
         AllOut: {
@@ -3375,14 +3375,13 @@ var skills = {
             details: "Join forces with your family of bots for a coordinated attack.",
             requires: "Head",
             dep: {
-                Resupply: 5,
-                CoordinatedAttack: 5
+                DataMining: 7
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 98
+                x: xl,
+                y: 4*yl
             }
         },
         RocketPunch: {
@@ -3391,12 +3390,13 @@ var skills = {
             details: "Blast arms at an enemy for strike damage. Causes arm bind to you.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Defrag: 1
+            },
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 492
+                x: 3*xl,
+                y: 0
             }
         },
         RocketHead: {
@@ -3405,13 +3405,13 @@ var skills = {
             details: "Blast your head for pierce damage to all enemies. Causes head bind to you.",
             requires: "N/A",
             dep: {
-                PartsRecovery: 3
+                Defrag: 1
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 377
+                x: 3*xl,
+                y: yl
             }
         },
         RocketJump: {
@@ -3420,43 +3420,43 @@ var skills = {
             details: "All attacks will miss you, but when the turn ends, your legs are bound.",
             requires: "Arms",
             dep: {
-                PartsRecovery: 1
-            },
-            active: TRUE,
-            max: 5,
-            coords: {
-                x: xl,
-                y: 548
-            }
-        },
-        HPCannon: {
-            name_jp: "ロケット頭突き",
-            name_en: "HP Cannon",
-            details: "Usable only when fully bound. Deals damage based on how low your HP is.",
-            requires: "Head",
-            dep: {
-                PartsRecovery: 1
-            },
-            active: TRUE,
-            max: 10,
-            coords: {
-                x: 2*xl,
-                y: 548
-            }
-        },
-        CoreDump: {
-            name_jp: "ロケットジャンプ",
-            name_en: "Core Dump",
-            details: "Undo all parts, entering a full bind.",
-            requires: "Legs",
-            dep: {
-                PartsRecovery: 1
+                Defrag: 1
             },
             active: TRUE,
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 548
+                y: 2*yl
+            }
+        },
+        RocketEngine: {
+            name_jp: "ロケット頭突き",
+            name_en: "Rocket Engine",
+            details: "Ignore mud and lava tiles.",
+            requires: "Head",
+            dep: {
+                Defrag: 1
+            },
+            active: TRUE,
+            max: 10,
+            coords: {
+                x: 3*xl,
+                y: 3*yl
+            }
+        },
+        Shoot: {
+            name_jp: "ロケットジャンプ",
+            name_en: "Shoot",
+            details: "Sacrifice bots to attack one enemy with the element of one of the bots.",
+            requires: "Legs",
+            dep: {
+                DataMining: 10
+            },
+            active: TRUE,
+            max: 5,
+            coords: {
+                x: 0,
+                y: 4*yl
             }
         },
         Defrag: {
@@ -3465,14 +3465,12 @@ var skills = {
             details: "Recover all parts, becoming unbound.",
             requires: "N/A",
             dep: {
-                Purge: 5,
-                Overheat: 10
-            },
+                /* none */ },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 377
+                x: 2*xl,
+                y: 1.5*yl
             }
         }
     }
