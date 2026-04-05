@@ -2654,28 +2654,28 @@ var skills = {
             details: "Throw a bucket of mysterious acid at enemies, hoping for the best.",
             requires: "N/A",
             dep: {
-                MomentOfInjury: 5
+                Contagion: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 170
+                x: 2*xl,
+                y: 0
             }
         },
-       Contagion: {
+        Contagion: {
             name_jp: "アメニモマケズ",
             name_en: "Contagion",
             details: "Launch nasty sewage at enemies. Biological warfare!.",
             requires: "N/A",
             dep: {
-                DetectionMaster: 3
+                Lullaby: 1
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 412
+                y: 0
             }
         },
         CampMastery: {
@@ -2688,8 +2688,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 492
+                x: 0,
+                y: 3*yl
             }
         },
         Witchcraft: {
@@ -2698,13 +2698,12 @@ var skills = {
             details: "Delve into the realms of witchcraft to learn occult magic.",
             requires: "N/A",
             dep: {
-                CampMaster: 5
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 534
+                x: 0,
+                y: 4.5*yl
             }
         },
         KeenNose: {
@@ -2713,13 +2712,13 @@ var skills = {
             details: "You have a higher chance of finding rare items at harvesting points.",
             requires: "Head",
             dep: {
-                Lullaby: 1
+                Harvestry: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 10
+                x: 3*xl,
+                y: 2.5*yl
             }
         },
         DevilsCandle: {
@@ -2728,13 +2727,13 @@ var skills = {
             details: "Purge the party's debuffs and heal them with occult magic.",
             requires: "Arms",
             dep: {
-                Lullaby: 3
+                Offering: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 170
+                x: 2*xl,
+                y: 4*yl
             }
         },
         DustDevil: {
@@ -2743,12 +2742,13 @@ var skills = {
             details: "Kick a dust cloud towards enemies,  but maybe that wasn't a great idea.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                RottenEgg: 3
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 412
+                x: 2*xl,
+                y: yl
             }
         },
         RottenEgg: {
@@ -2757,13 +2757,13 @@ var skills = {
             details: "Lower enemy strength for 4 turns. Status ailments increase its effect.",
             requires: "N/A",
             dep: {
-                CampMaster: 3
+                Lullaby: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 454
+                x: xl,
+                y: yl
             }
         },
         Lullaby: {
@@ -2776,8 +2776,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 332
+                x: 0,
+                y: yl
             }
         },
         StrangeSeeds: {
@@ -2786,12 +2786,13 @@ var skills = {
             details: "Plant seeds that bind enemies' head, arm, or legs at the end of the turn..",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Lullaby: 5
+            },
             active: TRUE,
             max: 1,
             coords: {
-                x: 0,
-                y: 251
+                x: xl,
+                y: 2*yl
             }
         },
         Offering: {
@@ -2800,12 +2801,13 @@ var skills = {
             details: "Witchcraft: Sacrifice the user's health to heal an ally.",
             requires: "Head",
             dep: {
-                /* none */ },
+                Witchcraft: 1
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 90
+                x: xl,
+                y: 4*yl
             }
         },
         HarvestTime: {
@@ -2814,13 +2816,13 @@ var skills = {
             details: "Time to swing that scythe 'round and 'round... did I even hit anything?",
             requires: "Arms",
             dep: {
-                CursedEyeOfWeak: 3
+                Harvestry: 1
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 170
+                x: 3*xl,
+                y: 3.5*yl
             }
         },
         Malediction: {
@@ -2829,13 +2831,13 @@ var skills = {
             details: "Witchcraft: Embrace the power of darkness to curse your enemies.",
             requires: "Arms",
             dep: {
-                Lullaby: 3
+                Witchcraft: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 90
+                y: 5*yl
             }
         },
         SafeStroll: {
@@ -2844,13 +2846,13 @@ var skills = {
             details: "Eliminate enemy encounters for a limited number of steps.",
             requires: "N/A",
             dep: {
-                DetectionMaster: 1
+                CampMastery: 1
             },
             active: TRUE,
             max: 5,
             coords: {
                 x: xl,
-                y: 332
+                y: 3*yl
             }
         },
         DevilsSnare: {
@@ -2859,13 +2861,13 @@ var skills = {
             details: "Remove buffs from all enemies and blast them with occult magic.",
             requires: "N/A",
             dep: {
-                DetectionMaster: 5
+                Malediction: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 492
+                x: 2*xl,
+                y: 5*yl
             }
         },
         ThornBind: {
@@ -2874,14 +2876,13 @@ var skills = {
             details: "Summon your loyal plants to drain and bind enemies 3 ways. Maybe it'll work?",
             requires: "N/A",
             dep: {
-                CryToCeaseAttack: 5,
-                MysterySeed: 3
+                StrangeSeeds: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 52
+                y: 2*yl
             }
         },
        Mesmerize: {
@@ -2890,13 +2891,14 @@ var skills = {
             details: "Witchcraft: Hypnotize your enemies into forgetting their misfortunes. Removes Built up Ailment/Bind Resistance",
             requires: "N/A",
             dep: {
-                ForagingMastery: 5
+                DevilsCandle: 3,
+                DevilsSnare: 3
             },
             active: TRUE,
             max: 5,
             coords: {
                 x: 3*xl,
-                y: 374
+                y: 4.5*yl
             }
         },
         Harvestry: {
@@ -2905,13 +2907,12 @@ var skills = {
             details: "Gather resources at all chopping, mining and gathering points.",
             requires: "N/A",
             dep: {
-                ForagingMastery: 3
-            },
+                /* none */ },
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl,
-                y: 294
+                x: 2*xl,
+                y: 3*yl
             }
         }
     },
