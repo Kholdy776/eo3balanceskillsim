@@ -2789,7 +2789,7 @@ var skills = {
                 Lullaby: 5
             },
             active: TRUE,
-            max: 1,
+            max: 10,
             coords: {
                 x: xl,
                 y: 2*yl
@@ -2909,7 +2909,7 @@ var skills = {
             dep: {
                 /* none */ },
             active: TRUE,
-            max: 5,
+            max: 10,
             coords: {
                 x: 2*xl,
                 y: 3*yl
@@ -2937,8 +2937,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 443.8
+                x: 2*xl,
+                y: 0
             }
         },
         Endure: {
@@ -2951,8 +2951,8 @@ var skills = {
             active: TRUE,
             max: 5,
             coords: {
-                x: 3*xl,
-                y: 256
+                x: 2*xl,
+                y: 1.5*yl
             }
         },
         UpwardSlash: {
@@ -2961,13 +2961,13 @@ var skills = {
             details: "Katana: Deal slash damage then empower the next slash attack.",
             requires: "N/A",
             dep: {
-                Endure: 3
+                AmbushStance: 3
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: 2*xl,
-                y: 336
+                x: 3*xl,
+                y: 3.5*yl
             }
         },
         BloodyLance: {
@@ -2976,12 +2976,13 @@ var skills = {
             details: "Your attack power increases each time you deal a final blow.",
             requires: "N/A",
             dep: {
-                /* none */ },
+                Endure: 3
+            },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 148
+                x: 3*xl,
+                y: yl
             }
         },
         MoraleBoost: {
@@ -2990,14 +2991,12 @@ var skills = {
             details: "Increase the morale of the allies, raising their maximum HP.",
             requires: "Arms",
             dep: {
-                RestoreWill: 1,
-                Endure: 1
-            },
+                /* none */ },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 148
+                x: 2*xl,
+                y: 3.5*yl
             }
         },
         ChargingThrust: {
@@ -3006,28 +3005,28 @@ var skills = {
             details: "Katana: Deal pierce damage then empower the next pierce attack.",
             requires: "Arms",
             dep: {
-                KatanaMastery: 1
+                AmbushStance: 5
             },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 363.8
+                x: 3*xl,
+                y: 4.5*yl
             }
         },
-       HiltStrike: {
+        HiltStrike: {
             name_jp: "明星",
             name_en: "Hilt Strike",
             details: "Katana/Sword: A single strike that uses the hilt. May stun.",
             requires: "Arms",
             dep: {
-                KatanaMastery: 5
+                KatanaMastery: 1
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 443.8
+                y: 0
             }
         },
         MorningStar: {
@@ -3036,13 +3035,13 @@ var skills = {
             details: "Katana/Sword: Slash all enemies. Stronger in sunlight, may blind.",
             requires: "Arms",
             dep: {
-                KatanaMastery: 5
+                KatanaMastery: 3
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: xl,
-                y: 523.8
+                y: yl
             }
         },
         TwilightHour: {
@@ -3051,14 +3050,13 @@ var skills = {
             details: "Katana/Sword: Slash all enemies. Stronger in moonlight, may sleep.",
             requires: "Arms",
             dep: {
-                KatanaMastery: 10,
-                GreatMilitarist: 3
+                KatanaMastery: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 0,
-                y: 256
+                x: x1,
+                y: 2*yl
             }
         },
         "5RingSword": {
@@ -3067,13 +3065,15 @@ var skills = {
             details: "Katana: Randomly slash all enemies, more hits with two swords.",
             requires: "Head",
             dep: {
-                Endure: 3
+                MorningStar: 5,
+                TwilightHour: 5
+            },
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 444
+                x: 0,
+                y: 1.5*yl
             }
         },
         GreatWarrior: {
@@ -3087,8 +3087,8 @@ var skills = {
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 256
+                x: 3*xl,
+                y: 2*yl
             }
         },
         WarriorMight: {
@@ -3097,13 +3097,13 @@ var skills = {
             details: "To perform follow up damage to most ally attacks.",
             requires: "Head",
             dep: {
-                RestoreWill: 3
+                BloodyLance: 5
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: xl,
-                y: 40
+                x: 3*xl,
+                y: 0
             }
         },
         ForeHonor: {
@@ -3112,13 +3112,13 @@ var skills = {
             details: "Designate an attacker for 3 turns, receiving ATK up and acting first.",
             requires: "Head",
             dep: {
-                RestoreWill: 3
+                MoraleBoost: 1
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 3*xl,
-                y: 40
+                x: xl,
+                y: 3*yl
             }
         },
         RearDignity: {
@@ -3127,14 +3127,13 @@ var skills = {
             details: "Designate a defender for 3 turns, receiving DEF up and acting last.",
             requires: "Arms",
             dep: {
-                VanguardsPrestige: 3,
-                RearGuardsHonor: 3
+                MoraleBoost: 3
             },
             active: TRUE,
             max: 10,
             coords: {
-                x: 2*xl,
-                y: 40
+                x: xl,
+                y: 4*yl
             }
         },
         AmbushStance: {
@@ -3143,14 +3142,13 @@ var skills = {
             details: "Attacks against the designated row will be countered.",
             requires: "Legs",
             dep: {
-                SpiritualUnification: 3,
-                BloodstainedSpear: 3
+                MoraleBoost: 5
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 2*xl,
-                y: 444
+                y: 4.5*yl
             }
         },
         Alertness: {
@@ -3159,13 +3157,12 @@ var skills = {
             details: "Raises awareness to reduce the chance of being ambushed.",
             requires: "Arms",
             dep: {
-                RestoreWill: 5
-            },
+                /* none */ },
             active: TRUE,
             max: 5,
             coords: {
-                x: xl,
-                y: 148
+                x: 0,
+                y: 0
             }
         },
         BlitzCommand: {
@@ -3174,13 +3171,14 @@ var skills = {
             details: "Commands every ally to strike one enemy simultaneously with their equipped weapon.",
             requires: "Arms",
             dep: {
-                SimultaneousFiring: 3
+                ForeHonor: 5,
+                RearDignity: 5
             },
             active: TRUE,
             max: 10,
             coords: {
                 x: 0,
-                y: 148
+                y: 3.5*yl
             }
         },
         SheathStrike: {
@@ -3189,12 +3187,13 @@ var skills = {
             details: "Katana: Deal strike damage then empower the next strike attack.",
             requires: "Legs",
             dep: {
-                /* none */ },
+                AmbushStance: 7
+            },
             active: TRUE,
             max: 5,
             coords: {
-                x: 0,
-                y: 40
+                x: 3*xl,
+                y: 5.5*yl
             }
         }
     },
