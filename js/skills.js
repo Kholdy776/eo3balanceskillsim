@@ -2255,7 +2255,7 @@ var skills = {
             requires: "Arms",
             dep: {
                 BeastSoul: 7,
-                SacrificeI: 3
+                Sacrifice: 3
             },
             active: TRUE,
             max: 10,
@@ -2332,7 +2332,7 @@ var skills = {
             requires: "Arms",
             dep: {
                 BeastSoul: 3,
-                SacrificeI: 1
+                Sacrifice: 1
             },
             active: TRUE,
             max: 10,
@@ -2348,7 +2348,7 @@ var skills = {
             requires: "Arms",
             dep: {
                 BeastSoul: 5,
-                SacrificeI: 2
+                Sacrifice: 2
             },
             active: TRUE,
             max: 10,
