@@ -218,9 +218,9 @@ div#header {
 
 div#main {
 	position: relative;
-	margin: 10px 30px 30px;
+	margin: 10px 30px 0;
 	width: 1356px;
-	height: 620px
+	height: 700px;
 }
 
 div#bg-main {
@@ -235,21 +235,21 @@ div#tree-fixed {
 	left: 0;
 	top: 0;
 	width: 150px;
-	height: 620px
+	height: 100%;
 }
 
 div#tree-primary {
 	left: 150px;
 	top: 0;
 	width: 603px;
-	height: 620px
+	height: 100%;
 }
 
 div#tree-secondary {
 	left: 753px;
 	top: 0;
 	width: 603px;
-	height: 620px
+	height: 100%;
 }
 
 div.tree-bg-primary,
@@ -774,7 +774,7 @@ div#stats {
 	position: absolute;
 	left: 10px;
 	top: 10px;
-	width: ;
+	/*width: ;*/
 	padding: 15px;
 	color: #fff;
 	border: 4px solid rgba(0, 0, 0, .2);
